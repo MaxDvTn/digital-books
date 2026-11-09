@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discorsi e dimostrazioni matematiche intorno a due nuove scienze — edizione interattiva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--carta:#fbf8f2;--inchiostro:#22201c;--rubrica:#871919;--attivo:#1f5fa8;--dato:#6b6458;--linea:#d9d1c3;--pannello:#f3eee4}
+*{box-sizing:border-box}
+html{scroll-padding-top:72px}
+body{margin:0;background:var(--carta);color:var(--inchiostro);font:19px/1.6 "EB Garamond",Georgia,serif}
+.ui,button,select,input,label,nav,.lettura,.cifre,.legenda,summary{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header.barra{position:sticky;top:0;z-index:10;background:rgba(251,248,242,.96);border-bottom:1px solid var(--linea);backdrop-filter:blur(4px)}
+header.barra .dentro{max-width:1040px;margin:0 auto;display:flex;align-items:center;gap:.6rem;padding:.45rem .8rem;flex-wrap:wrap}
+header.barra .marchio{font:600 1rem "EB Garamond",serif;color:var(--rubrica);margin-right:auto;font-variant:small-caps;letter-spacing:.03em}
+nav{display:flex;overflow-x:auto;scrollbar-width:none}nav a{font-size:.82rem;color:var(--inchiostro);text-decoration:none;padding:.55rem .55rem;border-radius:6px;border:1px solid transparent;display:inline-block;min-height:44px;line-height:1.6;white-space:nowrap}
+nav a:hover,nav a:focus{border-color:var(--linea)}
+main{max-width:760px;margin:0 auto;padding:1rem 1.1rem 5rem}
+h1{font-weight:400;font-variant:small-caps;color:var(--rubrica);text-align:center;font-size:2rem;margin:1.6rem 0 .2rem;letter-spacing:.04em;line-height:1.2}
+.sottotitolo{text-align:center;font-style:italic;color:var(--dato);margin:0 0 1.4rem}
+h2{font-weight:400;font-variant:small-caps;color:var(--rubrica);font-size:1.5rem;margin:2.6rem 0 .2rem;letter-spacing:.03em;text-align:center}
+h2 .sotto{display:block;font-size:1rem;font-style:italic;font-variant:normal;color:var(--dato)}
+h3.sez{font-weight:400;font-variant:small-caps;color:var(--rubrica);font-size:1.2rem;margin:1.8rem 0 .5rem;letter-spacing:.05em;text-align:center}
+p.t{margin:0 0 .9rem;text-align:justify;hyphens:auto;text-indent:1.2em}
+p.t.breve{text-indent:0}
+p.battuta{text-indent:0}
+.voce{font-variant:small-caps;color:var(--rubrica);font-weight:600;letter-spacing:.03em;margin-right:.25em}
+/* trattato De motu locali: enunciati e paragrafi */
+p.etichetta-trattato{font:600 .68rem Inter,system-ui,sans-serif;text-transform:uppercase;letter-spacing:.07em;color:var(--rubrica);margin:1.4rem 0 .3rem;text-indent:0}
+p.etichetta-trattato span{font-weight:400;text-transform:none;letter-spacing:0;color:var(--dato)}
+p.trattato,p.enunciato{border-left:3px solid #d8b9b5;padding-left:.8rem;text-indent:0;margin:0 0 .8rem;text-align:justify;hyphens:auto}
+p.enunciato .int{display:block;font-variant:small-caps;color:var(--rubrica);font-size:.95rem;letter-spacing:.06em;font-style:normal}
+p.enunciato.teorema,p.enunciato.problema,p.enunciato.definizione,p.enunciato.assioma,p.enunciato.lemma,p.enunciato.postulato{font-style:italic;border-left-color:var(--rubrica)}
+p.enunciato.citato{font-style:italic;border-left:none;padding:0 1.6rem;text-align:left}
+.glossa{color:var(--dato);font-style:normal;font-size:.92em}
+p.rimando{font:600 .75rem Inter,system-ui,sans-serif;color:var(--rubrica);text-indent:0;margin:.8rem 0 .2rem;font-variant:small-caps}
+p.notafine{font-size:.85rem;color:var(--dato);text-indent:0}
+.sc{font-variant:small-caps}
+.rubrica{color:var(--rubrica)}
+figure.fac{margin:1rem auto;text-align:center}
+figure.fac img{max-width:100%;height:auto}
+figure.fac figcaption{font-size:.75rem;color:var(--dato);font-family:Inter,system-ui,sans-serif}
+.nota{font-size:.78rem;color:var(--dato);font-family:Inter,system-ui,sans-serif}
+.avviso{background:var(--pannello);border-left:3px solid var(--rubrica);padding:.7rem .9rem;font-size:.95rem;border-radius:0 6px 6px 0;margin:1rem 0}
+.avviso.ui{font-size:.82rem;line-height:1.5}
+/* schede interattive */
+section.scheda{background:#fff;border:1px solid var(--linea);border-radius:10px;margin:1.6rem -.4rem;padding:.9rem .9rem 1rem;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+section.scheda>h3{margin:.1rem 0 .3rem;font:600 1.15rem "EB Garamond",serif;color:var(--rubrica);font-variant:small-caps;letter-spacing:.03em}
+section.scheda .intro{font-size:.95rem;color:var(--dato);margin:0 0 .6rem}
+.fig svg{width:100%;height:auto;display:block;touch-action:none;background:#fffdf8;border:1px solid var(--linea);border-radius:6px}
+.controlli{display:flex;flex-wrap:wrap;gap:.5rem .9rem;align-items:center;margin:.6rem 0;font-size:.85rem}
+.controlli label{display:flex;align-items:center;gap:.45rem;flex:1 1 260px}
+.controlli output{min-width:5.2em;font-variant-numeric:tabular-nums}
+.controlli input[type=range]{flex:1;min-width:110px;height:44px;accent-color:var(--attivo)}
+button.b{font-size:.85rem;border:1px solid var(--linea);background:#fff;border-radius:8px;padding:.45rem .8rem;cursor:pointer;min-height:44px;min-width:44px;color:var(--inchiostro)}
+button.b:hover{border-color:var(--attivo)}
+button.b:disabled{opacity:.4;cursor:default}
+button.b[aria-pressed=true]{background:var(--attivo);color:#fff;border-color:var(--attivo)}
+.passi{display:flex;align-items:center;gap:.5rem;margin:.6rem 0;flex-wrap:wrap}
+.passi .num{font-size:.8rem;color:var(--dato);min-width:6.5em;text-align:center}
+.lettura{font-size:.88rem;line-height:1.5;background:var(--pannello);border-radius:6px;padding:.6rem .8rem;min-height:4.2em}
+.lettura .cit{font-family:"EB Garamond",serif;font-style:italic;font-size:1.04rem;display:block}
+.lettura .latino{font-family:"EB Garamond",serif;font-size:.98rem;display:block;color:var(--dato);margin-top:.35rem;border-left:2px solid var(--linea);padding-left:.5rem}
+.lettura .spieg{display:block;margin-top:.45rem}
+.lettura .fonte{font-size:.75rem;color:var(--dato)}
+.cifre{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.4rem;margin:.6rem 0;font-size:.8rem}
+.cifre div{background:var(--pannello);border-radius:6px;padding:.4rem .55rem}
+.cifre b{display:block;font-size:1.02rem;font-weight:600;color:var(--inchiostro)}
+details{margin:.5rem 0;border:1px solid var(--linea);border-radius:6px;background:#fff}
+details>summary{cursor:pointer;padding:.55rem .7rem;font-size:.85rem;font-weight:600;color:var(--attivo);min-height:44px;display:flex;align-items:center}
+details>div{padding:0 .8rem .7rem;font-size:.92rem}
+details ol{padding-left:1.2rem;margin:.3rem 0}
+details li{margin:.4rem 0}
+details details{margin:.3rem 0 .2rem}
+details details>summary{font-weight:400;font-size:.8rem;min-height:44px}
+.etichetta{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--dato);margin:.9rem 0 .25rem;font-family:Inter,system-ui,sans-serif}
+.nota-ui{font-size:.75rem;color:var(--dato);margin:.3rem 0}
+.schedaEnunc{margin:.3rem 0 .6rem}
+.eqGriglia{display:grid;grid-template-columns:1fr;gap:.4rem}
+.facScheda{margin:0;background:#fff;border:1px solid var(--linea);border-radius:6px;padding:.3rem}
+.facScheda img{width:100%;height:auto;display:block}
+#eqGrid{max-width:420px;margin:0 auto}
+.lat1638{font-size:1rem;text-align:justify;hyphens:auto}
+footer{max-width:760px;margin:0 auto;padding:1rem 1.1rem 3rem;font-size:.82rem;color:var(--dato);font-family:Inter,system-ui,sans-serif}
+a{color:var(--attivo)}
+:focus-visible{outline:3px solid #f0b400;outline-offset:2px}
+.lb-corpo p.enunciato,.lb-corpo p.trattato,.lb-corpo p.battuta,.lb-corpo p.etichetta-trattato,.lb-corpo p.notafine,.lb-corpo p.rimando{text-indent:0}
+p.enunciato .int{text-align:left;text-indent:0}
+@keyframes lamp{0%,100%{opacity:1}50%{opacity:.15}} .nuovo{animation:lamp .5s ease 2}
+@media (prefers-reduced-motion: reduce){.nuovo{animation:none}}
+@media(max-width:767px){header.barra .dentro{flex-wrap:nowrap;padding:.25rem .5rem;gap:.3rem}header.barra .marchio{display:none}nav{flex:1;min-width:0}#btnLibro{font-size:.72rem;padding:.3rem .5rem;flex:none}body{font-size:18px}section.scheda{margin:1.4rem -.6rem;padding:.75rem .65rem .9rem}h1{font-size:1.5rem}.passi{position:sticky;bottom:0;background:#fff;padding:.4rem 0;z-index:2}}
+%%COPERTINA_CSS%%
+%%LIBRO_CSS%%
+@media(max-width:1023px){header.barra .dentro{flex-wrap:nowrap}header.barra .marchio{display:none}nav{flex:1;min-width:0}}
+</style>
+</head>
+<body>
+<header class="barra"><div class="dentro">
+<span class="marchio">Discorsi · 1638</span>
+<nav aria-label="Sezioni">
+<a href="#copertina">Copertina</a><a href="#testo">Testo</a><a href="#g1">Giornata I</a><a href="#g2">Giornata II</a><a href="#g3">Giornata III</a><a href="#equabile">Moto equabile</a><a href="#g4">Giornata IV</a><a href="#appendice">Appendice</a><a href="#note">Note</a>
+</nav>
+<button class="b ui" id="btnLibro" aria-pressed="false" title="Leggi come un libro da sfogliare">📖 Libro</button>
+</div></header>
+<main>
+%%COPERTINA%%
+
+<div class="avviso ui">Il testo è completo. Le parti del trattato latino <i>De motu locali</i>, che Salviati «legge» ai compagni nelle Giornate Terza e Quarta, hanno un filetto rosso a sinistra: nell'edizione da cui è tratto il testo sono tradotte in italiano e ridotte ai soli enunciati. Nei punti in cui il libro si apre in una <b>scheda interattiva</b> trovi anche la dimostrazione di Galileo, in latino e in traduzione. Con il pulsante <b>📖 Libro</b> lo leggi come un libro da sfogliare.</div>
+
+<div id="testo">
+%%TESTO%%
+</div>
+</main>
+<footer id="note">
+<h2 style="font-family:'EB Garamond',serif">Note all'edizione</h2>
+%%NOTE%%
+</footer>
+<script>window.LIBRO_LATINO=[];window.LIBRO_CONF=%%LIBRO_CONF%%;</script>
+<script>%%LIBRO_JS%%</script>
+<script>window.DIM_ME_P1=%%DIM_ME_P1%%;</script>
+<script>%%MODELLO_EQ%%</script>
+<script>%%SCHEDA_EQ_JS%%</script>
+<script>
+try{Libro.init();}catch(e){console.error(e);}
+function apriDaHash(){const h=location.hash.slice(1);if(h&&!h.startsWith("pagina-")){const e=document.getElementById(h);if(e)e.scrollIntoView();}}
+window.addEventListener("hashchange",apriDaHash);
+</script>
+</body>
+</html>

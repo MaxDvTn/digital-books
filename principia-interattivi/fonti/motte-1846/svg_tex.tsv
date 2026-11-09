@@ -1,0 +1,1361 @@
+1	\mathrm A \times \mathrm C \times \dfrac{1}{\mathrm D}
+2	\mathrm A
+3	\dfrac{\mathrm{BC}}{\mathrm D}
+4	\mathrm{AB}^{2} = \mathrm{AG} \times \mathrm{BD}
+5	\mathrm{A}b^{2} = \mathrm{A}g \times bd
+6	\mathrm{AB}^{2}
+7	\mathrm{A}b^{2}
+8	\mathrm{AD}^{4}
+9	\mathrm{AD}^{5}
+10	\mathrm{AD}^{6}
+11	\mathrm{AD}^{7}
+12	\mathrm{AD}^{2}
+13	\mathrm{AD}\tfrac{3}{2}
+14	\mathrm{AD}\tfrac{4}{3}
+15	\mathrm{AD}\tfrac{5}{4}
+16	\mathrm{AD}\tfrac{6}{5}
+17	\mathrm{AD}\tfrac{7}{6}
+18	\mathrm{AD}^{3}
+19	\mathrm{AD}\tfrac{13}{6}
+20	\mathrm{AD}\tfrac{11}{5}
+21	\mathrm{AD}\tfrac{9}{4}
+22	\mathrm{AD}\tfrac{7}{3}
+23	\mathrm{AD}\tfrac{5}{2}
+24	\mathrm{AD}\tfrac{8}{3}
+25	\mathrm{AD}\tfrac{11}{4}
+26	\mathrm{AD}\tfrac{14}{5}
+27	\mathrm{AD}\tfrac{17}{6}
+28	\mathrm{R}^{n - 1}
+29	\mathrm{R}^{2n - 1}
+30	\dfrac{\mathrm{SP}^{2} \times \mathrm{QT}^{2}}{\mathrm{QR}}
+31	\mathrm{SP} \times \mathrm{QT}
+32	\dfrac{\mathrm{SY}^{2} \times \mathrm{QP}^{2}}{\mathrm{QR}}
+33	\mathrm{SY} \times \mathrm{QP}
+34	\mathrm{SY}^{2} \times \mathrm{PV}
+35	\dfrac{\mathrm{QP}^{2}}{\mathrm{QR}}
+36	\mathrm{RP}^{2}
+37	\mathrm{QT}^{2}
+38	\mathrm{AV}^{2}
+39	\mathrm{PV}^{2}
+40	\dfrac{\mathrm{QRL} \times \mathrm{PV}^{2}}{\mathrm{AV}^{2}}
+41	\dfrac{\mathrm{SP}^{2}}{\mathrm{QR}}
+42	\dfrac{\mathrm{SP}^{2} \times \mathrm{PV}^{3}}{\mathrm{AV}^{2}} = \dfrac{\mathrm{SP}^{2} \times \mathrm{QT}^{2}}{\mathrm{QR}}
+43	\dfrac{\mathrm{SP}^{2} \times \mathrm{PV}^{3}}{\mathrm{AV}^{2}}
+44	\dfrac{\mathrm{SP} \times \mathrm{PV}}{\mathrm{AV}} = \mathrm{SY}
+45	\dfrac{\mathrm{SP}^{2} \times \mathrm{PV}^{3}}{\mathrm{AV}^{2}} = \mathrm{SY}^{2} \times \mathrm{PV}
+46	\mathrm{SP}^{2} \times \mathrm{PV}^{3}
+47	\mathrm{RP}^{2} \times \mathrm{SP}
+48	\mathrm{RP}^{2} \times \mathrm{PT}^{3}
+49	\mathrm{SP} \times \mathrm{RP}^{2}
+50	\dfrac{\mathrm{SP}^{3} \times \mathrm{PV}^{3}}{\mathrm{PT}^{3}}
+51	\mathrm{SG}^{3}
+52	\mathrm{CP}^{2}
+53	\mathrm{PM}^{2}
+54	\mathrm{PR}^{2}
+55	\mathrm{QR} \times\, \overline{\mathrm{RN} + \mathrm{QN}}
+56	\mathrm{QR} \times 2\mathrm{PM}
+57	\dfrac{\mathrm{QT}^{2}}{\mathrm{QR}} = \dfrac{2\mathrm{PM}^{3}}{\mathrm{CP}^{2}}
+58	\dfrac{\mathrm{QT}^{2} \times \mathrm{SP}^{2}}{\mathrm{QR}} = \dfrac{2\mathrm{PM}^{3} \times\, \mathrm{SP}^{2}}{\mathrm{CP}^{2}}
+59	\dfrac{2\mathrm{PM}^{3} \times \mathrm{SP}^{2}}{\mathrm{CP}^{2}}
+60	\left(\text{neglecting the given ratio}\, \dfrac{2\mathrm{SP}^{2}}{\mathrm{CP}^{2}}\right)
+61	\mathrm{PM}^{3}
+62	\dfrac{\mathrm{QT}}{\mathrm{QR}}
+63	\dfrac{\mathrm{QT}^{2}}{\mathrm{QR}}
+64	\dfrac{\mathrm{QT}^{2} \times\, \mathrm{SP}^{2}}{\mathrm{QR}}
+65	\mathrm{SP}^{3}
+66	\mathrm{SY}^{2} \times\, \mathrm{PV}
+67	\mathrm{Q}v^{2}
+68	\mathrm{PC}^{2}
+69	\mathrm{CD}^{2}
+70	\mathrm{PF}^{2}
+71	\dfrac{\mathrm{QT}^{2}}{\mathrm{P}v}
+72	\dfrac{\mathrm{CD}^{2} \times\, \mathrm{PF}^{2}}{\mathrm{PC}^{2}}
+73	\mathrm{BC} \times\, \mathrm{CA}
+74	\mathrm{CD} \times\, \mathrm{PF}
+75	\dfrac{\mathrm{QT}^{2} \times\, \mathrm{PC}^{2}}{\mathrm{QR}}
+76	\dfrac{2 \mathrm{BC}^{2} \times\, \mathrm{CA}^{2}}{\mathrm{PC}}
+77	2\mathrm{BC}^{2} \times\, \mathrm{CA}^{2}
+78	\dfrac{1}{\mathrm{PC}}
+79	\mathrm{DC}^{2}
+80	\mathrm{Q}v^{2} = \mathrm{P}v \times\, u\mathrm{V}
+81	\dfrac{2\mathrm{DC}^{2}}{\mathrm{PC}}
+82	\dfrac{2\mathrm{DC}^{2}}{\mathrm{PC}} \times\, \mathrm{PF}^{2}
+83	2\mathrm{DC}^{2} \times\, \mathrm{PF}^{2}
+84	\left(\text{or for}\, \dfrac{2\mathrm{BC}^{2}}{\mathrm{AC}}\right)
+85	\mathrm L \times\, \mathrm{QR}
+86	\mathrm L \times\, \mathrm{P}v
+87	\mathrm{Q}x^{2}
+88	\mathrm{EP}^{2}
+89	\mathrm{CA}^{2}
+90	\mathrm{CB}^{2}
+91	\mathrm{AC} \times\, \mathrm L \times\, \mathrm{PC}^{2} \times\, \mathrm{CD}^{2}
+92	2\mathrm{CB}^{2} \times\, \mathrm{PC}^{2} \times\, \mathrm{CD}^{2}
+93	\mathrm{PC} \times\, \mathrm{G}v \times \mathrm{CD}^{2} \times\, \mathrm{CB}^{2}
+94	\mathrm L \times\, \mathrm{SP}^{2}
+95	\dfrac{\mathrm{SP}^{2} \times\, \mathrm{QT}^{2}}{\mathrm{QR}}
+96	\dfrac{\mathrm{PE}^{2}}{\mathrm{SP}^{2}}
+97	\mathrm{SP}^{2}
+98	\dfrac{2\mathrm{BC}^{2}}{\mathrm{AC}}
+99	\dfrac{\mathrm{SP}^{2} \times\, \mathrm{QR}}{\mathrm{QT}^{2}}
+100	\dfrac{\mathrm{PE}^{3}}{\mathrm{SP}^2}
+101	\mathrm{SP}^{2} \times\, 4\mathrm{SA}
+102	\dfrac{\mathrm{SY}^{2}}{\mathrm L}
+103	\dfrac{\mathrm{SP} \times\, \mathrm{QT}}{\mathrm{SY}}
+104	\mathrm{SP}^2 - 2\mathrm{KPH} + \mathrm{PH}^2  = \mathrm{SH}^2 = 4\mathrm{CH}^2 = 4\mathrm{BH}^2 - 4\mathrm{BC}^2 = \overline{\mathrm{SP} + \mathrm{PH}^2}  - \mathrm L \times\, \overline{\mathrm{SP} + \mathrm{PH}}  = \mathrm{SP}^2 + 2\mathrm{SPH} + \mathrm{PH}^2 - \mathrm L \times\,  \overline{\mathrm{SP} + \mathrm{PH}}
+105	2\mathrm{KPH} - \mathrm{SP}^2 - \mathrm{PH}^2 + \mathrm L  \times\, \overline{\mathrm{SP} + \mathrm{PH}}
+106	\mathrm L \times\, \overline{\mathrm{SP}  + \mathrm{PH}} = 2\mathrm{SPH} + 2\mathrm{KPH}
+107	\dfrac{\mathrm{CG}^{2}}{\mathrm{RP}^{2}}
+108	\dfrac{\mathrm{BG}^{2}}{\mathrm{AG}}
+109	\dfrac{\mathrm{OA} \times\, \mathrm{AB}}{ad}
+110	\dfrac{\mathrm{OA} \times\, dg}{ad}
+111	\sqrt{ahb} + ik + \sqrt{alb}
+112	\mathrm{PH}
+113	\mathrm{AG}^2 + \mathrm{GH}^2
+114	\mathrm{HP}^{2} = \overline{\mathrm{AO} - \mathrm{AG}\vert^{2}} + \overline{\mathrm{PO} - \mathrm{GH}\vert^{2}}
+115	\mathrm{AO}^{2} + \mathrm{PO}^{2} - 2\mathrm{GAO} - 2\mathrm{GH}  + \mathrm{PO} + \mathrm{AG}^{2} + \mathrm{GH}^{2}
+116	2\mathrm{GH} \times\, \mathrm{PO}\, (= \mathrm{AO}^{2} + \mathrm{PO}^{2} - 2\mathrm{GAO}) = \mathrm{AO}^{2} + \dfrac{3}{4}\mathrm{PO}^{2}
+117	\mathrm{AO}^{2}
+118	\mathrm{AO} \times\, \dfrac{\mathrm{PO}^{2}}{4\mathrm{AS}}
+119	\dfrac{4}{3}\mathrm{GH} \times\, \mathrm{AS}\, (=\dfrac{1}{6}\mathrm{AO} \times\, \mathrm{PO} + \tfrac{1}{2} \mathrm{AS} \times\, \mathrm{PO} = \dfrac{\mathrm{AO} + 3\mathrm{AS}}{6} \times\, \mathrm{PO} = \dfrac{4\mathrm{AO} - 3\mathrm{SO}}{6} \times\, \mathrm{PO}
+120	\overline{\mathrm{APO} - \mathrm{SPO}\vert}
+121	\dfrac{4}{3}\mathrm{GH} \times\, \mathrm{AS}
+122	\tfrac{1}{2}\mathrm{OQ} \times\, \mathrm{AQ}
+123	\tfrac{1}{2}\mathrm{OQ} \times\, \mathrm{SR}
+124	\tfrac{1}{2}\mathrm{OQ}
+125	\cos{\mathrm{O}r}
+126	\sin{qr}
+127	\tfrac{1}{2}\mathrm L
+128	\tfrac{1}{2}\mathrm{AB}
+129	\tfrac{1}{2}\mathrm L \times\, \mathrm{SP}
+130	\dfrac{2 \mathrm{CP}^{2} \times\, \mathrm{AO}}{\mathrm{ACB}}
+131	\dfrac{\mathrm{CP}^{2} \times\, \mathrm{AO} \times\, \mathrm{SP}}{\mathrm{ACB}}
+132	\dfrac{\mathrm{BQ}^{2} \times\, \mathrm{AC} \times\, \mathrm{SP}}{\mathrm{AO} \times\, \mathrm{BC}}
+133	\dfrac{\mathrm{BQ}^{2} \times\, \mathrm{AC} \times\,  \mathrm{SP}}{\mathrm{AO} \times\, \mathrm{BC}}
+134	\tfrac{1}{2}\mathrm{SY} \times\, \mathrm{K}k
+135	\tfrac{1}{2}\mathrm{SY} \times\, \mathrm{D}d
+136	\tfrac{1}{4}\mathrm{CD} \times\, \mathrm{C}c
+137	\tfrac{1}{2}\mathrm{SC}
+138	\tfrac{1}{2}\mathrm{CD}
+139	\tfrac{1}{2}\mathrm{SK} \times\, \mathrm{K}k
+140	\tfrac{1}{2}\mathrm{AS}
+141	\dfrac{\mathrm{DFGE}}{\mathrm{DE}}
+142	\dfrac{2 \mathrm{VI} + \mathrm{II}}{\mathrm{DE}}
+143	\dfrac{2 \mathrm{VI}}{\mathrm{DE}}
+144	\dfrac{\mathrm I \times\, \mathrm V}{\mathrm{DE}}
+145	\tfrac{1}{2}\mathrm V
+146	\tfrac{1}{2}\mathrm{DE}
+147	\mathrm{A}^{n - 1}
+148	\sqrt{{\mathrm{P}^{n} - \mathrm{A}^{n}}}
+149	\dfrac{\mathrm Q}{\mathrm A}
+150	\dfrac{Q}{A}
+151	\sqrt{\mathrm{ABFD}}
+152	\sqrt{\mathrm{ABFD} - \mathrm{ZZ}}
+153	\dfrac{\mathrm Q \times\, \mathrm{IN}}{\sqrt{\mathrm{ABFD} - \mathrm{ZZ}}}
+154	\dfrac{\mathrm Q \times\, \mathrm{IN} \times\, \mathrm{CX}^{2}} {\mathrm{AA}\sqrt{\mathrm{ABFD} - \mathrm{ZZ}}}
+155	\dfrac{\mathrm Q}{2\sqrt{\mathrm{ABFD} - \mathrm{ZZ}}}
+156	\dfrac{\mathrm Q \times\, \mathrm{CX}^{2}}{2\mathrm{AA}\sqrt{\mathrm{ABFD} - \mathrm{ZZ}}}
+157	\dfrac{mk \times\, ms}{mt}
+158	\tfrac{1}{2}mt
+159	\dfrac{rk^{2}}{2k\mathrm C}
+160	\dfrac{\mathrm{FF}}{\mathrm{AA}} + \dfrac{\mathrm{RGG} - \mathrm{RFF}}{\mathrm{A}^{3}}
+161	\dfrac{\mathrm{FF}}{\mathrm{AA}}
+162	\dfrac{\mathrm{FF}}{\mathrm{CV}^{2}}
+163	\dfrac{\mathrm{RFF}}{\mathrm{CV}^{3}}
+164	\dfrac{\mathrm{RGG} - \mathrm{RFF}}{\mathrm{CV}^{3}}
+165	\dfrac{1}{\mathrm{A}^{3}}
+166	\dfrac{1}{\mathrm{CV}^{3}}
+167	\dfrac{\mathrm{RGG} - \mathrm{RFF}}{\mathrm{A}^{3}}
+168	\dfrac{\mathrm{FF}}{\mathrm{AA}} + \dfrac{\mathrm{RGG} - \mathrm{RFF}}{\mathrm{A}^{3}}
+169	\dfrac{\mathrm{FFA}}{\mathrm{T}^{3}}
+170	\dfrac{\mathrm{FFA}}{\mathrm{T}^{3}} + \dfrac{\mathrm{RGG} - \mathrm{RFF}}{\mathrm{A}^{3}}
+171	\dfrac{\mathrm{VFF}}{\mathrm{TT}}
+172	\mathrm X + \dfrac{\mathrm{VRGG} -\mathrm{VRFF}}{\mathrm{A}^{3}}
+173	\dfrac{\mathrm{FFA} + \mathrm{RGG} - \mathrm{RFF}}{\mathrm{A}^{3}}
+174	\dfrac{\mathrm{RGG} - \mathrm{RFF} + \mathrm{TFF} - \mathrm{FFX}}{\mathrm{A}^{3}}
+175	\dfrac{\mathrm{A}^{3}}{\mathrm{A}^{3}}
+176	\dfrac{\mathrm{T}^{3} - 3\mathrm{TTX} + 3\mathrm{TXX} - \mathrm{X}^{3}}{\mathrm{A}^{3}}
+177	\sqrt{3}
+178	\dfrac{180}{\sqrt{3}}
+179	\mathrm{A}^{n - 3}
+180	\dfrac{\mathrm{A}^{n}}{\mathrm{A}^{3}}
+181	\overline {\mathrm T - \mathrm X}\vert ^{n}
+182	\mathrm{T}^{n} - n\mathrm{XT}^{n - 1} + \dfrac{nn - n}{2}\mathrm{XXT}^{n - 2}
+183	-n\mathrm{T}^{n - 1} + \dfrac{nn -n}{2} \mathrm{XT}^{n - 2}
+184	-n\mathrm{T}^{n - 1}
+185	\mathrm{T}^{n - 1}
+186	n\mathrm{T}^{n - 1}
+187	\sqrt{n}
+188	\dfrac{180}{\sqrt{n}}
+189	\dfrac{180}{2}
+190	\dfrac{1}{\mathrm{A}}
+191	\dfrac{\mathrm{A}^{2}}{\mathrm{A}^{3}}
+192	\dfrac{180}{\sqrt{2}}
+193	\mathrm{A}\tfrac{11}{14}
+194	\dfrac{1}{\mathrm{A}\tfrac{11}{4}}
+195	\dfrac{\mathrm{A}\tfrac{3}{4}}{\mathrm{A}^{3}}
+196	\dfrac{1}{4}
+197	\dfrac{b\mathrm{A}^{m} + c\mathrm{A}^{n}}{\mathrm{A}^{3}}
+198	\dfrac{b\,\, \text{into}\,\, \overline {{T-X}} \vert ^{m} + c\,\, \text{into}\,\, \overline {{T-X}} \vert ^{n}}{\mathrm{A}^{3}}
+199	\dfrac{b\mathrm{T}^{m} + c\mathrm{T}^{n} - mb\mathrm{XT}^{n - 1}}{\mathrm{A}^{3}} + \dfrac{mm -m}{2}b\mathrm{XXT}^{m - 2} + \dfrac{mm - n}{2}\dfrac{b\mathrm{XXT}^{n- 2}}{\mathrm{A}^{3}}
+200	-mb\mathrm{T}^{m- 1} - nc\mathrm{T}^{n - 1} + \dfrac{mm - m}{2}b\mathrm{XT}^{m -2} + \dfrac{nn - n}{2}c\mathrm{XT}^{n - 2}
+201	\dfrac{mb + nc}{b + c}
+202	\sqrt{\dfrac{mb + nc}{b + c}}
+203	180 \sqrt{\dfrac{b + c}{mb + nc}}
+204	\dfrac{b\mathrm{A}^{m} -c\mathrm{A}^{n}}{\mathrm{A}^{3}}
+205	180 \sqrt{\dfrac{b - c}{mb - nc}}
+206	\mathrm{A}^{\tfrac{nn}{mm} -3}
+207	\dfrac{nn}{mm} -3
+208	1\tfrac{1}{2}
+209	\dfrac{nn}{mm} - 3
+210	\tfrac{1}{64} - 3
+211	\tfrac{1}{16} - 3
+212	\tfrac{1}{4} - 3
+213	\tfrac{4}{9} -3
+214	\mathrm{A}^{\tfrac{1}{64} - 3}
+215	\mathrm{A}^{\tfrac{1}{16} - 3}
+216	\mathrm{A}^{\tfrac{1}{4}- 3}
+217	\mathrm{A}^{\tfrac{4}{9} - 3}
+218	\mathrm{A}^{{3} - \tfrac{1}{64}}
+219	\mathrm{A}^{{3}- \tfrac{1}{16}}
+220	\mathrm{A}^{{3} -\tfrac{1}{4}}
+221	\mathrm{A}^{{3} - \tfrac{4}{9}}
+222	\mathrm{A}^{\tfrac{nn}{mm} - 3}
+223	\mathrm{A}^{-2}
+224	\dfrac{1}{\mathrm{AA}}
+225	\tfrac{3}{4}
+226	\tfrac{2}{3}
+227	\tfrac{1}{3}
+228	\tfrac{1}{4}
+229	\mathrm{A}^{\tfrac{nn}{mm}- 3}
+230	\mathrm{A}^{\tfrac{16}{9} - 3}
+231	\mathrm{A}^{\tfrac{9}{4} - 3}
+232	\mathrm{A}^{9 - 3}
+233	\mathrm{A}^{16 - 3}
+234	\mathrm{A}^{\tfrac{11}{9}}
+235	\mathrm{A}^{\tfrac{3}{4}}
+236	\mathrm{A}^{6}
+237	\mathrm{A}^{13}
+238	\mathrm{A}^{-\tfrac{29523}{14641}}
+239	\mathrm{A}^{\tfrac{29523}{14641}}
+240	\mathrm{A}^{2\tfrac{49}{253}}
+241	59\tfrac{3}{4}
+242	\dfrac{\mathrm{A} -c\mathrm{A}^{4}}{{\mathrm{A}^{3}}}
+243	180\sqrt{\dfrac{1 - c}{1 - 4c}}
+244	\dfrac{100}{35745}
+245	180 \sqrt{\dfrac{1 - c}{1 - 4c}}
+246	180 \sqrt{\tfrac{35645}{35345}}
+247	\tfrac{1}{2}\mathrm{PB}
+248	\tfrac{1}{2}\mathrm{BEP}
+249	\tfrac{1}{2}\mathrm{BV}
+250	\sqrt{\mathrm{SR}^{2} - \mathrm{TR}^{2}}
+251	\sqrt{\mathrm{GH} \times\, \mathrm{CO} \times\, \mathrm V}
+252	\sqrt{\mathrm{GH} \times\,\mathrm{CO} \times\, \mathrm V}
+253	\sqrt{\dfrac{\mathrm{SR}}{\mathrm{CO} \times\, \mathrm {V}}}
+254	\sqrt{\dfrac{\mathrm{AR}}{\mathrm{AC} \times\, \mathrm {V}}}
+255	\sqrt{\dfrac{\mathrm{AR}}{\mathrm{AC}}}
+256	\dfrac{\mathrm{PF} \times\, pf \times\, ps}{\mathrm{PS}}
+257	\dfrac{pf \times\, \mathrm{PF} \times\, \mathrm{PS}}{ps}
+258	\tfrac{1}{2}\mathrm{PF}^{2} - \tfrac{1}{2}\mathrm{PD}^{2}
+259	\dfrac{\mathrm{DE}^{2} \times\, \mathrm{PS}}{\mathrm{PE}}
+260	\dfrac{\mathrm{PS} \times\,\mathrm{D}d}{\mathrm{PE}}
+261	\mathrm{D}d \times\, \dfrac{\mathrm{DE}^{2} \times\, \mathrm{PS}}{\mathrm{PE}}
+262	\dfrac{\mathrm{DE}^{2} \times\, \mathrm{PS}}{\mathrm{PE}^{2}}
+263	\dfrac{\mathrm{DE}^{2} \times\, \mathrm{PS}}{\mathrm{PE}^{4}}
+264	\dfrac{\mathrm{DE}^{2} \times\, \mathrm{PS}}{\mathrm{PE} \times\, \mathrm V}
+265	\dfrac{\mathrm{DE}^{2} \times\,\mathrm{PS}}{\mathrm{PE} \times\, \mathrm V}
+266	\dfrac{2\mathrm{SLD} \times\, \mathrm{PS}}{\mathrm{PE} \times\, \mathrm V} - \dfrac{\mathrm{LD}^{2} \times\, \mathrm{PS}}{\mathrm{PE} \times\, \mathrm V} - \dfrac{\mathrm{ALB} \times\, \mathrm{PS}}{\mathrm{PE} \times\, \mathrm V}
+267	\mathrm{SL} - \tfrac{1}{2}\mathrm{LD} - \dfrac{\mathrm{ALB}}{2\mathrm{LD}}
+268	2\mathrm{SL} - \mathrm{LD} - \dfrac{\mathrm{ALB}}{\mathrm{LD}}
+269	\dfrac{\mathrm{LB}^{2} - \mathrm{LA}^{2}}{2}
+270	\dfrac{\mathrm{ALB}}{\mathrm{LD}}
+271	\dfrac{\mathrm{PE}^{3}}{2 \mathrm{AS}^{2}}
+272	\dfrac{\mathrm{SL} \times\, \mathrm{AS}^{2}}{\mathrm{PS} \times\, \mathrm{LD}} -\dfrac{\mathrm{AS}^{2}}{2\mathrm{PS}} - \dfrac{\mathrm{ALB} \times\, \mathrm{AS}^{2}}{2\mathrm{PS} \times\, \mathrm{LD}^{2}}
+273	\dfrac{\mathrm{LSI}}{\mathrm{LD}} - \tfrac{1}{2}\mathrm{SI} - \dfrac{\mathrm{ALB} \times\, \mathrm{SI}}{2\mathrm{LD}^{2}}
+274	\dfrac{\mathrm{LSI}}{\mathrm{LD}}
+275	\tfrac{1}{2}\mathrm{SI}
+276	\tfrac{1}{2}\mathrm{AB} \times\, \mathrm{SI}
+277	\dfrac{\mathrm{ALB} \times\, \mathrm{SI}}{2\mathrm{LD}^{2}}
+278	\dfrac{\mathrm{ALB} \times\, \mathrm{SI}}{2\mathrm{LA}} - \dfrac{\mathrm{ALB} \times\, \mathrm{SI}}{2\mathrm{LB}}
+279	\dfrac{\mathrm{PE}^{4}}{2\mathrm{AS}^{3}}
+280	\sqrt{2\mathrm{PS} + \mathrm{LD}}
+281	\dfrac{\mathrm{SI}^{2} \times\, \mathrm{SL}}{\sqrt{2\mathrm{SI}}}\times\, \dfrac{1}{\sqrt{\mathrm{LD}^{3}}} -\dfrac{\mathrm{SI}^{2}}{2\sqrt{2\mathrm{SI}}} \times\, \dfrac{1}{\sqrt{\mathrm{LD}}} - \dfrac{\mathrm{SI}^{2} \times\, \mathrm{ALB}}{2\sqrt{2\mathrm{SI}}} \times\, \dfrac{1}{\sqrt{\mathrm{LD}^{5}}}
+282	\dfrac{2\mathrm{SI}^{2} \times\, \mathrm{SL}}{\sqrt{2\mathrm{SI}}}
+283	\overline{\dfrac{1}{\sqrt{\mathrm{LA}}} - \dfrac{1}{\sqrt{\mathrm{LB}}}}
+284	\dfrac{\mathrm{SI}^{2}}{\sqrt{2\mathrm{SI}}}
+285	\sqrt{\mathrm{LB} - \sqrt{\mathrm{LA}}}
+286	\dfrac{\mathrm{SI}^{2} \times\, \mathrm{ALB}}{3\sqrt{2\mathrm{SI}}}
+287	\overline{\dfrac{1}{\sqrt{\mathrm{LA}^{3}}} - \dfrac{1}{\sqrt{\mathrm{LB}^{3}}}}
+288	\dfrac{2\mathrm{SI}^{2} \times\, \mathrm{SL}}{\mathrm{LI}}
+289	\mathrm{SI}^{2}
+290	\mathrm{SI}^{2} + \dfrac{2\mathrm{SI}^{3}}{3\mathrm{LI}}
+291	\dfrac{4\mathrm{SI}^{3}}{3\mathrm{LI}}
+292	\dfrac{\mathrm{SI}^{3}}{\mathrm{PI}}
+293	\mathrm{PS}^{3} \times\, \mathrm{PI}
+294	\dfrac{\mathrm{DE}^{2} \times\, \mathrm{PS}}{\mathrm{PE} \times \mathrm V}
+295	\mathrm{IE}
+296	\dfrac{\mathrm{DE}^{2} \times\, \mathrm{IS}}{\mathrm{IE} \times\, \mathrm V}
+297	\mathrm{PE}
+298	\mathrm{PE}^{n}
+299	\mathrm{IE}^{n}
+300	\dfrac{\mathrm{DE}^{2} \times\, \mathrm{PS}}{\mathrm{PE} \times\, \mathrm{PE}^{n}}
+301	\dfrac{\mathrm{DE}^{2} \times\, \mathrm{IS}}{\mathrm{IE} \times\, \mathrm{IE}^{n}}
+302	\mathrm{PS} \times\, \mathrm{IE} \times\, \mathrm{IE}^{n}
+303	\mathrm{IS} \times\, \mathrm{PE} \times\, \mathrm{PE}^{n}
+304	\mathrm{PS} \times\, \mathrm{IE}^{n}
+305	\mathrm{SA}\times\, \mathrm{PE}^{n}
+306	\mathrm{PF} \times\, \mathrm{DF} \times\, \mathrm{O}
+307	\dfrac{\mathrm{DE}^{2} \times\, \mathrm{O}}{\mathrm{PF}^{n}}
+308	\dfrac{2\mathrm{DF} \times\, \mathrm O}{\mathrm{PF}^{n-1}} - \dfrac{\mathrm{DF}^{2} \times\, \mathrm{O}}{\mathrm{PF}^{n}}
+309	\dfrac{\mathrm{A}^{3}}{\mathrm{A}^{2}}
+310	\dfrac{\mathrm{B}^{3}}{\mathrm{B}^{2}}
+311	\dfrac{\mathrm{B}^{2}}{\mathrm{B}^{3}}
+312	\dfrac{\mathrm{A}^{3}}{\mathrm{A}^{4}}
+313	\dfrac{\mathrm{B}^{3}}{\mathrm{B}^{4}}
+314	\overline{\mathrm{A} + \mathrm{B}}\times\, \mathrm{GZ}
+315	\overline{\mathrm{A} + \mathrm{B}} \times\, \mathrm{GZ}
+316	\dfrac{\mathrm{AP} \times\, \mathrm{FK}}{\mathrm{PE}}
+317	\dfrac{1}{\mathrm{PF}^{2}}
+318	\dfrac{1}{\mathrm{PA}} - \dfrac{1}{\mathrm{PH}}
+319	1 - \dfrac{\mathrm{PA}}{\mathrm{PH}}
+320	\dfrac{\mathrm{AH}}{\mathrm{PH}}
+321	\dfrac{1}{\mathrm{D}^{n}}
+322	\dfrac{1}{\mathrm{PA}^{n-1}} - \dfrac{1}{\mathrm{PH}^{n-1}}
+323	\dfrac{1}{\mathrm{PA}^{n-2}} - \dfrac{\mathrm{PA}}{\mathrm{PH}^{n-1}}
+324	\mathrm{PH}^{n-2}
+325	\dfrac{\mathrm{PA}}{\mathrm{PH}^{n-1}}
+326	\mathrm{AB} - \mathrm{PE} + \mathrm{PD}
+327	1 - \dfrac{\mathrm{PF}}{\mathrm{PR}}
+328	\dfrac{\mathrm{PF}}{\mathrm{PR}}
+329	\overline{\mathrm{PE} - \mathrm{AD}}
+330	\overline{\mathrm{PD} - \mathrm{AD}}
+331	\overline{\mathrm{PE} - \mathrm{PD}}
+332	\overline{\mathrm{AB} - \mathrm{PE} + \mathrm{PD}}
+333	\dfrac{\mathrm{AS} \times\, \mathrm{CS}^{2} - \mathrm{PS} \times\, \mathrm{KMRK}}{\mathrm{PS}^{2} + \mathrm{CS}^{2} - \mathrm{AS}^{2}}
+334	\dfrac{\mathrm{AS}^{3}}{3\mathrm{PS}^{2}}
+335	\mathrm{CH}^{n - 2}
+336	\mathrm{CH}^{n -2}
+337	\mathrm{CG}^{n - 2}
+338	\mathrm{CL}^{n - 2}
+339	\mathrm{CK}^{n - 2}
+340	\mathrm{CG}^{n - 3}
+341	\mathrm{CK}^{n - 3}
+342	\mathrm{A}^{\tfrac{m}{n}}
+343	\overline{\mathrm{A} + \mathrm{O}\vert^{\tfrac{m}{n}}}
+344	\mathrm{A}^{\tfrac{m}{n}} + \dfrac{m}{n}\mathrm{OA}^{\tfrac{m-n}{m}} + \dfrac{mm-mn}{2nn}\mathrm{OOA}^{\frac{m-2n}{n}}
+345	\mathrm{O}
+346	\dfrac{mm-mn}{2nn}\mathrm{OOA}^{\frac{m-2n}{n}}
+347	\dfrac{mm-mn}{2nn}\mathrm{A}^{\frac{m-2n}{n}}
+348	\dfrac{mm-mn}{2nn}\mathrm{B}^{\frac{m-2n}{n}}
+349	2\mathrm{B}^{0}
+350	2\mathrm{A}^{-3}
+351	2\mathrm{B}^{3}
+352	\tfrac{1}{2}kq
+353	\tfrac{1}{2}\mathrm{AK}
+354	\dfrac{t\mathrm{GT}}{\mathrm{N}}
+355	\dfrac{\mathrm{GTIE}}{\mathrm{N}}
+356	\dfrac{\mathrm{DR} \times\, \mathrm{QB} - t\mathrm{GT}}{\mathrm{N}}
+357	\left(\text{that is,}\, \mathrm{RV} - \mathrm{V}r\, \text{or}\, \dfrac{\mathrm{DR} \times\, \mathrm{QB} - t\mathrm{GT}}{\mathrm{N}}\right)
+358	\dfrac{\mathrm{DR} \times\, \mathrm{AB} - \mathrm{RDGT}}{\mathrm{N}}
+359	\left(\text{or}\, \dfrac{\mathrm{DR} \times\,  \mathrm{AB} - \mathrm{DR} \times\, \mathrm{AQ}}{\mathrm{N}}\right)
+360	\dfrac{\mathrm{DR} \times\, \mathrm{AB}}{\mathrm{N}} - \dfrac{\mathrm{RDGT}}{\mathrm{N}}
+361	\dfrac{\mathrm{DR} \times\, \mathrm{AB}}{\mathrm{N}}
+362	\dfrac{\mathrm{RDGT}}{\mathrm{N}}
+363	\dfrac{\mathrm{DV}^{2}}{\mathrm{V}r}
+364	\dfrac{\mathrm{DR} \times\, \mathrm{T}t}{2\mathrm{N}}
+365	\dfrac{\mathrm{CK} \times\, \mathrm{DR}}{\mathrm{DC}}
+366	\dfrac{\mathrm{QB} \times\, \mathrm{DC}}{\mathrm{CP}}
+367	\dfrac{\mathrm{DR}^{2} \times\, \mathrm{CK} \times\,  \mathrm{CP}}{2\mathrm{DC}^{2} \times\, \mathrm{QB}}
+368	\dfrac{\mathrm{DV}^{2} \times\, \mathrm{CK} \times\,  \mathrm{CP}}{2\mathrm{DP}^{2} \times\, \mathrm{QB}}
+369	\dfrac{2\mathrm{DP}^{2} \times\, \mathrm{QB}}{\mathrm{CK} \times\, \mathrm{CP}}
+370	\dfrac{2\mathrm{DP}^{2} \times\, \mathrm{DA}}{\mathrm{AC} \times\, \mathrm{CP}}
+371	\dfrac{\mathrm{F}f}{\mathrm{DF}}
+372	\mathrm{D}^{3 - n}
+373	\mathrm{E}^{3 - n}
+374	\mathrm{A}^{2}
+375	\mathrm{A}^{3}
+376	\mathrm{A}^{4}
+377	\mathrm{A}^{\tfrac{1}{2}}
+378	\mathrm{A}^{\tfrac{3}{2}}
+379	\mathrm{A}^{\tfrac{1}{3}}
+380	\mathrm{A}^{\tfrac{2}{3}}
+381	\mathrm{A}^{-1}
+382	\mathrm{A}^{-\tfrac{1}{2}}
+383	3a\mathrm{A}^{2}
+384	4a\mathrm{A}^{3}
+385	\tfrac{1}{2}a\mathrm{A}^{-\tfrac{1}{2}}
+386	\tfrac{3}{2}a\mathrm{A}^{\tfrac{1}{2}}
+387	\tfrac{1}{3}a\mathrm{A}^{-\tfrac{2}{3}}
+388	\tfrac{2}{3}a\mathrm{A}^{-\tfrac{1}{3}}
+389	-a\mathrm{A}^{-2}
+390	-2a\mathrm{A}^{-3}
+391	-\tfrac{1}{2}a\mathrm{A}^{-\tfrac{3}{2}}
+392	\mathrm{A}^{\tfrac{n}{m}}
+393	\tfrac{n}{m}a\mathrm{A}^{\tfrac{n - m}{m}}
+394	\mathrm{A}^{2}\mathrm B
+395	2a\mathrm{AB} + b\mathrm{A}^{2}
+396	\mathrm{A}^{3}\mathrm{B}^{4}\mathrm{C}^{2}
+397	3a\mathrm{A}^{2}\mathrm{B}^{4}\mathrm{C}^{2} + 4b\mathrm{A}^{3}\mathrm{B}^{3}\mathrm{C}^{2} + 2c\mathrm{A}^{3}\mathrm{B}^{4}\mathrm C
+398	\dfrac{\mathrm{A}^{3}}{\mathrm{B}^{2}}
+399	\mathrm{A}^{3}\mathrm{B}^{-2}
+400	3a\mathrm{A}^{2}\mathrm{B}^{-2} - 2b\mathrm{A}^{3}\mathrm{B}^{-3}
+401	\tfrac{1}{2}a
+402	\tfrac{1}{2}b
+403	\mathrm{A} - \tfrac{1}{2}a
+404	\mathrm B - \tfrac{1}{2}b
+405	\mathrm{AB} - \tfrac{1}{2}a\mathrm B - \tfrac{1}{2}b\mathrm A + \tfrac{1}{4}ab
+406	\mathrm A + \tfrac{1}{2}a
+407	\mathrm B + \tfrac{1}{2}b
+408	\mathrm{AB} + \tfrac{1}{2}a\mathrm B + \tfrac{1}{2}b\mathrm A + \tfrac{1}{4}ab
+409	\mathrm{A}^{n}
+410	na\mathrm{A}^{n - 1}
+411	\dfrac{1}{\mathrm A}
+412	\dfrac{-a}{\mathrm{A}^{2}}
+413	\dfrac{1}{\mathrm{A}^{n}}
+414	\mathrm{A}^{-n}
+415	-\dfrac{na}{\mathrm{A}^{n+1}}
+416	2\mathrm{A}^{\tfrac{1}{2}}
+417	\dfrac{a}{2\mathrm{A}\tfrac{1}{2}}
+418	\mathrm B
+419	\mathrm{A}^m
+420	\mathrm{B}^{n}
+421	ma\mathrm{A}^{m - 1}
+422	nb\mathrm{B}^{n - 1}
+423	ma\mathrm{A}^{-1}
+424	nb\mathrm{B}^{-1}
+425	nb\mathrm{A}^{-\tfrac{m}{n}}
+426	\tfrac{m}{n}a\mathrm{A}^{\tfrac{(m - n)}{n}}
+427	\mathrm{A}^{m}\mathrm{B}^{n}
+428	\mathrm{A}^{m}
+429	ma\mathrm{A}^{m - 1}\mathrm{B}^{n} + nb\mathrm{B}^{n - 1}\mathrm{A}^{m}
+430	\dfrac{q\mathrm{D}p \times\, t\mathrm{D}^{2}}{p\mathrm{D}^{2}}
+431	\dfrac{q\mathrm{D}p}{p\mathrm{D}^{2}}
+432	p\mathrm{D}^{2}
+433	\mathrm{AD}^{2} + \mathrm{A}p^{2}
+434	\mathrm{AD}^{2} + \mathrm{AD}AD \times\, \mathrm{A}k
+435	\mathrm{AD} \times\, \mathrm{C}k
+436	\tfrac{1}{2}\mathrm{AD} \times\, pq
+437	\dfrac{pq}{\mathrm{C}k}
+438	\dfrac{\mathrm{PDQ} \times\, \mathrm{AC}}{\mathrm{CK}}
+439	\dfrac{\mathrm{PQ}}{\mathrm{CK}}
+440	\tfrac{1}{2}\mathrm{PQ}
+441	\tfrac{1}{4}\mathrm{AC}
+442	\dfrac{\mathrm{GH}}{\mathrm T}
+443	\dfrac{\mathrm{HI}}{t}
+444	\dfrac{\mathrm{GH}}{\mathrm T} - \dfrac{\mathrm{HI}}{t}
+445	\dfrac{2\mathrm{NI}}{t}
+446	\mathrm{HI} - \mathrm{HN}
+447	\dfrac{\mathrm{MI} \times\, \mathrm{NI}}{\mathrm{HI}}
+448	\dfrac{2\mathrm{MI} \times\, \mathrm{NI}}{t \times\, \mathrm{HI}}
+449	\dfrac{\mathrm{GH}}{\mathrm T} - \dfrac{\mathrm{HI}}{t} + \dfrac{2\mathrm{MI} \times\, \mathrm{NI}}{t \times\, \mathrm{HI}}
+450	\dfrac{\mathrm{GH}}{\mathrm T} - \dfrac{\mathrm{HI}}{t} + \dfrac{2\mathrm{MI} \times\, \mathrm{NI}}{t \times\, \mathrm{HI}}
+451	\dfrac{t \times\, \mathrm{GH}}{\mathrm{\mathrm T}} - \mathrm{HI} + \dfrac{2\mathrm{MI} \times\, \mathrm{NI}}{\mathrm{HI}}
+452	2\mathrm{NI}
+453	o\dfrac{1}{\sqrt{1 + \mathrm{QQ}}} - \dfrac{\mathrm{QR}_{oo}}{\sqrt{1 + \mathrm{QQ}}}
+454	o\sqrt{1 + \mathrm{QQ}} + \dfrac{\mathrm{QR}_{oo}}{\sqrt{1 + \mathrm{QQ}}}
+455	\dfrac{t}{\mathrm T}
+456	\dfrac{\sqrt{\mathrm R + 3 \mathrm{S}_o}}{\mathrm R}
+457	\dfrac{\mathrm R + \tfrac{3}{2}\mathrm{S}_o}{\mathrm R}
+458	\dfrac{t \times\, \mathrm{GH}}{\mathrm T} - \mathrm{HI} + \dfrac{2\mathrm{MI} \times\, \mathrm{NI}}{t \times\, \mathrm{HI}}
+459	\dfrac{3 \mathrm{S}_{oo}}{2 \mathrm R}\sqrt{1 + \mathrm{QQ}}
+460	3 \mathrm{S}\sqrt{1 + \mathrm{QQ}}
+461	\dfrac{\mathrm{HN}^{2}}{\mathrm{NI}}
+462	\dfrac{1 + \mathrm{QQ}}{\mathrm R}
+463	\dfrac{3 \mathrm S\sqrt{1 + \mathrm{QQ}}} {4\mathrm{RR}}
+464	\dfrac{\mathrm S}{\mathrm R\sqrt{1 + \mathrm{QQ}}}
+465	\mathrm T \dfrac{\mathrm{HT}}{\mathrm{AC}}
+466	\sqrt{1 + \mathrm{QQ}}
+467	\dfrac{\mathrm{HT}}{\mathrm{AC}\sqrt{\mathrm R}}
+468	\dfrac{\mathrm S \times\, \mathrm{AC}}{\mathrm R \times\, \mathrm{HT}}
+469	\mathrm{DI} = e - \dfrac{ao}{e} - \dfrac{oo}{2e} - \dfrac{aaoo}{2e^{3}} - \dfrac{ao^{2}}{2e^{3}} - \dfrac{a^{3}o^{3}}{2e^{5}} - 
+470	= e - \dfrac{ao}{e} - \dfrac{nnoo}{2e^{3}} - \dfrac{anno^{3}}{2e^{5}} -
+471	\dfrac{ao}{e}
+472	\dfrac{nnoo}{2e^{3}}
+473	\dfrac{a}{e}
+474	\dfrac{nn}{2e^{3}}
+475	\dfrac{ann}{2e^{5}}
+476	\sqrt{1 + \mathrm{QQ}}
+477	\sqrt{1 + \tfrac{aa}{ee}}
+478	\dfrac{n}{e}
+479	\dfrac{a}{ne}
+480	\dfrac{\mathrm{AC}}{\mathrm{CH}}
+481	\sqrt{\mathrm{CH}}
+482	-\dfrac{a}{e}
+483	\dfrac{ac - aa}{b} + \dfrac{c - 2a}{b}o - \dfrac{oo}{b}
+484	\dfrac{c - 2a}{b}o
+485	\dfrac{oo}{b}
+486	\dfrac{m}{n}
+487	\dfrac{bb}{a - o}
+488	\dfrac{m}{n} \times\, \overline{a - o}
+489	c - \dfrac{m}{n}a +\dfrac{m}{n}o - \dfrac{bb}{a - o}
+490	\dfrac{bb}{a} + \dfrac{bb}{aa}o + \dfrac{bb}{a^{3}}oo + \dfrac{bb}{a^{4}}o^{3}
+491	c - \dfrac{m}{n}a - \dfrac{bb}{a} + \dfrac{m}{n}o - \dfrac{bb}{aa}o - \dfrac{bb}{a^{3}}o^{2} - \dfrac{bb}{a^{4}}o^{3}
+492	\dfrac{m}{n}o - \dfrac{bb}{aa}o
+493	\dfrac{bb}{a^{3}}o^{2}
+494	\dfrac{bb}{a^{4}}o^{3}
+495	\dfrac{m}{n} - \dfrac{bb}{aa}
+496	\dfrac{bb}{a^{3}}
+497	\dfrac{bb}{a^{4}}
+498	\dfrac{\tfrac{bb}{a^{4}}}{\tfrac{bb}{a^{3}}\sqrt{1 + \tfrac{mm}{nn} - \tfrac{2mbb}{naa} + \tfrac{b^{4}}{a^{4}}}}
+499	\dfrac{1} {\sqrt{aa + \tfrac{mm}{nn}aa - \tfrac{2mbb}{n} +\tfrac{b^{4}}{aa}}}
+500	\dfrac{1}{\mathrm{XY}}
+501	\dfrac{m^{2}}{n^{2}}a^{2} - \dfrac{2mbb}{a} + \dfrac{b^{4}}{a^{4}}
+502	\dfrac{\mathrm{XY}^{2}}{\mathrm{VG}}
+503	\dfrac{bb}{\mathrm{DN}^{n}}
+504	\mathrm{VG} =\dfrac{bb}{\overline{\mathrm A - \mathrm O \vert^{n}}}
+505	\mathrm{VZ} = \tfrac{d}{e}\overline{\mathrm A - \mathrm O}
+506	\mathrm C - \tfrac{d}{e}\mathrm A + \tfrac{d}{e}\mathrm O - \dfrac{bb}{\overline{\mathrm A - \mathrm O \vert^{n}}}
+507	\dfrac{bb}{\overline{\mathrm A - \mathrm O \vert^{n}}}
+508	\dfrac{bb}{\mathrm{A}^{n}} + \dfrac{nbb}{\mathrm{A}^{n+1}} \times\, \mathrm O + \dfrac{nn+n}{2\mathrm{A}^{n+2}} \times\, bb \mathrm{O}^{2} + \dfrac{n^{3} + 3nn + 2n}{6 \mathrm{A}^{n+3}}\times\, bb \mathrm {O}^{3}
+509	\mathrm C - \dfrac{d}{e}\mathrm A - \dfrac{bb}{\mathrm{A}^{n}} + \dfrac{d}{e}\mathrm O - \dfrac{nbb}{\mathrm{A}^{n+1}}\mathrm O - \dfrac{nn+n}{2\mathrm{A}^{n+2}} bb \mathrm{O}^{2} - \dfrac{n^{3} + 3nn + 2n}{6 \mathrm{A}^{n+3}}bb \mathrm {O}^{3}
+510	\dfrac{d}{e}\mathrm O - \dfrac{nbb}{\mathrm{A}^{n+1}}\mathrm O
+511	\dfrac{nn+n}{2\mathrm{A}^{n+2}} bb \mathrm{O}^{2}
+512	\dfrac{n^{3} + 3nn + 2n}{6 \mathrm{A}^{n+3}}bb \mathrm{O}^{3}
+513	\mathrm{S}o^{3}
+514	\dfrac{\mathrm{S}}{\mathrm R \sqrt{1+\mathrm{QQ}}}
+515	\dfrac{n +2}{3\sqrt{\mathrm{A}^{2} +\tfrac{dd}{ee}\mathrm{A}^{2} - \tfrac{2dnbb}{e\mathrm{A}^{n}}\mathrm{A} +\tfrac{nnb^{4}}{\mathrm{A}^{2n}}}}
+516	\dfrac{dd}{ee}\mathrm{A}^{2} - \dfrac{2dnbb}{e\mathrm{A}^{n}}\mathrm{A} + \dfrac{nnb^{4}}{\mathrm{A}^{2n}}
+517	3\mathrm S \times\, \dfrac{\mathrm{XY}}{\mathrm A}
+518	\dfrac{2nn+2n}{n+2}\mathrm{VG}
+519	\dfrac{2 \mathrm{XY}^{2}}{\overline{nn+n} \times\, \mathrm{VG}}
+520	\dfrac{\mathrm S \times\, \mathrm{AC}}{\mathrm R \times\,\mathrm{HT}}
+521	\dfrac{\mathrm S}{\mathrm{R}^{\tfrac{4-n}{2}}} \times\, \dfrac{\overline{\mathrm{AC}}}{\mathrm{HT}}\bigg\vert^{n-1}
+522	\dfrac{\mathrm S}{\mathrm{R}^{\tfrac{4-n}{2}}}
+523	\dfrac{\overline{\mathrm{HT}}}{\mathrm{AC}}\bigg\vert^{n-1}
+524	\dfrac{\mathrm{S}^{3}}{\mathrm{R}^{4-n}}
+525	\overline{1 +\mathrm{QQ}}\vert^{n-1}
+526	\sqrt{\tfrac{\mathrm{GT}^{2}}{\mathrm{GV}}}
+527	\dfrac{2nn+2n}{n+2} \times\,\mathrm{GV}
+528	\sqrt{\tfrac{\mathrm{AH}^{2}}{\mathrm{AI}}}
+529	\dfrac{2nn+2n}{n+2} \times\,\mathrm{AI}
+530	\dfrac{\mathrm{AH}^{2}}{\mathrm{AI}}
+531	\dfrac{\mathrm{AK}}{\mathrm{A}k} - \dfrac{d}{e}
+532	\dfrac{4}{3}\mathrm{AI}
+533	\tfrac{1}{2}\mathrm{HX}
+534	\dfrac{2\mathrm{GT}^{2}}{\overline{nn-n} \times\, \mathrm{GV}}
+535	\dfrac{2nn-2n}{n-2}\mathrm{GV}
+536	\dfrac{1}{\mathrm{GD}}
+537	\dfrac{\mathrm{D}d}{\mathrm{GD}^{2}}
+538	\dfrac{\mathrm{CD}}{\mathrm{GD}^{2}}
+539	\dfrac{\mathrm{CG} + \mathrm{GD}}{\mathrm{GD}^{2}}
+540	\dfrac{1}{\mathrm{GD}} + \dfrac{\mathrm{CG}}{\mathrm{GD}^{2}}
+541	\dfrac{\mathrm{CG}}{\mathrm{GD}^{2}}
+542	\dfrac{1}{\mathrm{GD}^{2}}
+543	\dfrac{\mathrm{AP}^{2} + 2\mathrm{BAP}}{\mathrm Z}
+544	\dfrac{2\mathrm{APQ} + 2\mathrm{BA} \times\, \mathrm{PQ}}{\mathrm Z}
+545	\dfrac{2\mathrm{BPQ}}{\mathrm Z}
+546	\dfrac{2\mathrm{BPQ} \times\, \mathrm{LO}}{\mathrm Z}
+547	\dfrac{\mathrm{BPQ} \times\, \mathrm{BD}^2}{2\mathrm Z \times\, \mathrm{CK} \times\, \mathrm{AB}}
+548	\dfrac{\mathrm{AB}^{2} + \mathrm{BD}^{2}}{\mathrm Z}
+549	\dfrac{\mathrm{AB}^{2} - \mathrm{BD}^{2}}{\mathrm Z}
+550	\dfrac{\mathrm{BD}^{2} - \mathrm{AB}^{2}}{\mathrm Z}
+551	\tfrac{1}{2}\mathrm{BD} \times\, \mathrm{PQ}
+552	\dfrac{\mathrm{BP} \times\, \mathrm{BD} \times\, m}{\mathrm{AB}}
+553	\dfrac{\mathrm{AP} \times\, \mathrm{BD} \times\,m}{\mathrm{AB}}
+554	\dfrac{\mathrm{AP} \times\, \mathrm{BD} \times\, m}{\mathrm{AB}}
+555	\left(\text{because of the given quantity}\,  \dfrac{\mathrm{BD}\times\, m}{\mathrm{AB}}\right)
+556	\dfrac{\mathrm{BD} \times\, \mathrm{V}^{2}}{\mathrm{AB}}
+557	\dfrac{\mathrm{DA}^{2} \times\, \mathrm{BD} \times\, \mathrm{M}^{2}}{\mathrm{DE}^{2} \times\, \mathrm{AB}}
+558	\dfrac{\mathrm{DA}^{2} \times\, \mathrm{BD} \times\, 2\mathrm{M} \times\, m} {\mathrm{DE}^{2} \times\, \mathrm{AB}}
+559	\dfrac{\mathrm{AP} \times\, \mathrm{BD} \times\, \times\, m}{\mathrm{AB}}
+560	\dfrac{\mathrm{DA}^{2} \times\, \mathrm{BD} \times\,\mathrm{M}}{\mathrm{DE}^{2}}
+561	\tfrac{1}{2}\mathrm{BD} \times\, \mathrm{AP}
+562	\dfrac{\mathrm{DA}^{2}}{\mathrm{DE}^{2}}
+563	\dfrac{\mathrm{BD} \times\,\mathrm{V}^{2}}{\mathrm{AB}}
+564	\dfrac{\mathrm{BD}\times\, \mathrm{V}^{2}}{\mathrm{AB}}
+565	\tfrac{1}{2}\mathrm{R}r
+566	\tfrac{1}{2}\mathrm{PQ}^{2}\times\, \mathrm{SP}
+567	\mathrm{PQ} \sqrt{\mathrm{SP}}
+568	\dfrac{\mathrm{PQ}}{\mathrm{PQ} \sqrt{\mathrm{SP}}}
+569	\dfrac{1}{\sqrt{\mathrm{SP}}}
+570	\sqrt{\mathrm{SP} \times\, \mathrm{SQ}}
+571	\mathrm{SP} - \sqrt{\mathrm{SP} \times\,\mathrm{SQ}}
+572	\tfrac{1}{2}\mathrm{VQ}
+573	\mathrm{SP} - \sqrt{\mathrm{SP} \times\, \mathrm{SQ}}
+574	\dfrac{\mathrm{R}r}{\mathrm{PQ}^{2} \times\, \mathrm{SP}}
+575	\dfrac{\tfrac{1}{2}\mathrm{VQ}}{\mathrm{PQ} \times\, \mathrm{SP} \times\, \mathrm{SQ}}
+576	\dfrac{\tfrac{1}{2}\mathrm{OS}}{\mathrm{OP} \times\, \mathrm{SP}^{2}}
+577	\tfrac{1}{2}\mathrm{OS}
+578	\dfrac{\mathrm{OS}}{\mathrm{OP} \times\, \mathrm{SP}^{2}}
+579	\dfrac{1}{\mathrm{SP}}
+580	\dfrac{\mathrm{OS}}{\mathrm{OP} \times\, \mathrm{SP}}
+581	\dfrac{\mathrm{OS}}{\mathrm{OP}}
+582	\dfrac{\tfrac{1}{2}\mathrm{VQ} \times\, \mathrm{PQ} }{\mathrm{SQ}}
+583	\dfrac{\tfrac{1}{2}\mathrm{PQ}^{2}}{\mathrm{SP}}
+584	\dfrac{\mathrm{PS}}{\mathrm{OS}}
+585	\dfrac{\mathrm{OP}}{\mathrm{OS}}
+586	\mathrm{AS}^{\tfrac{3}{2}}
+587	\mathrm{BS}^{\tfrac{3}{2}}
+588	\mathrm{CS}^{\tfrac{3}{2}}
+589	\mathrm{AS}^{\tfrac{3}{2}} - \mathrm{BS}^{\tfrac{3}{2}}
+590	\tfrac{2}{3}\mathrm{AS}
+591	\mathrm{SP}^{n + 1}
+592	\mathrm{PQ} \times\, \mathrm{PS}^{\tfrac{1}{2}n}
+593	\dfrac{\mathrm{R}r}{\mathrm{PQ}^{2} \times\, \mathrm{SP}^{n}}
+594	\dfrac{\overline{1 - \tfrac{1}{2}n} \times\, \mathrm{VQ}}{\mathrm{PQ} \times\, \mathrm{SP}^{n} \times\, \mathrm{SQ}}
+595	\dfrac{\overline{1 - \tfrac{1}{2}n} \times\, \mathrm{OS}}{\mathrm{OP} \times\, \mathrm{SP}^{n+1}}
+596	\left(\text{because}\, \dfrac{\overline{1 - \tfrac{1}{2}n} \times\, \mathrm{OS}}{\mathrm{OP}}\right)
+597	\mathrm{SP}^{\tfrac{1}{2}n}
+598	\overline{1 - \tfrac{1}{2}n} \times\, \mathrm{OS}
+599	1 - \tfrac{1}{2}n
+600	\dfrac{\mathrm{AH}}{\mathrm{AS}}
+601	\dfrac{\mathrm{BI}}{\mathrm{BS}}
+602	\dfrac{\mathrm{CK}}{\mathrm{CS}}
+603	\dfrac{\mathrm{AH}}{\mathrm{AB}}
+604	\dfrac{\mathrm{BI}}{\mathrm{BC}}
+605	\dfrac{\mathrm{CK}}{\mathrm{CD}}
+606	\dfrac{\mathrm{AH}}{\mathrm{SA}^{2}}
+607	\dfrac{\mathrm{BI}}{\mathrm{SB}^{2}}
+608	\dfrac{\mathrm{CK}}{\mathrm{SC}^{2}}
+609	\dfrac{\mathrm{AH}}{\mathrm{SA}}
+610	\dfrac{\mathrm{BI}}{\mathrm{SB}}
+611	\dfrac{\mathrm{CK}}{\mathrm{SC}}
+612	\dfrac{\mathrm{AH} \times\, th}{\mathrm{SA}}
+613	\dfrac{\mathrm{BI} \times\, ui}{\mathrm{SB}}
+614	\dfrac{\mathrm{BI} \times\,ui}{\mathrm{SB}}
+615	\left(\text{namely,}\, \dfrac{\mathrm{SA}^{3}}{\mathrm{SA}^{2}}, \dfrac{\mathrm{SA}^{3}}{\mathrm{SB}^{2}}, \dfrac{\mathrm{SA}^{3}}{\mathrm{SC}^{2}}\right)
+616	\left(\text{as}\, \dfrac{\mathrm{SA}^{4}}{\mathrm{SA}^{3}}, \dfrac{\mathrm{SA}^{4}}{\mathrm{SB}^{3}}, \dfrac{\mathrm{SA}^{4}}{\mathrm{SC}^{3}},\, \&c.,\, \right)
+617	\mathrm{E}^{n + 2}
+618	\dfrac{\mathrm{OR}}{\mathrm{OQ}}\mathrm{IEF} - \mathrm{IGH}
+619	\mathrm{GH}hg - \dfrac{\mathrm{R}r}{\mathrm{OQ}}\mathrm{IEF}
+620	\mathrm{R}r \times\, \mathrm{HG} - \dfrac{\mathrm{R}r}{\mathrm{OQ}}\mathrm{IEF}
+621	\mathrm{HG} - \dfrac{\mathrm{IEF}}{\mathrm{OQ}}
+622	\mathrm{OR} \times\, \mathrm{HG} - \dfrac{\mathrm{OR}}{\mathrm{OQ}}\mathrm{IEF}
+623	\mathrm{PIGR} + \mathrm{IGH} - \dfrac{\mathrm{OR}}{\mathrm{OQ}}\mathrm{IEF}
+624	\dfrac{\mathrm{OR}}{\mathrm{OQ}}\mathrm{IEF}
+625	\dfrac{\mathrm{OP}}{\mathrm{OQ}}\mathrm{IEF}
+626	\mathrm{A}a \times\, \tfrac{1}{2}a\mathrm B
+627	\tfrac{1}{2}\mathrm{B}a
+628	\tfrac{1}{2}\mathrm{A}a
+629	\tfrac{7}{11}\mathrm{A}a
+630	\tfrac{2}{3}\mathrm{B}a
+631	\tfrac{2}{3}\mathrm{B}a \times\, \mathrm{OV}
+632	\tfrac{3}{4}\mathrm{A}a
+633	\tfrac{1}{2}a \mathrm B
+634	57\tfrac{7}{22}
+635	6\tfrac{7}{8}
+636	10\tfrac{1}{2}
+637	\tfrac{1}{8}
+638	1\tfrac{3}{4}
+639	3\tfrac{1}{2}
+640	35\tfrac{1}{2}
+641	18\tfrac{1}{2}
+642	9\tfrac{2}{3}
+643	\tfrac{1}{2}
+644	3\tfrac{3}{4}
+645	7\tfrac{1}{2}
+646	\tfrac{1}{656}
+647	\tfrac{1}{242}
+648	\tfrac{1}{69}
+649	\tfrac{4}{71}
+650	\tfrac{8}{37}
+651	\tfrac{24}{29}
+652	\mathrm{AV} + \mathrm{BV}^{\tfrac{3}{2}} + \mathrm{CV}^2
+653	\dfrac{\tfrac{1}{2}}{121}
+654	\dfrac{2}{35\tfrac{1}{2}}
+655	\dfrac{8}{9\tfrac{2}{3}}
+656	0,0000916 \mathrm V + 0,0010847 \mathrm{V}^{\tfrac{3}{2}} + 0,0029558\mathrm{V}^2
+657	\tfrac{7}{11}\mathrm{AV} + \tfrac{7}{10}\mathrm{BV}^{\tfrac{3}{2}} + \tfrac{3}{4}\mathrm{CV}^{2}
+658	0,0000583 \mathrm V + 0,0007593\mathrm{V}^{\tfrac{3}{2}} + 0,0022169\mathrm{V}^{2}
+659	120 - \dfrac{8}{9\tfrac{2}{3}}
+660	119\tfrac{5}{29}
+661	124\tfrac{3}{31}
+662	62\tfrac{3}{62}
+663	376\tfrac{1}{50}
+664	\dfrac{1}{376\tfrac{1}{50}}
+665	3\tfrac{7}{16}
+666	\tfrac{1}{3342}
+667	1 \tfrac{1}{2}
+668	162 \tfrac{1}{2}
+669	83 \tfrac{1}{3}
+670	41 \tfrac{2}{3}
+671	22 \tfrac{1}{1}
+672	26\tfrac{1}{4}
+673	\tfrac{7}{8}
+674	\tfrac{7}{4}
+675	3 \tfrac{1}{2}
+676	90 \tfrac{1}{2}
+677	\dfrac{\tfrac{1}{2}}{193} = \mathrm A + \mathrm B + \mathrm C
+678	\dfrac{2}{90\tfrac{1}{2}} = 4\mathrm A + 8\mathrm B + 16\mathrm C
+679	\dfrac{8}{30}= 16\mathrm A + 64\mathrm B + 256\mathrm C
+680	0,0009\mathrm V+ 0,000208\mathrm{V}^{\tfrac{3}{2}} + 0,000659 \mathrm{V}^{2}
+681	0,000659 \mathrm{V}^{2}
+682	0,002217 \mathrm{V}^{2}
+683	7\tfrac{1}{3}
+684	47\tfrac{1}{4}
+685	11\tfrac{13}{16}
+686	7\tfrac{1}{3} - \tfrac{1}{3}
+687	1 - \tfrac{1}{3}
+688	18\tfrac{3}{4}
+689	122\tfrac{1}{2}
+690	109\tfrac{1}{2}
+691	\tfrac{1}{10}
+692	\tfrac{2}{5}
+693	67\tfrac{1}{8}
+694	\dfrac{126}{121}
+695	\dfrac{8}{9\tfrac{3}{2}}
+696	351\tfrac{9}{16}
+697	47\tfrac{17}{64}
+698	166\tfrac{1}{6}
+699	3\tfrac{5}{8}
+700	134\tfrac{3}{8}
+701	\left.\begin{matrix}\ \\\\\ \\\ \\\ \\\ \\ \end{matrix}\right\}
+702	\left.\begin{matrix}\ \\\\\ \\\ \\\ \\ \end{matrix}\right\}
+703	\tfrac{3}{8}
+704	\tfrac{3}{16}
+705	\tfrac{1}{16}
+706	\left.\begin{matrix}\ \\\\\ \\\ \\ \end{matrix}\right\}
+707	\tfrac{29}{60}
+708	1 \tfrac{1}{5}
+709	11 \tfrac{1}{4}
+710	12 \tfrac{2}{3}
+711	13 \tfrac{1}{3}
+712	\left.\begin{matrix}\ \\\\\ \\ \end{matrix}\right\}
+713	85 \tfrac{1}{2}
+714	1\tfrac{1}{5}
+715	\dfrac{2}{535}
+716	\dfrac{16}{85\tfrac{1}{2}}
+717	85\tfrac{1}{2}
+718	\tfrac{3}{14}
+719	\tfrac{2}{7}
+720	\tfrac{7}{11}\mathrm{AV} + \tfrac{3}{4}\mathrm{CV}^{2}
+721	\tfrac{6}{11}\mathrm V + 48\tfrac{9}{56}\mathrm{V}^{2}
+722	\tfrac{6}{11} + 48\tfrac{9}{56}
+723	\tfrac{12}{17}
+724	\tfrac{9}{56}
+725	\tfrac{1}{5}
+726	3\tfrac{3}{8}
+727	6\tfrac{1}{2}
+728	12\tfrac{1}{12}
+729	21\tfrac{1}{5}
+730	62\tfrac{1}{5}
+731	\tfrac{1}{78}
+732	\dfrac{\mathrm{BE}^{2}}{\mathrm{CB}}
+733	\dfrac{t \mathrm M}{\mathrm T + t}
+734	\dfrac{\mathrm {TM}}{\mathrm T + t}
+735	\dfrac{\mathrm T + t}{\mathrm T}
+736	5\tfrac{1}{2}
+737	\tfrac{5}{8}
+738	\tfrac{21}{40}
+739	\tfrac{1}{2}\mathrm{GH}
+740	\mathrm{EF}^{2}
+741	\mathrm{EF}^{2} - \tfrac{1}{2}\mathrm{PQ}^{2}
+742	\tfrac{1}{2}\mathrm{IG}
+743	\mathrm{EF}
+744	\mathrm{EF}^{2} - \mathrm{PQ}^{2}
+745	\tfrac{4}{3}\mathrm D
+746	0,4342944819\dfrac{2\mathrm P}{\mathrm G}
+747	\dfrac{\mathrm{N}+1}{\mathrm{N}}
+748	\dfrac{\mathrm{N}-1}{\mathrm{N}+1}\mathrm H
+749	\dfrac{2\mathrm{PF}}{\mathrm G} - 1,3862943611\mathrm F - 4,405170186\mathrm{LF}
+750	4,405170186 \mathrm{LF}
+751	\dfrac{2\mathrm{PF}}{\mathrm G} - 1,3862943611 \mathrm F
+752	\dfrac{2 \mathrm P}{\mathrm G}
+753	1,3862944 - 4,6051702\mathrm L
+754	0,001\mathrm G
+755	99999\tfrac{29}{30}
+756	0,000001\mathrm F
+757	0,002\mathrm F
+758	0,01\mathrm G
+759	0,0001\mathrm F
+760	0,02\mathrm F
+761	0,1\mathrm G
+762	0,0099834\mathrm F
+763	0,2\mathrm F
+764	0,01\mathrm F
+765	0,2\mathrm G
+766	0,0397361\mathrm F
+767	0,4\mathrm F
+768	0,04\mathrm F
+769	0,3\mathrm G
+770	0,0886815\mathrm F
+771	0,6\mathrm F
+772	0,09\mathrm F
+773	0,4\mathrm G
+774	0,1559070\mathrm F
+775	0,8\mathrm F
+776	0,16\mathrm F
+777	0,5\mathrm G
+778	0,2402290\mathrm F
+779	1,0\mathrm F
+780	0,25\mathrm F
+781	0,6\mathrm G
+782	0,3402706\mathrm F
+783	1,2\mathrm F
+784	0,36\mathrm F
+785	0,7\mathrm G
+786	0,4545405\mathrm F
+787	1,4\mathrm F
+788	0,49\mathrm F
+789	0,8\mathrm G
+790	0,5815071\mathrm F
+791	1,6\mathrm F
+792	0,64\mathrm F
+793	0,9\mathrm G
+794	0,7196609\mathrm F
+795	1,8\mathrm F
+796	0,81\mathrm F
+797	1\mathrm G
+798	0,8675617\mathrm F
+799	2\mathrm F
+800	1\mathrm F
+801	2\mathrm G
+802	2,6500055\mathrm F
+803	4\mathrm F
+804	3\mathrm G
+805	4,6186570\mathrm F
+806	6\mathrm F
+807	9\mathrm F
+808	4\mathrm G
+809	6,6143765\mathrm F
+810	8\mathrm F
+811	16\mathrm F
+812	5\mathrm G
+813	8,6137964\mathrm F
+814	10\mathrm F
+815	25\mathrm F
+816	6\mathrm G
+817	10,6137179\mathrm F
+818	12\mathrm F
+819	36\mathrm F
+820	7\mathrm G
+821	12,6137073\mathrm F
+822	14\mathrm F
+823	49\mathrm F
+824	8\mathrm G
+825	14,6137059\mathrm F
+826	64\mathrm F
+827	9\mathrm G
+828	16,6137057\mathrm F
+829	18\mathrm F
+830	81\mathrm F
+831	10\mathrm G
+832	99999999\tfrac{3}{5}
+833	18,6137056\mathrm F
+834	20\mathrm F
+835	100\mathrm F
+836	\tfrac{19}{36}
+837	253\tfrac{1}{3}
+838	156\tfrac{1}{4}
+839	156\tfrac{13}{38}
+840	79\tfrac{13}{38}
+841	\tfrac{8}{3}
+842	193\tfrac{1}{3}
+843	76\tfrac{1}{3}
+844	5\tfrac{1}{16}
+845	76\tfrac{5}{12}
+846	\tfrac{17}{48}
+847	\mathrm{GO}'',301056
+848	8\tfrac{2}{3}
+849	139\tfrac{1}{4}
+850	7\tfrac{1}{8}
+851	47\tfrac{1}{2}
+852	48\tfrac{1}{2}
+853	49\tfrac{1}{2}
+854	139\tfrac{2}{5}
+855	132\tfrac{11}{40}
+856	\mathrm{GO}'',376843
+857	154\tfrac{3}{8}
+858	21\tfrac{1}{2}
+859	28\tfrac{1}{2}
+860	29\tfrac{1}{2}
+861	212\tfrac{3}{8}
+862	79\tfrac{1}{2}
+863	15\tfrac{1}{2}
+864	293\tfrac{3}{8}
+865	35\tfrac{7}{8}
+866	30\tfrac{1}{2}
+867	273\tfrac{1}{4}
+868	140\tfrac{3}{4}
+869	11\tfrac{1}{3}
+870	119\tfrac{1}{2}
+871	17\tfrac{3}{4}
+872	181\tfrac{1}{2}
+873	15\tfrac{5}{9}
+874	3\tfrac{20}{32}
+875	43\tfrac{1}{2}
+876	44\tfrac{1}{2}
+877	182\tfrac{1}{2}
+878	\tfrac{5}{9}
+879	4\tfrac{3}{8}
+880	64\tfrac{1}{2}
+881	8''\tfrac{1}{2}
+882	8''\tfrac{1}{4}
+883	\tfrac{16600}{860}
+884	19\tfrac{3}{10}
+885	502\tfrac{3}{10}
+886	13\tfrac{1}{3}
+887	5\tfrac{1}{3}
+888	8''
+889	12'''
+890	14\tfrac{3}{4}
+891	12\tfrac{3}{4}''
+892	14\tfrac{5}{8}''
+893	17\tfrac{3}{4}''
+894	16\tfrac{7}{8}''
+895	14\tfrac{1}{2}''
+896	14\tfrac{1}{4}''
+897	16\tfrac{3}{4}''
+898	4\tfrac{1}{4}''
+899	18\tfrac{7}{8}''
+900	21\tfrac{1}{8}''
+901	18\tfrac{3}{4}''
+902	18\tfrac{1}{2}''
+903	18\tfrac{1}{4}''
+904	23\tfrac{1}{4}''
+905	19\tfrac{3}{8}''
+906	17\tfrac{1}{4}''
+907	22\tfrac{1}{8}
+908	21\tfrac{5}{8}''
+909	18\tfrac{5}{8}''
+910	18\tfrac{3}{8}''
+911	21\tfrac{1}{4}''
+912	19''
+913	0\tfrac{1}{2}
+914	137\tfrac{1}{2}
+915	97\tfrac{1}{2}
+916	99\tfrac{1}{8}
+917	21\tfrac{1}{8}
+918	\tfrac{1}{4586}
+919	\dfrac{8}{3}\mathrm D
+920	\dfrac{t\mathrm V}{\mathrm T + t}
+921	\dfrac{\mathrm{TV}}{\mathrm T + t}
+922	6\tfrac{1}{9}
+923	3\tfrac{1}{18}
+924	183\tfrac{1}{3}
+925	\epsilon
+926	\pi
+927	\gamma
+928	\epsilon \phi
+929	\phi \gamma
+930	\mathrm{E}\epsilon
+931	\mathrm{F}\phi
+932	\mathrm{G}\gamma
+933	\epsilon \gamma
+934	\mathrm{EG} + \mathrm{G}\gamma\ - \mathrm{E}\epsilon
+935	\dfrac{1}{\mathrm V - \mathrm{IM}}
+936	\dfrac{1}{\mathrm V}
+937	\dfrac{1}{\mathrm V + im}
+938	\dfrac{1}{\mathrm V - \mathrm{HL}}
+939	\dfrac{1}{\mathrm V - \mathrm{KN}}
+940	\dfrac{\mathrm{HL} - \mathrm{KN}}{\mathrm{VV} - \mathrm V \times\,\mathrm{HL} - \mathrm V \times\, \mathrm{KN} + \mathrm{HL} \times\, \mathrm{KN}}
+941	\dfrac{\mathrm{HL} - \mathrm{KN}}{\mathrm{VV}}
+942	\Omega
+943	\Omega \phi
+944	\tfrac{1}{2}\mathrm{PS}
+945	13\tfrac{2}{3}
+946	39\tfrac{1}{5}
+947	190\tfrac{3}{4}
+948	\tfrac{979}{9}
+949	10\tfrac{7}{10}
+950	5\tfrac{2}{3}
+951	24\tfrac{2}{3}
+952	\left.\begin{matrix}\ \\\\\ \\\ \\\ \\\ \\\ \\\ \\ \end{matrix}\right\} \textit{semi-diameter of Jupiter}
+953	14\tfrac{23}{60}
+954	25\tfrac{3}{10}
+955	37\tfrac{1}{8}''
+956	37\tfrac{3}{8}''
+957	37\tfrac{1}{4}''
+958	1\tfrac{19}{20}
+959	2\tfrac{1}{2}
+960	\tfrac{7}{10}
+961	\mathrm{D}^{2}\tfrac{4}{243}
+962	2\tfrac{4}{243}
+963	178\tfrac{29}{40}
+964	177\tfrac{29}{40}
+965	60\tfrac{1}{3}
+966	60\tfrac{2}{5}
+967	56\tfrac{1}{2}
+968	60\tfrac{1}{2}
+969	15\tfrac{1}{12}
+970	\tfrac{4}{9}
+971	60 \times\, 60 \times\, 15\tfrac{1}{12}
+972	\tfrac{7}{9}
+973	30\tfrac{1}{6}
+974	\tfrac{1}{1000}
+975	\tfrac{1}{2000}
+976	16\tfrac{3}{4}^{h}.
+977	16\tfrac{8}{15}^{h}.
+978	22\tfrac{2}{3}^{h}.
+979	\tfrac{1}{1067}
+980	\tfrac{1}{3021}
+981	\tfrac{1}{169282}
+982	94\tfrac{1}{2}
+983	13\tfrac{3}{5}
+984	\dfrac{16 \times\, 81 \times\, 3021}{25}
+985	25\tfrac{1}{2}
+986	27\tfrac{1}{2}
+987	486156\tfrac{1}{2}
+988	11\tfrac{5}{6}''
+989	1\tfrac{7}{9}
+990	\tfrac{1}{11000}
+991	125\tfrac{1}{2}
+992	126 \times\, 126 \times\, 100
+993	125 \times\, 125\tfrac{1}{2} \times\, 101
+994	\tfrac{4}{505}
+995	\tfrac{1}{289}
+996	\tfrac{1}{100}
+997	17\tfrac{1}{10}
+998	\dfrac{29}{5} \times\, \dfrac{400}{94\tfrac{1}{2}} \times\, \dfrac{1}{229}
+999	9\tfrac{1}{3}
+1000	10\tfrac{1}{3}
+1001	11\tfrac{1}{6}
+1002	10\tfrac{1}{6}
+1003	13\tfrac{3}{4}
+1004	12\tfrac{3}{4}
+1005	12\tfrac{2}{3}
+1006	11\tfrac{2}{3}
+1007	14\tfrac{1}{2}
+1008	13\tfrac{1}{2}
+1009	1 \times\, \tfrac{11334}{20000}
+1010	8\tfrac{1}{2}
+1011	8\tfrac{5}{9}
+1012	8\tfrac{3}{5}
+1013	1\tfrac{1}{4}
+1014	3\tfrac{2}{3}
+1015	1\tfrac{1}{3}
+1016	2\tfrac{5}{9}
+1017	6\tfrac{3}{4}
+1018	5\tfrac{7}{12}
+1019	5\tfrac{10}{12}
+1020	2\tfrac{2}{3}
+1021	\tfrac{1}{12}
+1022	1\tfrac{87}{1000}
+1023	1 \times\, 60\tfrac{1}{2}
+1024	60 \times\, 60 \times\, 60 \times\, 178\tfrac{29}{40}
+1025	\dfrac{3\mathrm{PK} \times\, \mathrm{TK}}{\mathrm{TP}}
+1026	\tfrac{1}{2}\mathrm{CT}
+1027	\tfrac{2}{3} \times\, 17872\tfrac{1}{2}
+1028	\tfrac{100}{11915}
+1029	\tfrac{1}{2}\mathrm{TP} \times\, \mathrm{P}p
+1030	\tfrac{1}{2}\mathrm{TP} \times\, \mathrm{CP}
+1031	\tfrac{1}{2}\mathrm{TP} \times\, \mathrm{CA}
+1032	\tfrac{100}{11023}
+1033	\dfrac{\mathrm{AT} + \mathrm{CT}}{2}
+1034	\dfrac{178725}{\mathrm{AT}^{2}} - \dfrac{2000}{\mathrm{CT} \times\, \mathrm N}
+1035	\dfrac{178725}{\mathrm{CT}^{2}} + \dfrac{1000}{\mathrm{AT} \times\, \mathrm N}
+1036	\mathrm{AT}^{3} - \tfrac{16824}{100000}\mathrm{CT}^{2}\mathrm{AT}
+1037	\mathrm{CT}^{3} + \tfrac{16824}{100000}\mathrm{AT}^{2} \times\, \mathrm{CT}
+1038	\tfrac{16824}{100000}
+1039	70\tfrac{1}{24}
+1040	69\tfrac{1}{24}
+1041	16\tfrac{15}{16}
+1042	\dfrac{ml}{\mathrm{T}m}
+1043	\dfrac{\mathrm{IT} \times\, \mathrm{P}m}{\mathrm{T}m}
+1044	\dfrac{\mathrm{IT} \times\, \mathrm{PH}}{\mathrm{TP}}
+1045	12\tfrac{1}{2}^{iv}
+1046	\dfrac{ce \times\, f\mathrm Y}{c \mathrm Y}
+1047	\dfrac{ce \times\, fp}{cp}
+1048	\dfrac{ce \times\, fp}{cp}
+1049	\tfrac{1}{2}\mathrm{AZ}
+1050	\tfrac{1}{300}
+1051	38\tfrac{3}{10}
+1052	\beta
+1053	\mathrm{AB}\beta
+1054	\mathrm{A}\beta
+1055	23\tfrac{2}{3}'''
+1056	\mathrm{IT} \times\, \mathrm{AZ} \times\, \mathrm{TG} \times\, \dfrac{\mathrm{P}p}{\mathrm{PG}}
+1057	\dfrac{\mathrm{K}k \times\, \mathrm{H}p \times\, \mathrm{TZ}}{\mathrm{M}p}
+1058	\dfrac{\mathrm{TZ}}{\mathrm{M}p}
+1059	\mathrm{AZ} \times\, \dfrac{\mathrm{TZ}}{\mathrm{M}p} \times\, \dfrac{\mathrm{P}p}{\mathrm{PG}}
+1060	\mathrm{AZ} \times\, \mathrm{TZ} \times\, \dfrac{\mathrm{P}p}{\mathrm{PG}}
+1061	\mathrm{P}p \times\, \dfrac{\mathrm{AZ} \times\, \mathrm{TZ}}{\tfrac{1}{2} \mathrm{AT}}
+1062	\dfrac{\mathrm{AZ} \times\, \mathrm{TZ}}{\tfrac{1}{2} \mathrm{AT}}
+1063	\mathrm{IT} \times\, \mathrm{AZ} \times\, \mathrm{TG} \times\, \dfrac{\mathrm{P}p}{\mathrm{PG}}
+1064	\dfrac{\mathrm{IT} \times\, \mathrm{TG}}{\tfrac{1}{2} \mathrm{AT}} \times\, \dfrac{\mathrm{P}p}{\mathrm{PG}}
+1065	\dfrac{\mathrm{P}p}{\mathrm{PG}}
+1066	177\tfrac{1}{6}
+1067	7 \times\, \tfrac{874}{10000}
+1068	\dfrac{\mathrm{GH}}{\mathrm{GE}} \times\, \mathrm{GE}^{2}
+1069	\dfrac{\mathrm{GH}}{\mathrm{GE}} \times\, \mathrm{AH}
+1070	2079\tfrac{7}{10}
+1071	224 \times\, 7 \times\, 2079\tfrac{7}{10}
+1072	23\tfrac{1}{2}''
+1073	21\tfrac{1}{2}''
+1074	16\tfrac{7}{8}
+1075	16\tfrac{11}{12}
+1076	33\tfrac{7}{8}
+1077	1172\tfrac{3}{4}
+1078	35\tfrac{1}{5}
+1079	113\tfrac{1}{30}
+1080	20\tfrac{1}{2}
+1081	11\tfrac{1}{2}
+1082	69\tfrac{1}{2}
+1083	11\tfrac{1}{30}
+1084	7\tfrac{5}{22}
+1085	12\tfrac{1}{2}
+1086	16\tfrac{1}{2}''
+1087	43\tfrac{4}{9}'
+1088	4\tfrac{4}{11}
+1089	4\tfrac{25}{33}
+1090	60\tfrac{5}{6}
+1091	\mathrm{LN} \times\, \mathrm{M}m - \mathrm{NM} \times\, \overline{\mathrm{MC} + m \mathrm C}
+1092	\mathrm{NM} \times\, \overline{\mathrm{MC} + m \mathrm C}
+1093	\mathrm{AC}^{4} \times\,\mathrm{CX} - \tfrac{4}{3}\mathrm{AC}^{2} \times\, \mathrm{CX}^{3} +\tfrac{3}{5}\mathrm{CX}^{5}
+1094	\mathrm{AC}^{4} \times\, \mathrm{CX} - \tfrac{1}{3}\mathrm{AC}^{2} \times\, \mathrm{CX}^{3}
+1095	\tfrac{4}{15}\mathrm{AC}^{5}
+1096	\tfrac{2}{3}\mathrm{AC}^{5}
+1097	23\tfrac{1}{2}
+1098	17\tfrac{1}{6}
+1099	\Upsilon \mathrm{QA}
+1100	\Upsilon \mathrm{QB}
+1101	\Upsilon \mathrm{QC}
+1102	\Upsilon \mathrm{QF}
+1103	\Upsilon \mathrm{QG}
+1104	\mathrm{T}\Upsilon
+1105	\Upsilon \mathrm{TV}
+1106	g \Upsilon
+1107	\mathrm{T} \Upsilon
+1108	\Upsilon g\mathrm V
+1109	\Upsilon g \mathrm V
+1110	\sqrt{4}
+1111	4\sqrt{4}
+1112	71675\tfrac{1}{2}
+1113	\sqrt{2}
+1114	101364\tfrac{1}{2}
+1115	1216373\tfrac{1}{2}
+1116	50682\tfrac{1}{4}
+1117	\mathrm{AH} = a
+1118	-\mathrm{HS} = p
+1119	\tfrac{1}{2}p
+1120	-\mathrm{IS} = q
+1121	\tfrac{1}{3}q
+1122	+ \mathrm{SK} = r
+1123	\tfrac{1}{4}r
+1124	\tfrac{1}{5}s
+1125	= \dfrac{\mathrm{AH} - \mathrm{BI}}{\mathrm{HI}}
+1126	= \dfrac{\mathrm{BI} - \mathrm{CK}}{\mathrm{IK}}
+1127	= \dfrac{\mathrm{CK} - \mathrm{DL}}{\mathrm{KL}}
+1128	= \dfrac{b - 2b}{\mathrm{HK}}
+1129	= \dfrac{2b - 3b}{\mathrm{IL}}
+1130	= \dfrac{3b - 4b}{\mathrm{KM}}
+1131	= \dfrac{c - 2c}{\mathrm{HL}}
+1132	= \dfrac{2c - 3c}{\mathrm{IM}}
+1133	\mathrm{I}\mu
+1134	\mu
+1135	\mu \mathrm O
+1136	\xi
+1137	\mathrm{S}\xi
+1138	\xi \mathrm B
+1139	mu \mathrm X
+1140	mu
+1141	\mathrm{AEX}\mu \mathrm A
+1142	\mathrm{ACY}\mu \mathrm A
+1143	\mathrm{ASEX}\mu \mathrm A
+1144	\mathrm{ASCY}\mu \mathrm A
+1145	\xi \mathrm O
+1146	\mathrm{ASBX}\mu \mathrm A
+1147	\mathrm{ASBY}\mu \mathrm A
+1148	\mu \xi
+1149	\delta
+1150	\xi n
+1151	\mu \mathrm B
+1152	16 \mathrm{M} \mu
+1153	\mathrm{I} \mu
+1154	\mu \mathrm M
+1155	\dfrac{\mathrm{AI}^{2}}{4 \mathrm{S} \mu}
+1156	4 \mathrm{S} \mu
+1157	\mathrm{S} \mu
+1158	\mu \mathrm N
+1159	\mu \mathrm I
+1160	\mathrm{S}\mu
+1161	\mathrm{A} \mu \mathrm C
+1162	\mathrm{ASC} \mu \mathrm A
+1163	\mathrm{S} \mu\ + \tfrac{2}{3}\mathrm{I} \mu
+1164	\mathrm{S} \mu + \tfrac{2}{3} \mathrm{I} \mu
+1165	\dfrac{\mathrm{AI}^{2}}{4 \mathrm{SP}}
+1166	\tau
+1167	\tau \mathrm C
+1168	\mathrm T \tau
+1169	\lambda
+1170	\lambda \mu
+1171	\mathrm I \sigma
+1172	3\mathrm I \lambda
+1173	\sigma \xi
+1174	3 \mathrm S \sigma + 3 i \lambda
+1175	\mathrm S \mu + \tfrac{1}{3}i \lambda
+1176	i \mathrm I \lambda \mu
+1177	\mathrm S \mu + \tfrac{2}{3}i \lambda
+1178	\alpha
+1179	\kappa
+1180	\mathrm{G}g \lambda
+1181	\alpha \kappa
+1182	\alpha \phi
+1183	\kappa \lambda
+1184	\phi
+1185	\mathrm{F}f \phi
+1186	\tau \mathrm Z
+1187	\mathrm B \xi
+1188	\tfrac{4}{3}\mathrm T \tau
+1189	\tau \mathrm C
+1190	6.32\tfrac{1}{2}
+1191	\zeta
+1192	\eta
+1193	80\tfrac{7}{12}
+1194	52\tfrac{1}{4}
+1195	58\tfrac{5}{6}
+1196	57\tfrac{5}{12}
+1197	82\tfrac{6}{11}
+1198	23\tfrac{2}{3}
+1199	29\tfrac{4}{7}
+1200	57\tfrac{1}{2}
+1201	49\tfrac{11}{12}
+1202	27\tfrac{7}{12}
+1203	52\tfrac{1}{6}
+1204	36\tfrac{7}{12}
+1205	53\tfrac{5}{11}
+1206	38\tfrac{2}{3}
+1207	31\tfrac{5}{9}
+1208	36\tfrac{1}{4}
+1209	18\tfrac{6}{7}
+1210	50\tfrac{7}{8}
+1211	46\tfrac{5}{12}
+1212	31\tfrac{1}{3}
+1213	45\tfrac{5}{12}
+1214	31\tfrac{5}{7}
+1215	\tfrac{1}{6}\mathrm{CD}
+1216	8\tfrac{1}{2}^{h}.
+1217	\tfrac{3}{13}\mathrm{AE}
+1218	\tfrac{1}{5}\mathrm{AE}
+1219	\tfrac{3}{14}\mathrm{AE}
+1220	\tfrac{1}{5}p \mathrm E
+1221	9\tfrac{1}{2}^{h}.
+1222	\dfrac{1}{4\tfrac{1}{2}}\mathrm{AE}
+1223	\dfrac{1}{5\tfrac{1}{4}}\mathrm{AE}
+1224	\dfrac{1}{4\tfrac{7}{8}}
+1225	\tfrac{8}{39}\mathrm{AE}
+1226	\tfrac{4}{5}\mathrm{PE}
+1227	8\tfrac{1}{4}^{h}.
+1228	\tfrac{1}{3}\mathrm{CK}
+1229	\tfrac{1}{3}\mathrm{CK} + \tfrac{1}{8}\mathrm{CR}
+1230	\tfrac{1}{3}\mathrm{CK} + \tfrac{1}{16}\mathrm{CR}
+1231	\tfrac{16}{45}\mathrm{CK}
+1232	\tfrac{4}{9}\mathrm{FC}
+1233	\tfrac{1}{24}\mathrm{FC}
+1234	11\tfrac{1}{2}^{h}.
+1235	\tfrac{1}{2}\mathrm{ML}
+1236	\mathrm{V}\alpha
+1237	\mathrm{V}\beta
+1238	\alpha \beta
+1239	\tfrac{1}{2}\mathrm{V}\beta
+1240	\gamma \mathrm X
+1241	\tfrac{1}{2}\gamma \delta
+1242	\gamma \delta
+1243	\gamma \mathrm Y
+1244	\tfrac{5}{16}
+1245	\gamma \mathrm Y
+1246	\tfrac{1}{6}
+1247	\tfrac{1}{3} \gamma \delta
+1248	i \lambda
+1249	\tfrac{1}{3}'
+1250	16\tfrac{1}{3}
+1251	\tfrac{6}{7}
+1252	20\tfrac{1}{3}'
+1253	\sigma
+1254	3\tfrac{1}{2}'
+1255	39\tfrac{1}{4}'
+1256	33\tfrac{1}{2}'
+1257	7\tfrac{1}{2}'
+1258	\psi
+1259	\theta
+1260	42\tfrac{1}{2}
+1261	4\tfrac{1}{2}^{h}.
+1262	38\tfrac{1}{2}
+1263	7\tfrac{1}{4}^{h}.
+1264	6\tfrac{1}{2}^{h}.
+1265	18\tfrac{1}{3}
+1266	\omega
+1267	19\tfrac{1}{2}
+1268	34\tfrac{1}{4}
+1269	8\tfrac{1}{2}^{h}
+1270	4\tfrac{1}{2}
+1271	\delta + \epsilon
+1272	2\mathrm G - 2 \mathrm C, = m\mathrm G - mg + n\mathrm G - n \gamma
+1273	2\mathrm T - 2 \mathrm S = m \mathrm T - mt + n\mathrm T - n \tau
+1274	\rho
+1275	\dfrac{1}{\mathrm L}
+1276	\dfrac{1}{l}
+1277	\dfrac{1}{\lambda}
+1278	\mathrm R + mr - m \mathrm R + n\rho - n\mathrm R
+1279	\dfrac{1}{\mathrm L + ml - m \mathrm L + n \lambda - n \mathrm L}
+1280	\sqrt[3]{75 \times\, 75}
+1281	493\tfrac{1}{2}'' \times\, \sqrt{493\tfrac{1}{2}''}
+1282	108'' \times\, \sqrt{108}''
+1283	59\tfrac{1}{3}
+1284	62\tfrac{1}{2}
+1285	31\tfrac{1}{2}'
+1286	\tfrac{1}{42}
+1287	\sqrt[3]{42 + \overline{43}\vert^{2}}
+1288	16\tfrac{3}{4}^{d}
+1289	224\tfrac{2}{3}^{d}
+1290	\tfrac{13}{100}
+1291	92\tfrac{2}{3}
+1292	39\tfrac{1}{2}''
+1293	4\sqrt{2}
+1294	237\tfrac{3}{10}
+1295	24\tfrac{2}{3}^{h}.
+1296	60 \times\, 60 \times\, 178\tfrac{29}{40}
+1297	9\tfrac{1}{5}
+1298	\dfrac{\mathrm{VG}^{2}}{2\mathrm{RE}^{2}}\mathrm L + \dfrac{\mathrm{TF}^{2}}{2\mathrm{RD}^{2}}\mathrm S
+1299	\dfrac{\mathrm{VG}^{2}}{2\mathrm{RE}^{2}}\mathrm L - \dfrac{\mathrm{TF}^{2}}{2\mathrm{RD}^{2}}\mathrm S
+1300	\dfrac{1682}{2000}\mathrm L - \mathrm S
+1301	5\mathrm L + 5\mathrm S = \dfrac{15138}{2000}\mathrm L - 9\mathrm S
+1302	\mathrm L = \dfrac{28000}{5138}\mathrm S = 5\tfrac{5}{11}\mathrm S
+1303	5\tfrac{1}{6}\mathrm S
+1304	\dfrac{1682}{2000}\mathrm L + \dfrac{1682}{2000}\mathrm S : \mathrm L - \dfrac{1682}{2000}\mathrm {S}::6:5
+1305	\mathrm L = 5\tfrac{1}{3}\mathrm S
+1306	6\tfrac{1}{3}
+1307	31\tfrac{1}{2}
+1308	32\tfrac{1}{5}
+1309	5\tfrac{7}{10}
+1310	32\tfrac{1}{5}'
+1311	3\tfrac{28}{29}
+1312	41\tfrac{1}{2}
+1313	\tfrac{1}{2100000000}
+1314	\tfrac{1}{4200000000}
+1315	10000 \sqrt{42}
+1316	4\tfrac{1}{6}
+1317	\tfrac{3}{11}
+1318	32\tfrac{2}{3}
+1319	71\tfrac{2}{3}
+1320	4\tfrac{2}{3}
+1321	79\tfrac{2}{3}
+1322	7\tfrac{3}{4}^{h}.
+1323	33\tfrac{1}{2}
+1324	\dfrac{\mathrm{M}^{2} \times\, \mathrm N}{\mathrm{O}r^{2}}
+1325	\dfrac{\mathrm{M}^{2} \times\, \mathrm N}{\mathrm{OR}^{2}} - \mathrm{SP}
+1326	\pm
+1327	\mathrm{OR} - \dfrac{\mathrm{TR}}{\mathrm{TP}}e
+1328	\sqrt{\mathrm{SP}^{2} + 2\mathrm{BP}e + ee} = \dfrac{\mathrm{M}^{2}}{\mathrm{OR}^{2} + \dfrac{2\mathrm{OR} \times\, \mathrm{TR}}{\mathrm{TP}}e + \dfrac{\mathrm{TR}^{2}}{\mathrm{TP}^{2}}ee}
+1329	\mathrm{SP} + \dfrac{\mathrm{BP}}{\mathrm{SP}}e + \dfrac{\mathrm{SB}^{2}}{2\mathrm{SP}^{3}}ee
+1330	\dfrac{\mathrm{M}^{2} \mathrm N}{\mathrm{OR}^{2}} + \dfrac{2\mathrm{TR}}{\mathrm{TP}} \times\, \dfrac{\mathrm{M}^{2} \mathrm N}{\mathrm{OR}^{3}}e + \dfrac{3\mathrm{TR}^{2}}{\mathrm{TP}^{2}} \times\, \dfrac{\mathrm{M}^{2} \mathrm N}{\mathrm{OR}^{4}}ee
+1331	\dfrac{\mathrm{M}^{2} \mathrm N}{\mathrm{OR}^{2}} - \mathrm{SP}
+1332	\dfrac{2\mathrm{TR}}{\mathrm{TP}} \times\, \dfrac{\mathrm{M}^{2} \mathrm N}{\mathrm{OR}^{3}} - \dfrac{\mathrm{BP}}{\mathrm{SP}}
+1333	\dfrac{3\mathrm{TR}^{2}}{\mathrm{TP}^{2}} \times\, \dfrac{\mathrm{M}^{2} \mathrm N}{\mathrm{OR}^{4}} - \dfrac{\mathrm{SB}^{2}}{2\mathrm{SP}^{3}}
+1334	\mathrm F
+1335	\dfrac{\mathrm F}{\mathrm G}
+1336	\dfrac{\mathrm F}{\mathrm{GH}}
+1337	\mathrm F + \dfrac{\mathrm F}{\mathrm G}e + \dfrac{\mathrm F}{\mathrm{GH}}ee = 0
+1338	e + \dfrac{ee}{\mathrm H} = - \mathrm G
+1339	\dfrac{e^{2}}{\mathrm H}
+1340	-\mathrm G - \dfrac{\mathrm{G}^{2}}{\mathrm H} = e
+1341	R \rho
+1342	T \rho
+1343	\rho\varpi
+1344	\mathrm{T} \rho
+1345	\varpi
+1346	\varpi \rho
+1347	r\mathrm{R}\rho
+1348	\mathrm{S}\varpi
+1349	\tau \rho
+1350	\mathrm{RO}\rho
+1351	\tau\rho
+1352	t\mathrm{T} \tau \mathrm{O}
+1353	p\mathrm{P}\varpi
+1354	p \varpi
+1355	\mathrm V \times\, t \tau
+1356	\mathrm{P}\varpi
+1357	r \rho
+1358	\mathrm{R} \rho
+1359	\mathrm{S}p\varpi
+1360	p\varpi
+1361	\mathrm{S}p \varpi

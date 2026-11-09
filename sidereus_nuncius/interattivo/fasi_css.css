@@ -1,0 +1,10 @@
+.fl-griglia{display:grid;grid-template-columns:1fr;gap:.6rem}
+@media(min-width:768px){.fl-griglia{grid-template-columns:1.55fr 1fr}}
+.fl-scena{position:relative;border:1px solid var(--linea);border-radius:6px;overflow:hidden;background:#f3ecdb;touch-action:none}
+.fl-tela{display:block}
+.fl-riquadro{display:none;position:absolute;left:8px;top:8px;border:1.5px solid #1e1c1a;pointer-events:none}
+.fl-riquadro span{position:absolute;bottom:-1.5em;left:0;font:600 .7rem Inter,system-ui,sans-serif;color:#1e1c1a;background:#f3ecdb;padding:0 .3em}
+.fl-etichetta{position:absolute;transform:translate(-50%,0);font:italic 1rem "EB Garamond",serif;color:#1e1c1a;pointer-events:none;white-space:nowrap;text-shadow:0 0 3px #f3ecdb,0 0 3px #f3ecdb}
+.fl-nota{font-size:.92rem;line-height:1.45;margin:.4rem 0 0}
+.fl-fig[aria-pressed=true],.fl-cinerea[aria-pressed=true]{background:var(--attivo);color:#fff;border-color:var(--attivo)}
+.fl-galileo img{max-width:100%;height:auto;max-height:260px}

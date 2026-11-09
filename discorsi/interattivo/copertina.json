@@ -1,0 +1,34 @@
+{
+ "autore": "Galileo Galilei Linceo",
+ "titolo": "Discorsi e dimostrazioni<br>matematiche",
+ "titolo2": "intorno a due nuove scienze",
+ "sottotitolo": "attenenti alla mecanica e i movimenti locali: la resistenza dei corpi solidi all'essere spezzati, il moto equabile e naturalmente accelerato, il moto dei proietti. Con una appendice del centro di gravità d'alcuni solidi",
+ "luogo": "In Leida, appresso gli Elsevirii · MDCXXXVIII",
+ "facsimile": {
+  "file": "fac/frontespizio_1638.png",
+  "alt": "Il frontespizio dell'edizione del 1638: DISCORSI E DIMOSTRAZIONI MATEMATICHE, con il nome di Galileo e la marca tipografica degli Elzevier, un vecchio sotto un albero con il motto NON SOLUS.",
+  "didascalia": "Il frontespizio originale, Leida 1638 (Google Books, Wikimedia Commons, pubblico dominio)"
+ },
+ "edizione": "Edizione interattiva per la classe",
+ "crediti": [
+  "testo dell'edizione UTET (1980, a cura di F. Brunetti), da Liber Liber",
+  "dimostrazioni latine del 1638 nelle tavole, con traduzione dei curatori"
+ ],
+ "tavole": [
+  {
+   "id": "equabile",
+   "titolo": "Il moto equabile e il Teorema I",
+   "dove": "Giornata III"
+  },
+  {
+   "titolo": "Il moto naturalmente accelerato"
+  },
+  {
+   "titolo": "L'esperimento del piano inclinato"
+  },
+  {
+   "titolo": "La parabola dei proietti"
+  }
+ ],
+ "piede": "Liceo scientifico «Leonardo da Vinci» · Trento — v0.2, novembre 2026<br>Testi CC BY-NC-SA 4.0 · codice MIT · <a href=\"#note\">note all'edizione</a>"
+}

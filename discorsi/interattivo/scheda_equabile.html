@@ -1,0 +1,64 @@
+<section class="scheda" id="equabile" aria-labelledby="hEq" tabindex="-1">
+<h3 id="hEq">Scheda · Il moto equabile: «comunque presi» e il Teorema I</h3>
+<p class="intro">Galileo apre il suo trattato con una definizione corretta in un punto preciso e con un teorema dimostrato senza un solo numero. Prima guarda due mobili che sembrano andare alla pari; poi segui la sua dimostrazione passo per passo.</p>
+
+<div class="etichetta">1 · Due mobili: perché «comunque presi»</div>
+<div class="lettura"><span class="cit">«può accadere che in determinati tempi eguali un mobile percorra spazi eguali, mentre spazi, percorsi in frazioni di tempo minori, sebbene eguali, non siano eguali.»</span> <span class="fonte">Avvertenza (trad. UTET)</span></div>
+<div class="fig"><svg id="eqDue" viewBox="0 0 640 250" role="img" aria-label="Due mobili su due binari paralleli, divisi in braccia. Il primo va di moto equabile, il secondo a scatti: ad ogni battuta sono alla pari, in mezzo no. Sotto, le barre degli spazi percorsi in ogni parte eguale di tempo."></svg></div>
+<div class="controlli ui">
+<button class="b" id="eqPlay" aria-pressed="false">▶ Fai partire</button>
+<button class="b" id="eqDaCapo">Da capo</button>
+<label>Dividi ogni battuta in parti eguali <input type="range" id="eqParti" min="1" max="6" step="1" value="1" aria-label="Numero di parti eguali in cui si divide ogni battuta"> <output id="eqPartiV" style="min-width:4.5em">1 parte</output></label>
+</div>
+<div class="cifre" id="eqDueCifre" aria-live="polite"></div>
+
+<div class="etichetta">2 · Teorema I, Proposizione I — la dimostrazione di Galileo</div>
+<p class="enunciato teorema schedaEnunc"><span class="int">Teorema 1. Proposizione 1</span>Se un mobile, dotato di moto equabile, percorre due spazi con una stessa velocità, i tempi dei moti staranno tra di loro come gli spazi percorsi.</p>
+<div class="eqGriglia">
+<div><div class="etichetta">Figura ricostruita (sopra i tempi, sotto gli spazi)</div><div class="fig"><svg id="eqFig" viewBox="0 0 640 252" role="img" aria-label="Figura del Teorema I"></svg></div></div>
+<div><div class="etichetta">L'incisione del 1638, p. 152</div><figure class="facScheda"><img id="eqFac" width="770" height="94" alt="Incisione del 1638: in alto la linea dei tempi I, D, E, F, K, in basso la linea degli spazi G, A, B, C, H; le tacche segnano le copie di DE e di AB a sinistra, di EF e di BC a destra." src="%%FAC_EQ%%"></figure></div>
+</div>
+<div class="passi ui"><button class="b" id="eqPrec" aria-label="Passo precedente">◀</button><span class="num" id="eqNum"></span><button class="b" id="eqSucc" aria-label="Passo successivo">▶</button><button class="b" id="eqInizio">Da capo</button></div>
+<div class="lettura" id="eqTesto" aria-live="polite"></div>
+<div class="controlli ui">
+<label>Spazio AB <input type="range" id="eqAB" min="0.5" max="4" step="0.5" value="2" aria-label="Lunghezza di AB in braccia"> <output id="eqABv"></output></label>
+<label>Spazio BC <input type="range" id="eqBC" min="0.5" max="4" step="0.5" value="3" aria-label="Lunghezza di BC in braccia"> <output id="eqBCv"></output></label>
+<label>Velocità <input type="range" id="eqV" min="0.5" max="2" step="0.25" value="1" aria-label="Velocità del mobile in braccia per battuta"> <output id="eqVv"></output></label>
+<label>m, copie a sinistra <input type="range" id="eqM" min="1" max="12" step="1" value="3" aria-label="Numero m di copie di AB e di DE"> <output id="eqMv"></output></label>
+<label>n, copie a destra <input type="range" id="eqN" min="1" max="12" step="1" value="2" aria-label="Numero n di copie di BC e di EF"> <output id="eqNv"></output></label>
+</div>
+<div class="controlli ui">
+<button class="b" id="eqLat" aria-pressed="false">Mostra il latino</button>
+<button class="b" id="eqCorri" aria-pressed="false">▶ Il mobile percorre GH</button>
+<button class="b" id="eqRad2" aria-pressed="false">AB : BC = √2 : 1</button>
+<button class="b" id="eqContro" aria-pressed="false">Controprova: su BC il mobile rallenta</button>
+</div>
+<div class="cifre" id="eqCifre" aria-live="polite"></div>
+<div id="eqGrigliaBox" hidden>
+<div class="etichetta">Tutte le coppie (m, n) fino a 12: in alto a sinistra il confronto degli spazi, in basso a destra quello dei tempi</div>
+<div class="fig"><svg id="eqGrid" viewBox="0 0 400 400" role="img" tabindex="0" aria-label="Griglia dei confronti tra moltiplici, per m e n da 1 a 12"></svg></div>
+<p class="ui nota-ui">Tocca una casella per portare m e n su quella coppia; con la tastiera, seleziona la griglia e usa le frecce (oppure i cursori). Le caselle con il bordo spesso e «≠» sono quelle in cui i due confronti non danno lo stesso esito.</p>
+</div>
+
+<details><summary>Il latino del 1638</summary><div id="eqLatino"></div></details>
+<details><summary>Per la classe</summary><div><ol>
+<li>Il mobile «a scatti» percorre un braccio in ogni battuta, proprio come quello equabile. Perché secondo Galileo non è equabile?
+<details><summary>Risposta</summary><div>Perché, dividendo la battuta in due metà (tempi eguali), percorre 0,8 braccia nella prima e 0,2 nella seconda: spazi diseguali. La parola «comunque presi» (<i>quibuscunque</i>) chiede l'eguaglianza per <i>tutti</i> i tempi eguali, anche i più piccoli.</div></details></li>
+<li>Galileo non misura i rapporti AB : BC e DE : EF con dei numeri. Che cosa confronta invece?
+<details><summary>Risposta</summary><div>Confronta i moltiplici: m volte AB con n volte BC, e m volte DE con n volte EF. Mostra che i due confronti danno sempre lo stesso esito (maggiore, eguale, minore), qualunque siano m e n. Per Euclide questo vuol dire che le due ragioni sono eguali.</div></details></li>
+<li>Su quale assioma si appoggia il passaggio «se GB è maggiore di BH, anche IE sarà maggiore di EK»?
+<details><summary>Risposta</summary><div>Sull'Assioma II: nello stesso moto equabile, lo spazio maggiore richiede il tempo più lungo. Per il caso eguale serve l'Assioma I usato al contrario: se i tempi IE ed EK fossero diversi, anche gli spazi GB e BH lo sarebbero.</div></details></li>
+<li>Premi «AB : BC = √2 : 1». Nella griglia compare mai il segno «=»? Perché la dimostrazione vale lo stesso?
+<details><summary>Risposta</summary><div>No: √2 non è un rapporto tra numeri interi, quindi m volte AB non è mai esattamente n volte BC. Ma i due confronti continuano a coincidere in ogni casella, ed è solo questo che la definizione di Euclide richiede. Per questo Galileo usa i moltiplici e non i numeri: funzionano anche con grandezze incommensurabili.</div></details></li>
+<li>Con la controprova il mobile percorre BC più lentamente. Quali caselle lo smascherano, e quale ipotesi del teorema è caduta?
+<details><summary>Risposta</summary><div>Le caselle in cui GB è eguale a BH o di poco maggiore: lì il tempo EK, percorso più lentamente, raggiunge o supera il tempo IE, e i due confronti non coincidono più. È caduta l'ipotesi «con una stessa velocità» (<i>eadem cum velocitate</i>).</div></details></li>
+</ol></div></details>
+<details><summary>Lettura moderna</summary><div>
+<p>Con velocità costante v, lo spazio è s = v·t. Allora t<sub>1</sub> = s<sub>1</sub>/v e t<sub>2</sub> = s<sub>2</sub>/v, e quindi t<sub>1</sub> : t<sub>2</sub> = s<sub>1</sub> : s<sub>2</sub>. In una riga: è il Teorema I.</p>
+<p>Galileo non può scrivere così, perché per lui una «velocità» non è un numero che si moltiplica per un tempo: spazi, tempi e velocità sono grandezze di specie diversa, e si confrontano solo con grandezze della stessa specie. Per questo usa la definizione 5 del libro V di Euclide: a : b = c : d quando, per ogni coppia di interi m, n, m·a è maggiore, eguale o minore di n·b esattamente quando m·c lo è di n·d. Più di due secoli dopo (1872) Dedekind partirà da un'idea vicina, una grandezza individuata dalle frazioni che le stanno sotto e sopra, per <i>costruire</i> i numeri reali; Euclide e Galileo invece confrontano ragioni tra grandezze già date.</p>
+</div></details>
+<details><summary>Come è fatta</summary><div>
+<p>Il latino è trascritto dalla stampa del 1638 (pp. 151–152); la traduzione della dimostrazione è nostra, quella degli enunciati è dell'edizione UTET. La figura ricostruita usa le lettere di Galileo; spazi e tempi sono disegnati alla stessa scala (un braccio e una battuta hanno la stessa lunghezza), allineati a sinistra in G e in I. Nell'incisione le due linee hanno scale diverse.</p>
+<p>Semplificazioni dichiarate: m e n arrivano a 12, nella figura e nella griglia, mentre la definizione di Euclide chiede <i>tutte</i> le coppie; il confronto «eguale» è deciso con una tolleranza relativa di 10<sup>−9</sup>, perciò con √2 (che il calcolatore conosce solo approssimato) la griglia mostra il comportamento per m, n ≤ 12, non una prova. Il mobile a scatti è un esempio inventato per illustrare l'Avvertenza: Galileo non lo descrive. La controprova riduce la velocità su BC all'80 %. Con m = 1 (o n = 1) il punto G coincide con A (o H con C): è il caso in cui non si prende nessuna copia in più. La dimostrazione dà per scontato che il moto prosegua su tutta GH e che tempi e spazi contigui si sommino.</p>
+</div></details>
+</section>

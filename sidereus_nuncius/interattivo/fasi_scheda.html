@@ -1,0 +1,32 @@
+<section class="scheda" id="fasi" aria-labelledby="hFasi">
+<h3 id="hFasi">Scheda · Le fasi della Luna, dal cannocchiale allo spazio</h3>
+<p class="intro">Prima guardi come Galileo, al cannocchiale: il disco cambia forma giorno dopo giorno e il confine della luce è frastagliato dai monti. Poi esci nello spazio e vedi perché succede: il Sole illumina sempre metà della Luna, ma dalla Terra ne vediamo una parte diversa a seconda di dove si trova.</p>
+<div class="fl-griglia">
+<div>
+<div class="fl-scena"><canvas class="fl-tela" role="img" aria-label="Simulazione delle fasi della Luna in stile incisione"></canvas><div class="fl-riquadro" aria-hidden="true"><span>dalla Terra</span></div></div>
+<div class="fl-stato dataoss" aria-live="polite" style="margin-top:.4rem"></div>
+<div class="controlli ui"><label>Giorni dalla luna nuova <input type="range" class="fl-eta" min="0" max="29.5" step="0.05" value="4.5" aria-label="Giorni dalla luna nuova"></label></div>
+<div class="controlli ui" role="group" aria-label="Le cinque figure di Galileo">
+<button class="b fl-fig">Fig. 1</button><button class="b fl-fig">Fig. 2</button><button class="b fl-fig">Fig. 3</button><button class="b fl-fig">Fig. 4</button><button class="b fl-fig">Fig. 5</button>
+</div>
+<div class="controlli ui">
+<button class="b fl-play" aria-pressed="false">▶ Anima</button>
+<button class="b fl-vista" aria-pressed="false">Esci nello spazio ↗</button>
+<button class="b fl-cinerea" aria-pressed="true">Luce cinerea</button>
+</div>
+</div>
+<div class="fl-lato"><div class="etichetta">Il disegno di Galileo</div><div class="disegnoG fl-galileo"></div><p class="fl-nota"></p></div>
+</div>
+<p class="ui" style="font-size:.75rem;color:var(--dato);margin:.2rem 0">Nello spazio: trascina per girare intorno, pizzica o usa la rotella per avvicinarti. Distanze e dimensioni non sono in scala: nello spazio la Luna è disegnata più grande; in realtà è lontana 30 diametri terrestri, e il Sole circa 400 volte più in là.</p>
+<details><summary>Per la classe</summary><div><ol>
+<li>Nella vista dallo spazio, quanta parte della Luna è illuminata alla luna nuova? E alla luna piena?
+<details><summary>Risposta</summary><div>Sempre metà: il Sole illumina sempre un emisfero. Cambia solo quanto di quell'emisfero è rivolto verso la Terra.</div></details></li>
+<li>Perché nella figura 1 il confine tra luce e ombra è frastagliato e non una linea ovale?
+<details><summary>Risposta</summary><div>Perché la superficie ha rilievi e cavità: vicino al confine il Sole è radente, le cime si illuminano prima delle valli e proiettano ombre lunghe. Su una sfera liscia il confine sarebbe un'ellisse perfetta. È l'argomento di Galileo: la Luna non è un corpo perfettamente sferico.</div></details></li>
+<li>Le figure 3 e 5 mostrano la stessa grande cavità rotonda. Perché nella 2 la parte luminosa della cavità è a sinistra e nella 3 a destra?
+<details><summary>Risposta</summary><div>Nel primo quarto il Sole illumina da destra, nell'ultimo quarto da sinistra. Dentro una cavità si illumina la parete rivolta al Sole, cioè quella dalla parte opposta da cui arriva la luce: Galileo lo descrive con precisione.</div></details></li>
+<li>Che cos'è la luce cinerea e quando è più forte?
+<details><summary>Risposta</summary><div>È la luce del Sole riflessa dalla Terra che illumina debolmente la parte buia della Luna. È più forte vicino alla luna nuova, quando dalla Luna la Terra appare «piena». Galileo la spiega più avanti nel testo.</div></details></li>
+</ol></div></details>
+<details><summary>Come è fatta la simulazione</summary><div>La superficie della Luna è ricostruita in modo schematico: i mari principali (con i contorni semplificati), circa 2600 crateri di dimensioni casuali, la grande cavità centrale vicino al confine del primo e dell'ultimo quarto (oggi Albategnius), gli Appennini al bordo del Mare Imbrium. I rilievi sono esagerati, come nei disegni di Galileo. La luce è calcolata punto per punto e poi tradotta in tratteggio: tratti obliqui fitti per l'ombra, tratti orizzontali per i mari, puntini per i rilievi. Non è una carta lunare: le età delle cinque figure sono stimate dalla forma del confine.</div></details>
+</section>

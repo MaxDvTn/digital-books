@@ -1,0 +1,15 @@
+{
+ "_nota": "Righe del .tex (inclusive) dei paragrafi che appartengono al trattato latino De motu locali (nel .tex in italiano moderno, versione UTET), distinti dal dialogo in volgare del 1638. Gli enunciati (TEOREMA, COROLLARIO...) sono riconosciuti dall'importatore e sono sempre trattato. Ricavate leggendo il testo: Giornata Terza completa; Giornata Quarta da fare nel suo lotto.",
+ "intervalli": [
+  [1177, 1180],
+  [1185, 1210],
+  [1217, 1224],
+  [1270, 1270],
+  [1301, 1306],
+  [1326, 1329],
+  [1375, 1377],
+  [1384, 1407],
+  [1425, 1631]
+ ],
+ "eccezioni_dialogo": []
+}

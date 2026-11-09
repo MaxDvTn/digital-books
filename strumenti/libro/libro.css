@@ -1,0 +1,64 @@
+[hidden]{display:none!important}
+body.lb-on{overflow:hidden}
+#libro{position:fixed;inset:0;z-index:50;background:#3b3630;display:flex;flex-direction:column}
+.lb-barra{display:flex;gap:.45rem;align-items:center;padding:.35rem .6rem;background:#2a2622;color:#efe8d8;flex-wrap:wrap}
+.lb-barra .b{background:#f3ecdb;font-size:.8rem}
+.lb-barra .b[aria-pressed=true]{background:#1f5fa8;color:#fff;border-color:#1f5fa8}
+.lb-num{font-size:.8rem;min-width:8em}
+.lb-salto{flex:1;min-width:120px;height:44px;accent-color:#c9a45a}
+.lb-tavolo{flex:1;display:flex;align-items:center;justify-content:center;position:relative;min-height:0;padding:8px 0}
+.lb-palco{perspective:2400px;outline:none;position:relative}
+.lb-palco:focus-visible{outline:3px solid #f0b400;outline-offset:4px}
+.lb-vista{display:flex;position:relative;filter:drop-shadow(0 6px 14px rgba(0,0,0,.45))}
+.lb-pagina{width:var(--lb-w);height:var(--lb-h);background:#fbf8f2;color:#22201c;font:var(--lb-fs)/1.48 "EB Garamond",Georgia,serif;padding:calc(var(--lb-h)*.055) calc(var(--lb-w)*.095) calc(var(--lb-h)*.04);display:flex;flex-direction:column;position:relative;overflow:hidden}
+.lb-pagina.sx{background:linear-gradient(to left,rgba(0,0,0,.13),rgba(0,0,0,0) 7%),#fbf8f2}
+.lb-pagina.dx{background:linear-gradient(to right,rgba(0,0,0,.13),rgba(0,0,0,0) 7%),#fbf8f2}
+.lb-pagina.latina{background-color:#f8f3e6}
+.lb-corpo{flex:1;overflow:hidden;min-height:0}
+.lb-testata{display:flex;justify-content:space-between;font-size:.7em;font-variant:small-caps;letter-spacing:.05em;color:#5b554b;border-bottom:.5px solid #b9b0a0;margin-bottom:.9em;height:1.7em;line-height:1.7em;flex:none;overflow:hidden}
+.lb-piede{text-align:center;font-size:.72em;color:#5b554b;margin-top:.4em;height:1.5em;line-height:1.5em;flex:none}
+.lb-corpo p{margin:0;text-align:justify;hyphens:auto;-webkit-hyphens:auto;text-indent:1.2em}
+.lb-corpo p.breve,.lb-corpo p.cont{text-indent:0}
+.lb-corpo p.spezzato{text-align-last:justify}
+.lb-corpo p.sottotitolo{text-align:center;font-style:italic;text-indent:0;margin:0 0 .8em;color:#5b554b}
+.lb-corpo .nota{font-size:.72em}
+.lb-titolo{text-align:center;font-variant:small-caps;color:#871919;font-weight:400;font-size:1.55em;margin:.4em 0 .5em;letter-spacing:.04em}
+.lb-fig{margin:.35em 0;text-align:center}
+.lb-fig img{width:auto;height:auto;max-width:100%;max-height:calc(var(--lb-h)*.5);display:block;margin:0 auto}
+.lb-fig figcaption{font:.62em Inter,system-ui,sans-serif;color:#6b6458}
+.lb-fig .minibtn{min-height:32px}
+.lb-fig .ricostruito{max-width:100%}
+.lb-tavola{border:1.5px solid #871919;border-radius:3px;padding:.55em .6em .7em;margin:.6em 0;text-align:center;background:#f4ecda}
+.lb-tav-et{font:600 .6em Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#871919}
+.lb-tav-tit{font-variant:small-caps;font-size:1.05em;margin:.2em 0 .45em}
+.lb-tavola .b{font-size:.75rem}
+.lb-frontespizio{height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:1.1em;font-variant:small-caps;letter-spacing:.08em;color:#22201c}
+.lb-frontespizio .g{font-size:2.2em;color:#871919;line-height:1.1;letter-spacing:.12em}
+.lb-frontespizio .p{font-size:.8em;font-variant:normal;letter-spacing:0;color:#5b554b}
+.lb-pagina.vuota .lb-piede{display:none}
+.lb-misura{position:absolute;left:-20000px;top:0;visibility:hidden}
+.lb-freccia{background:rgba(243,236,219,.12);border:1px solid rgba(243,236,219,.35);color:#f3ecdb;font-size:1.8rem;width:44px;height:64px;border-radius:8px;cursor:pointer;margin:0 6px;flex:none}
+.lb-freccia:hover{background:rgba(243,236,219,.25)}
+@media(max-width:600px){.lb-freccia{position:absolute;bottom:6px;z-index:3;background:rgba(43,39,35,.7);height:48px}.lb-freccia.sx{left:6px}.lb-freccia.dx{right:6px}}
+.lb-foglio{position:absolute;top:0;width:var(--lb-w);height:var(--lb-h);transform-style:preserve-3d;transition:transform .7s cubic-bezier(.35,.1,.25,1);z-index:2}
+.lb-foglio.avanti{left:0;transform-origin:left center}
+.lb-foglio.avanti.doppia{left:var(--lb-w)}
+.lb-foglio.avanti.via{transform:rotateY(-180deg)}
+.lb-foglio.indietro.doppia{left:0;transform-origin:right center}
+.lb-foglio.indietro.doppia.via{transform:rotateY(180deg)}
+.lb-foglio.indietro:not(.doppia){left:0;transform-origin:left center;transform:rotateY(-180deg)}
+.lb-foglio.indietro:not(.doppia).via{transform:none}
+.lb-faccia{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.lb-faccia.retro{transform:rotateY(180deg)}
+.lb-faccia::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,rgba(0,0,0,.18),rgba(0,0,0,0) 30%);opacity:.0;transition:opacity .7s}
+.lb-foglio.via .lb-faccia::after{opacity:1}
+.lb-modale{position:fixed;inset:0;z-index:60;background:var(--carta);overflow:auto}
+.lb-modale-barra{position:sticky;top:0;z-index:3;background:rgba(251,248,242,.97);border-bottom:1px solid var(--linea);padding:.4rem .6rem}
+.lb-modale-corpo{max-width:900px;margin:0 auto;padding:.4rem .8rem 3rem}
+.lb-modale-corpo section.scheda{margin:.8rem 0}
+@media (prefers-reduced-motion: reduce){.lb-foglio{transition:none}}
+.lb-loop{margin:.4em 0 .6em;text-align:center}
+.lb-loop canvas{width:auto;height:auto;max-width:100%;max-height:calc(var(--lb-h)*.38);aspect-ratio:1;display:block;margin:0 auto;cursor:pointer;background:#fbf8f2}
+.lb-loop figcaption{font:.62em Inter,system-ui,sans-serif;color:#6b6458;margin-top:.2em}
+
+.lb-frontespizio img{max-width:86%;max-height:82%;width:auto;height:auto;object-fit:contain;mix-blend-mode:multiply;filter:sepia(.25)}

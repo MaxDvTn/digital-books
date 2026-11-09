@@ -1,0 +1,1523 @@
+[
+ {
+  "tipo": "titolo",
+  "livello": "chapter",
+  "testo": "Giornata Terza",
+  "riga": 1174,
+  "sottotitolo": "Del Moto Locale"
+ },
+ {
+  "tipo": "par",
+  "id": "p001",
+  "testo": "Diamo avvio a una nuovissima scienza intorno a un soggetto antichissimo. Nulla v'è, forse, in natura, di più antico del moto, e su di esso ci sono non pochi volumi, né di piccola mole, scritti dai filosofi; tuttavia tra le sue proprietà ne trova molte che, pur degne di essere conosciute, non sono mai state finora osservate, nonché dimostrate. Se ne rilevano alcune più immediate, come quella, ad esempio, che il moto naturale dei gravi discendenti accelera continuamente; però, secondo quale proporzione tale accelerazione avvenga, non è stato sin qui mostrato: nessuno, che io sappia, infatti, ha dimostrato che un mobile discendente a partire dalla quiete percorre, in tempi eguali, spazi che ritengono tra di loro la medesima proporzione che hanno i numeri impari successivi ab unitate. È stato osservato che i corpi lanciati, ovverossia i proietti, descrivono una linea curva di un qualche tipo; però, che essa sia una parabola, nessuno l'ha mostrato. Che sia così, lo dimostrerò insieme ad altre non poche cose, né meno degne di essere conosciute, e, ciò che ritengo ancor più importante, si apriranno le porte a una vastissima e importantissima scienza, della quale queste nostre ricerche costituiranno gli elementi; altri ingegni più acuti del mio ne penetreranno poi più ascosi recessi.",
+  "note": [],
+  "riga": 1175
+ },
+ {
+  "tipo": "par",
+  "id": "p002",
+  "testo": "Dividiamo in tre parti la trattazione: nella prima parte consideriamo ciò che concerne il moto equabile o uniforme; nella seconda trattiamo del moto naturalmente accelerato; nella terza, del moto violento, ossia dei proietti.",
+  "note": [],
+  "riga": 1179
+ },
+ {
+  "tipo": "titolo",
+  "livello": "section",
+  "testo": "DEL MOTO EQUABILE",
+  "riga": 1182
+ },
+ {
+  "tipo": "par",
+  "id": "p003",
+  "testo": "Circa il moto equabile o uniforme, ci occorre una sola definizione, che formulo così:",
+  "note": [],
+  "riga": 1185
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "definizione",
+  "id": "ME-DEF",
+  "intestazione": "Definizione",
+  "numero": null,
+  "proposizione": null,
+  "testo": "Moto eguale o uniforme intendo quello in cui gli spazi percorsi da un mobile in tempi eguali, comunque presi, risultano tra di loro eguali.",
+  "note": [],
+  "riga": 1187
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "avvertenza",
+  "id": "ME-AVV",
+  "intestazione": "Avvertenza",
+  "numero": null,
+  "proposizione": null,
+  "testo": "Ci è parso opportuno aggiungere alla vecchia definizione (che semplicemente parla di moto equabile, allorché in tempi eguali vengono percorsi spazi eguali) l'espressione comunque presi, cioè per tutti i tempi che siano eguali: infatti, può accadere che in determinati tempi eguali un mobile percorra spazi eguali, mentre spazi, percorsi in frazioni di tempo minori, sebbene eguali, non siano eguali. Dalla precedente definizione dipendono quattro assiomi, cioè:",
+  "note": [],
+  "riga": 1189
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "assioma",
+  "id": "ME-A1",
+  "intestazione": "Assioma 1",
+  "numero": 1,
+  "proposizione": null,
+  "testo": "In uno stesso moto equabile, lo spazio percorso in un tempo più lungo è maggiore dello spazio percorso in un tempo più breve.",
+  "note": [],
+  "riga": 1191
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "assioma",
+  "id": "ME-A2",
+  "intestazione": "Assioma 2",
+  "numero": 2,
+  "proposizione": null,
+  "testo": "In uno stesso moto equabile, il tempo in cui è percorso uno spazio maggiore è più lungo del tempo impiegato a percorrere uno spazio minore.",
+  "note": [],
+  "riga": 1193
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "assioma",
+  "id": "ME-A3",
+  "intestazione": "Assioma 3",
+  "numero": 3,
+  "proposizione": null,
+  "testo": "Lo spazio, percorso in un dato tempo a velocità maggiore, è maggiore di quello percorso, nello stesso tempo, a velocità minore.",
+  "note": [],
+  "riga": 1195
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "assioma",
+  "id": "ME-A4",
+  "intestazione": "Assioma 4",
+  "numero": 4,
+  "proposizione": null,
+  "testo": "La velocità, con cui in un dato tempo viene percorso uno spazio maggiore, è maggiore di quella con cui, nello stesso tempo, viene percorso uno spazio minore.",
+  "note": [],
+  "riga": 1197
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "ME-P1",
+  "intestazione": "Teorema 1. Proposizione 1",
+  "numero": 1,
+  "proposizione": 1,
+  "testo": "Se un mobile, dotato di moto equabile, percorre due spazi con una stessa velocità, i tempi dei moti staranno tra di loro come gli spazi percorsi.",
+  "note": [],
+  "riga": 1199
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "ME-P2",
+  "intestazione": "Teorema 2. Proposizione 2",
+  "numero": 2,
+  "proposizione": 2,
+  "testo": "Se un mobile percorre due spazi in tempi eguali, quegli spazi staranno tra loro come le velocità. E se gli spazi stanno tra loro come le velocità, i tempi saranno eguali.",
+  "note": [],
+  "riga": 1201
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "ME-P3",
+  "intestazione": "Teorema 3. Proposizione 3",
+  "numero": 3,
+  "proposizione": 3,
+  "testo": "Se il medesimo spazio viene percorso con velocità diseguali, i tempi dei moti rispondono contrariamente <span class=\"glossa\">[<i>sono inversamente proporzionali</i>]</span> alle velocità.",
+  "note": [],
+  "riga": 1203
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "ME-P4",
+  "intestazione": "Teorema 4. Proposizione 4",
+  "numero": 4,
+  "proposizione": 4,
+  "testo": "Se due mobili si muovono di moto equabile, ma con diseguale velocità, gli spazi percorsi da essi in tempi diseguali avranno tra di loro una proporzione composta della proporzione tra le velocità e della proporzione tra i tempi.",
+  "note": [],
+  "riga": 1205
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "ME-P5",
+  "intestazione": "Teorema 5. Proposizione 5",
+  "numero": 5,
+  "proposizione": 5,
+  "testo": "Se due mobili si muovono di moto equabile, ma le loro velocità sono diseguali e diseguali gli spazi percorsi, la proporzione tra i tempi risulterà composta della proporzione tra gli spazi e della proporzione tra le velocità permutatamente prese <span class=\"glossa\">[<i>proporzione inversa delle velocità</i>]</span>.",
+  "note": [],
+  "riga": 1207
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "ME-P6",
+  "intestazione": "Teorema 6. Proposizione 6",
+  "numero": 6,
+  "proposizione": 6,
+  "testo": "Se due mobili si muovono di moto equabile, la proporzione tra le loro velocità risulterà composta della proporzione tra gli spazi percorsi e della proporzione tra i tempi permutatamente presi <span class=\"glossa\">[<i>proporzione inversa dei tempi</i>]</span>.",
+  "note": [],
+  "riga": 1209
+ },
+ {
+  "tipo": "battuta",
+  "id": "p004",
+  "voce": "Salv.",
+  "testo": "Questo che abbiamo veduto, è quanto il nostro Autore ha scritto del moto equabile. Passeremo dunque a più sottile e nuova contemplazione intorno al moto naturalmente accelerato, quale è quello che generalmente è esercitato da i mobili gravi descendenti: ed ecco il titolo e l'introduzione.",
+  "note": [],
+  "riga": 1211
+ },
+ {
+  "tipo": "titolo",
+  "livello": "section",
+  "testo": "DEL MOTO NATURALMENTE ACCELERATO",
+  "riga": 1214
+ },
+ {
+  "tipo": "par",
+  "id": "p005",
+  "testo": "Le proprietà del moto equabile sono state considerate nel libro precedente: ora dobbiamo trattare del moto accelerato.",
+  "note": [],
+  "riga": 1217
+ },
+ {
+  "tipo": "par",
+  "id": "p006",
+  "testo": "E in primo luogo conviene investigare e spiegare la definizione che corrisponde esattamente al moto accelerato di cui si serve la natura. Infatti, sebbene sia lecito immaginare arbitrariamente qualche forma di moto e contemplare le proprietà che ne conseguono (così, infatti, coloro che si immaginarono linee spirali o concoidi, originate da certi movimenti, ne hanno lodevolmente dimostrate le proprietà argomentando ex suppositione, anche se di tali movimenti non usi la natura), tuttavia, dal momento che la natura si serve di una certa forma di accelerazione nei gravi discendenti, abbiamo stabilito di studiarne le proprietà, posto che la definizione che daremo del nostro moto accelerato abbia a corrispondere con l'essenza del moto naturalmente accelerato. Questa coincidenza crediamo di averla raggiunta finalmente, dopo lunghe riflessioni; soprattutto per il fatto che le proprietà, da noi successivamente dimostrate <span class=\"glossa\">[dalla nostra definizione]</span>, sembrano esattamente corrispondere e coincidere con ciò che gli esperimenti naturali presentano ai sensi. Infine a studiare il moto naturalmente accelerato siamo stati condotti quasi per mano dall'osservazione della consuetudine e della regola seguite dalla natura medesima in tutte le altre sue opere, nella cui attuazione suole far uso dei mezzi più immediati, più semplici, più facili. Ritengo infatti che non vi sia nessuno, il quale creda che si possa praticare il nuoto o il volo in una maniera più semplice e più facile di quella usata, per istinto naturale, dai pesci e dagli uccelli.",
+  "note": [],
+  "riga": 1219
+ },
+ {
+  "tipo": "par",
+  "id": "p007",
+  "testo": "Quando, dunque, osservo che una pietra, che discende dall'alto a partire dalla quiete, acquista via via nuovi incrementi di velocità, perché non dovrei credere che tali aumenti avvengano secondo la più semplice e più ovvia proporzione? Ora, se consideriamo attentamente la cosa, non troveremo nessun aumento o incremento più semplice di quello che aumenta sempre nel medesimo modo. Il che facilmente intenderemo considerando la stretta connessione tra tempo e moto: come infatti la equabilità e uniformità del moto si definisce e si concepisce sulla base della eguaglianza dei tempi e degli spazi (infatti chiamiamo equabile il moto, allorché in tempi eguali vengono percorsi spazi eguali), così, mediante una medesima suddivisione uniforme del tempo, possiamo concepire che gli incrementi di velocità avvengano con <span class=\"glossa\">[altrettanta]</span> semplicità; <span class=\"glossa\">[lo possiamo]</span> in quanto stabiliamo in astratto che risulti uniformemente e, nel medesimo modo, continuamente accelerato, quel moto che in tempi eguali, comunque presi, acquista eguali aumenti di velocità. Cosicché, considerando un numero qualsiasi di frazioni di tempo eguali a partire dal primo istante in cui il mobile abbandona la quiete e comincia a scendere, il grado di velocità acquistato nella prima e seconda frazione di tempo prese insieme, è doppio rispetto al grado di velocità acquistato dal mobile nella prima frazione; e il grado che si ottiene in tre frazioni di tempo, è triplo; quello acquistato in quattro, quadruplo del medesimo grado del primo tempo: sì che (per maggiore chiarezza), se il mobile continuasse il suo moto secondo il grado o momento di velocità acquistato nella prima frazione di tempo e lo proseguisse uniformemente con tale grado, questo moto sarebbe due volte più lento di quello che <span class=\"glossa\">[il mobile]</span> otterrebbe secondo il grado di velocità acquistato in due frazioni di tempo. E così ci sembra di non discordare affatto dalla retta ragione se ammettiamo che l'intensità della velocità cresca secondo l'estensione del tempo <span class=\"glossa\">[la velocità sia proporzionale al tempo]</span>.",
+  "note": [],
+  "riga": 1221
+ },
+ {
+  "tipo": "par",
+  "id": "p008",
+  "testo": "Possiamo quindi ammettere la seguente definizione del moto di cui tratteremo: Moto equabilmente, ossia uniformemente accelerato, dico quello che, a partire dalla quiete, in tempi eguali acquista eguali momenti di velocità.",
+  "note": [],
+  "riga": 1223
+ },
+ {
+  "tipo": "battuta",
+  "id": "p009",
+  "voce": "Sagr.",
+  "testo": "Io, sì come fuor di ragione mi opporrei a questa o ad altra definizione che da qualsivoglia autore fusse assegnata, essendo tutte arbitrarie, così ben posso senza offesa dubitare se tal definizione, concepita ed ammessa in astratto, si adatti, convenga e si verifichi in quella sorte di moto accelerato che i gravi naturalmente descendenti vanno esercitando. E perché pare che l'Autore ci prometta che tale, quale egli ha definito, sia il moto naturale de i gravi, volentieri mi sentirei rimuover certi scrupoli che mi perturbano la mente, acciò poi con maggior attenzione potessi applicarmi alle proposizioni, e lor dimostrazioni, che si attendono.",
+  "note": [],
+  "riga": 1225
+ },
+ {
+  "tipo": "battuta",
+  "id": "p010",
+  "voce": "Salv.",
+  "testo": "È bene che V. S. ed il Sig. Simplicio vadano proponendo le difficoltà; le quali mi vo immaginando che siano per essere quelle stesse che a me ancora sovvennero, quando primieramente veddi questo trattato, e che o dall'Autor medesimo, ragionandone seco, mi furon sopite, o tal una ancora da me stesso, co 'l pensarvi, rimosse.",
+  "note": [],
+  "riga": 1227
+ },
+ {
+  "tipo": "battuta",
+  "id": "p011",
+  "voce": "Sagr.",
+  "testo": "Mentre io mi vo figurando, un mobile grave descendente partirsi dalla quiete, cioè dalla privazione di ogni velocità, ed entrare nel moto, ed in quello andarsi velocitando secondo la proporzione che cresce 'l tempo dal primo instante del moto, ad avere, v. g., in otto battute di polso acquistato otto gradi di velocità, della quale nella quarta battuta ne aveva guadagnati quattro, nella seconda due, nella prima uno, essendo il tempo subdivisibile in infinito, ne séguita che, diminuendosi sempre con tal ragione l'antecedente velocità, grado alcuno non sia di velocità così piccolo, o vogliamo dir di tardità così grande, nel quale non si sia trovato costituito l'istesso mobile dopo la partita dall'infinita tardità, cioè dalla quiete: tal che, se quel grado di velocità ch'egli ebbe alle quattro battute di tempo, era tale che, mantenendola equabile, arebbe corso due miglia in un'ora, e co 'l grado di velocità ch'ebbe nella seconda battuta arebbe fatto un miglio per ora, convien dire che ne gl'instanti del tempo più e più vicini al primo della sua mossa dalla quiete si trovasse così tardo, che non arebbe (seguitando di muoversi con tal tardità) passato un miglio in un'ora, né in un giorno, né in un anno, né in mille, né passato anco un sol palmo in tempo maggiore; accidente al quale pare che assai mal agevolmente s'accomodi l'immaginazione, mentre che il senso ci mostra, un grave cadente venir subito con gran velocità.",
+  "note": [],
+  "riga": 1229
+ },
+ {
+  "tipo": "battuta",
+  "id": "p012",
+  "voce": "Salv.",
+  "testo": "Questa è una delle difficoltà che a me ancora su 'l principio dette che pensare, ma non molto dopo la rimossi; ed il rimuoverla fu effetto della medesima esperienza che di presente a voi la suscita. Voi dite, parervi che l'esperienza mostri, che a pena partitosi il grave dalla quiete, entri in una molto notabile velocità; ed io dico che questa medesima esperienza ci chiarisce, i primi impeti del cadente, benché gravissimo, esser lentissimi e tardissimi. Posate un grave sopra una materia cedente, lasciandovelo sin che prema quanto egli può con la sua semplice gravità: è manifesto che, alzandolo un braccio o due, lasciandolo poi cadere sopra la medesima materia, farà con la percossa nuova pressione, e maggiore che la fatta prima co 'l solo peso; e l'effetto sarà cagionato dal mobile cadente congiunto con la velocità guadagnata nella caduta, il quale effetto sarà più e più grande, secondo che da maggior altezza verrà la percossa, cioè secondo che la velocità del percuziente sarà maggiore. Quanta dunque sia la velocità d'un grave cadente, lo potremo noi senza errore conietturare dalla qualità e quantità della percossa. Ma ditemi, Signori: quel mazzo che lasciato cadere sopra un palo dall'altezza di quattro braccia lo ficca in terra, v. g., quattro dita, venendo dall'altezza di duo braccia lo caccerà assai manco, e meno dall'altezza di uno, e manco da un palmo; e finalmente, sollevandolo un dito, che farà di più che se, senza percossa, vi fusse posto sopra? certo pochissimo: ed operazione del tutto impercettibile sarebbe, se si elevasse quanto è grosso un foglio. E perché l'effetto della percossa si regola dalla velocità del medesimo percuziente, chi vorrà dubitare che lentissimo sia 'l moto e più che minima la velocità, dove l'operazione sua sia impercettibile? Veggano ora quanta sia la forza della verità, mentre l'istessa esperienza che pareva nel primo aspetto mostrare una cosa, meglio considerata ci assicura del contrario. Ma senza ridursi a tale esperienza (che senza dubbio è concludentissima), mi pare che non sia difficile co 'l semplice discorso penetrare una tal verità. Noi abbiamo un sasso grave, sostenuto nell'aria in quiete; si libera dal sostegno e si pone in libertà, e, come più grave dell'aria, vien descendendo al basso, e non con moto equabile, ma lento nel principio, e continuamente dopo accelerato: ed essendo che la velocità è augumentabile e menomabile in infinito, qual ragione mi persuaderà che tal mobile, partendosi da una tardità infinita (ché tal è la quiete), entri immediatamente in dieci gradi di velocità più che in una di quattro, o in questa prima che in una di due, di uno, di un mezo, di un centesimo? ed in somma in tutte le minori in infinito? Sentite, in grazia. Io non credo che voi fuste renitenti a concedermi che l'acquisto de i gradi di velocità del sasso cadente dallo stato di quiete possa farsi co 'l medesimo ordine che la diminuzione e perdita de i medesimi gradi, mentre da virtù impellente fusse ricacciato in su alla medesima altezza; ma quando ciò sia, non veggo che si possa dubitare che nel diminuirsi la velocità del sasso ascendente, consumandola tutta, possa pervenire allo stato di quiete prima che passar per tutti i gradi di tardità.",
+  "note": [],
+  "riga": 1231
+ },
+ {
+  "tipo": "battuta",
+  "id": "p013",
+  "voce": "Simp.",
+  "testo": "Ma se i gradi di tardità maggiore e maggiore sono infiniti, già mai non si consumeranno tutti; onde tal grave ascendente non si condurrà mai alla quiete, ma infinitamente si moverà, ritardandosi sempre: cosa che non si vede accadere.",
+  "note": [],
+  "riga": 1233
+ },
+ {
+  "tipo": "battuta",
+  "id": "p014",
+  "voce": "Salv.",
+  "testo": "Accaderebbe cotesto, Sig. Simplicio, quando il mobile andasse per qualche tempo trattenendosi in ciaschedun grado; ma egli vi passa solamente, senza dimorarvi oltre a un instante; e perché in ogni tempo quanto, ancor che piccolissimo, sono infiniti instanti, però son bastanti a rispondere a gl'infiniti gradi di velocità diminuita. Che poi tal grave ascendente non persista per verun tempo quanto in alcun medesimo grado di velocità, si fa manifesto così: perché se, assegnato qualche tempo quanto, nel primo instante di tal tempo ed anco nell'ultimo il mobile si trovasse aver il medesimo grado di velocità, potrebbe da questo secondo grado esser parimente sospinto in su per altrettanto spazio, sì come dal primo fu portato al secondo, e per l'istessa ragione passerebbe dal secondo al terzo, e finalmente continuerebbe il suo moto uniforme in infinito.",
+  "note": [],
+  "riga": 1235
+ },
+ {
+  "tipo": "battuta",
+  "id": "p015",
+  "voce": "Sagr.",
+  "testo": "Da questo discorso mi par che si potrebbe cavare una assai congrua ragione della quistione agitata tra i filosofi, qual sia la causa dell'accelerazione del moto naturale de i gravi. Imperò che, mentre io considero, nel grave cacciato in su andarsi continuamente diminuendo quella virtù impressagli dal proiciente; la quale, sin che fu superiore all'altra contraria della gravità, lo sospinse in alto; giunte che siano questa e quella all'equilibrio, resta il mobile di più salire e passa per lo stato della quiete, nel quale l'impeto impresso non è altramente annichilito, ma solo consumatosi quell'eccesso che pur dianzi aveva sopra la gravità del mobile, per lo quale, prevalendogli, lo spingeva in su; continuandosi poi la diminuzione di questo impeto straniero, ed in consequenza cominciando il vantaggio ad esser dalla parte della gravità, comincia altresì la scesa, ma lenta per il contrasto della virtù impressa, buona parte della quale rimane ancora nel mobile; ma perché ella pur va continuamente diminuendosi, venendo sempre con maggior proporzione superata dalla gravità, quindi nasce la continua accelerazione del moto.",
+  "note": [],
+  "riga": 1237
+ },
+ {
+  "tipo": "battuta",
+  "id": "p016",
+  "voce": "Simp.",
+  "testo": "Il pensiero è arguto, ma più sottile che saldo: imperò che, quando pur sia concludente, non sodisfà se non a quei moti naturali a i quali sia preceduto un moto violento, nel quale resti ancora vivace parte della virtù esterna; ma dove non sia tal residuo, ma si parta il mobile da una antiquata quiete, cessa la forza di tutto il discorso.",
+  "note": [],
+  "riga": 1239
+ },
+ {
+  "tipo": "battuta",
+  "id": "p017",
+  "voce": "Sagr.",
+  "testo": "Credo che voi siate in errore, e che questa distinzione di casi, che fate, sia superflua, o, per dir meglio, nulla. Però ditemi, se nel proietto può esser tal volta impressa dal proiciente molta e tal ora poca virtù, sì che possa essere scagliato in alto cento braccia, ed anco venti, o quattro, o uno?",
+  "note": [],
+  "riga": 1241
+ },
+ {
+  "tipo": "battuta",
+  "id": "p018",
+  "voce": "Simp.",
+  "testo": "Non è dubbio che sì.",
+  "note": [],
+  "riga": 1243
+ },
+ {
+  "tipo": "battuta",
+  "id": "p019",
+  "voce": "Sagr.",
+  "testo": "E non meno potrà cotal virtù impressa di così poco superar la resistenza della gravità, che non l'alzi più d'un dito; e finalmente può la virtù del proiciente esser solamente tanta, che pareggi per l'appunto la resistenza della gravità, sì che il mobile sia non cacciato in alto, ma solamente sostenuto. Quando dunque voi reggete in mano una pietra, che altro gli fate voi che l'imprimerli tanta virtù impellente all'in su, quanta è la facoltà della sua gravità, traente in giù? e questa vostra virtù non continuate voi di conservargliela impressa per tutto il tempo che voi la sostenete in mano? si diminuisce ella forse per la lunga dimora che voi la reggete? e questo sostentamento che vieta la scesa al sasso, che importa che sia fatto più dalla vostra mano, che da una tavola, o da una corda dalla quale ei sia sospeso? Certo niente. Concludete pertanto, Sig. Simplicio, che il precedere alla caduta del sasso una quiete lunga o breve o momentanea, non fa differenza alcuna, sì che il sasso non parta sempre affetto da tanta virtù contraria alla sua gravità, quanta appunto bastava a tenerlo in quiete.",
+  "note": [],
+  "riga": 1245
+ },
+ {
+  "tipo": "battuta",
+  "id": "p020",
+  "voce": "Salv.",
+  "testo": "Non mi par tempo opportuno d'entrare al presente nell'investigazione della causa dell'accelerazione del moto naturale, intorno alla quale da varii filosofi varie sentenzie sono state prodotte, riducendola alcuni all'avvicinamento al centro, altri al restar successivamente manco parti del mezo da fendersi, altri a certa estrusione del mezo ambiente, il quale, nel ricongiugnersi a tergo del mobile, lo va premendo e continuatamente scacciando; le quali fantasie, con altre appresso, converrebbe andare esaminando e con poco guadagno risolvendo. Per ora basta al nostro Autore che noi intendiamo che egli ci vuole investigare e dimostrare alcune passioni di un moto accelerato (qualunque si sia la causa della sua accelerazione) talmente, che i momenti della sua velocità vadano accrescendosi, dopo la sua partita dalla quiete, con quella semplicissima proporzione con la quale cresce la continuazion del tempo, che è quanto dire che in tempi eguali si facciano eguali additamenti di velocità; e se s'incontrerà che gli accidenti che poi saranno dimostrati si verifichino nel moto de i gravi naturalmente descendenti ed accelerati, potremo reputare che l'assunta definizione comprenda cotal moto de i gravi, e che vero sia che l'accelerazione loro vadia crescendo secondo che cresce il tempo e la durazione del moto.",
+  "note": [],
+  "riga": 1247
+ },
+ {
+  "tipo": "battuta",
+  "id": "p021",
+  "voce": "Sagr.",
+  "testo": "Per quanto per ora mi si rappresenta all'intelletto, mi pare che con chiarezza forse maggiore si fusse potuto definire, senza variare il concetto: Moto uniformemente accelerato esser quello, nel qual la velocità andasse crescendo secondo che cresce lo spazio che si va passando; sì che, per esempio, il grado di velocità acquistato dal mobile nella scesa di quattro braccia fusse doppio di quello ch'egli ebbe sceso che e' fu lo spazio di due, e questo doppio del conseguito nello spazio del primo braccio. Perché non mi par che sia da dubitare, che quel grave che viene dall'altezza di sei braccia, non abbia e perquota con impeto doppio di quello che ebbe, sceso che fu tre braccia, e triplo di quello che ebbe alle due, e sescuplo dell'auto nello spazio di uno.",
+  "note": [],
+  "riga": 1249
+ },
+ {
+  "tipo": "battuta",
+  "id": "p022",
+  "voce": "Salv.",
+  "testo": "Io mi consolo assai d'aver auto un tanto compagno nell'errore; e più vi dirò che il vostro discorso ha tanto del verisimile e del probabile, che il nostro medesimo Autore non mi negò, quando io glielo proposi, d'esser egli ancora stato per qualche tempo nella medesima fallacia. Ma quello di che io poi sommamente mi maravigliai, fu il vedere scoprir con quattro semplicissime parole, non pur false, ma impossibili, due proposizioni che hanno del verisimile tanto, che avendole io proposte a molti, non ho trovato chi liberamente non me l'ammettesse.",
+  "note": [],
+  "riga": 1251
+ },
+ {
+  "tipo": "battuta",
+  "id": "p023",
+  "voce": "Simp.",
+  "testo": "Veramente io sarei del numero de i conceditori: e che il grave descendente <i>vires acquirat eundo</i>, crescendo la velocità a ragion dello spazio, e che 'l momento dell'istesso percuziente sia doppio venendo da doppia altezza, mi paiono proposizioni da concedersi senza repugnanza o controversia.",
+  "note": [],
+  "riga": 1253
+ },
+ {
+  "tipo": "battuta",
+  "id": "p024",
+  "voce": "Salv.",
+  "testo": "E pur son tanto false e impossibili, quanto che il moto si faccia in un instante: ed eccovene chiarissima dimostrazione. Quando le velocità hanno la medesima proporzione che gli spazii passati o da passarsi, tali spazii vengon passati in tempi eguali; se dunque le velocità con le quali il cadente passò lo spazio di quattro braccia, furon doppie delle velocità con le quali passò le due prime braccia (sì come lo spazio è doppio dello spazio), adunque i tempi di tali passaggi sono eguali: ma passare il medesimo mobile le quattro braccia e le due nell'istesso tempo, non può aver luogo fuor che nel moto instantaneo: ma noi veggiamo che il grave cadente fa suo moto in tempo, ed in minore passa le due braccia che le quattro; adunque è falso che la velocità sua cresca come lo spazio. L'altra proposizione si dimostra falsa con la medesima chiarezza. Imperò che, essendo quello che perquote il medesimo, non può determinarsi la differenza e momento delle percosse se non dalla differenza della velocità: quando dunque il percuziente, venendo da doppia altezza, facesse percossa di doppio momento, bisognerebbe che percotesse con doppia velocità: ma la doppia velocità passa il doppio spazio nell'istesso tempo, e noi veggiamo il tempo della scesa dalla maggior altezza esser più lungo.",
+  "note": [],
+  "riga": 1255
+ },
+ {
+  "tipo": "battuta",
+  "id": "p025",
+  "voce": "Sagr.",
+  "testo": "Troppa evidenza, troppa agevolezza, è questa con la quale manifestate conclusioni ascoste: questa somma facilità le rende di minor pregio che non erano mentre stavano sotto contrario sembiante. Poco penso io che prezzerebbe l'universale notizie acquistate con sì poca fatica, in comparazione di quelle intorno alle quali si fanno lunghe ed inesplicabili altercazioni.",
+  "note": [],
+  "riga": 1257
+ },
+ {
+  "tipo": "battuta",
+  "id": "p026",
+  "voce": "Salv.",
+  "testo": "A quelli i quali con gran brevità e chiarezza mostrano le fallacie di proposizioni state comunemente tenute per vere dall'universale, danno assai comportabile sarebbe il riportarne solamente disprezzo, in luogo di aggradimento; ma bene spiacevole e molesto riesce cert'altro affetto che suol tal volta destarsi in alcuni, che, pretendendo ne i medesimi studii almeno la parità con chiunque si sia, si veggono aver trapassate per vere conclusioni che poi da un altro con breve e facile discorso vengono scoperte e dichiarate false. Io non chiamerò tale affetto invidia, solita a convertirsi poi in odio ed ira contro agli scopritori di tali fallacie, ma lo dirò uno stimolo e una brama di voler più presto mantener gli errori inveterati, che permetter che si ricevano le verità nuovamente scoperte; la qual brama tal volta gl'induce a scrivere in contradizione a quelle verità, pur troppo internamente conosciute anco da loro medesimi, solo per tener bassa nel concetto del numeroso e poco intelligente vulgo l'altrui reputazione. Di simili conclusioni false, ricevute per vere e di agevolissima confutazione, non piccol numero ne ho io sentite dal nostro Academico, di parte delle quali ho anco tenuto registro.",
+  "note": [],
+  "riga": 1259
+ },
+ {
+  "tipo": "battuta",
+  "id": "p027",
+  "voce": "Sagr.",
+  "testo": "E V. S. non dovrà privarcene, ma a suo tempo farcene parte, quando ben anco bisognasse in grazia loro fare una particolar sessione. Per ora, continuando il nostro filo, parmi che sin qui abbiamo fermata la definizione del moto uniformemente accelerato, del quale si tratta ne i discorsi che seguono; ed è:",
+  "note": [],
+  "riga": 1261
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "citato",
+  "id": "p028",
+  "testo": "Moto equabilmente, ossia uniformemente accelerato, diciamo quello che, a partire dalla quiete, in tempi eguali acquista eguali momenti di velocità.",
+  "note": [],
+  "riga": 1264
+ },
+ {
+  "tipo": "battuta",
+  "id": "p029",
+  "voce": "Salv.",
+  "testo": "Fermata cotal definizione, un solo principio domanda e suppone per vero l'Autore, cioè:",
+  "note": [],
+  "riga": 1268
+ },
+ {
+  "tipo": "par",
+  "id": "p030",
+  "testo": "Assumo che i gradi di velocità, acquistati da un medesimo mobile su piani diversamente inclinati, siano eguali allorché sono eguali le elevazioni di quei piani medesimi.",
+  "note": [],
+  "riga": 1270
+ },
+ {
+  "tipo": "par",
+  "id": "p031",
+  "testo": "Chiama la elevazione di un piano inclinato la perpendicolare che dal termine sublime di esso piano casca sopra la linea orizontale prodotta per l'infimo termine di esso piano inclinato;",
+  "note": [],
+  "riga": 1272
+ },
+ {
+  "tipo": "figura",
+  "id": "figura41",
+  "file": "images/figura41.png",
+  "riga": 1276
+ },
+ {
+  "tipo": "par",
+  "id": "p032",
+  "testo": "come, per intelligenza, essendo la linea <i>AB</i> parallela all'orizonte, sopra 'l quale siano inclinati li due piani <i>CA</i>, <i>CD</i>, la perpendicolare <i>CB</i>, cadente sopra l'orizontale <i>BA</i>, chiama l'Autore la elevazione de i piani <i>CA</i>, <i>CD</i>; e suppone che i gradi di velocità del medesimo mobile scendente per li piani inclinati <i>CA</i>, <i>CD</i>, acquistati ne i termini <i>A</i>, <i>D</i>, siano eguali, per esser la loro elevazione l'istessa <i>CB</i>: e tanto anco si deve intendere il grado di velocità che il medesimo cadente dal punto <i>C</i> arebbe nel termine <i>B</i>.",
+  "note": [],
+  "riga": 1279
+ },
+ {
+  "tipo": "battuta",
+  "id": "p033",
+  "voce": "Sagr.",
+  "testo": "Veramente mi par che tal supposto abbia tanto del probabile, che meriti di esser senza controversia conceduto, intendendo sempre che si rimuovano tutti gl'impedimenti accidentarii ed esterni, e che i piani siano ben solidi e tersi ed il mobile di figura perfettissimamente rotonda, sì che ed il piano ed il mobile non abbiano scabrosità. Rimossi tutti i contrasti ed impedimenti, il lume naturale mi detta senza difficoltà, che una palla grave e perfettamente rotonda, scendendo per le linee <i>CA</i>, <i>CD</i>, <i>CB</i>, giugnerebbe ne i termini <i>A</i>, <i>D</i>, <i>B</i> con impeti eguali.",
+  "note": [],
+  "riga": 1281
+ },
+ {
+  "tipo": "battuta",
+  "id": "p034",
+  "voce": "Salv.",
+  "testo": "Voi molto probabilmente discorrete; ma, oltre al verisimile, voglio con una esperienza accrescer tanto la probabilità, che poco gli manchi all'agguagliarsi ad una ben necessaria dimostrazione.",
+  "note": [],
+  "riga": 1283
+ },
+ {
+  "tipo": "figura",
+  "id": "figura42",
+  "file": "images/figura42.png",
+  "riga": 1287
+ },
+ {
+  "tipo": "par",
+  "id": "p035",
+  "testo": "Figuratevi, questo foglio essere una parete eretta all'orizonte, e da un chiodo fitto in essa pendere una palla di piombo d'un'oncia o due, sospesa dal sottil filo <i>AB</i>, lungo due o tre braccia, perpendicolare all'orizonte, e nella parete segnate una linea orizontale <i>DC</i>, segante a squadra il perpendicolo <i>AB</i>, il quale sia lontano dalla parete due dita in circa; trasferendo poi il filo <i>AB</i> con la palla in <i>AC</i>, lasciate essa palla in libertà: la quale primieramente vedrete scendere descrivendo l'arco <i>CBD</i>, e di tanto trapassare il termine <i>B</i>, che, scorrendo per l'arco <i>BD</i>, sormonterà sino quasi alla segnata parallela <i>CD</i>, restando di pervenirvi per piccolissimo intervallo, toltogli il precisamente arrivarvi dall'impedimento dell'aria e del filo; dal che possiamo veracemente concludere, che l'impeto acquistato nel punto <i>B</i> dalla palla, nello scendere per l'arco <i>CB</i>, fu tanto, che bastò a risospingersi per un simile arco <i>BD</i> alla medesima altezza. Fatta e più volte reiterata cotale esperienza, voglio che ficchiamo nella parete, rasente al perpendicolo <i>AB</i>, un chiodo, come in <i>E</i> o vero in <i>F</i>, che sporga in fuori cinque o sei dita, e questo acciò che il filo <i>AC</i>, tornando, come prima, a riportar la palla <i>C</i> per l'arco <i>CB</i>, giunta che ella sia in <i>B</i>, intoppando il filo nel chiodo <i>E</i>, sia costretta a camminare per la circonferenza <i>BG</i>, descritta intorno al centro <i>E</i>; dal che vedremo quello che potrà far quel medesimo impeto che, dianzi, concepito nel medesimo termine <i>B</i>, sospinse l'istesso mobile per l'arco <i>BD</i> all'altezza della orizontale <i>CD</i>. Ora, Signori, voi vedrete con gusto condursi la palla all'orizontale nel punto <i>G</i>, e l'istesso accadere se l'intoppo si mettesse più basso, come in <i>F</i>, dove la palla descriverebbe l'arco <i>BI</i>, terminando sempre la sua salita precisamente nella linea <i>CD</i>; e quando l'intoppo del chiodo fusse tanto basso che l'avanzo del filo sotto di lui non arrivasse all'altezza di <i>CD</i> (il che accaderebbe quando fusse più vicino al punto <i>B</i> che al segamento dell'<i>AB</i> con l'orizontale <i>CD</i>), allora il filo cavalcherebbe il chiodo e se gli avvolgerebbe intorno. Questa esperienza non lascia luogo di dubitare della verità del supposto: imperò che, essendo li due archi <i>CB</i>, <i>DB</i> eguali e similmente posti, l'acquisto di momento fatto per la scesa nell'arco <i>CB</i> è il medesimo che il fatto per la scesa dell'arco <i>DB</i>; ma il momento acquistato in <i>B</i> per l'arco <i>CB</i> è potente a risospingere in su il medesimo mobile per l'arco <i>BD</i>; adunque anco il momento acquistato nella scesa <i>DB</i> è eguale a quello che sospigne l'istesso mobile per il medesimo arco da <i>B</i> in <i>D</i>; sì che, universalmente, ogni momento acquistato per la scesa d'un arco è eguale a quello che può far risalire l'istesso mobile per il medesimo arco: ma i momenti tutti che fanno risalire per tutti gli archi <i>BD</i>, <i>BG</i>, <i>BI</i> sono eguali, poiché son fatti dall'istesso medesimo momento acquistato per la scesa <i>CB</i>, come mostra l'esperienza; adunque tutti i momenti che si acquistano per le scese ne gli archi <i>DB</i>, <i>GB</i>, <i>IB</i> sono eguali.",
+  "note": [],
+  "riga": 1290
+ },
+ {
+  "tipo": "battuta",
+  "id": "p036",
+  "voce": "Sagr.",
+  "testo": "Il discorso mi par concludentissimo, e l'esperienza tanto accomodata per verificare il postulato, che molto ben sia degno d'esser conceduto come se fusse dimostrato.",
+  "note": [],
+  "riga": 1292
+ },
+ {
+  "tipo": "battuta",
+  "id": "p037",
+  "voce": "Salv.",
+  "testo": "Io non voglio, Sig. Sagredo, che noi ci pigliamo più del dovere, e massimamente che di questo assunto ci abbiamo a servire principalmente ne i moti fatti sopra superficie rette, e non sopra curve, nelle quali l'accelerazione procede con gradi molto differenti da quelli con i quali noi pigliamo ch'ella proceda ne' piani retti. Di modo che, se ben l'esperienza addotta ci mostra che la scesa per l'arco <i>CB</i> conferisce al mobile momento tale, che può ricondurlo alla medesima altezza per qualsivoglia arco <i>BD</i>, <i>BG</i>, <i>BI</i>, noi non possiamo con simile evidenza mostrare che l'istesso accadesse quando una perfettissima palla dovesse scendere per piani retti, inclinati secondo le inclinazioni delle corde di questi medesimi archi; anzi è credibile che, formandosi angoli da essi piani retti nel termine <i>B</i>, la palla scesa per l'inclinato secondo la corda <i>CB</i>, trovando intoppo ne i piani ascendenti secondo le corde <i>BD</i>, <i>BG</i>, <i>BI</i>, nell'urtare in essi perderebbe del suo impeto, né potrebbe, salendo, condursi all'altezza della linea <i>CD</i>: ma levato l'intoppo, che progiudica all'esperienza, mi par bene che l'intelletto resti capace, che l'impeto (che in effetto piglia vigore dalla quantità della scesa) sarebbe potente a ricondurre il mobile alla medesima altezza. Prendiamo dunque per ora questo come postulato, la verità assoluta del quale ci verrà poi stabilita dal vedere altre conclusioni, fabbricate sopra tale ipotesi, rispondere e puntualmente confrontarsi con l'esperienza. Supposto dall'Autore questo solo principio, passa alle proposizioni, dimostrativamente concludendole; delle quali la prima è questa:",
+  "note": [],
+  "riga": 1294
+ },
+ {
+  "tipo": "figura",
+  "id": "figura43",
+  "file": "images/figura43.png",
+  "riga": 1298
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P1",
+  "intestazione": "Teorema 1. Proposizione 1",
+  "numero": 1,
+  "proposizione": 1,
+  "testo": "Il tempo in cui uno spazio dato è percorso da un mobile con moto uniformemente accelerato a partire dalla quiete, è eguale al tempo in cui quel medesimo spazio sarebbe percorso dal medesimo mobile mosso di moto equabile, il cui grado di velocità sia sudduplo <span class=\"glossa\">[la metà]</span> del grado di velocità ultimo e massimo <span class=\"glossa\">[raggiunto dal mobile]</span> nel precedente moto uniformemente accelerato.",
+  "note": [],
+  "riga": 1301
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P2",
+  "intestazione": "Teorema 2. Proposizione 2",
+  "numero": 2,
+  "proposizione": 2,
+  "testo": "Se un mobile scende, a partire dalla quiete, con moto uniformemente accelerato, gli spazi percorsi da esso in tempi qualsiasi stanno tra di loro in duplicata proporzione dei tempi <span class=\"glossa\">[in un rapporto pari al rapporto dei tempi moltiplicato per se stesso]</span>, cioè stanno tra di loro come i quadrati dei tempi.",
+  "note": [],
+  "riga": 1303
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "corollario",
+  "id": "MA-P2-C1",
+  "intestazione": "Corollario 1",
+  "numero": 1,
+  "proposizione": null,
+  "testo": "Di qui è manifesto che, se dal primo istante o inizio del moto avremo preso successivamente un numero qualsiasi di tempi eguali, come ad esempio AD, DE, EF, FG, nei quali siano percorsi gli spazi HL, LM, MN, NI, questi spazi staranno tra di loro come i numeri impari ab unitate, cioè come 1, 3, 5, 7: questa è infatti la proporzione tra gli eccessi dei quadrati delle linee che si eccedono egualmente e il cui eccesso è eguale alla minima di esse, o vogliam dire tra i numeri quadrati consecutivi ab unitate. Pertanto, mentre i gradi di velocità aumentano in tempi eguali secondo la serie dei numeri semplici, gli spazi percorsi nei medesimi tempi acquistano incrementi secondo la serie dei numeri impari ab unitate.",
+  "note": [],
+  "riga": 1305
+ },
+ {
+  "tipo": "battuta",
+  "id": "p038",
+  "voce": "Sagr.",
+  "testo": "Sospendete, in grazia, alquanto la lettura, mentre io vo ghiribizando intorno a certo concetto pur ora cascatomi in mente; per la spiegatura del quale, per mia e per vostra più chiara intelligenza, fo un poco di disegno.",
+  "note": [],
+  "riga": 1307
+ },
+ {
+  "tipo": "figura",
+  "id": "figura44",
+  "file": "images/figura44.png",
+  "riga": 1311
+ },
+ {
+  "tipo": "par",
+  "id": "p039",
+  "testo": "Dove mi figuro per la linea <i>AI</i> la continuazione del tempo dopo il primo instante in <i>A</i>; applicando poi in <i>A</i>, secondo qualsivoglia angolo, la retta <i>AF</i>, e congiugnendo i termini <i>I</i>, <i>F</i>, diviso il tempo <i>AI</i> in mezo in <i>C</i>, tiro la <i>CB</i> parallela alla <i>IF</i>; considerando poi la <i>CB</i> come grado massimo della velocità che, cominciando dalla quiete nel primo instante del tempo <i>A</i>, si andò augumentando secondo il crescimento delle parallele alla <i>BC</i>, prodotte nel triangolo <i>ABC</i> (che è il medesimo che crescere secondo che cresce il tempo), ammetto senza controversia, per i discorsi fatti sin qui, che lo spazio passato dal mobile cadente con la velocità accresciuta nel detto modo sarebbe eguale allo spazio che passerebbe il medesimo mobile quando si fusse nel medesimo tempo <i>AC</i> mosso di moto uniforme, il cui grado di velocità fusse eguale all'<i>EC</i>, metà del <i>BC</i>. Passo ora più oltre, e figuratomi, il mobile sceso con moto accelerato trovarsi nell'instante <i>C</i> avere il grado di velocità <i>BC</i>, è manifesto, che se egli continuasse di muoversi con l'istesso grado di velocità <i>BC</i> senza più accelerarsi, passerebbe nel seguente tempo <i>CI</i> spazio doppio di quello che ei passò nell'egual tempo <i>AC</i> col grado di velocità uniforme <i>EC</i>, metà del grado <i>BC</i>; ma perché il mobile scende con velocità accresciuta sempre uniformemente in tutti i tempi eguali, aggiugnerà al grado <i>CB</i> nel seguente tempo <i>CI</i> quei momenti medesimi di velocità crescente secondo le parallele del triangolo <i>BFG</i>, eguale al triangolo <i>ABC</i>: sì che, aggiunto al grado di velocità <i>GI</i> la metà del grado <i>FG</i>, massimo degli acquistati nel moto accelerato e regolati dalle parallele del triangolo <i>BFG</i>, aremo il grado di velocità <i>IN</i>, col quale di moto uniforme si sarebbe mosso nel tempo <i>CI</i>; il qual grado <i>IN</i> essendo triplo del grado <i>EC</i>, convince, lo spazio passato nel secondo tempo <i>CI</i> dovere esser triplo del passato nel primo tempo <i>CA</i>. E se noi intenderemo, esser aggiunta all'<i>AI</i> un'altra ugual parte di tempo <i>IO</i>, ed accresciuto il triangolo sino in <i>APO</i>, è manifesto, che quando si continuasse il moto per tutto 'l tempo <i>IO</i> col grado di velocità <i>IF</i>, acquistato nel moto accelerato nel tempo <i>AI</i>, essendo tal grado <i>IF</i> quadruplo dell'<i>EC</i>, lo spazio passato nel tempo <i>IO</i> sarebbe quadruplo del passato nell'egual primo tempo <i>AC</i>; ma continuando l'accrescimento dell'uniforme accelerazione nel triangolo <i>FPQ</i> simile a quello del triangolo <i>ABC</i>, che ridotto a moto equabile aggiugne il grado eguale all'<i>EC</i>, aggiunto il <i>QR</i> eguale all'<i>EC</i>, aremo tutta la velocità equabile esercitata nel tempo <i>IO</i> quintupla dell'equabile del primo tempo <i>AC</i>, e però lo spazio passato quintuplo del passato nel primo tempo <i>AC</i>. Vedesi dunque anco in questo semplice calcolo, gli spazii passati in tempi uguali dal mobile che, partendosi dalla quiete, va acquistando velocità conforme all'accrescimento del tempo, esser tra di loro come i numeri impari <i>ab unitate</i> 1, 3, 5, e, congiuntamente presi gli spazii passati, il passato nel doppio tempo esser quadruplo del passato nel sudduplo, il passato nel tempo triplo esser nonuplo, ed in somma gli spazii passati essere in duplicata proporzione de i tempi, cioè come i quadrati di essi tempi.",
+  "note": [],
+  "riga": 1314
+ },
+ {
+  "tipo": "battuta",
+  "id": "p040",
+  "voce": "Simp.",
+  "testo": "Io veramente ho preso più gusto in questo semplice e chiaro discorso del Sig. Sagredo, che nella per me più oscura dimostrazione dell'Autore; sì che io resto assai ben capace che il negozio deva succeder così, posta e ricevuta la definizione del moto uniformemente accelerato. Ma se tale sia poi l'accelerazione della quale si serve la natura nel moto de i suoi gravi descendenti, io per ancora ne resto dubbioso; e però, per intelligenza mia e di altri simili a me, parmi che sarebbe stato opportuno in questo luogo arrecar qualche esperienza di quelle che si è detto esservene molte, che in diversi casi s'accordano con le conclusioni dimostrate.",
+  "note": [],
+  "riga": 1316
+ },
+ {
+  "tipo": "battuta",
+  "id": "p041",
+  "voce": "Salv.",
+  "testo": "Voi, da vero scienziato, fate una ben ragionevol domanda; e così si costuma e conviene nelle scienze le quali alle conclusioni naturali applicano le dimostrazioni matematiche, come si vede ne i perspettivi, negli astronomi, ne i mecanici, ne i musici ed altri, li quali con sensate esperienze confermano i principii loro, che sono i fondamenti di tutta la seguente struttura: e però non voglio che ci paia superfluo se con troppa lunghezza aremo discorso sopra questo primo e massimo fondamento, sopra 'l quale s'appoggia l'immensa machina d'infinite conclusioni, delle quali solamente una piccola parte ne abbiamo in questo libro, poste dall'Autore, il quale arà fatto assai ad aprir l'ingresso e la porta stata sin or serrata agl'ingegni specolativi. Circa dunque all'esperienze, non ha tralasciato l'Autor di farne; e per assicurarsi che l'accelerazione de i gravi naturalmente descendenti segua nella proporzione sopradetta, molte volte mi son ritrovato io a farne la prova nel seguente modo, in sua compagnia.",
+  "note": [],
+  "riga": 1318
+ },
+ {
+  "tipo": "par",
+  "id": "p042",
+  "testo": "In un regolo, o vogliàn dir corrente, di legno, lungo circa 12 braccia, e largo per un verso mezo bracio e per l'altro 3 dita, si era in questa minor larghezza incavato un canaletto, poco più largo d'un dito; tiratolo drittissimo, e, per averlo ben pulito e liscio, incollatovi dentro una carta pecora zannata e lustrata al possibile, si faceva in esso scendere una palla di bronzo durissimo, ben rotondata e pulita; costituito che si era il detto regolo pendente, elevando sopra il piano orizontale una delle sue estremità un braccio o due ad arbitrio, si lasciava (come dico) scendere per il detto canale la palla, notando, nel modo che appresso dirò, il tempo che consumava nello scorrerlo tutto, replicando il medesimo atto molte volte per assicurarsi bene della quantità del tempo, nel quale non si trovava mai differenza né anco della decima parte d'una battuta di polso. Fatta e stabilita precisamente tale operazione, facemmo scender la medesima palla solamente per la quarta parte della lunghezza di esso canale; e misurato il tempo della sua scesa, si trovava sempre puntualissimamente esser la metà dell'altro: e facendo poi l'esperienze di altre parti, esaminando ora il tempo di tutta la lunghezza col tempo della metà, o con quello delli duo terzi o de i 3/4, o in conclusione con qualunque altra divisione, per esperienze ben cento volte replicate sempre s'incontrava, gli spazii passati esser tra di loro come i quadrati e i tempi, e questo in tutte le inclinazioni del piano, cioè del canale nel quale si faceva scender la palla; dove osservammo ancora, i tempi delle scese per diverse inclinazioni mantener esquisitamente tra di loro quella proporzione che più a basso troveremo essergli assegnata e dimostrata dall'Autore. Quanto poi alla misura del tempo, si teneva una gran secchia piena d'acqua, attaccata in alto, la quale per un sottil cannellino, saldatogli nel fondo, versava un sottil filo d'acqua, che s'andava ricevendo con un piccol bicchiero per tutto 'l tempo che la palla scendeva nel canale e nelle sue parti: le particelle poi dell'acqua, in tal guisa raccolte, s'andavano di volta in volta con esattissima bilancia pesando, dandoci le differenze e proporzioni de i pesi loro le differenze e proporzioni de i tempi; e questo con tal giustezza, che, come ho detto, tali operazioni, molte e molte volte replicate, già mai non differivano d'un notabil momento.",
+  "note": [],
+  "riga": 1320
+ },
+ {
+  "tipo": "battuta",
+  "id": "p043",
+  "voce": "Simp.",
+  "testo": "Gran sodisfazione arei ricevuta nel trovarmi presente a tali esperienze: ma sendo certo della vostra diligenza nel farle e fedeltà nel referirle, mi quieto, e le ammetto per sicurissime e vere.",
+  "note": [],
+  "riga": 1322
+ },
+ {
+  "tipo": "battuta",
+  "id": "p044",
+  "voce": "Salv.",
+  "testo": "Potremo dunque ripigliar la nostra lettura, e seguitare avanti.",
+  "note": [],
+  "riga": 1324
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "corollario",
+  "id": "MA-P2-C2",
+  "intestazione": "Corollario 2",
+  "numero": 2,
+  "proposizione": null,
+  "testo": "In secondo luogo si ricava che, se si prendono, a partire dall'inizio del moto, due spazi qualsiasi percorsi in tempi qualsiasi, i rispettivi tempi staranno tra di loro come uno dei due spazi sta al medio proporzionale tra i due spazi dati.",
+  "note": [],
+  "riga": 1326
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "scolio",
+  "id": "MA-P2-S",
+  "intestazione": "Scolio",
+  "numero": null,
+  "proposizione": null,
+  "testo": "Ora, quanto si è dimostrato riguardo ai moti verticali, si intenda verificarsi similmente anche nei moti sopra piani comunque inclinati: si è infatti assunto che, in questi ultimi, il grado di accelerazione aumenti sempre secondo la medesima proporzione, ossia secondo l'incremento del tempo, o vogliam dire secondo la prima serie semplice dei numeri.",
+  "note": [],
+  "riga": 1328
+ },
+ {
+  "tipo": "battuta",
+  "id": "p045",
+  "voce": "Salv.",
+  "testo": "Qui vorrei, Sig. Sagredo, che a me ancora fosse permesso, se ben forsi con troppo tedio del Sig. Simplicio, il differir per un poco la presente lettura, fin ch'io possa esplicare quanto dal detto e dimostrato fin ora, e congiuntamente dalla notizia d'alcune conclusioni mecaniche apprese già dal nostro Academico, sovviemmi adesso di poter soggiugnere per maggior confermazione della verità del principio che sopra con probabili discorsi ed esperienze fu da noi esaminato, anzi, quello più importa, per geometricamente concluderlo, dimostrando prima un sol lemma, elementare nella contemplazione de gl'impeti.",
+  "note": [
+   "Il brano in forma di dialogo tra le interlinee, che Galileo voleva inserire in questo punto, è stato scritto dal suo discepolo Vincenzo Viviani (Firenze 1622–1703). <span class=\"glossa\">[<i>Nota per l extquotesingle edizione elettronica Manuzio</i>]</span>"
+  ],
+  "riga": 1330
+ },
+ {
+  "tipo": "battuta",
+  "id": "p046",
+  "voce": "Sagr.",
+  "testo": "Mentre tale deva esser l'acquisto quale V. S. ci promette, non vi è tempo che da me volentierissimo non si spendesse, trattandosi di confermare e interamente stabilire queste scienze del moto: e quanto a me, non solo vi concedo il poter satisfarvi in questo particolare, ma di più pregovi ad appagare quanto prima la curiosità che mi avete in esso svegliata; e credo che il Sig. Simplicio abbia ancora il medesimo sentimento.",
+  "note": [],
+  "riga": 1332
+ },
+ {
+  "tipo": "battuta",
+  "id": "p047",
+  "voce": "Simp.",
+  "testo": "Non posso dire altrimenti.",
+  "note": [],
+  "riga": 1334
+ },
+ {
+  "tipo": "battuta",
+  "id": "p048",
+  "voce": "Salv.",
+  "testo": "Già che dunque me ne date licenza, considerisi in primo luogo, come effetto notissimo, che i momenti o le velocità d'un istesso mobile son diverse sopra diverse inclinazioni di piani, e che la massima è per la linea perpendicolarmente sopra l'orizonte elevata, e che per l'altre inclinate si diminuisce tal velocità, secondo che quelle più dal perpendicolo si discostano, cioè più obliquamente s'inclinano; onde l'impeto, il talento, l'energia, o vogliamo dire il momento, del descendere vien diminuito nel mobile dal piano soggetto, sopra il quale esso mobile s'appoggia e descende.",
+  "note": [],
+  "riga": 1336
+ },
+ {
+  "tipo": "figura",
+  "id": "figura45",
+  "file": "images/figura45.png",
+  "riga": 1340
+ },
+ {
+  "tipo": "par",
+  "id": "p049",
+  "testo": "E per meglio dichiararmi, intendasi la linea <i>AB</i>, perpendicolarmente eretta sopra l'orizonte <i>AC</i>; pongasi poi la medesima in diverse inclinazioni verso l'orizonte piegata, come in <i>AD</i>, <i>AE</i>, <i>AF</i>, etc.: dico, l'impeto massimo e totale del grave per descendere esser per la perpendicolare <i>BA</i>, minor di questo per la <i>DA</i>, e minore ancora per la <i>EA</i>, e successivamente andarsi diminuendo per la più inclinata <i>FA</i>, e finalmente esser del tutto estinto nella orizontale <i>CA</i>, dove il mobile si trova indifferente al moto e alla quiete, e non ha per se stesso inclinazione di muoversi verso alcuna parte, né meno alcuna resistenza all'esser mosso; poiché, sì come è impossibile che un grave o un composto di essi si muova naturalmente all'in su, discostandosi dal comun centro verso dove conspirano tutte le cose gravi, così è impossibile che egli spontaneamente si muova, se con tal moto il suo proprio centro di gravità non acquista avvicinamento al sudetto centro comune: onde sopra l'orizontale, che qui s'intende per una superficie egualmente lontana dal medesimo centro, e perciò affatto priva d'inclinazione, nullo sarà l'impeto o momento di detto mobile.",
+  "note": [],
+  "riga": 1343
+ },
+ {
+  "tipo": "par",
+  "id": "p050",
+  "testo": "Appresa questa mutazione d'impeto, mi fa qui mestier esplicare quello che in un antico trattato di mecaniche, scritto già in Padova dal nostro Academico sol per uso de' suoi discepoli, fu diffusamente e concludentemente dimostrato, in occasione di considerare l'origine e natura del maraviglioso strumento della vita; ed è con qual proporzione si faccia tal mutazione d'impeto per diverse inclinazioni di piani: come, per esempio, del piano inclinato <i>AF</i> tirando la sua elevazione sopra l'orizonte, cioè la linea <i>FC</i>, per la quale l'impeto d'un grave ed il momento del descendere è il massimo, cercasi qual proporzione abbia questo momento al momento dell'istesso mobile per l'inclinata <i>FA</i>; qual proporzione dico esser reciproca delle dette lunghezze: e questo sia il lemma da premettersi al teorema, che dopo io spero di poter dimostrare. Qui è manifesto, tanto essere l'impeto del descendere d'un grave, quanta è la resistenza o forza minima che basta per proibirlo e fermarlo: per tal forza e resistenza, e sua misura, mi voglio servire della gravità d'un altro mobile. Intendasi ora, sopra il piano <i>FA</i> posare il mobile <i>G</i>, legato con un filo che, cavalcando sopra l'<i>F</i>, abbia attaccato un peso <i>H</i>; e consideriamo che lo spazio della scesa o salita a perpendicolo di esso è ben sempre eguale a tutta la salita o scesa dell'altro mobile <i>G</i> per l'inclinata <i>AF</i>, ma non già alla salita o scesa a perpendicolo, nella qual sola esso mobile <i>G</i> (sì come ogn'altro mobile) esercita la sua resistenza. Il che è manifesto. Imperoché considerando, nel triangolo <i>AFC</i> il moto del mobile <i>G</i>, per esempio all'in su da <i>A</i> in <i>F</i>, esser composto del trasversale orizontale <i>AC</i> e del perpendicolare <i>CF</i>; ed essendo che quanto all'orizontale, nessuna, come s'è detto, è la resistenza del medesimo all'esser mosso (non facendo con tal moto perdita alcuna, né meno acquisto, in riguardo della propria distanza dal comun centro delle cose gravi, che nell'orizonte si conserva sempre l'istessa); resta, la resistenza esser solamente rispetto al dover salire la perpendicolare <i>CF</i>. Mentre che dunque il grave <i>G</i>, movendosi da <i>A</i> in <i>F</i>, resiste solo, nel salire, lo spazio perpendicolare <i>CF</i>, ma che l'altro grave <i>H</i> scende a perpendicolo necessariamente quanto tutto lo spazio <i>FA</i>, e che tal proporzione di salita e scesa si mantien sempre l'istessa, poco o molto che sia il moto de i detti mobili (per esser collegati insieme); possiamo assertivamente affermare, che quando debba seguire l'equilibrio, cioè la quiete tra essi mobili, i momenti, le velocità, o le lor propensioni al moto, cioè gli spazii che da loro si passerebbero nel medesimo tempo, devon rispondere reciprocamente alle loro gravità, secondo quello che in tutti i casi de' movimenti mecanici si dimostra: sì che basterà, per impedire la scesa del <i>G</i>, che lo <i>H</i> sia tanto men grave di quello, quanto a proporzione lo spazio <i>CF</i> è minore dello spazio <i>FA</i>. Sia fatto, dunque, come <i>FA</i> ad <i>FC</i>, così il grave <i>G</i> al grave <i>H</i>; ché allora seguirà l'equilibrio, cioè i gravi <i>H</i>, <i>G</i> averanno momenti eguali, e cesserà il moto de i detti mobili. E perché siamo convenuti, che di un mobile tanto sia l'impeto, l'energia, il momento, o la propensione al moto, quanta è la forza o resistenza minima che basta a fermarlo, e s'è concluso che il grave <i>H</i> è bastante a proibire il moto al grave <i>G</i>, adunque il minor peso <i>H</i>, che nella perpendicolare <i>FC</i> esercita il suo momento totale, sarà la precisa misura del momento parziale che il maggior peso <i>G</i> esercita per il piano inclinato <i>FA</i>; ma la misura del total momento del medesimo grave <i>G</i> è egli stesso (poiché per impedire la scesa perpendicolare d'un grave si richiede il contrasto d'altrettanto grave, che pur sia in libertà di muoversi perpendicolarmente); adunque l'impeto o momento parziale del <i>G</i> per l'inclinata <i>FA</i>, all'impeto massimo e totale dell'istesso <i>G</i> per la perpendicolare <i>FC</i>, starà come il peso <i>H</i> al peso <i>G</i>, cioè, per la costruzione, come essa perpendicolare <i>FC</i>, elevazione dell'inclinata, alla medesima inclinata <i>FA</i>: che è quello che per lemma si propose di dimostrare, e che dal nostro Autore, come vedranno, vien supposto per noto nella seconda parte della sesta proposizione del presente trattato.",
+  "note": [],
+  "riga": 1345
+ },
+ {
+  "tipo": "battuta",
+  "id": "p051",
+  "voce": "Sagr.",
+  "testo": "Da questo che V. S. ha concluso fin qui, parmi che facilmente si possa dedurre, argumentando <i>ex æquali</i> con la proporzione perturbata, che i momenti dell'istesso mobile per piani diversamente inclinati, come <i>FA</i>, <i>FI</i>, che abbino l'istessa elevazione, son fra loro in reciproca proporzione de' medesimi piani.",
+  "note": [],
+  "riga": 1347
+ },
+ {
+  "tipo": "battuta",
+  "id": "p052",
+  "voce": "Salv.",
+  "testo": "Verissima conclusione. Fermato questo, passerò adesso a dimostrare il teorema, cioè che:",
+  "note": [],
+  "riga": 1349
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "citato",
+  "id": "p053",
+  "testo": "I gradi di velocità d'un mobile descendente con moto naturale dalla medesima sublimità per piani in qualsivoglia modo inclinati, all'arrivo all'orizonte son sempre eguali, rimossi gl'impedimenti.",
+  "note": [],
+  "riga": 1352
+ },
+ {
+  "tipo": "par",
+  "id": "p054",
+  "testo": "Qui devesi prima avvertire, che stabilito che in qualsivoglino inclinazioni il mobile dalla partita dalla quiete vada crescendo la velocità, o la quantità dell'impeto, con la proporzione del tempo (secondo la definizione data dall'Autore al moto naturalmente accelerato), onde, com'egli ha per l'antecedente proposizione dimostrato, gli spazii passati sono in duplicata proporzione de' tempi, e conseguentemente de' gradi di velocità; quali furono gl'impeti nella prima mossa, tali proporzionalmente saranno i gradi delle velocità guadagnati nell'istesso tempo, poiché e questi e quelli crescono con la medesima proporzione nel medesimo tempo.",
+  "note": [],
+  "riga": 1356
+ },
+ {
+  "tipo": "figura",
+  "id": "figura46",
+  "file": "images/figura46.png",
+  "riga": 1360
+ },
+ {
+  "tipo": "par",
+  "id": "p055",
+  "testo": "Ora sia il piano inclinato <i>AB</i>, la sua elevazione sopra l'orizonte la perpendicolare <i>AC</i>, e l'orizontale <i>CB</i>; e perché, come poco fa si è concluso, l'impeto d'un mobile per la perpendicolare <i>AC</i>, all'impeto del medesimo per l'inclinata <i>AB</i>, sta come <i>AB</i> ad <i>AC</i>, prendasi nell'inclinata <i>AB</i> la <i>AD</i>, terza proporzionale delle <i>AB</i>, <i>AC</i>: l'impeto dunque per <i>AC</i> all'impeto per la <i>AB</i>, cioè per la <i>AD</i>, sta come la <i>AC</i> all'<i>AD</i>; e perciò il mobile nell'istesso tempo che passerebbe lo spazio perpendicolare <i>AC</i>, passerà ancora lo spazio <i>AD</i> nell'inclinata <i>AB</i> (essendo i momenti come gli spazii), ed il grado di velocità in <i>C</i> al grado di velocità in <i>D</i> averà la medesima proporzione della <i>AC</i> alla <i>AD</i>. Ma il grado di velocità in <i>B</i> al medesimo grado in <i>D</i> sta come il tempo per <i>AB</i> al tempo per <i>AD</i>, per la definizione del moto accelerato, ed il tempo per <i>AB</i> al tempo per <i>AD</i> sta come la medesima <i>AC</i>, media tra le <i>BA</i>, <i>AD</i>, alla <i>AD</i>, per l'ultimo corollario della seconda proposizione; adunque i gradi in <i>B</i> ed in <i>C</i> al grado in <i>D</i> hanno la medesima proporzione della <i>AC</i> alla <i>AD</i>, e però sono eguali: che è il teorema che intesi di dimostrare.",
+  "note": [],
+  "riga": 1363
+ },
+ {
+  "tipo": "par",
+  "id": "p056",
+  "testo": "Da questo potremo più concludentemente provare la seguente terza proposizione dell'Autore, nella quale egli si vale del principio; ed è che il tempo per l'inclinata al tempo per la perpendicolare ha l'istessa proporzione di essa inclinata e perpendicolare. Imperoché diciamo: quando <i>BA</i> sia il tempo per <i>AB</i>, il tempo per <i>AD</i> sarà la media tra esse, cioè la <i>AC</i>, per il secondo corollario della seconda proposizione; ma quando <i>AC</i> sia il tempo per <i>AD</i>, sarà anco il tempo per <i>AC</i>, per essere le <i>AD</i>, <i>AC</i> scorse in tempi eguali; e però quando <i>BA</i> sia il tempo per <i>AB</i>, <i>AC</i> sarà il tempo per <i>AC</i>; adunque, come <i>AB</i> ad <i>AC</i>, così il tempo per <i>AB</i> al tempo per <i>AC</i>.",
+  "note": [],
+  "riga": 1365
+ },
+ {
+  "tipo": "par",
+  "id": "p057",
+  "testo": "Col medesimo discorso si proverà, che il tempo per <i>AC</i> al tempo per altra inclinata <i>AE</i> sta come la <i>AC</i> alla <i>AE</i>; adunque, <i>ex æquali</i>, il tempo per l'inclinata <i>AB</i> al tempo dell'inclinata <i>AE</i> sta omologamente come la <i>AB</i> alla <i>AE</i>, etc.",
+  "note": [],
+  "riga": 1367
+ },
+ {
+  "tipo": "par",
+  "id": "p058",
+  "testo": "Potevasi ancora dall'istesso progresso del teorema, come vedrà benissimo il Sig. Sagredo, dimostrar immediatamente la sesta proposizione dell'Autore: ma basti per ora tal digressione, che forsi gli è riuscita troppo tediosa, benché veramente di profitto in queste materie del moto.",
+  "note": [],
+  "riga": 1369
+ },
+ {
+  "tipo": "battuta",
+  "id": "p059",
+  "voce": "Sagr.",
+  "testo": "Anzi di mio grandissimo gusto, e necessarissima alla perfetta intelligenza di quel principio.",
+  "note": [],
+  "riga": 1371
+ },
+ {
+  "tipo": "battuta",
+  "id": "p060",
+  "voce": "Salv.",
+  "testo": "Ripiglierò dunque la lettura del testo.",
+  "note": [],
+  "riga": 1373
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P3",
+  "intestazione": "Teorema 3. Proposizione 3",
+  "numero": 3,
+  "proposizione": 3,
+  "testo": "Se un medesimo mobile si muove, a partire dalla quiete, su un piano inclinato e lungo una perpendicolare, che abbiano eguale altezza, i tempi dei moti staranno tra di loro come le lunghezze <span class=\"glossa\">[<i>rispettivamente</i>]</span> del piano e della perpendicolare.",
+  "note": [],
+  "riga": 1375
+ },
+ {
+  "tipo": "figura",
+  "id": "figura47",
+  "file": "images/figura47.png",
+  "riga": 1379
+ },
+ {
+  "tipo": "battuta",
+  "id": "p061",
+  "voce": "Sagr.",
+  "testo": "Parmi che assai chiaramente e con brevità si poteva concludere il medesimo, essendosi già concluso che la somma del moto accelerato de i passaggi per <i>AC</i>, <i>AB</i> è quanto il moto equabile il cui grado di velocità sia sudduplo al grado massimo <i>CB</i>; essendo dunque passati li due spazii <i>AC</i>, <i>AB</i> con l'istesso moto equabile, già è manifesto, per la proposizione prima del primo, che i tempi de' passaggi saranno come gli spazii medesimi.",
+  "note": [],
+  "riga": 1382
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "corollario",
+  "id": "MA-P3-C",
+  "intestazione": "Corollario",
+  "numero": null,
+  "proposizione": null,
+  "testo": "Di qui si ricava che i tempi impiegati a scendere su piani diversamente inclinati, purché però abbiano la medesima elevazione, stanno tra di loro come le rispettive lunghezze.",
+  "note": [],
+  "riga": 1384
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P4",
+  "intestazione": "Teorema 4. Proposizione 4",
+  "numero": 4,
+  "proposizione": 4,
+  "testo": "I tempi dei moti su piani di eguale lunghezza, ma di diversa inclinazione, stanno tra di loro in sudduplicata proporzione delle elevazioni dei medesimi piani permutatamente prese <span class=\"glossa\">[<i>in un rapporto pari alla radice quadrata del rapporto inverso tra le elevazioni</i>]</span>.",
+  "note": [],
+  "riga": 1386
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P5",
+  "intestazione": "Teorema 5. Proposizione 5",
+  "numero": 5,
+  "proposizione": 5,
+  "testo": "La proporzione tra i tempi delle discese su piani di diversa inclinazione e lunghezza e di elevazione pure diseguale, è composta dalla proporzione tra le rispettive lunghezze e della sudduplicata proporzione delle elevazioni permutatamente prese.",
+  "note": [],
+  "riga": 1388
+ },
+ {
+  "tipo": "figura",
+  "id": "figura48",
+  "file": "images/figura48.png",
+  "riga": 1392
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P6",
+  "intestazione": "Teorema 6. Proposizione 6",
+  "numero": 6,
+  "proposizione": 6,
+  "testo": "Se dal più alto o dal più basso punto di un cerchio eretto sull'orizzonte si conducono piani inclinati qualsiasi fino alla circonferenza, i tempi delle discese lungo tali piani saranno eguali.",
+  "note": [],
+  "riga": 1395
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "corollario",
+  "id": "MA-P6-C1",
+  "intestazione": "Corollario 1",
+  "numero": 1,
+  "proposizione": null,
+  "testo": "Di qui si ricava che i tempi delle discese lungo tutte le corde condotte dagli estremi <i>C</i> o <i>D</i>, sono tra di loro eguali.",
+  "note": [],
+  "riga": 1397
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "corollario",
+  "id": "MA-P6-C2",
+  "intestazione": "Corollario 2",
+  "numero": 2,
+  "proposizione": null,
+  "testo": "Si ricava inoltre che, se da un medesimo punto partono una perpendicolare e un piano inclinato tali, che i tempi di discesa lungo di essi siano eguali, quella perpendicolare e quel piano inclinato risultano <span class=\"glossa\">[inscrivibili]</span> in un semicerchio, il cui diametro è la perpendicolare medesima.",
+  "note": [],
+  "riga": 1399
+ },
+ {
+  "tipo": "figura",
+  "id": "figura49",
+  "file": "images/figura49.png",
+  "riga": 1403
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "corollario",
+  "id": "MA-P6-C3",
+  "intestazione": "Corollario 3",
+  "numero": 3,
+  "proposizione": null,
+  "testo": "Si ricava anche che i tempi dei moti sopra piani inclinati sono eguali allorché le elevazioni di tratti eguali di tali piani staranno tra di esse come le lunghezze dei piani medesimi: si è infatti mostrato, nella penultima figura, che i tempi delle discese per <i>CA</i> e <i>DA</i> sono eguali, quando l'elevazione del tratto <i>AB</i>, eguale ad <i>AD</i>, ossia <i>BE</i>, sta alla elevazione <i>DF</i> come <i>CA</i> sta a <i>DA</i>.",
+  "note": [
+   "In realtà, avendo l extquotesingle edizione U.T.E.T. omesso una dimostrazione, ci si riferisce qui all extquotesingle ultima figura. <span class=\"glossa\">[<i>Nota per l extquotesingle edizione elettronica Manuzio</i>]</span>"
+  ],
+  "riga": 1406
+ },
+ {
+  "tipo": "battuta",
+  "id": "p062",
+  "voce": "Sagr.",
+  "testo": "Sospenda in grazia V. S. per un poco la lettura delle cose che seguono, sin che io mi vo risolvendo sopra certa contemplazione che pur ora mi si rivolge per la mente; la quale, quando non sia una fallacia, non è lontana dall'essere uno scherzo grazioso, quali sono tutti quelli della natura o della necessità.",
+  "note": [],
+  "riga": 1408
+ },
+ {
+  "tipo": "par",
+  "id": "p063",
+  "testo": "È manifesto, che se da un punto segnato in un piano orizontale si faranno produr sopra 'l medesimo piano infinite linee rette per tutti i versi, sopra ciascuna delle quali s'intenda muoversi un punto con moto equabile, cominciandosi a muover tutti nell'istesso momento di tempo dal segnato punto, e che siano le velocità di tutti eguali, si verranno conseguentemente a figurar da essi punti mobili circonferenze di cerchi, tuttavia maggiori e maggiori, concentrici tutti intorno al primo punto segnato; giusto in quella maniera che vediamo farsi dall'ondette dell'acqua stagnante, dopo che da alto vi sia caduto un sassetto, la percossa del quale serve per dar principio di moto verso tutte le parti, e resta come centro di tutti i cerchi che vengon disegnati, successivamente maggiori e maggiori, da esse ondette. Ma se noi intenderemo un piano eretto all'orizonte, ed in esso piano notato un punto sublime, dal quale si portano infinite linee inclinate secondo tutte le inclinazioni, sopra le quali ci figuriamo descender mobili gravi, ciascheduno con moto naturalmente accelerato, con quelle velocità che alle diverse inclinazioni convengono; posto che tali mobili descendenti fusser continuamente visibili, in che sorti di linee gli vedremmo noi continuamente disposti? Qui nasce la mia maraviglia, mentre le precedenti dimostrazioni mi assicurano che si vedranno sempre tutti nell'istessa circonferenza di cerchi successivamente crescenti, secondo che i mobili nello scendere si vanno più e più successivamente allontanando dal punto sublime, dove fu il principio della lor caduta.",
+  "note": [],
+  "riga": 1410
+ },
+ {
+  "tipo": "figura",
+  "id": "figura50",
+  "file": "images/figura50.png",
+  "riga": 1414
+ },
+ {
+  "tipo": "par",
+  "id": "p064",
+  "testo": "E per meglio dichiararmi, segnisi il punto subblime <i>A</i>, dal quale descendano linee secondo qualsivogliano inclinazioni <i>AF</i>, <i>AH</i>, e la perpendicolare <i>AB</i>, nella quale presi i punti <i>C</i>, <i>D</i> descrivansi intorno ad essi cerchi che passino per il punto <i>A</i>, segando le linee inclinate ne i punti <i>F</i>, <i>H</i>, <i>B</i>, <i>E</i>, <i>G</i>, <i>I</i>: è manifesto, per le antecedenti dimostrazioni, che partendosi nell'istesso tempo dal termine <i>A</i> mobili descendenti per esse linee, quando l'uno sarà in <i>E</i>, l'altro sarà in <i>G</i> e l'altro in <i>I</i>; e così, continuando di scendere, si troveranno nell'istesso momento di tempo in <i>F</i>, <i>H</i>, <i>B</i>; e continuando di muoversi questi ed altri infiniti per le infinite diverse inclinazioni, si troveranno sempre successivamente nelle medesime circonferenze, fatte maggiori e maggiori in infinito. Dalle due specie dunque di moti, delle quali la natura si serve, nasce con mirabil corrispondente diversità la generazione di cerchi infiniti: quella si pone, come in sua sede e principio originario, nel centro d'infiniti cerchi concentrici; questa si costituisce nel contatto subblime delle infinite circonferenze di cerchi, tutti tra loro eccentrici: quelli nascono da moti tutti eguali ed equabili; questi, da moti tutti sempre inequabili in se stessi, e diseguali l'uno dall'altro tutti, che sopra le differenti infinite inclinazioni si esercitano. Ma più aggiunghiamo, che se da i due punti assegnati per le emanazioni noi intenderemo eccitarsi linee non per due superficie sole, orizontale ed eretta, ma per tutti i versi, sì come da quelle, cominciandosi da un sol punto, si passava alla produzzione di cerchi, dal minimo al massimo, così, cominciandosi da un sol punto, si verranno producendo infinite sfere, o vogliam dire una sfera che in infinite grandezze si andrà ampliando, e questo in due maniere: cioè, o col por l'origine nel centro, o vero nella circonferenza di tali sfere.",
+  "note": [],
+  "riga": 1417
+ },
+ {
+  "tipo": "battuta",
+  "id": "p065",
+  "voce": "Salv.",
+  "testo": "La contemplazione è veramente bellissima, e proporzionata all'ingegno del Sig. Sagredo.",
+  "note": [],
+  "riga": 1419
+ },
+ {
+  "tipo": "battuta",
+  "id": "p066",
+  "voce": "Simp.",
+  "testo": "Io, restando al meno capace della contemplazione sopra le due maniere del prodursi, con li due diversi moti naturali, i cerchi e le sfere, se bene della produzzione dependente dal moto accelerato e della sua dimostrazione non son del tutto intelligente, tuttavia quel potersi assegnare per luogo di tale emanazione tanto il centro infimo quanto l'altissima sferica superficie, mi fa credere che possa essere che qualche gran misterio si contenga in queste vere ed ammirande conclusioni; misterio, dico, attenente alla creazione dell'universo, il quale si stima essere di forma sferica, ed alla residenza della prima causa.",
+  "note": [],
+  "riga": 1421
+ },
+ {
+  "tipo": "battuta",
+  "id": "p067",
+  "voce": "Salv.",
+  "testo": "Io non ho repugnanza al creder l'istesso. Ma simili profonde contemplazioni si aspettano a più alte dottrine che le nostre: ed a noi deve bastare d'esser quei men degni artefici, che dalle fodine scuoprono e cavano i marmi, ne i quali poi gli scultori industri fanno apparire maravigliose immagini, che sotto roza ed informe scorza stavano ascoste. Or, se così vi piace, seguiremo avanti.",
+  "note": [],
+  "riga": 1423
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P7",
+  "intestazione": "Teorema 7. Proposizione 7",
+  "numero": 7,
+  "proposizione": 7,
+  "testo": "Se le elevazioni di due piani avranno tra di loro una proporzione doppia di quella posseduta dalle lunghezze dei medesimi piani, su di questi i moti a partire dalla quiete si compiranno in tempi eguali.",
+  "note": [],
+  "riga": 1425
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P8",
+  "intestazione": "Teorema 8. Proposizione 8",
+  "numero": 8,
+  "proposizione": 8,
+  "testo": "Tra i piani delimitati da un medesimo cerchio eretto sull'orizzonte, su quelli, che terminano nell'estremo inferiore o superiore del diametro perpendicolare, i tempi delle discese sono eguali al tempo della caduta lungo il diametro; invece sui piani che non raggiungono il diametro, i tempi sono più brevi; infine, sui piani che tagliano il diametro, sono più lunghi.",
+  "note": [],
+  "riga": 1427
+ },
+ {
+  "tipo": "figura",
+  "id": "figura51",
+  "file": "images/figura51.png",
+  "riga": 1431
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P9",
+  "intestazione": "Teorema 9. Proposizione 9",
+  "numero": 9,
+  "proposizione": 9,
+  "testo": "Se a partire da un punto di una linea parallela all'orizzonte si conducono due piani comunque inclinati, e questi sono tagliati da una linea, che formi con essi angoli permutatamente <span class=\"glossa\">[<i>inversamente</i>]</span> eguali agli angoli racchiusi dai medesimi piani e dalla orizzontale, i moti lungo i tratti intersecati dalla suddetta linea si compiranno in tempi eguali.",
+  "note": [],
+  "riga": 1434
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P10",
+  "intestazione": "Teorema 10. Proposizione 10",
+  "numero": 10,
+  "proposizione": 10,
+  "testo": "I tempi dei moti sopra piani di diversa inclinazione ma di elevazione eguale, stanno tra di loro come le lunghezze dei piani medesimi, sia che i moti si svolgano a partire dalla quiete, sia che li preceda un moto <span class=\"glossa\">[<i>iniziato</i>]</span> da una medesima altezza <span class=\"glossa\">[<i>cfr. figura 48</i>]</span>.",
+  "note": [],
+  "riga": 1436
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P11",
+  "intestazione": "Teorema 11. Proposizione 11",
+  "numero": 11,
+  "proposizione": 11,
+  "testo": "Se il piano, sul quale si svolge il moto a partire dalla quiete, viene diviso in un modo qualsiasi, il tempo del moto lungo il primo tratto sta al tempo del moto lungo il tratto successivo, come quel medesimo primo tratto sta all'eccesso che, su di esso, ha la media proporzionale tra l'intero piano e il suo primo tratto.",
+  "note": [],
+  "riga": 1438
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P12",
+  "intestazione": "Teorema 12. Proposizione 12",
+  "numero": 12,
+  "proposizione": 12,
+  "testo": "Se una perpendicolare e un piano comunque inclinato si intersecano tra di loro <span class=\"glossa\">[nello spazio compreso]</span> tra due medesime linee orizzontali, e se si prendono le medie proporzionali tra ciascuno di essi e la rispettiva parte compresa tra il punto comune di intersezione e la linea orizzontale superiore, il tempo del moto lungo la perpendicolare starà al tempo del moto <span class=\"glossa\">[complessivo]</span> lungo la parte superiore della perpendicolare e poi lungo la parte inferiore del piano secante, nella medesima proporzione che l'intera lunghezza della perpendicolare ha alla linea composta della media proporzionale presa sulla perpendicolare, e dell'eccesso dell'intero piano inclinato sulla propria media proporzionale.",
+  "note": [],
+  "riga": 1440,
+  "riga_testo": 1447
+ },
+ {
+  "tipo": "figura",
+  "id": "figura52",
+  "file": "images/figura52.png",
+  "riga": 1444
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "problema",
+  "id": "MA-P13",
+  "intestazione": "Problema 1. Proposizione 13",
+  "numero": 1,
+  "proposizione": 13,
+  "testo": "Data una perpendicolare, condurre ad essa un piano inclinato tale, che, avendo esso elevazione eguale a quella della perpendicolare, il moto su di esso dopo la caduta lungo la perpendicolare si compia in un tempo eguale a quello della caduta lungo la perpendicolare data a partire dalla quiete.",
+  "note": [],
+  "riga": 1449
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "problema",
+  "id": "MA-P14",
+  "intestazione": "Problema 2. Proposizione 14",
+  "numero": 2,
+  "proposizione": 14,
+  "testo": "Data una perpendicolare e dato un piano ad essa inclinato, determinare nella parte superiore della perpendicolare un tratto tale, che il tempo impiegato a percorrerlo a partire dalla quiete risulti eguale al tempo impiegato a percorrere il piano inclinato con moto successivo alla caduta lungo il suddetto tratto di perpendicolare.",
+  "note": [],
+  "riga": 1451
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "problema",
+  "id": "MA-P15",
+  "intestazione": "Problema 3. Proposizione 15",
+  "numero": 3,
+  "proposizione": 15,
+  "testo": "Dati una perpendicolare e un piano ad essa inclinato, determinare sul prolungamento inferiore della perpendicolare un tratto tale, che il tempo impiegato a percorrerlo risulti eguale al tempo impiegato a percorrere il piano inclinato con moto successivo alla caduta lungo la perpendicolare data.",
+  "note": [],
+  "riga": 1453
+ },
+ {
+  "tipo": "figura",
+  "id": "figura53",
+  "file": "images/figura53.png",
+  "riga": 1457
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P16",
+  "intestazione": "Teorema 13. Proposizione 16",
+  "numero": 13,
+  "proposizione": 16,
+  "testo": "Se in un punto convergono i tratti di un piano inclinato e di una perpendicolare, tali che risultino eguali i tempi dei moti lungo di essi a partire dalla quiete, un mobile che cada da una qualsiasi altezza più elevata percorrerà più presto il tratto del piano inclinato che non quello della perpendicolare.",
+  "note": [],
+  "riga": 1460
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "corollario",
+  "id": "MA-P16-C",
+  "intestazione": "Corollario",
+  "numero": null,
+  "proposizione": null,
+  "testo": "Da questa e dalla precedente proposizione si ricava che, dopo una caduta dall'alto, lo spazio, che viene percorso lungo la perpendicolare nel medesimo tempo impiegato a percorrere un dato piano inclinato, è minore dello spazio che viene percorso in tempo eguale a quello impiegato a percorrere il piano inclinato senza una precedente caduta dall'alto; tuttavia è maggiore del piano inclinato stesso.",
+  "note": [],
+  "riga": 1462
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "problema",
+  "id": "MA-P17",
+  "intestazione": "Problema 4. Proposizione 17",
+  "numero": 4,
+  "proposizione": 17,
+  "testo": "Dati una perpendicolare e un piano ad essa inclinato, segnare su questo un tratto tale, che un mobile, dopo essere caduto lungo la perpendicolare data, lo percorra in un tempo eguale a quello impiegato a percorrere la medesima perpendicolare a partire dalla quiete.",
+  "note": [],
+  "riga": 1464
+ },
+ {
+  "tipo": "figura",
+  "id": "figura54",
+  "file": "images/figura54.png",
+  "riga": 1468
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "problema",
+  "id": "MA-P18",
+  "intestazione": "Problema 5. Proposizione 18",
+  "numero": 5,
+  "proposizione": 18,
+  "testo": "Preso sulla perpendicolare, dall'inizio del moto, uno spazio qualsiasi, il quale sia percorso in un dato tempo, e dato un altro tempo minore qualsiasi, determinare, sulla medesima perpendicolare, un altro spazio <span class=\"glossa\">[<i>eguale in lunghezza al precedente</i>]</span>, il quale venga percorso nel tempo minore dato.",
+  "note": [],
+  "riga": 1471
+ },
+ {
+  "tipo": "figura",
+  "id": "figura55",
+  "file": "images/figura55.png",
+  "riga": 1475
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "problema",
+  "id": "MA-P19",
+  "intestazione": "Problema 6. Proposizione 19",
+  "numero": 6,
+  "proposizione": 19,
+  "testo": "Dato su una perpendicolare uno spazio qualsiasi percorso dall'inizio del moto, e dato il tempo della caduta, trovare il tempo in cui il medesimo mobile percorre successivamente un altro spazio eguale, preso in una parte qualsiasi della medesima perpendicolare.",
+  "note": [],
+  "riga": 1478
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "corollario",
+  "id": "MA-P19-C",
+  "intestazione": "Corollario",
+  "numero": null,
+  "proposizione": null,
+  "testo": "Di qui si ricava che, se si pone che il tempo, impiegato a percorrere un qualche spazio a partire dalla quiete, sia eguale allo spazio stesso, il tempo impiegato a percorrerlo, dopo che si sia già percorso un altro spazio, sarà eguale all'eccesso del medio proporzionale tra la somma dello spazio aggiunto più lo spazio dato e il medesimo spazio dato, sul medio proporzionale tra il primo spazio e lo spazio aggiunto: ad esempio, posto che il tempo del moto per <i>AB</i> a partire dalla quiete in <i>A</i> sia <i>AB</i>, qualora si aggiunga lo spazio <i>AS</i>, il tempo del moto per <i>AB</i> dopo il moto per <i>SA</i> sarà eguale all'eccesso del medio proporzionale tra <i>SB</i> e <i>BA</i> sul medio proporzionale tra <i>BA</i> e <i>AS</i>.",
+  "note": [],
+  "riga": 1480,
+  "riga_testo": 1487
+ },
+ {
+  "tipo": "figura",
+  "id": "figura56",
+  "file": "images/figura56.png",
+  "riga": 1484
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "problema",
+  "id": "MA-P20",
+  "intestazione": "Problema 7. Proposizione 20",
+  "numero": 7,
+  "proposizione": 20,
+  "testo": "Dato uno spazio qualsiasi e preso su di esso un tratto a partire dall'inizio del moto, determinare un altro tratto, alla fine <span class=\"glossa\">[del moto]</span>, che sia percorso nello stesso tempo del primo tratto dato.",
+  "note": [],
+  "riga": 1489
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P21",
+  "intestazione": "Teorema 14. Proposizione 21",
+  "numero": 14,
+  "proposizione": 21,
+  "testo": "Se ha luogo una caduta lungo la perpendicolare a partire dalla quiete, e se si prende, dall'inizio del moto, un tratto, percorso in un tempo qualsiasi, cui segua un moto deviato su un piano comunque inclinato, lo spazio che, su tale piano, viene percorso in un tempo eguale a quello della caduta precedentemente svoltasi lungo la perpendicolare, sarà più del doppio, ma meno del triplo, dello spazio già percorso lungo la perpendicolare.",
+  "note": [],
+  "riga": 1491
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "problema",
+  "id": "MA-P22",
+  "intestazione": "Problema 8. Proposizione 22",
+  "numero": 8,
+  "proposizione": 22,
+  "testo": "Dati due tempi diseguali, e dato lo spazio che viene percorso lungo la perpendicolare a partire dalla quiete nel più breve dei due tempi dati, condurre dall'estremo superiore della perpendicolare fino all'orizzonte un piano inclinato, sul quale il mobile scenda in un tempo eguale al più lungo dei tempi dati.",
+  "note": [],
+  "riga": 1493
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "problema",
+  "id": "MA-P23",
+  "intestazione": "Problema 9. Proposizione 23",
+  "numero": 9,
+  "proposizione": 23,
+  "testo": "Preso sulla perpendicolare uno spazio percorso in un tempo qualsiasi a partire dalla quiete, condurre dall'estremo inferiore di questo spazio un piano inclinato, sul quale, dopo la caduta lungo la perpendicolare, venga percorso nel medesimo tempo uno spazio eguale a uno spazio dato qualsiasi, purché superiore al doppio, ma inferiore al triplo, dello spazio percorso lungo la perpendicolare.",
+  "note": [],
+  "riga": 1495,
+  "riga_testo": 1502
+ },
+ {
+  "tipo": "figura",
+  "id": "figura57",
+  "file": "images/figura57.png",
+  "riga": 1499
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "scolio",
+  "id": "MA-P23-S",
+  "intestazione": "Scolio",
+  "numero": null,
+  "proposizione": null,
+  "testo": "Se si considera attentamente, apparirà manifesto che, quanto meno manca alla linea data <i>IR</i> per raggiungere il triplo della <i>AC</i>, tanto maggiormente il piano inclinato, sul quale deve svolgersi il secondo movimento, come ad esempio <i>CO</i>, si avvicina alla perpendicolare, e finalmente, lungo quest'ultima, viene percorso in un tempo eguale ad <i>AC</i> uno spazio che è tre volte <i>AC</i>. Infatti, allorché <i>IR</i> sarà prossima al triplo di <i>AC</i>, <i>IM</i> sarà quasi eguale ad <i>MN</i>; e poiché, per costruzione, come <i>IM</i> sta ad <i>MN</i> così <i>AC</i> sta a <i>CE</i>, ne risulta che la medesima <i>CE</i> si trova ad essere di poco maggiore della <i>CA</i>, e, di conseguenza, il punto <i>E</i> si trova ad essere prossimo al punto <i>A</i>, e <i>CO</i> forma con <i>CS</i> un angolo molto acuto, coincidendo quasi l'una con l'altra. Viceversa, se la linea data <i>IR</i> sarà di pochissimo superiore al doppio della medesima <i>AC</i>, <i>IM</i> sarà una linea brevissima; ne verrà che anche la <i>AC</i> sarà minima rispetto alla <i>CE</i>, la quale sarà lunghissima e quanto più prossima alla parallela orizzontale passante per <i>C</i>. E di qui possiamo ricavare che, se nella figura accanto dopo la discesa sul piano inclinato <i>AC</i> il moto viene riflesso lungo la linea orizzontale, quale sarebbe <i>CT</i>, lo spazio che il mobile successivamente percorrerebbe in un tempo eguale al tempo della discesa per <i>AC</i>, sarebbe esattamente doppio dello spazio <i>AC</i>. Sembra inoltre che qui sia anche adatto un consimile ragionamento: infatti, è chiaro, dal fatto che <i>OE</i> sta ad <i>EF</i> come <i>FE</i> ad <i>EC</i>, che proprio la <i>FC</i> determina il tempo della discesa per <i>CO</i>. Se poi il tratto orizzontale <i>TC</i>, doppio di <i>CA</i>, vien diviso a metà in <i>V</i>, prolungato verso <i>X</i> si estenderà all'infinito prima che possa incontrare il prolungamento di <i>AE</i>, e la proporzione della linea infinita <i>TX</i> all'infinita <i>VX</i> non sarà diversa dalla proporzione dell'infinita <i>VX</i> all'infinita <i>XC</i>.",
+  "note": [],
+  "riga": 1504,
+  "riga_testo": 1511
+ },
+ {
+  "tipo": "figura",
+  "id": "figura58",
+  "file": "images/figura58.png",
+  "riga": 1508
+ },
+ {
+  "tipo": "par",
+  "id": "p068",
+  "testo": "A questa stessa conclusione saremmo potuti giungere seguendo un altro procedimento, rifacendo un ragionamento consimile a quello seguìto nella dimostrazione della proposizione prima.",
+  "note": [],
+  "riga": 1513
+ },
+ {
+  "tipo": "figura",
+  "id": "figura59",
+  "file": "images/figura59.png",
+  "riga": 1517
+ },
+ {
+  "tipo": "par",
+  "id": "p069",
+  "testo": "Riprendiamo, infatti, il triangolo <i>ABC</i>, che sulle parallele alla base <i>BC</i> ci rappresenta i gradi di velocità continuamente aumentati secondo il crescere del tempo, le quali <span class=\"glossa\">[parallele]</span>, essendo infinite, siccome infiniti sono i punti nella linea <i>AC</i> e gli istanti in un tempo qualsiasi, daranno origine alla superficie stessa del triangolo; se intendiamo che il moto continui per altrettanto tempo, ma non più accelerato, bensì equabile, secondo il massimo grado della velocità acquistata, il quale grado è rappresentato dalla linea <i>BC</i>; tali gradi di velocità formeranno un aggregato simile al parallelogramma <i>ADBC</i>, che è doppio del triangolo <i>ABC</i>: perciò lo spazio percorso nel medesimo tempo con gradi di velocità consimili <span class=\"glossa\">[<i>tutti eguali a BC</i>]</span>, sarà doppio dello spazio percorso coi gradi di velocità rappresentati dal triangolo <i>ABC</i>. Ma su un piano orizzontale il moto è equabile, allorché non intervenga nessuna causa di accelerazione o di ritardamento; dunque, si conclude che lo spazio <i>CD</i> percorso in un tempo eguale al tempo <i>AC</i> è doppio dello spazio <i>AC</i>: infatti quest'ultimo viene percorso con moto accelerato a partire dalla quiete, secondo le parallele del triangolo; quello, invece, secondo le parallele del parallelogramma, le quali, quando siano prese nella loro infinità, risultano doppie delle infinite parallele del triangolo.",
+  "note": [],
+  "riga": 1520
+ },
+ {
+  "tipo": "par",
+  "id": "p070",
+  "testo": "Inoltre, è lecito aspettarsi che, qualunque grado di velocità si trovi in un mobile, gli sia per sua natura indelebilmente impresso, purché siano tolte le cause esterne di accelerazione o di ritardamento; il che accade soltanto nel piano orizzontale; infatti nei piani declivi è di già presente una causa di accelerazione, mentre in quelli acclivi <span class=\"glossa\">[è già presente una causa]</span> di ritardamento: da ciò segue parimenti che il moto sul piano orizzontale è anche eterno; infatti, se è equabile, non scema o diminuisce, né tanto meno cessa. E per di più, poiché esiste un grado di velocità acquistato dal mobile nella discesa naturale, e poiché esso è, per sua natura, indelebile ed eterno, bisogna considerare che, se dopo la discesa per un piano declive il moto viene riflesso su un altro piano acclive, su quest'ultimo interviene già una causa di ritardamento: su tale piano, infatti, il medesimo mobile scende naturalmente; perciò ne nasce una certa mescolanza di proprietà contrarie, cioè del grado di velocità che è stato acquistato nella precedente discesa, il quale <span class=\"glossa\">[grado di velocità]</span> di per se stesso porterebbe il mobile a muoversi all'infinito di moto uniforme, e della naturale propensione al moto <i>deorsum</i> secondo quella medesima proporzione di accelerazione con la quale sempre si muove. Perciò, investigando su che cosa accade allorché il mobile, dopo la discesa per un piano declive, viene riflesso su un piano acclive, sembrerà oltremodo ragionevole ammettere che il massimo grado di velocità acquistato nella discesa per sé si conservi sempre lo stesso sul piano ascendente; e che tuttavia nella ascesa gli si aggiunga la naturale inclinazione <i>deorsum</i>, cioè un moto accelerato a partire dalla quiete sempre secondo una proporzione data. Se poi tali cose risulteranno troppo oscure da intendere, si faranno più chiare con l'aiuto di qualche disegno.",
+  "note": [],
+  "riga": 1522
+ },
+ {
+  "tipo": "figura",
+  "id": "figura60",
+  "file": "images/figura60.png",
+  "riga": 1526
+ },
+ {
+  "tipo": "par",
+  "id": "p071",
+  "testo": "Si intenda pertanto che la discesa si sia svolta sul piano declive <i>AB</i>, e che in séguito il moto continui riflesso su un altro piano acclive <i>BC</i>; e, in primo luogo, i piani siano eguali ed elevati sull'orizzonte <i>GH</i> con angoli <span class=\"glossa\">[di inclinazione]</span> eguali: già sappiamo che il mobile, che discende per <i>AB</i> a partire dalla quiete in <i>A</i>, acquista gradi di velocità secondo il crescere del tempo; inoltre <span class=\"glossa\">[sappiamo]</span> che il grado di velocità acquistato in <i>B</i> è il massimo, e per sua natura immutabilmente impresso, rimosse beninteso le cause di nuova accelerazione o di ritardamento: vogliam dire, di accelerazione, se <span class=\"glossa\">[il mobile]</span> procede ancora sul prolungamento del medesimo piano; di ritardamento, allorché viene riflesso sul piano acclive <i>BC</i>: ma sul piano orizzontale <i>GH</i> il moto continuerebbe equabile all'infinito, col grado di velocità acquistato in <i>B</i> nella discesa da <i>A</i>; e la velocità sarebbe tale, che in un tempo eguale al tempo della discesa per <i>AB</i> <span class=\"glossa\">[il mobile]</span> percorrerebbe sull'orizzonte uno spazio doppio del medesimo <i>AB</i>. Immaginiamo ora che il medesimo mobile con il medesimo grado di velocità si muova equabilmente sul piano <i>BC</i>, sì che, anche su questo, in un tempo eguale al tempo della discesa per <i>AB</i>, percorrerebbe sul prolungamento di <i>BC</i> uno spazio doppio del medesimo spazio <i>AB</i>; intendiamo tuttavia che, non appena comincia a salire, per sua medesima natura gli sopravviene ciò stesso che gli accadde <span class=\"glossa\">[nel muoversi]</span> da <i>A</i> sul piano <i>AB</i>, cioè un moto di discesa a partire dalla quiete secondo medesimi gradi di accelerazione, in virtù dei quali, come già accadde sul piano <i>AB</i>, in uno stesso tempo scenderebbe sul piano riflesso per uno spazio eguale a quello percorso in discesa su <i>AB</i>: è manifesto che, per tale mescolanza di moto ascendente equabile e di moto discendente accelerato, il mobile verrà spinto sul piano <i>BC</i> fino all'estremo <i>C</i> secondo i medesimi gradi di velocità, che risulteranno eguali. Presi infatti due punti qualsiasi <i>D</i> ed <i>E</i>, ad eguale distanza dall'angolo <i>B</i>, potremo ricavare che la discesa per <i>DB</i> avverrà in un tempo eguale al tempo del moto riflesso per <i>BE</i>. Tracciata la <i>DF</i>, essa sarà parallela alla <i>BC</i>; è noto infatti che il moto di discesa per <i>AD</i> viene riflesso lungo la <i>DF</i>: ora, se dopo <i>D</i> il mobile si muovesse sull'orizzontale <i>DE</i>, l'impeto in <i>E</i> sarebbe eguale all'impeto in <i>D</i>; dunque, da <i>E</i> salirebbe fino in <i>C</i>; dunque, il grado di velocità in <i>D</i> è eguale al grado <span class=\"glossa\">[di velocità]</span> in <i>E</i>.",
+  "note": [],
+  "riga": 1529
+ },
+ {
+  "tipo": "par",
+  "id": "p072",
+  "testo": "Da ciò, pertanto, possiamo ragionevolmente asserire che, se ha luogo la discesa su un qualche piano inclinato e dopo di essa ha luogo la riflessione su un piano ascendente, il mobile, in virtù dell'impeto acquistato, salirà fino alla medesima altezza o elevazione dall'orizzonte; ad esempio,",
+  "note": [],
+  "riga": 1531
+ },
+ {
+  "tipo": "figura",
+  "id": "figura61",
+  "file": "images/figura61.png",
+  "riga": 1535
+ },
+ {
+  "tipo": "par",
+  "id": "p073",
+  "testo": "se la discesa si svolge lungo <i>AB</i>, il mobile si muoverà sul piano riflesso <i>BC</i> fino all'orizzontale <i>ACD</i>, non soltanto se i piani avranno eguale inclinazione, ma anche se saranno di inclinazione diseguale, come il piano <i>BD</i>: infatti, abbiamo prima assunto che i gradi di velocità, che si acquistano su piani diversamente inclinati, risultano eguali a condizione che sia eguale la elevazione di quegli stessi piani sull'orizzonte. Se infatti l'inclinazione dei piani <i>EB</i> e <i>BD</i> fosse la medesima, la discesa per <i>EB</i> sarebbe in grado di spingere il mobile sul piano <i>BD</i> fino al punto <i>D</i>; ma tale spinta ha luogo in virtù dell'impeto di velocità acquistato nel punto <i>B</i>, e in <i>B</i> l'impeto è lo stesso, sia che il mobile scenda per <i>AB</i>, sia che scenda per <i>EB</i>; ne risulta allora che il mobile sarà spinto sul piano <i>BD</i> dopo la discesa per <i>AB</i> allo stesso modo che dopo la discesa per <i>EB</i>. Accadrà però che il tempo della salita sul piano <i>BD</i> sarà più lungo del tempo della salita sul piano <i>BC</i>, siccome anche la discesa per <i>EB</i> avviene in un tempo più lungo di quella per <i>AB</i>; del resto, abbiamo già dimostrato che la proporzione dei tempi è eguale a quella delle lunghezze dei piani. Ci resta ora da investigare la proporzione tra gli spazi percorsi in tempi eguali su piani, che abbiano diverse inclinazioni, ma eguale elevazione, cioè che siano compresi entro le medesime parallele orizzontali. Ciò avviene secondo la seguente proporzione.",
+  "note": [],
+  "riga": 1538
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P24",
+  "intestazione": "Teorema 15. Proposizione 24",
+  "numero": 15,
+  "proposizione": 24,
+  "testo": "Siano dati, <span class=\"glossa\">[nello spazio compreso]</span> entro le medesime parallele orizzontali, una perpendicolare e un piano inclinato innalzato dall'estremo inferiore di essa: lo spazio, che il mobile dopo la caduta lungo la perpendicolare percorre sul piano ascendente in un tempo eguale al tempo della caduta, è maggiore della stessa perpendicolare, ma minore del doppio di essa.",
+  "note": [],
+  "riga": 1540,
+  "riga_testo": 1547
+ },
+ {
+  "tipo": "figura",
+  "id": "figura62",
+  "file": "images/figura62.png",
+  "riga": 1544
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P25",
+  "intestazione": "Teorema 16. Proposizione 25",
+  "numero": 16,
+  "proposizione": 25,
+  "testo": "Se, dopo la caduta lungo un piano inclinato, il moto prosegue sul piano dell'orizzonte, il tempo della caduta lungo il piano inclinato starà al tempo del moto lungo un qualsiasi tratto dell'orizzonte, come il doppio della lunghezza del piano inclinato sta al tratto orizzontale preso.",
+  "note": [],
+  "riga": 1549,
+  "riga_testo": 1556
+ },
+ {
+  "tipo": "figura",
+  "id": "figura63",
+  "file": "images/figura63.png",
+  "riga": 1553
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "problema",
+  "id": "MA-P26",
+  "intestazione": "Problema 10. Proposizione 26",
+  "numero": 10,
+  "proposizione": 26,
+  "testo": "Data una perpendicolare <span class=\"glossa\">[compresa]</span> tra linee parallele orizzontali, e dato uno spazio maggiore della medesima perpendicolare, ma minore del doppio di essa, dall'estremo inferiore della perpendicolare innalzare, <span class=\"glossa\">[nello spazio compreso]</span> tra quelle medesime parallele, un piano tale che il mobile, se riflesso su questo piano dopo la discesa lungo la perpendicolare, percorra uno spazio eguale a quello dato, e in un tempo eguale al tempo della discesa lungo la perpendicolare.",
+  "note": [],
+  "riga": 1558,
+  "riga_testo": 1565
+ },
+ {
+  "tipo": "figura",
+  "id": "figura64",
+  "file": "images/figura64.png",
+  "riga": 1562
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P27",
+  "intestazione": "Teorema 17. Proposizione 27",
+  "numero": 17,
+  "proposizione": 27,
+  "testo": "Se un mobile scende su piani diseguali, ma aventi la medesima elevazione, lo spazio, che viene percorso nella parte inferiore del piano più lungo in un tempo eguale a quello impiegato a percorrere l'intero piano più breve, è eguale allo spazio composto dello stesso piano più breve e di quel tratto rispetto al quale il medesimo piano più breve ha una proporzione pari a quella che il piano più lungo ha rispetto all'eccesso del più lungo sul più breve.",
+  "note": [],
+  "riga": 1567,
+  "riga_testo": 1574
+ },
+ {
+  "tipo": "figura",
+  "id": "figura65",
+  "file": "images/figura65.png",
+  "riga": 1571
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "problema",
+  "id": "MA-P28",
+  "intestazione": "Problema 11. Proposizione 28",
+  "numero": 11,
+  "proposizione": 28,
+  "testo": "La linea orizzontale <i>AG</i> sia tangente a un cerchio, e dal punto di contatto si conduca il diametro <i>AB</i>; si considerino inoltre due corde qualsiasi <i>AEB</i>: bisogna determinare la proporzione del tempo della caduta lungo <i>AB</i> al tempo della discesa lungo ambedue le corde <i>AEB</i>.",
+  "note": [],
+  "riga": 1576,
+  "riga_testo": 1583
+ },
+ {
+  "tipo": "figura",
+  "id": "figura66",
+  "file": "images/figura66.png",
+  "riga": 1580
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P29",
+  "intestazione": "Teorema 18. Proposizione 29",
+  "numero": 18,
+  "proposizione": 29,
+  "testo": "Sia dato uno spazio orizzontale qualsiasi, e dal suo estremo sia innalzata la perpendicolare, sulla quale si prenda un tratto eguale alla metà dello spazio orizzontale dato; il mobile, che scenda da tale altezza e sia deviato sul piano orizzontale, percorrerà lo spazio orizzontale e la perpendicolare, presi insieme, in più breve tempo di <span class=\"glossa\">[quello che impiegherebbe a percorrere]</span> un qualsiasi altro tratto della perpendicolare insieme al medesimo spazio orizzontale.",
+  "note": [],
+  "riga": 1585
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P30",
+  "intestazione": "Teorema 19. Proposizione 30",
+  "numero": 19,
+  "proposizione": 30,
+  "testo": "Se da un punto di una linea orizzontale scende una perpendicolare e da un altro punto, preso sulla medesima orizzontale, si deve condurre fino alla perpendicolare un piano inclinato, sul quale il mobile impieghi il tempo più breve per scendere fino alla perpendicolare; tale piano sarà quello che stacca dalla perpendicolare un tratto eguale alla distanza che intercorre tra il <span class=\"glossa\">[secondo]</span> punto preso sull'orizzontale e l'estremo della perpendicolare.",
+  "note": [],
+  "riga": 1587
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P31",
+  "intestazione": "Teorema 20. Proposizione 31",
+  "numero": 20,
+  "proposizione": 31,
+  "testo": "Se, tracciata una linea retta comunque inclinata sull'orizzontale, si conduce da un dato punto dell'orizzontale fino alla linea inclinata il piano, sul quale la discesa si svolge nel tempo più breve, tale piano sarà quello che divide a metà l'angolo compreso tra le due perpendicolari che, dal punto dato, vengano condotte, l'una alla linea orizzontale, l'altra alla linea inclinata.",
+  "note": [],
+  "riga": 1589,
+  "riga_testo": 1596
+ },
+ {
+  "tipo": "figura",
+  "id": "figura67",
+  "file": "images/figura67.png",
+  "riga": 1593
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "lemma",
+  "id": "MA-P31-L",
+  "intestazione": "Lemma",
+  "numero": null,
+  "proposizione": null,
+  "testo": "Date due circonferenze tangenti internamente l'una all'altra, se una retta qualsiasi è tangente alla circonferenza interna e interseca la circonferenza esterna, le tre linee condotte dal punto di contatto delle circonferenze ai tre punti della linea retta tangente - cioè al punto di contatto di essa con la circonferenza interna e ai due punti di intersezione di essa con la circonferenza esterna - formeranno angoli eguali <span class=\"glossa\">[aventi per vertice]</span> il punto di contatto delle circonferenze.",
+  "note": [],
+  "riga": 1598,
+  "riga_testo": 1605
+ },
+ {
+  "tipo": "figura",
+  "id": "figura68",
+  "file": "images/figura68.png",
+  "riga": 1602
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P32",
+  "intestazione": "Teorema 21. Proposizione 32",
+  "numero": 21,
+  "proposizione": 32,
+  "testo": "Se sull'orizzontale si prendono due punti e, a partire da uno di essi, si traccia una qualsiasi linea inclinata verso la parte dell'altro punto, e se a partire da quest'ultimo si conduce una linea retta, la quale incontri la predetta inclinata determinando su di essa un tratto eguale alla distanza fra i due punti dati sull'orizzontale, la caduta lungo questa retta si compirà più presto che non lungo qualsiasi altra retta condotta da quel medesimo punto fino a incontrare la medesima inclinata. Prese poi due rette qualsiasi, che formino con la retta data due angoli eguali da una parte e dall'altra, i tempi di caduta lungo di esse saranno eguali tra di loro.",
+  "note": [],
+  "riga": 1607
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "problema",
+  "id": "MA-P33",
+  "intestazione": "Problema 12. Proposizione 33",
+  "numero": 12,
+  "proposizione": 33,
+  "testo": "Dati una perpendicolare e un piano ad essa inclinato, che abbiano la medesima altezza e lo stesso estremo superiore, trovare lungo la perpendicolare, al di sopra dell'estremo in comune, un punto tale, che se da esso si lascia cadere un mobile, il quale venga poi fatto deviare sul piano inclinato, <span class=\"glossa\">[quel mobile]</span> percorra questo piano nello stesso tempo in cui percorrerebbe la perpendicolare a partire dalla quiete.",
+  "note": [],
+  "riga": 1609
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "problema",
+  "id": "MA-P34",
+  "intestazione": "Problema 13. Proposizione 34",
+  "numero": 13,
+  "proposizione": 34,
+  "testo": "Dati un piano inclinato e una perpendicolare, che abbiano il medesimo estremo superiore, trovare sul prolungamento della perpendicolare un punto più alto <span class=\"glossa\">[dell'estremo comune]</span>, tale che un mobile, il quale cada da esso e sia deviato sul piano inclinato, li percorra entrambi in un tempo eguale a quello in cui percorrerebbe il solo piano inclinato <span class=\"glossa\">[se partisse]</span> dalla quiete nell'estremo superiore di questo.",
+  "note": [],
+  "riga": 1611
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "problema",
+  "id": "MA-P35",
+  "intestazione": "Problema 14. Proposizione 35",
+  "numero": 14,
+  "proposizione": 35,
+  "testo": "Data una perpendicolare e data una retta inclinata su di essa, determinare sull'inclinata un tratto, il quale da solo, <span class=\"glossa\">[con movimento]</span> a partire dalla quiete, sia percorso in un tempo eguale a quello impiegato a percorrere la medesima inclinata insieme alla perpendicolare.",
+  "note": [],
+  "riga": 1613
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "teorema",
+  "id": "MA-P36",
+  "intestazione": "Teorema 22. Proposizione 36",
+  "numero": 22,
+  "proposizione": 36,
+  "testo": "Se in un cerchio, eretto sull'orizzonte, dal suo punto più basso si innalza un piano inclinato, il quale sottenda un arco non maggiore di un quadrante, e se dagli estremi di tale piano si conducono due altri piani inclinati a un qualsiasi punto dell'arco, la discesa lungo <span class=\"glossa\">[il sistema di]</span> questi due ultimi piani inclinati si compirà in minor tempo che lungo il solo primo piano inclinato, o che lungo uno soltanto di questi due ultimi piani, e precisamente l'inferiore.",
+  "note": [],
+  "riga": 1615
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "scolio",
+  "id": "MA-P36-S",
+  "intestazione": "Scolio",
+  "numero": null,
+  "proposizione": null,
+  "testo": "Da quanto si è dimostrato sembra si possa ricavare che il movimento più veloce da estremo ad estremo non avviene lungo la linea più breve, cioè la retta, ma lungo un arco di cerchio. Infatti, nel quadrante <i>BAEC</i>, il cui lato <i>BC</i> sia eretto sull'orizzonte, si divida l'arco <i>AC</i> in un numero qualsiasi di parti eguali <i>AD</i>, <i>DE</i>, <i>EF</i>, <i>FG</i>, <i>GC</i>; da <i>C</i> si conducano le corde ai punti <i>A</i>, <i>D</i>, <i>E</i>, <i>F</i>, <i>G</i>, e si traccino pure le corde <i>AD</i>, <i>DE</i>, <i>EF</i>, <i>FG</i>, <i>G</i> <i>C</i>: è manifesto che il movimento lungo <span class=\"glossa\">[il sistema del]</span>le due corde <i>ADC</i> si compie più presto che lungo la sola <i>AC</i>, o lungo <i>DC</i> a partire dalla quiete in <i>D</i>. Ma a partire dalla quiete in <i>A</i>, <i>DC</i> viene percorsa più presto di <i>ADC</i>: ma lungo le due <i>DEC</i> a partire dalla quiete in <i>A</i>, è verisimile che la discesa si compia più presto che non lungo la sola <i>CD</i>: dunque, la discesa lungo le tre corde <i>ADEC</i> si compie più presto che non lungo le due <i>ADC</i>. E similmente, dopo la discesa lungo <i>ADE</i>, il movimento si svolge più presto lungo le due corde <i>EFC</i> che non lungo la sola <i>EC</i>; dunque, lungo le quattro corde <i>ADEFC</i> il movimento si svolge più presto che non lungo le tre <i>ADEC</i>. E infine, lungo le due corde <i>FGC</i>, dopo la discesa lungo <i>ADEF</i>, il movimento si compie più presto che non lungo la sola <i>FC</i>; dunque, lungo le cinque corde <i>ADEFGC</i> la discesa si svolge in un tempo ancora più breve che non lungo le quattro <i>ADEFC</i>. Pertanto, quanto più, con poligoni inscritti <span class=\"glossa\">[<i>poligonali iscritte</i>]</span> ci avviciniamo alla circonferenza, tanto più presto si compie il moto tra i due segnati estremi <i>A</i> e <i>C</i>.",
+  "note": [],
+  "riga": 1617,
+  "riga_testo": 1624
+ },
+ {
+  "tipo": "figura",
+  "id": "figura69",
+  "file": "images/figura69.png",
+  "riga": 1621
+ },
+ {
+  "tipo": "par",
+  "id": "p074",
+  "testo": "Ciò che si è mostrato in un quadrante, accade anche in un arco di circonferenza minore di un quadrante; e identico è il ragionamento.",
+  "note": [],
+  "riga": 1626
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "problema",
+  "id": "MA-P37",
+  "intestazione": "Problema 15. Proposizione 37",
+  "numero": 15,
+  "proposizione": 37,
+  "testo": "Dati una perpendicolare e un piano inclinato, che abbiano la medesima elevazione, trovare sul piano inclinato un tratto, il quale sia eguale alla perpendicolare e venga percorso nello stesso tempo di quest'ultima.",
+  "note": [],
+  "riga": 1628
+ },
+ {
+  "tipo": "enunciato",
+  "genere": "problema",
+  "id": "MA-P38",
+  "intestazione": "Problema 16. Proposizione 38",
+  "numero": 16,
+  "proposizione": 38,
+  "testo": "Dati due piani orizzontali intersecati da una perpendicolare, trovare su questa, in alto, un punto tale, che due mobili, i quali cadano da quel punto e vengano deviati sui piani orizzontali, percorrano su di questi, cioè sul piano orizzontale superiore e su quello inferiore, in tempi eguali a quelli della loro <span class=\"glossa\">[rispettiva]</span> caduta, spazi tali che abbiano tra loro una proporzione eguale a una qualsiasi proporzione data fra una <span class=\"glossa\">[grandezza]</span> minore e una maggiore.",
+  "note": [],
+  "riga": 1630
+ },
+ {
+  "tipo": "battuta",
+  "id": "p075",
+  "voce": "Sagr.",
+  "testo": "Parmi veramente che conceder si possa al nostro Accademico, che egli senza iattanza abbia nel principio di questo suo trattato potuto attribuirsi di arrecarci una nuova scienza intorno a un suggetto antichissimo. Ed il vedere con quanta facilità e chiarezza da un solo semplicissimo principio ei deduca le dimostrazioni di tante proposizioni, mi fa non poco maravigliare come tal materia sia passata intatta da Archimede, Apollonio, Euclide e tanti altri matematici e filosofi illustri, e massime che del moto si trovano scritti volumi grandi e molti.",
+  "note": [],
+  "riga": 1632
+ },
+ {
+  "tipo": "battuta",
+  "id": "p076",
+  "voce": "Salv.",
+  "testo": "Si vede un poco di fragmento d'Euclide intorno al moto, ma non vi si scorge vestigio che egli s'incaminasse all'investigazione della proporzione dell'accelerazione e delle sue diversità sopra le diverse inclinazioni. Tal che veramente si può dire, essersi non prima che ora aperta la porta ad una nuova contemplazione, piena di conclusioni infinite ed ammirande, le quali ne i tempi avenire potranno esercitare altri ingegni.",
+  "note": [],
+  "riga": 1634
+ },
+ {
+  "tipo": "battuta",
+  "id": "p077",
+  "voce": "Sagr.",
+  "testo": "Io veramente credo, che sì come quelle poche passioni (dirò per esempio) del cerchio, dimostrate nel terzo de' suoi Elementi da Euclide, sono l'ingresso ad innumerabili altre più recondite, così le prodotte e dimostrate in questo breve trattato, quando passasse nelle mani di altri ingegni specolativi, sarebbe strada ad altre ed altre più maravigliose; ed è credibile che così seguirebbe, mediante la nobiltà del soggetto sopra tutti gli altri naturali.",
+  "note": [],
+  "riga": 1636
+ },
+ {
+  "tipo": "par",
+  "id": "p078",
+  "testo": "Lunga ed assai laboriosa giornata è stata questa d'oggi, nella quale ho gustato più delle semplici proposizioni che delle loro dimostrazioni, molte delle quali credo che, per ben capirle, mi porteranno via più d'un'ora per ciascheduna: studio che mi riserbo a farlo con quiete, lasciandomi V. S. il libro nelle mani, dopo che avremo veduto questa parte che resta intorno al moto de i proietti; che sarà, se così gli piace, nel seguente giorno.",
+  "note": [],
+  "riga": 1638
+ },
+ {
+  "tipo": "battuta",
+  "id": "p079",
+  "voce": "Salv.",
+  "testo": "Non mancherò d'esser con lei.",
+  "note": [],
+  "riga": 1640
+ },
+ {
+  "tipo": "par",
+  "id": "p080",
+  "testo": "<b>Note:</b>",
+  "note": [],
+  "riga": 1642
+ },
+ {
+  "tipo": "par",
+  "id": "p081",
+  "testo": "(1) Il brano in forma di dialogo tra le interlinee, che Galileo voleva inserire in questo punto, è stato scritto dal suo discepolo Vincenzo Viviani (Firenze 1622-1703). <span class=\"glossa\">[<i>nota per l'edizione elettronica Manuzio</i>]</span>",
+  "note": [],
+  "riga": 1644
+ },
+ {
+  "tipo": "par",
+  "id": "p082",
+  "testo": "(2) In realtà, avendo l'edizione U.T.E.T. omesso una dimostrazione, ci si riferisce qui all'ultima figura. <span class=\"glossa\">[<i>nota per l'edizione elettronica Manuzio</i>]</span>",
+  "note": [],
+  "riga": 1646
+ },
+ {
+  "tipo": "par",
+  "id": "p083",
+  "testo": "<i>Finisce la terza Giornata</i>",
+  "note": [],
+  "riga": 1649
+ }
+]

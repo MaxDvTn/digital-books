@@ -1,0 +1,40 @@
+{
+ "autore": "Galileo Galilei",
+ "titolo": "Sidereus Nuncius",
+ "titolo2": "Avviso Astronomico",
+ "sottotitolo": "che contiene e spiega le grandi e oltremodo mirabili osservazioni fatte con l'aiuto del cannocchiale nella faccia della Luna, in innumerevoli Stelle fisse, nella Via Lattea, nelle Stelle nebulose, ma soprattutto in Quattro Pianeti che ruotano intorno alla stella di Giove: gli <span class=\"sc\">Astri Medicei</span>",
+ "luogo": "In Venezia · MDCX",
+ "facsimile": {
+  "file": "fac/frontespizio_1610.png",
+  "alt": "Il frontespizio dell'edizione del 1610: SIDEREVS NVNCIVS, con il nome di Galileo, la dedica dei Medicea Sidera e un grande fregio inciso.",
+  "didascalia": "Il frontespizio originale, Venezia 1610 (Wikimedia Commons, pubblico dominio)"
+ },
+ "edizione": "Edizione interattiva per la classe",
+ "crediti": [
+  "traduzione di Luisa Lanzillotta (Ricciardi, 1953), dal testo di Liber Liber",
+  "con il latino del 1610 a fronte e le 71 figure dell'edizione originale"
+ ],
+ "tavole": [
+  {
+   "id": "fasi",
+   "titolo": "Le fasi della Luna",
+   "dove": "fig. 1"
+  },
+  {
+   "id": "cannocchiale",
+   "titolo": "Come funziona il cannocchiale",
+   "dove": "fig. 5"
+  },
+  {
+   "id": "luna",
+   "titolo": "Quanto sono alti i monti della Luna?",
+   "dove": "fig. 7"
+  },
+  {
+   "id": "giove",
+   "titolo": "L'osservatorio degli Astri Medicei",
+   "dove": "figg. 8–72"
+  }
+ ],
+ "piede": "Liceo scientifico «Leonardo da Vinci» · Trento — v0.3, novembre 2026<br>Testi CC BY-NC-SA 4.0 · codice MIT · <a href=\"#note\">note all'edizione</a>"
+}

@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Principia interattivi — Libro I</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+/*
+    Copyright 2008-2024
+        Matthias Ehmann,
+        Michael Gerhaeuser,
+        Carsten Miller,
+        Bianca Valentin,
+        Andreas Walter,
+        Alfred Wassermann,
+        Peter Wilfahrt
+
+    This file is part of JSXGraph.
+
+    JSXGraph is free software dual licensed under the GNU LGPL or MIT License.
+
+    You can redistribute it and/or modify it under the terms of the
+
+      * GNU Lesser General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version
+      OR
+      * MIT License: https://github.com/jsxgraph/jsxgraph/blob/master/LICENSE.MIT
+
+    JSXGraph is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License and
+    the MIT License along with JSXGraph. If not, see <https://www.gnu.org/licenses/>
+    and <https://opensource.org/licenses/MIT/>.
+ */
+
+.jxgbox {
+    /* for IE 7 */
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #356aa0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin: 0;
+    -ms-touch-action: none;
+    /* "touch-action: none;" is set with JavaScript. */
+}
+
+.jxgbox svg text {
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.JXGtext {
+    font-family: Courier, monospace;
+    /*
+     * The default font family is now set in
+     * JXG.Options.text.cssdefaultstyle = 'font-family: Arial, Helvetica, Geneva, sans-serif;'
+     */
+
+    /* "background-color: transparent;" may produce artefacts in IE. Solution: setting a color explicitly. */
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.JXGinfobox {
+    border-style: none;
+    border-width: 0;
+    border-color: black;
+}
+
+/* CSS attributes will (permantely) overwrite attributes set in JSXGraph */
+.JXGimage {
+    /* opacity: 1.0; */
+}
+
+.JXGimageHighlight {
+    /* opacity: 0.6; */
+}
+
+.jxgbox :focus {
+    outline-width: 0.5px;
+    outline-style: dotted;
+}
+
+/* CSS rules for the navigation bar */
+
+.JXG_navigation {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+
+    z-index: 100;
+
+    background-color: transparent;
+    padding: 2px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.JXG_navigation_button {
+    color: #666;
+}
+
+.JXG_navigation_button_left {
+}
+
+.JXG_navigation_button_right {
+}
+
+.JXG_navigation_button_up {
+}
+
+.JXG_navigation_button_down {
+}
+
+.JXG_navigation_button_out {
+}
+
+.JXG_navigation_button_100 {
+}
+
+.JXG_navigation_button_in {
+}
+
+.JXG_navigation_button_fullscreen {
+}
+
+.JXG_navigation_button_reload {
+}
+
+.JXG_navigation_button_cleartraces {
+}
+
+.JXG_navigation_button_screenshot {
+}
+
+.JXG_navigation_button:hover {
+    border-radius: 2px;
+    background: rgba(184, 184, 184, 0.5);
+}
+
+.JXG_navigation_button svg {
+    top: 0.2em;
+    position: relative;
+    padding: 0;
+}
+
+/* CSS rules for the wrapping div in fullscreen mode */
+
+.JXG_wrap_private:-moz-full-screen {
+    background-color: #ccc;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.JXG_wrap_private:-webkit-full-screen {
+    background-color: #ccc;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.JXG_wrap_private:fullscreen {
+    background-color: #ccc;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.JXG_wrap_private:-ms-fullscreen {
+    background-color: #ccc;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Classes forn smartlabels */
+
+.smart-label-solid {
+    padding: 1px 7px 1px 7px;
+    margin: 0;
+    color: white;
+    border-radius: 150px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.smart-label-outline {
+    padding: 1px 7px 1px 7px;
+    margin: 0;
+    border: solid 2px black;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.smart-label-pure {
+    padding: 20px 7px 1px 7px;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.smart-label-line,
+.smart-label-point {
+    background-color: #0072b2;
+    border-color: #0072b2;
+}
+
+.smart-label-point {
+    margin-top: 12px;
+}
+
+.smart-label-angle {
+    background-color: #e69f00;
+    border-color: #e69f00;
+    padding: 1px 7px 1px 7px;
+}
+
+.smart-label-polygon,
+.smart-label-circle {
+    background-color: #f0e442;
+    color: black;
+    border-color: #f0e442;
+    padding: 1px 7px 1px 7px;
+}
+
+</style>
+<style>
+:root{
+  --paper:#fbf8f1; --paper2:#f3eee2; --ink:#2b2a26; --muted:#6b665b; --rule:#d9d2c1;
+  --accent:#b5452b; --given:#2f5d8a; --fill1:rgba(201,151,58,.30); --fill2:rgba(47,93,138,.16);
+  --ok:#3d7a3a; --bad:#b5452b;
+  --serif:"EB Garamond", Georgia, "Times New Roman", serif;
+  --sans:Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --hdr:52px;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink)}
+body{font-family:var(--serif);font-size:19px;line-height:1.5;-webkit-text-size-adjust:100%}
+button,select,input{font-family:var(--sans)}
+header.top{position:sticky;top:0;z-index:30;height:var(--hdr);display:flex;align-items:center;gap:12px;
+  padding:0 14px;background:var(--paper);border-bottom:1px solid var(--rule)}
+.brand{font-family:var(--serif);font-weight:600;font-size:19px;white-space:nowrap}
+.brand small{font-weight:400;color:var(--muted);font-style:italic}
+nav.tabs{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+nav.tabs a{font-family:var(--sans);font-size:14px;text-decoration:none;color:var(--ink);padding:9px 12px;border-radius:999px;white-space:nowrap;min-height:40px;display:flex;align-items:center}
+nav.tabs a[aria-current="page"]{background:var(--ink);color:var(--paper)}
+@media (max-width:520px){.brand small{display:none}.brand{font-size:17px}nav.tabs a{padding:9px 9px}}
+@media (max-width:420px){.brand{display:none}nav.tabs{margin-left:0}}
+
+main{max-width:1280px;margin:0 auto}
+.view{display:none}
+.view.active{display:grid;grid-template-columns:minmax(0,1fr);gap:0}
+@media (min-width:768px){
+  .view.active{grid-template-columns:minmax(0,1.1fr) minmax(330px,.9fr);gap:28px;padding:20px 20px 40px}
+}
+.figcol,.textcol{min-width:0}
+.figcol{position:sticky;top:var(--hdr);z-index:10;background:var(--paper);border-bottom:1px solid var(--rule)}
+@media (min-width:768px){.figcol{border:none;align-self:start}}
+.board{width:100%;height:40svh;min-height:240px;touch-action:none;background:#fffdf8}
+@media (min-width:768px){.board{height:auto;aspect-ratio:1/1;max-height:72vh;border:1px solid var(--rule);border-radius:10px}}
+.figbar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:6px 10px;font-family:var(--sans);font-size:13px}
+.modes{display:flex;background:var(--paper2);border-radius:999px;padding:3px}
+.modes button{border:0;background:transparent;padding:8px 12px;border-radius:999px;font-size:13px;min-height:38px;color:var(--ink);cursor:pointer}
+.modes button[aria-pressed="true"]{background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.12);font-weight:600}
+.iconbtn{border:1px solid var(--rule);background:#fff;border-radius:999px;padding:8px 12px;min-height:38px;font-size:13px;cursor:pointer;color:var(--ink)}
+.areas{display:flex;gap:6px;overflow-x:auto;padding:4px 10px 8px;font-family:var(--sans);font-size:12px;scrollbar-width:thin}
+.chip{flex:0 0 auto;border:1px solid var(--rule);border-radius:8px;padding:4px 8px;background:#fff;line-height:1.25}
+.chip b{font-weight:600}
+.chip .bar{height:4px;background:#c9973a;border-radius:2px;margin-top:3px}
+.chip.ok{border-color:var(--ok)} .chip.bad{border-color:var(--bad);color:var(--bad)}
+.controls{display:none;gap:10px;flex-wrap:wrap;align-items:center;padding:4px 10px 8px;font-family:var(--sans);font-size:13px}
+.controls.show{display:flex}
+.controls label{display:flex;align-items:center;gap:6px}
+.controls input[type=range]{width:150px;height:32px}
+.controls select{min-height:36px;font-size:13px}
+.textcol{padding:14px 16px 120px}
+@media (min-width:768px){.textcol{padding:0 0 160px}}
+.kicker{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0}
+h1{font-size:30px;line-height:1.15;margin:.1em 0 .3em;font-weight:600}
+.enunciato{font-style:italic;font-size:20px;margin:0 0 .6em;padding-left:12px;border-left:3px solid var(--accent)}
+.en{display:none;font-family:var(--serif);font-style:italic;color:var(--muted);font-size:16px;margin-top:4px}
+body.show-en .en{display:block}
+.deps{display:flex;flex-wrap:wrap;gap:6px;margin:.3em 0 1em;font-family:var(--sans);font-size:12px}
+.deps a,.deps span{border:1px solid var(--rule);border-radius:999px;padding:4px 10px;text-decoration:none;color:var(--ink);background:#fff}
+.deps span{color:var(--muted);background:transparent}
+.toggle-en{font-family:var(--sans);font-size:13px;display:flex;gap:8px;align-items:center;margin:.4em 0 1em;min-height:36px}
+ol.steps{list-style:none;padding:0;margin:0;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding:10px 12px 10px 40px;border-radius:10px;cursor:pointer;margin-bottom:4px;transition:background .2s,opacity .2s;opacity:.55}
+ol.steps li::before{content:counter(s);position:absolute;left:10px;top:12px;width:22px;height:22px;border-radius:50%;border:1px solid var(--rule);font:600 12px/22px var(--sans);text-align:center;color:var(--muted)}
+ol.steps li.done{opacity:.8}
+ol.steps li.active{opacity:1;background:#fff;box-shadow:0 0 0 1px var(--rule)}
+ol.steps li.active::before{background:var(--accent);border-color:var(--accent);color:#fff}
+.qed{font-variant:small-caps;letter-spacing:.04em}
+details.panel{border-top:1px solid var(--rule);padding:10px 0}
+details.panel summary{font-family:var(--sans);font-size:14px;font-weight:600;cursor:pointer;min-height:36px;display:flex;align-items:center;list-style:none}
+details.panel summary::-webkit-details-marker{display:none}
+details.panel summary::before{content:"▸";margin-right:8px;transition:transform .2s}
+details.panel[open] summary::before{transform:rotate(90deg)}
+details.panel p,details.panel li{font-size:18px}
+.q{margin:.6em 0}
+.q details summary{font-family:var(--sans);font-size:13px;color:var(--given);cursor:pointer;min-height:32px;display:flex;align-items:center}
+.fac img{max-width:100%;height:auto;background:#fff;border:1px solid var(--rule);border-radius:6px;mix-blend-mode:multiply}
+.note{font-size:16px;color:var(--muted)}
+.stepbar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;align-items:center;gap:10px;
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(251,248,241,.96);border-top:1px solid var(--rule);backdrop-filter:blur(6px)}
+.stepbar button{flex:0 0 auto;width:56px;height:48px;border-radius:14px;border:1px solid var(--rule);background:#fff;font-size:22px;cursor:pointer;color:var(--ink)}
+.stepbar button:disabled{opacity:.35}
+.stepbar .lbl{flex:1;text-align:center;font-family:var(--sans);font-size:13px;color:var(--muted)}
+.stepbar .lbl b{color:var(--ink)}
+@media (min-width:768px){.stepbar{left:auto;right:24px;bottom:20px;border:1px solid var(--rule);border-radius:16px;width:340px}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.warn{color:var(--bad);font-weight:600}
+.lawcard{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:10px 14px;margin:0 0 10px}
+.lawcard h3{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 4px;color:var(--muted)}
+.lawcard p{margin:0;font-style:italic}
+footer{font-family:var(--sans);font-size:12px;color:var(--muted);padding:20px 16px 110px;max-width:1280px;margin:0 auto}
+.JXGtext{font-family:var(--serif)!important}
+</style>
+<script>
+window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'},options:{enableMenu:false}};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraphcore.js"></script>
+</head>
+<body>
+<header class="top">
+  <div class="brand">Principia <small>· Libro I, edizione interattiva</small></div>
+  <nav class="tabs" aria-label="Sezioni">
+    <a href="#leggi" data-view="leggi">Leggi</a>
+    <a href="#lemma-1" data-view="lemma-1">Lemma I</a>
+    <a href="#prop-1" data-view="prop-1">Prop. I</a>
+    <a href="#prop-11" data-view="prop-11">Prop. XI</a>
+  </nav>
+</header>
+
+<main>
+<!-- ============ LEGGI ============ -->
+<section class="view" id="v-leggi" data-view="leggi">
+  <div class="figcol">
+    <div class="board" id="b-leggi" role="img" aria-label=""></div>
+    <div class="controls show" id="c-leggi">
+      <label>tempo <input type="range" id="leggi-t" min="0" max="1" step="0.01" value="0.6"></label>
+      <button class="iconbtn" id="leggi-play">▶ Anima</button>
+    </div>
+  </div>
+  <div class="textcol">
+    <p class="kicker">Assiomi, ovvero leggi del moto</p>
+    <h1>Le tre leggi e il Corollario I</h1>
+    <label class="toggle-en"><input type="checkbox" class="en-toggle"> Mostra il testo inglese di Motte (1846)</label>
+    <div class="lawcard"><h3>Legge I</h3><p>Ogni corpo persevera nel proprio stato di quiete o di moto uniforme in linea retta, se non in quanto è costretto a mutare quello stato da forze impresse.</p>
+      <div class="en">Every body perseveres in its state of rest, or of uniform motion in a right line, unless it is compelled to change that state by forces impressed thereon.</div></div>
+    <div class="lawcard"><h3>Legge II</h3><p>Il cambiamento della quantità di moto è proporzionale alla forza motrice impressa e avviene lungo la linea retta secondo la quale quella forza è impressa.</p>
+      <div class="en">The alteration of motion is ever proportional to the motive force impressed; and is made in the direction of the right line in which that force is impressed.</div></div>
+    <div class="lawcard"><h3>Legge III</h3><p>All'azione è sempre contraria e uguale la reazione: ossia le azioni di due corpi l'uno sull'altro sono sempre uguali e dirette verso parti contrarie.</p>
+      <div class="en">To every action there is always opposed an equal reaction: or the mutual actions of two bodies upon each other are always equal, and directed to contrary parts.</div></div>
+
+    <p class="kicker" style="margin-top:1.2em">Corollario I</p>
+    <p class="enunciato">Un corpo, per effetto di forze congiunte, descrive la diagonale di un parallelogramma nello stesso tempo in cui, per effetto delle forze separate, ne descriverebbe i lati.</p>
+    <div class="en">A body by two forces conjoined will describe the diagonal of a parallelogram, in the same time that it would describe the sides, by those forces apart.</div>
+    <div class="deps"><a href="#leggi">Legge I</a><a href="#leggi">Legge II</a></div>
+    <ol class="steps" data-for="leggi"></ol>
+    <details class="panel"><summary>Lettura moderna</summary>
+      <p>Le due forze agiscono indipendentemente: gli spostamenti si sommano come vettori, \(\vec{AD}=\vec{AB}+\vec{AC}\). Se si scompone il moto secondo le due direzioni AB e AC, la seconda legge garantisce che la forza N, parallela ad AC, non alteri la componente del moto parallela ad AB (e viceversa). Attenzione: si tratta delle componenti in questa scomposizione obliqua, non delle proiezioni perpendicolari.</p>
+    </details>
+    <details class="panel"><summary>Per la classe</summary>
+      <div class="q"><p>1. Trascina B in modo che AB e AC siano perpendicolari. Che figura diventa ABDC, e che cosa diventa la diagonale?</p>
+        <details><summary>Risposta</summary><p>Un rettangolo: la diagonale è l'ipotenusa, e il suo modulo si ottiene con il teorema di Pitagora.</p></details></div>
+      <div class="q"><p>2. Durante l'animazione, perché il corpo che subisce entrambe le forze arriva alla retta BD nello stesso istante del corpo spinto solo da M?</p>
+        <details><summary>Risposta</summary><p>Perché N agisce parallelamente a BD: non cambia la rapidità con cui il corpo si avvicina a BD (Legge II).</p></details></div>
+    </details>
+    <details class="panel fac"><summary>Figura originale (ed. 1846)</summary><img alt="Figura originale del Corollario I: parallelogramma ABDC con la diagonale AD" src="data:image/jpeg;base64,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"></details>
+    <details class="panel"><summary>Note di traduzione</summary>
+      <p class="note">«Right line» è reso con «retta» o «linea retta». «Motion» (lat. <i>motus</i>) è la quantità di moto, definita nella Def. II: per questo «alteration of motion» è «cambiamento della quantità di moto», non «di velocità», come nella traduzione della Def. VIII.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ============ LEMMA I ============ -->
+<section class="view" id="v-lemma-1" data-view="lemma-1">
+  <div class="figcol">
+    <div class="board" id="b-lemma-1" role="img" aria-label=""></div>
+    <div class="controls show" id="c-lemma-1">
+      <label>differenza data D <input type="range" id="lemma-D" min="0.05" max="1.5" step="0.01" value="0.6"></label>
+      <span id="lemma-Dv" style="font-variant-numeric:tabular-nums">0.60</span>
+    </div>
+  </div>
+  <div class="textcol">
+    <p class="kicker">Libro I · Sezione I · Il metodo dei rapporti primi e ultimi</p>
+    <h1>Lemma I</h1>
+    <p class="enunciato">Le quantità, e i rapporti tra quantità, che in un qualunque tempo finito tendono senza interruzione all'uguaglianza, e prima della fine di quel tempo si avvicinano l'una all'altra più di qualsiasi differenza data, diventano alla fine uguali.</p>
+    <div class="en">Quantities, and the ratios of quantities, which in any finite time converge continually to equality, and before the end of that time approach nearer the one to the other than by any given difference, become ultimately equal.</div>
+    <label class="toggle-en"><input type="checkbox" class="en-toggle"> Mostra il testo inglese di Motte (1846)</label>
+    <ol class="steps" data-for="lemma-1"></ol>
+    <details class="panel"><summary>Lettura moderna</summary>
+      <p>È la nozione di limite. Se \(d(t)=|Q_1(t)-Q_2(t)|\) e per ogni \(D>0\) esiste un istante \(t_D<T\) tale che \(d(t)<D\) per \(t_D<t<T\), allora \(\lim_{t\to T} d(t)=0\).</p>
+      <p>Newton dà per scontato che una «differenza ultima» esista: la dimostrazione per assurdo mostra solo che, se esiste, non può essere diversa da zero. Il linguaggio moderno degli \(\varepsilon\) e \(\delta\) arriverà con Cauchy e Weierstrass.</p>
+    </details>
+    <details class="panel"><summary>Per la classe</summary>
+      <div class="q"><p>1. Scegli D molto piccolo con il cursore. Esiste ancora un istante dopo il quale le due quantità differiscono meno di D?</p>
+        <details><summary>Risposta</summary><p>Sì: per qualunque D positivo c'è un istante \(t_D\) prima della fine. Più D è piccolo, più \(t_D\) si avvicina alla fine del tempo.</p></details></div>
+      <div class="q"><p>2. Perché la dimostrazione comincia con «Se lo neghi»? Che tipo di ragionamento è?</p>
+        <details><summary>Risposta</summary><p>È una dimostrazione per assurdo: si suppone falsa la tesi (differenza ultima D diversa da zero) e si arriva a contraddire l'ipotesi.</p></details></div>
+    </details>
+    <details class="panel"><summary>Note di traduzione e note per il docente</summary>
+      <p class="note">Il latino del 1726 ha <i>constanter tendunt</i>, reso «tendono senza interruzione» (Motte: «converge continually»). <i>Constanter</i> indica una tendenza che non viene meno, non un avvicinamento a ritmo uniforme: per questo non si usa «costantemente». La dimostrazione funziona se l'avvicinamento non si interrompe, cioè se la differenza non torna mai a crescere. «Ultimately» è «alla fine»; «ultimate difference» è «differenza ultima». Nell'originale non c'è una figura: quella qui sopra è una ricostruzione didattica, con due quantità scelte da noi.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ============ PROP I ============ -->
+<section class="view" id="v-prop-1" data-view="prop-1">
+  <div class="figcol">
+    <div class="board" id="b-prop-1" role="img" aria-label=""></div>
+    <div class="figbar">
+      <div class="modes" role="group" aria-label="Modalità">
+        <button data-mode="guida" aria-pressed="true">Guidata</button>
+        <button data-mode="esplora" aria-pressed="false">Esplora</button>
+        <button data-mode="limite" aria-pressed="false">Al limite</button>
+      </div>
+      <button class="iconbtn" id="p1-anim">▶ Anima</button>
+      <button class="iconbtn" id="p1-reset" title="Ripristina la figura">↺</button>
+    </div>
+    <div class="controls" id="p1-explore">
+      <label>forza <select id="p1-law">
+        <option value="inv2">∝ 1/r² (gravità)</option>
+        <option value="lin">∝ r (molla)</option>
+        <option value="rand">intensità casuale</option>
+      </select></label>
+      <label><input type="checkbox" id="p1-noncentral"> impulso non diretto a S</label>
+    </div>
+    <div class="controls" id="p1-limit">
+      <label>triangoli n <input type="range" id="p1-n" min="5" max="200" step="5" value="5"></label>
+      <span id="p1-nv" style="font-variant-numeric:tabular-nums">5</span>
+    </div>
+    <div class="areas" id="p1-areas" aria-live="polite"></div>
+  </div>
+  <div class="textcol">
+    <p class="kicker">Libro I · Sezione II · La determinazione delle forze centripete</p>
+    <h1>Proposizione I. Teorema I</h1>
+    <p class="enunciato">Le aree che i corpi in rivoluzione descrivono con raggi condotti a un centro di forza immobile giacciono negli stessi piani immobili e sono proporzionali ai tempi in cui sono descritte.</p>
+    <div class="en">The areas, which revolving bodies describe by radii drawn to an immovable centre of force do lie in the same immovable planes, and are proportional to the times in which they are described.</div>
+    <div class="deps"><a href="#leggi">Legge I</a><a href="#leggi">Cor. I delle Leggi</a><span>Lemma III, Cor. 4 (prossimamente)</span><a href="#lemma-1">Lemma I (implicito)</a><span>Def. III e V (implicite)</span></div>
+    <label class="toggle-en"><input type="checkbox" class="en-toggle"> Mostra il testo inglese di Motte (1846)</label>
+    <ol class="steps" data-for="prop-1"></ol>
+    <details class="panel"><summary>Lettura moderna</summary>
+      <p>Se la forza è centrale, \(\vec F=f(r)\,\hat r\), allora il suo momento rispetto a S è nullo: \(\vec r\times\vec F=\vec 0\). Quindi il momento angolare \(\vec L=m\,\vec r\times\vec v\) è costante.</p>
+      <p>Direzione costante di \(\vec L\): il moto avviene in un piano fisso. Modulo costante: la velocità areolare è costante,</p>
+      <p>\[\frac{dA}{dt}=\frac{|\vec r\times\vec v|}{2}=\frac{L}{2m}=\text{cost.}\]</p>
+      <p>È la seconda legge di Keplero, valida per <em>qualunque</em> forza centrale, non solo per la gravità. Nella costruzione di Newton lo si vede bene: l'impulso \(\vec{cC}\) è parallelo a \(\vec{SB}\), quindi \(\vec{SB}\times\vec{cC}=\vec 0\) e l'area non cambia.</p>
+    </details>
+    <details class="panel"><summary>Per la classe</summary>
+      <div class="q"><p>1. In «Esplora» scegli «intensità casuale». Le aree restano uguali? Perché l'intensità dell'impulso non conta?</p>
+        <details><summary>Risposta</summary><p>Restano uguali. Qualunque sia la lunghezza di cC, il punto C sta sulla parallela a SB passante per c: i triangoli SBc e SBC hanno la stessa base SB e la stessa altezza.</p></details></div>
+      <div class="q"><p>2. Attiva «impulso non diretto a S». Che cosa succede alle aree? Quale ipotesi della proposizione viene a mancare?</p>
+        <details><summary>Risposta</summary><p>Le aree non sono più uguali: la forza deve essere centripeta, cioè diretta verso il centro S (Def. V).</p></details></div>
+      <div class="q"><p>3. Con «Anima», guarda dove il corpo va più veloce: vicino o lontano da S? Collega la risposta al Corollario 1, che dice che la velocità è inversamente proporzionale alla perpendicolare condotta da S sulla tangente.</p>
+        <details><summary>Risposta</summary><p>Più vicino a S. A parità di area, un triangolo con altezza minore deve avere una base più lunga: in tempi uguali il corpo percorre tratti più lunghi.</p></details></div>
+      <div class="q"><p>4. Perché nel passo 2 i triangoli SAB e SBc sono uguali, anche senza forza?</p>
+        <details><summary>Risposta</summary><p>Hanno basi uguali, AB = Bc, sulla stessa retta, e lo stesso vertice S: quindi anche la stessa altezza.</p></details></div>
+    </details>
+    <details class="panel fac"><summary>Figura originale (ed. 1846)</summary><img alt="Figura originale della Proposizione I: il centro S, la spezzata ABCDEF, i punti c, d, e, f e i raggi verso S" src="data:image/jpeg;base64,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"></details>
+    <details class="panel"><summary>Note di traduzione e note per il docente</summary>
+      <p class="note">«Innate force» (Motte) traduce <i>vis insita</i>, resa con «forza insita» come nella traduzione delle Definizioni (Def. III): per Newton è la capacità del corpo di perseverare nel suo stato, non una forza nel senso moderno. «Particle of time» è «particella di tempo». Q.E.D. diventa C.V.D.</p>
+      <p class="note">Nel passo 8 Newton dà per scontato che la spezzata, con impulsi sempre più fitti, tenda alla traiettoria prodotta da una forza continua. È un punto discusso dagli storici: la figura «Al limite» lo rende plausibile numericamente, ma non lo dimostra.</p>
+      <p class="note">Nella ricostruzione l'intensità degli impulsi è scelta da noi: il testo di Newton non la specifica, e la tesi non ne dipende.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ============ PROP XI ============ -->
+<section class="view" id="v-prop-11" data-view="prop-11">
+  <div class="figcol">
+    <div class="board" id="b-prop-11" role="img" aria-label=""></div>
+    <div class="figbar">
+      <button class="iconbtn" id="p11-qp">▶ Q verso P</button>
+      <button class="iconbtn" id="p11-orbit">▶ Fai orbitare P</button>
+      <button class="iconbtn" id="p11-zoom" aria-pressed="false">🔍 Ingrandisci attorno a P</button>
+      <button class="iconbtn" id="p11-reset" title="Ripristina la figura">↺</button>
+    </div>
+    <div class="controls show">
+      <label>Q → P <input type="range" id="p11-d" min="0" max="1" step="0.005" value="0"></label>
+      <span id="p11-dv" style="font-variant-numeric:tabular-nums"></span>
+      <label>eccentricità <input type="range" id="p11-e" min="0.2" max="0.9" step="0.01" value="0.7"></label>
+      <span id="p11-ev" style="font-variant-numeric:tabular-nums">0.70</span>
+    </div>
+    <div class="areas" id="p11-ratios" aria-live="polite"></div>
+  </div>
+  <div class="textcol">
+    <p class="kicker">Libro I · Sezione III · Il moto dei corpi nelle sezioni coniche eccentriche</p>
+    <h1>Proposizione XI. Problema VI</h1>
+    <p class="enunciato">Se un corpo ruota su un'ellisse, si chiede di trovare la legge della forza centripeta diretta verso un fuoco dell'ellisse.</p>
+    <div class="en">If a body revolves in an ellipsis; it is required to find the law of the centripetal force tending to the focus of the ellipsis.</div>
+    <div class="deps"><span>Lemma VII, Cor. 2</span><span>Lemma XII</span><span>Prop. VI, Cor. 1 e 5</span><span>Prop. X, Cor. 1 e Prop. VII, Cor. 3 (seconda dimostrazione)</span></div>
+    <label class="toggle-en"><input type="checkbox" class="en-toggle"> Mostra il testo inglese di Motte (1846)</label>
+    <ol class="steps" data-for="prop-11"></ol>
+    <details class="panel"><summary>Risultati richiamati da Newton</summary>
+      <p><b>Lemma VII, Cor. 2</b> (in breve): se per A e per B si conducono altre rette che taglino la tangente AD e la sua parallela BF, le ascisse AD, AE, BF, BG, la corda e l'arco AB hanno, a due a due, rapporto ultimo di uguaglianza. Qui Qv e Qx stanno sulla parallela alla tangente condotta per Q, tagliata dalle rette PC e PS che passano per P: alla fine sono quindi uguali.</p>
+      <p><b>Lemma XII.</b> <i>Tutti i parallelogrammi circoscritti a una data ellisse o iperbole attorno a una coppia qualsiasi di diametri coniugati sono uguali fra loro.</i> Per l'ellisse ne segue PF × CD = AC × CB.</p>
+      <p><b>Prop. VI, Cor. 1.</b> <i>Se un corpo P, ruotando attorno al centro S, descrive una linea curva APQ, toccata in un punto qualsiasi P dalla retta ZPR; e da un altro punto Q della curva si conduce QR parallela alla distanza SP, che incontri la tangente in R, e QT perpendicolare alla distanza SP: la forza centripeta sarà inversamente proporzionale al solido \(\frac{SP^2\times QT^2}{QR}\), preso nella grandezza che assume alla fine, quando i punti P e Q coincidono.</i></p>
+      <p><b>Prop. VI, Cor. 5</b> (in breve): data la curva e il centro S, la legge della forza si trova calcolando il solido \(\frac{SP^2\times QT^2}{QR}\) (oppure gli equivalenti dei Cor. 2–3) e prendendone l'inverso.</p>
+      <p class="note">Le notazioni CA, CB, GP, DK, PF, Qv sono quelle introdotte nella Prop. X. Le traduzioni del Lemma XII e del Cor. 1 sono nostre, dal Motte; il Lemma VII e il Cor. 5 sono riassunti.</p>
+    </details>
+    <details class="panel"><summary>La stessa cosa altrimenti</summary>
+      <p>Poiché la forza diretta verso il centro dell'ellisse, per la quale il corpo P può ruotare su quell'ellisse, è (per il Cor. 1 della Prop. X) come la distanza CP del corpo dal centro C, si conduca CE parallela alla tangente PR. La forza per la quale lo stesso corpo P può ruotare attorno a un altro punto qualsiasi S dell'ellisse, se CE e PS si intersecano in E, sarà come \(\frac{PE^3}{SP^2}\) (per il Cor. 3 della Prop. VII); cioè, se il punto S è il fuoco dell'ellisse, e quindi PE è data, inversamente come \(SP^2\). <span class="qed">C.V.T.</span></p>
+      <div class="en">Since the force tending to the centre of the ellipsis, by which the body P may revolve in that ellipsis, is (by Corol. 1, Prop. X.) as the distance CP of the body from the centre C of the ellipsis; let CE be drawn parallel to the tangent PR of the ellipsis; and the force by which the same body P may revolve about any other point S of the ellipsis, if CE and PS intersect in E, will be as PE²/SP² [sic] (by Cor. 3, Prop. VII.); that is, if the point S is the focus of the ellipsis, and therefore PE be given as SP² reciprocally. Q.E.I.</div>
+      <p class="note"><b>Nota testuale.</b> Il file Gutenberg dell'edizione 1846 stampa qui \(PE^2/SP^2\). Dal Cor. 3 della Prop. VII, con la forza verso C proporzionale a CP, si ottiene invece \(PE^3/SP^2\), che è anche la forma usata nella Prop. XII per l'iperbole. Il latino del 1726 (p. 56) ha <i>PE cub./SPq</i>, e anche la prima edizione inglese di Motte (Londra 1729, vol. I, p. 80) stampa \(PE^3/SP^2\): il refuso è dell'edizione americana del 1846. La conclusione non cambia, perché PE = AC è costante.</p>
+    </details>
+    <details class="panel"><summary>Lettura moderna</summary>
+      <p>Il Cor. 1 della Prop. VI dice che la forza è proporzionale a \(\lim_{Q\to P}\frac{QR}{SP^2\,QT^2}\): QR misura la deviazione dalla tangente, e \(SP\cdot QT\), il doppio dell'area SPQ, misura il tempo (Prop. I).</p>
+      <p>Newton mostra che per l'ellisse \(\lim \frac{QT^2}{QR}=L=\frac{2b^2}{a}\), il lato retto, che è costante. Quindi</p>
+      <p>\[F\propto\frac{1}{L\,SP^2}\propto\frac{1}{r^2}.\]</p>
+      <p>In termini moderni, con \(h=r^2\dot\theta\) costante: \(F/m = \frac{h^2}{p}\,\frac{1}{r^2}\), dove \(p=b^2/a\) è il semilato retto, cioè L/2. È la legge di gravitazione, ricavata qui a partire dalla forma dell'orbita (prima legge di Keplero).</p>
+    </details>
+    <details class="panel"><summary>Per la classe</summary>
+      <div class="q"><p>1. Al passo 3, sposta P lungo l'ellisse. EP cambia? Perché conta che sia sempre uguale ad AC?</p>
+        <details><summary>Risposta</summary><p>Non cambia: EP = AC per ogni P. Per questo nella «stessa cosa altrimenti» PE è «data», cioè costante, e il fattor comune PE³ si può ignorare.</p></details></div>
+      <div class="q"><p>2. Con il cursore «Q → P», guarda i rapporti con il segno «→». Quali sono uguali per ogni posizione di Q e quali solo al limite?</p>
+        <details><summary>Risposta</summary><p>Sono esatti AC:PC = QR:Pv, il rapporto con PC²:CD², EP²:PF² e CD²:CB². Valgono solo al limite Qv²:Qx² → 1 e Gv → 2PC: ecco perché serve il metodo dei rapporti ultimi (Sezione I).</p></details></div>
+      <div class="q"><p>3. Con «Fai orbitare P», dove la freccia della forza è più lunga? Dove il corpo va più veloce?</p>
+        <details><summary>Risposta</summary><p>Vicino al fuoco S, nel perielio: la forza va come 1/SP² e, per la Prop. I, la velocità è maggiore dove la distanza da S è minore.</p></details></div>
+      <div class="q"><p>4. Porta l'eccentricità verso 0,2. Che cosa succede ai fuochi S e H, e al lato retto L?</p>
+        <details><summary>Risposta</summary><p>I fuochi si avvicinano al centro e L tende al diametro 2a: al limite l'ellisse è un cerchio e S coincide con C.</p></details></div>
+    </details>
+    <details class="panel fac"><summary>Figura originale (ed. 1846)</summary><img alt="Figura originale della Proposizione XI: ellisse con centro C, fuochi S e H, punto P con tangente PR, punti Q, x, v, T, E, I, F, G, D, K" src="data:image/jpeg;base64,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"></details>
+    <details class="panel"><summary>Note di traduzione e note per il docente</summary>
+      <p class="note">«Ordinata Qv»: il segmento condotto da Q parallelo alla tangente in P, fino al diametro PG (ordinata rispetto al diametro PG, come in Apollonio). «Lato retto principale» (<i>latus rectum</i>) è la corda per il fuoco perpendicolare all'asse maggiore; vale \(2BC^2/AC\). «In ragione duplicata» significa nel rapporto dei quadrati. Q.E.I., <i>quod erat inveniendum</i>, è reso «C.V.T.», come volevasi trovare: è un problema, non un teorema.</p>
+      <p class="note">Il passo «e per il Cor. 2 del Lemma VII…» mescola uguaglianze esatte e uguaglianze solo al limite. Nella figura i rapporti esatti hanno il segno ✓; quelli che diventano uguali solo quando Q va in P hanno il segno →.</p>
+      <p class="note">Il moto mostrato con «Fai orbitare P» rispetta la legge delle aree (equazione di Keplero): non è nel testo di Newton, è un'aggiunta didattica.</p>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<div class="stepbar" role="group" aria-label="Passi della dimostrazione">
+  <button id="prev" aria-label="Passo precedente">◀</button>
+  <div class="lbl" id="steplbl">Passo <b>1</b> di 8</div>
+  <button id="next" aria-label="Passo successivo">▶</button>
+</div>
+<div class="sr" aria-live="polite" id="live"></div>
+
+<footer>Testo: I. Newton, <i>The Mathematical Principles of Natural Philosophy</i>, trad. A. Motte, New York, D. Adee, 1846 (Project Gutenberg #76404, pubblico dominio). Traduzione italiana e ricostruzioni interattive: edizione didattica, bozza da rivedere.</footer>
+
+<script>
+"use strict";
+/* ---------------- Testi ---------------- */
+const STEPS = {
+  "leggi": [
+    {it:"Supponiamo che un corpo, in un tempo dato, per effetto della sola forza M impressa nel luogo A, sia portato con moto uniforme da A a B;",
+     en:"If a body in a given time, by the force M impressed apart in the place A, should with an uniform motion be carried from A to B;",
+     alt:"Il corpo parte da A e, con la sola forza M, va di moto uniforme fino a B."},
+    {it:"e che, per effetto della sola forza N impressa nel medesimo luogo, sia portato da A a C.",
+     en:"and by the force N impressed apart in the same place, should be carried from A to C;",
+     alt:"Con la sola forza N il corpo andrebbe da A a C."},
+    {it:"Si completi il parallelogramma ABDC: per effetto di entrambe le forze, quel corpo sarà portato nello stesso tempo lungo la diagonale, da A a D.",
+     en:"complete the parallelogram ABCD [sic; latino 1726 e figura originale: ABDC], and, by both forces acting together, it will in the same time be carried in the diagonal from A to D.",
+     alt:"Si completa il parallelogramma: con entrambe le forze il corpo percorre la diagonale AD."},
+    {it:"Poiché infatti la forza N agisce lungo la linea AC, parallela a BD, per la Legge II questa forza non muterà affatto la velocità di avvicinamento a quella linea BD generata dall'altra forza. Il corpo giungerà dunque alla linea BD nello stesso tempo, sia che la forza N venga impressa, sia che non venga impressa; e perciò alla fine di quel tempo si troverà in qualche punto di quella linea BD.",
+     en:"For since the force N acts in the direction of the line AC, parallel to BD, this force (by the second law) will not at all alter the velocity generated by the other force M, by which the body is carried towards the line BD. The body therefore will arrive at the line BD in the same time, whether the force N be impressed or not; and therefore at the end of that time it will be found somewhere in the line BD.",
+     alt:"La retta BD è evidenziata: il corpo con entrambe le forze la raggiunge nello stesso istante del corpo spinto solo da M."},
+    {it:"Con lo stesso argomento, alla fine dello stesso tempo si troverà in qualche punto della linea CD; e perciò deve necessariamente trovarsi in D, punto d'incontro delle due linee. Procederà poi da A a D con moto rettilineo, per la Legge I.",
+     en:"By the same argument, at the end of the same time it will be found somewhere in the line CD. Therefore it will be found in the point D, where both lines meet. But it will move in a right line from A to D, by Law I.",
+     alt:"Anche CD è evidenziata: il corpo si trova nell'intersezione D delle due rette."}
+  ],
+  "lemma-1": [
+    {it:"Le quantità (e i rapporti tra quantità) che, in un qualunque tempo finito, tendono senza interruzione all'uguaglianza…",
+     en:"Quantities, and the ratios of quantities, which in any finite time converge continually to equality,",
+     alt:"Due curve, che rappresentano due quantità, si avvicinano l'una all'altra durante un intervallo di tempo finito."},
+    {it:"…e prima della fine di quel tempo si avvicinano l'una all'altra più di qualsiasi differenza data,",
+     en:"and before the end of that time approach nearer the one to the other than by any given difference,",
+     alt:"Una fascia verde indica l'intervallo finale in cui la differenza tra le due quantità è minore della differenza data D. Con il cursore si può scegliere D piccolo a piacere."},
+    {it:"Se lo neghi, supponi che alla fine siano disuguali, e sia D la loro differenza ultima.",
+     en:"If you deny it, suppose them to be ultimately unequal, and let D be their ultimate difference.",
+     alt:"Ipotesi per assurdo: alla fine del tempo le due quantità differiscono ancora di D, indicata in rosso."},
+    {it:"Allora non possono avvicinarsi all'uguaglianza più di quella differenza data D: il che è contro l'ipotesi.",
+     en:"Therefore they cannot approach nearer to equality than by that given difference D; which is against the supposition.",
+     alt:"Contraddizione: le due curve si avvicinano meno di D prima della fine, contro l'ipotesi di una differenza ultima D. Dunque alla fine sono uguali."}
+  ],
+  "prop-1": [
+    {it:"Infatti, si supponga il tempo diviso in parti uguali, e nella prima parte di tempo il corpo, per la sua forza insita, descriva la retta AB.",
+     en:"For suppose the time to be divided into equal parts, and in the first part of that time let the body by its innate force describe the right line AB.",
+     alt:"Il centro S e il primo tratto AB percorso dal corpo nel primo intervallo di tempo."},
+    {it:"Nella seconda parte di tempo lo stesso corpo, se nulla lo impedisse, procederebbe (per la Legge I) diritto fino a c, lungo la retta Bc uguale ad AB; così, con i raggi AS, BS, cS condotti al centro, verrebbero descritte le aree uguali ASB e BSc.",
+     en:"In the second part of that time, the same would (by Law I.), if not hindered, proceed directly to c, along the line Bc equal to AB; so that by the radii AS, BS, cS, drawn to the centre, the equal areas ASB, BSc, would be described.",
+     alt:"Prolungamento Bc uguale ad AB; i triangoli SAB e SBc, colorati, hanno area uguale."},
+    {it:"Ma quando il corpo è giunto in B, si supponga che la forza centripeta agisca con un impulso unico ma grande e, deviandolo dalla retta Bc, lo costringa a continuare il suo moto lungo la retta BC.",
+     en:"But when the body is arrived at B, suppose that a centripetal force acts at once with a great impulse, and, turning aside the body from the right line Bc, compels it afterwards to continue its motion along the right line BC.",
+     alt:"In B una freccia rossa indica l'impulso diretto verso S; il corpo devia lungo BC."},
+    {it:"Si conduca cC parallela a BS, che incontri BC in C; alla fine della seconda parte di tempo il corpo (per il Cor. 1 delle Leggi) si troverà in C, nello stesso piano del triangolo ASB.",
+     en:"Draw cC parallel to BS meeting BC in C; and at the end of the second part of the time, the body (by Cor. 1. of the Laws) will be found in C, in the same plane with the triangle ASB.",
+     alt:"Il segmento cC, parallelo a BS, e il parallelogramma delle due spinte: il corpo si trova in C."},
+    {it:"Si congiunga SC: poiché SB e Cc sono parallele, il triangolo SBC sarà uguale al triangolo SBc, e quindi anche al triangolo SAB.",
+     en:"Join SC, and, because SB and Cc are parallel, the triangle SBC will be equal to the triangle SBc, and therefore also to the triangle SAB.",
+     alt:"SB e cC sono evidenziati come paralleli; i triangoli SBc e SBC hanno la stessa base SB e la stessa altezza."},
+    {it:"Con lo stesso argomento, se la forza centripeta agisce successivamente in C, D, E, ecc., e fa descrivere al corpo, in ciascuna singola particella di tempo, le rette CD, DE, EF, ecc., queste giaceranno tutte nello stesso piano; e il triangolo SCD sarà uguale al triangolo SBC, SDE a SCD, e SEF a SDE.",
+     en:"By the like argument, if the centripetal force acts successively in C, D, E, &c., and makes the body, in each single particle of time, to describe the right lines CD, DE, EF, &c., they will all lie in the same plane; and the triangle SCD will be equal to the triangle SBC, and SDE to SCD, and SEF to SDE.",
+     alt:"La spezzata completa ABCDEF con i punti d, e, f: cinque triangoli di area uguale."},
+    {it:"Dunque in tempi uguali si descrivono aree uguali in un piano immobile; e, per composizione, somme qualsiasi di quelle aree, SADS e SAFS, stanno tra loro come i tempi in cui sono descritte.",
+     en:"And therefore, in equal times, equal areas are described in one immovable plane: and, by composition, any sums SADS, SAFS, of those areas, are one to the other as the times in which they are described.",
+     alt:"L'area SADS è evidenziata: sta all'area SAFS come 3 sta a 5, come i tempi."},
+    {it:"Ora si aumenti il numero di quei triangoli e se ne diminuisca la larghezza all'infinito: (per il Cor. 4 del Lemma III) il loro perimetro ultimo ADF sarà una linea curva. Perciò la forza centripeta, che richiama continuamente il corpo dalla tangente di questa curva, agirà in modo continuo; e le aree descritte SADS, SAFS, sempre proporzionali ai tempi di descrizione, lo saranno anche in questo caso. <span class='qed'>C.V.D.</span>",
+     en:"Now let the number of those triangles be augmented, and their breadth diminished in infinitum; and (by Cor. 4, Lem. III.) their ultimate perimeter ADF will be a curve line: and therefore the centripetal force, by which the body is perpetually drawn back from the tangent of this curve, will act continually; and any described areas SADS, SAFS, which are always proportional to the times of description, will, in this case also, be proportional to those times. Q.E.D.",
+     alt:"Con il cursore n i triangoli diventano sempre più numerosi e sottili: la spezzata tende a una curva e il rapporto delle aree resta 3 a 5."}
+  ]
+};
+
+/* ---------------- Utilità ---------------- */
+const $ = (s,r=document)=>r.querySelector(s);
+const $$ = (s,r=document)=>Array.from(r.querySelectorAll(s));
+const css = getComputedStyle(document.documentElement);
+const C = {ink:"#2b2a26",muted:"#8a8478",accent:"#b5452b",given:"#2f5d8a",fill1:"#c9973a",fill2:"#2f5d8a",ok:"#3d7a3a"};
+const reducedMotion = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+function store(k,v){try{ if(v===undefined) return localStorage.getItem(k); localStorage.setItem(k,v);}catch(e){return null}}
+
+JXG.Options.text.fontSize = 18;
+JXG.Options.text.display = "internal";
+JXG.Options.label.fontSize = 18;
+JXG.Options.text.cssDefaultStyle = "font-family:'EB Garamond',Georgia,serif;";
+JXG.Options.text.highlightCssDefaultStyle = JXG.Options.text.cssDefaultStyle;
+if (JXG.Options.precision) { JXG.Options.precision.touch = 30; JXG.Options.precision.touchMax = 60; }
+
+function makeBoard(id, bbox){
+  return JXG.JSXGraph.initBoard(id,{boundingbox:bbox,keepAspectRatio:true,axis:false,grid:false,
+    showNavigation:false,showCopyright:false,showInfobox:false,
+    pan:{enabled:true,needTwoFingers:true,needShift:true},
+    zoom:{enabled:true,pinch:true,wheel:false,needShift:true},
+    resize:{enabled:true,throttle:100}});
+}
+function handle(board,coords,name,color){
+  return board.create("point",coords,{name:name,size:6,face:"o",fillColor:"#fff",strokeColor:color||C.given,strokeWidth:2.5,
+    highlightFillColor:"#fff",highlightStrokeColor:C.accent,label:{offset:[8,10],fontSize:20,color:C.ink},showInfobox:false});
+}
+
+/* ---------------- Gestione viste e passi ---------------- */
+const VIEWS = {};
+let current = null;
+
+function renderSteps(view){
+  const ol = $(`ol.steps[data-for="${view}"]`);
+  ol.innerHTML = "";
+  STEPS[view].forEach((s,i)=>{
+    const li=document.createElement("li");
+    li.innerHTML = `<div>${s.it}</div><div class="en">${s.en}</div>`;
+    li.addEventListener("click",()=>setStep(view,i));
+    ol.appendChild(li);
+  });
+}
+function setStep(view,i){
+  const V=VIEWS[view]; const n=STEPS[view].length;
+  V.step=Math.max(0,Math.min(n-1,i));
+  $$(`ol.steps[data-for="${view}"] li`).forEach((li,k)=>{
+    li.classList.toggle("active",k===V.step); li.classList.toggle("done",k<V.step);
+  });
+  $("#steplbl").innerHTML=`Passo <b>${V.step+1}</b> di ${n}`;
+  $("#prev").disabled = V.step===0; $("#next").disabled = V.step===n-1;
+  const s=STEPS[view][V.step];
+  $(`#b-${view}`).setAttribute("aria-label", s.alt);
+  $("#live").textContent = `Passo ${V.step+1}. ${s.alt}`;
+  const act=$(`ol.steps[data-for="${view}"] li.active`);
+  if(act && V.userNav){ act.scrollIntoView({block:"center",behavior:reducedMotion?"auto":"smooth"}); }
+  V.userNav=true;
+  V.onStep && V.onStep(V.step);
+}
+function show(view){
+  if(!STEPS[view]) view="prop-1";
+  current=view;
+  $$(".view").forEach(v=>v.classList.toggle("active",v.dataset.view===view));
+  $$("nav.tabs a").forEach(a=>a.setAttribute("aria-current",a.dataset.view===view?"page":"false"));
+  store("principia.view",view);
+  requestAnimationFrame(()=>{
+    const V=VIEWS[view];
+    if(!V.board){ V.init(); }
+    else { V.board.resizeContainer($(`#b-${view}`).clientWidth,$(`#b-${view}`).clientHeight,false,true); V.board.fullUpdate(); }
+    setStep(view, V.step||0);
+  });
+}
+function route(){ const h=(location.hash||"").replace("#",""); show(h || store("principia.view") || "prop-1"); }
+$("#prev").addEventListener("click",()=>setStep(current,VIEWS[current].step-1));
+$("#next").addEventListener("click",()=>setStep(current,VIEWS[current].step+1));
+document.addEventListener("keydown",e=>{
+  if(e.target.matches("input,select,textarea")) return;
+  if(e.key==="ArrowRight"){ setStep(current,VIEWS[current].step+1); e.preventDefault(); }
+  if(e.key==="ArrowLeft"){ setStep(current,VIEWS[current].step-1); e.preventDefault(); }
+});
+$$(".en-toggle").forEach(cb=>cb.addEventListener("change",()=>{
+  document.body.classList.toggle("show-en",cb.checked);
+  $$(".en-toggle").forEach(o=>o.checked=cb.checked);
+}));
+
+/* ================= LEGGI: Corollario I ================= */
+VIEWS["leggi"] = {
+  step:0,
+  init(){
+    const b=this.board=makeBoard("b-leggi",[-0.8,4.2,5.6,-1.2]);
+    const A=b.create("point",[0,3],{name:"A",fixed:true,size:4,fillColor:C.ink,strokeColor:C.ink,label:{offset:[-18,10],fontSize:20}});
+    const B=handle(b,[4.2,3.2],"B");
+    const Cp=handle(b,[0.7,-0.2],"C");
+    const D=b.create("point",[()=>B.X()+Cp.X()-A.X(),()=>B.Y()+Cp.Y()-A.Y()],{name:"D",size:4,fillColor:C.ink,strokeColor:C.ink,label:{offset:[8,-10],fontSize:20}});
+    const t=()=>+$("#leggi-t").value;
+    const sAB=b.create("segment",[A,B],{strokeColor:C.given,strokeWidth:2});
+    const sAC=b.create("segment",[A,Cp],{strokeColor:C.given,strokeWidth:2});
+    const sBD=b.create("segment",[B,D],{strokeColor:C.muted,strokeWidth:2,dash:2});
+    const sCD=b.create("segment",[Cp,D],{strokeColor:C.muted,strokeWidth:2,dash:2});
+    const sAD=b.create("segment",[A,D],{strokeColor:C.accent,strokeWidth:3});
+    const pM=b.create("point",[()=>A.X()+t()*(B.X()-A.X()),()=>A.Y()+t()*(B.Y()-A.Y())],{name:"solo M",size:5,fillColor:C.given,strokeColor:C.given,label:{fontSize:14,offset:[6,12],color:C.given}});
+    const pN=b.create("point",[()=>A.X()+t()*(Cp.X()-A.X()),()=>A.Y()+t()*(Cp.Y()-A.Y())],{name:"solo N",size:5,fillColor:C.given,strokeColor:C.given,label:{fontSize:14,offset:[-48,0],color:C.given}});
+    const pMN=b.create("point",[()=>pM.X()+pN.X()-A.X(),()=>pM.Y()+pN.Y()-A.Y()],{name:"M e N",size:6,fillColor:C.accent,strokeColor:C.accent,label:{fontSize:14,offset:[12,16],color:C.accent}});
+    const gM=b.create("segment",[pM,pMN],{strokeColor:C.accent,dash:1,strokeWidth:1.5});
+    const gN=b.create("segment",[pN,pMN],{strokeColor:C.accent,dash:1,strokeWidth:1.5});
+    this.el={B,Cp,D,sAB,sAC,sBD,sCD,sAD,pM,pN,pMN,gM,gN};
+    const degWarn=b.create("text",[-0.65,-0.85,"⚠ A, B e C sono (quasi) allineati: il parallelogramma degenera"],{fontSize:14,color:C.accent,fixed:true,visible:false,highlight:false,cssStyle:"background:rgba(251,248,241,.94);padding:2px 6px;border-radius:6px"});
+    b.on("update",()=>{ const ux=B.X()-A.X(), uy=B.Y()-A.Y(), wx=Cp.X()-A.X(), wy=Cp.Y()-A.Y(); const nn=(Math.hypot(ux,uy)*Math.hypot(wx,wy))||1; const deg=(this.step>=1)&&(Math.abs(ux*wy-uy*wx)/nn<0.06); if(!!degWarn.visProp.visible!==deg){ degWarn.setAttribute({visible:deg}); if(deg) $("#live").textContent="Attenzione: A, B e C sono quasi allineati, il parallelogramma degenera."; } });
+    const lab=()=>{const tt=t(), on=tt>0.04&&tt<0.96; [pM,pN,pMN].forEach(p=>p.setAttribute({withLabel:on})); b.update();}; this.lab=lab; $("#leggi-t").addEventListener("input",lab);
+    $("#leggi-play").addEventListener("click",()=>this.play());
+  },
+  play(){
+    const r=$("#leggi-t"); const b=this.board; let t0=null;
+    if(reducedMotion){ r.value=1; b.update(); return; }
+    const f=ts=>{ if(t0===null) t0=ts; const u=Math.min(1,(ts-t0)/2200); r.value=u; this.lab(); if(u<1) requestAnimationFrame(f); };
+    requestAnimationFrame(f);
+  },
+  onStep(s){
+    const e=this.el; if(!e) return;
+    const vis=(o,v)=>o.setAttribute({visible:v});
+    vis(e.sAB,true); vis(e.pM,true);
+    vis(e.sAC,s>=1); vis(e.Cp,s>=1); vis(e.pN,s>=1);
+    vis(e.D,s>=2); vis(e.sAD,s>=2); vis(e.pMN,s>=2); vis(e.sBD,s>=2); vis(e.sCD,s>=2);
+    vis(e.gM,s>=3); vis(e.gN,s>=4);
+    e.sBD.setAttribute({strokeColor:s===3?C.accent:C.muted,strokeWidth:s===3?3:2,dash:s===3?0:2});
+    e.sCD.setAttribute({strokeColor:s===4?C.accent:C.muted,strokeWidth:s===4?3:2,dash:s===4?0:2});
+    this.board.update();
+  }
+};
+
+/* ================= LEMMA I ================= */
+VIEWS["lemma-1"] = {
+  step:0,
+  init(){
+    const b=this.board=makeBoard("b-lemma-1",[-0.4,5.3,4.9,-0.7]);
+    b.create("axis",[[0,0],[4,0]],{ticks:{visible:false},strokeColor:C.muted,withLabel:true,name:"tempo",label:{position:"rt",offset:[-40,-14],fontSize:14}});
+    b.create("segment",[[0,0],[0,5]],{strokeColor:C.muted,strokeWidth:1,fixed:true});
+    const W=4; const q1=t=>3+1.5*(1-t), q2=t=>3-0.8*(1-t)*(1-t); const Q1=x=>q1(x/W), Q2=x=>q2(x/W);
+    const d=t=>Q1(t)-Q2(t);
+    const Dv=()=>+$("#lemma-D").value;
+    const tD=()=>{ // risolve d(t)=D su [0,1] (d decrescente)
+      const D=Dv(); if(d(0)<=D) return 0; let lo=0,hi=W; for(let i=0;i<50;i++){const m=(lo+hi)/2; if(d(m)>D) lo=m; else hi=m;} return hi; };
+    this.fn={Q1,Q2,d,Dv,tD};
+    const e={};
+    e.end=b.create("line",[[W,0],[W,1]],{strokeColor:C.ink,dash:2,strokeWidth:1,fixed:true,straightFirst:true,straightLast:true});
+    e.endlbl=b.create("text",[W-0.05,5.05,"fine del tempo"],{fontSize:13,color:C.muted,anchorX:"right",fixed:true});
+    e.band=b.create("polygon",[[()=>tD(),0],[W,0],[W,5],[()=>tD(),5]],{fillColor:C.ok,fillOpacity:.12,borders:{visible:false},vertices:{visible:false},fixed:true,hasInnerPoints:false});
+    e.g1=b.create("functiongraph",[Q1,0,W],{strokeColor:C.given,strokeWidth:3});
+    e.g2=b.create("functiongraph",[Q2,0,W],{strokeColor:C.accent,strokeWidth:3});
+    e.l1=b.create("text",[0.08,Q1(0.08)+0.3,"prima quantità"],{fontSize:14,color:C.given,fixed:true});
+    e.l2=b.create("text",[0.08,Q2(0.08)-0.35,"seconda quantità"],{fontSize:14,color:C.accent,fixed:true});
+    e.gap=b.create("segment",[[()=>tD(),()=>Q2(tD())],[()=>tD(),()=>Q1(tD())]],{strokeColor:C.ok,strokeWidth:3,fixed:true});
+    e.gaplbl=b.create("text",[()=>tD()-0.06,()=>(Q1(tD())+Q2(tD()))/2,()=>"D"],{fontSize:18,color:C.ok,anchorX:"right",fixed:true});
+    e.tlbl=b.create("text",[()=>tD(),-0.3,"t<sub>D</sub>"],{fontSize:16,color:C.ok,anchorX:"middle",fixed:true,display:"html"});
+    // ipotesi per assurdo: differenza ultima D
+    e.hyp=b.create("segment",[[W,3],[W,()=>3-Dv()]],{strokeColor:C.accent,strokeWidth:5,fixed:true});
+    e.hyplbl=b.create("text",[W+0.08,()=>3-Dv()/2,"D ?"],{fontSize:18,color:C.accent,anchorX:"left",fixed:true});
+    e.hypc=b.create("functiongraph",[x=>Q2(x)-Dv()*Math.min(1,2*(x/W)*(x/W)),0,W],{strokeColor:C.accent,strokeWidth:1.5,dash:2});
+    e.cross=b.create("text",[()=>tD()+(W-tD())*0.5,()=>Q2(tD()+(W-tD())*0.5)-0.35,"✕ già < D"],{fontSize:15,anchorY:"top",color:C.accent,anchorX:"middle",fixed:true});
+    this.el=e;
+    $("#lemma-D").addEventListener("input",()=>{ $("#lemma-Dv").textContent=Dv().toFixed(2); b.update(); });
+  },
+  onStep(s){
+    const e=this.el; if(!e) return; const vis=(o,v)=>o.setAttribute({visible:v});
+    vis(e.band,s===1||s===3); vis(e.gap,s===1||s===3); vis(e.gaplbl,s===1||s===3); vis(e.tlbl,s===1||s===3);
+    vis(e.hyp,s>=2); vis(e.hyplbl,s>=2); vis(e.hypc,s===2); vis(e.cross,s===3);
+    $("#c-lemma-1").classList.toggle("show",s>=1);
+    this.board.update();
+  }
+};
+
+/* ================= PROPOSIZIONE I ================= */
+const P1 = { T:5, k:20, kl:0.093, seed:7 };
+let CAPPED=false;
+/* Riferimento indipendente: integrazione RK4 dell'equazione del moto continuo */
+function rk4(S,A,v,law,N){
+  const h=P1.T/N, out=[A.slice()]; let x=A.slice(), u=v.slice(); const r01=()=>0;
+  const f=(x,u)=>{ const a=accel(law,x,S,r01); return [u[0],u[1],a[0],a[1]]; };
+  for(let i=0;i<N;i++){
+    const k1=f(x,u), k2=f([x[0]+h/2*k1[0],x[1]+h/2*k1[1]],[u[0]+h/2*k1[2],u[1]+h/2*k1[3]]);
+    const k3=f([x[0]+h/2*k2[0],x[1]+h/2*k2[1]],[u[0]+h/2*k2[2],u[1]+h/2*k2[3]]);
+    const k4=f([x[0]+h*k3[0],x[1]+h*k3[1]],[u[0]+h*k3[2],u[1]+h*k3[3]]);
+    x=[x[0]+h/6*(k1[0]+2*k2[0]+2*k3[0]+k4[0]), x[1]+h/6*(k1[1]+2*k2[1]+2*k3[1]+k4[1])];
+    u=[u[0]+h/6*(k1[2]+2*k2[2]+2*k3[2]+k4[2]), u[1]+h/6*(k1[3]+2*k2[3]+2*k3[3]+k4[3])];
+    out.push(x);
+  }
+  return out;
+}
+function rng(seed){ let s=seed>>>0; return ()=>{ s=(s*1664525+1013904223)>>>0; return s/4294967296; }; }
+function accel(law,p,S,r01){
+  const dx=S[0]-p[0], dy=S[1]-p[1], d=Math.hypot(dx,dy)||1e-9;
+  let g = law==="inv2" ? P1.k/(d*d) : law==="lin" ? P1.kl*d : r01()*1.1;
+  if(law==="inv2" && g>40){ g=40; CAPPED=true; }
+  return [g*dx/d, g*dy/d];
+}
+function rot(v,a){ const c=Math.cos(a), s=Math.sin(a); return [c*v[0]-s*v[1], s*v[0]+c*v[1]]; }
+/* Costruzione di Newton: P[k+1] = c_k + J_k,  c_k = 2P[k]-P[k-1],  J_k = a(P[k]) dt^2 diretto verso S */
+function construct(S,A,v,n,law,noncentral){
+  const dt=P1.T/n, r01=rng(P1.seed+n);
+  const P=[A,[A[0]+v[0]*dt, A[1]+v[1]*dt]], c=[null], J=[null];
+  for(let k=1;k<n;k++){
+    const p=P[k], q=P[k-1];
+    const ck=[2*p[0]-q[0], 2*p[1]-q[1]];
+    let a=accel(law,p,S,r01); if(noncentral) a=rot(a,0.55);
+    const Jk=[a[0]*dt*dt, a[1]*dt*dt];
+    c.push(ck); J.push(Jk); P.push([ck[0]+Jk[0], ck[1]+Jk[1]]);
+  }
+  return {P,c,J,dt};
+}
+function triArea(S,p,q){ return 0.5*Math.abs((p[0]-S[0])*(q[1]-S[1])-(p[1]-S[1])*(q[0]-S[0])); }
+
+VIEWS["prop-1"] = {
+  step:0, mode:"guida", dyn:[], anim:null,
+  init(){
+    const b=this.board=makeBoard("b-prop-1",[-0.8,5.6,7.4,-0.8]);
+    this.S=b.create("point",[0,0],{name:"S",size:5,face:"o",fillColor:C.ink,strokeColor:C.ink,label:{offset:[-20,-14],fontSize:22}});
+    this.A=handle(b,[6,0],"A");
+    this.B=handle(b,[6,1.28],"B");
+    [this.S,this.A,this.B].forEach(p=>p.on("drag",()=>this.queue()));
+    $$("#v-prop-1 .modes button").forEach(bt=>bt.addEventListener("click",()=>this.setMode(bt.dataset.mode)));
+    ["#p1-law","#p1-noncentral"].forEach(s=>$(s).addEventListener("change",()=>this.queue()));
+    $("#p1-n").addEventListener("input",()=>{ $("#p1-nv").textContent=$("#p1-n").value; this.queue(); });
+    $("#p1-anim").addEventListener("click",()=>this.toggleAnim());
+    $("#p1-reset").addEventListener("click",()=>{ this.S.moveTo([0,0]); this.A.moveTo([6,0]); this.B.moveTo([6,1.28]); b.setBoundingBox([-0.8,5.6,7.4,-0.8],true); this.queue(); });
+    this.draw();
+  },
+  setMode(m){
+    this.mode=m; this.stopAnim();
+    $$("#v-prop-1 .modes button").forEach(bt=>bt.setAttribute("aria-pressed",bt.dataset.mode===m));
+    $("#p1-explore").classList.toggle("show",m==="esplora");
+    $("#p1-limit").classList.toggle("show",m==="limite" || (m==="guida" && this.step===7));
+    if(m==="limite" && this.step<7) { setStep("prop-1",7); return; }
+    if(m==="esplora" && this.step<6) { setStep("prop-1",6); return; }
+    this.queue();
+  },
+  onStep(s){
+    if(this.mode==="guida"){ $("#p1-limit").classList.toggle("show",s===7); if(s<7) { $("#p1-n").value=5; $("#p1-nv").textContent="5"; } }
+    this.stopAnim(); this.queue();
+  },
+  queue(){ if(this._q) return; this._q=requestAnimationFrame(()=>{ this._q=null; this.draw(); }); },
+  params(){
+    const guided=this.mode==="guida";
+    const law = guided ? "inv2" : $("#p1-law").value;
+    const noncentral = !guided && $("#p1-noncentral").checked;
+    const n = (this.mode==="limite" || (guided && this.step===7)) ? +$("#p1-n").value : 5;
+    const lvl = guided ? this.step : 6;
+    return {law,noncentral,n,lvl};
+  },
+  clear(){ const b=this.board; for(let i=this.dyn.length-1;i>=0;i--){ try{ b.removeObject(this.dyn[i]); }catch(e){} } this.dyn=[]; },
+  add(type,parents,attr){ const o=this.board.create(type,parents,Object.assign({fixed:true,highlight:false,withLabel:false},attr||{})); this.dyn.push(o); return o; },
+  pt(xy,name,opt){ return this.add("point",xy,Object.assign({name:name,withLabel:!!name,size:3,fillColor:C.ink,strokeColor:C.ink,label:{fontSize:20,offset:[7,9],color:C.ink}},opt||{})); },
+  seg(p,q,opt){ return this.add("segment",[p,q],Object.assign({strokeColor:C.ink,strokeWidth:2},opt||{})); },
+  tri(pts,color,op){ return this.add("polygon",pts,{fillColor:color,fillOpacity:op,borders:{strokeWidth:0,visible:false},vertices:{visible:false},hasInnerPoints:false}); },
+  draw(){
+    const b=this.board; if(!b) return;
+    b.suspendUpdate(); this.clear();
+    const {law,noncentral,n,lvl}=this.params();
+    const S=[this.S.X(),this.S.Y()], A=[this.A.X(),this.A.Y()], Bh=[this.B.X(),this.B.Y()];
+    const dt0=P1.T/5, v=[(Bh[0]-A[0])/dt0,(Bh[1]-A[1])/dt0];
+    CAPPED=false;
+    const R=construct(S,A,v,n,law,noncentral); const P=R.P;
+    const minR=Math.min(...P.map(p=>Math.hypot(p[0]-S[0],p[1]-S[1])));
+    this.warn=[]; if(Math.hypot(Bh[0]-A[0],Bh[1]-A[1])<0.15) this.warn.push("B coincide quasi con A: il corpo è quasi fermo");
+    if(minR<0.35) this.warn.push("il corpo passa troppo vicino a S: figura poco leggibile");
+    if(CAPPED) this.warn.push("vicino a S la forza è stata limitata: lì non è più ∝ 1/r²");
+    const big = n>5;
+    this.B.setAttribute({visible:!big, withLabel:!big});
+    this.last={S,P,n,law,noncentral,lvl};
+    const names="ABCDEF", small="·cdef";
+    const areas=[];
+    if(!big){
+      // ---- costruzione passo per passo (n = 5) ----
+      const show=k=>lvl>=k;
+      const c1=R.c[1], J1=R.J[1];
+      // passo 2: inerziale
+      if(show(1)){
+        this.tri([S,P[0],P[1]],C.fill1,.32);
+        this.tri([S,P[1],c1],C.fill2,lvl>=4?.0:.22);
+        if(lvl>=4) this.add("polygon",[S,P[1],c1],{fillOpacity:0,borders:{strokeColor:C.fill2,strokeWidth:1.5,dash:2},vertices:{visible:false}});
+        this.seg(S,P[0],{strokeColor:C.muted,strokeWidth:1}); this.seg(S,P[1],{strokeColor:C.muted,strokeWidth:1}); this.seg(S,c1,{strokeColor:C.muted,strokeWidth:1,dash:2});
+        this.seg(P[1],c1,{dash:2,strokeColor:C.ink,strokeWidth:1.5});
+        this.pt(c1,"c",{size:2,face:"o",fillColor:"#fff",label:{fontSize:20,offset:[7,4],color:C.ink,cssStyle:"font-style:italic"}});
+      }
+      this.seg(P[0],P[1],{strokeWidth:3});
+      // passo 3: impulso
+      if(show(2)){
+        const tip=[P[1][0]+J1[0],P[1][1]+J1[1]];
+        this.add("arrow",[P[1],tip],{strokeColor:C.accent,strokeWidth:3,lastArrow:{type:2,size:5}});
+        if(lvl===2) this.add("text",[tip[0]-0.15,tip[1]-0.35,"impulso"],{fontSize:15,color:C.accent,anchorX:"right"});
+        this.seg(P[1],P[2],{strokeColor:lvl>=3?C.ink:C.accent,strokeWidth:3});
+      }
+      // passo 4: cC parallela a BS
+      if(show(3)){
+        const tip=[P[1][0]+J1[0],P[1][1]+J1[1]];
+        this.seg(c1,P[2],{dash:2,strokeColor:C.accent,strokeWidth:lvl===4?4:2});
+        this.seg(tip,P[2],{dash:1,strokeColor:C.muted,strokeWidth:1});
+        this.pt(P[2],"C",{label:{fontSize:20,offset:[-24,-10],color:C.ink}});
+      }
+      // passo 5: SC, triangolo SBC
+      if(show(4)){
+        this.tri([S,P[1],P[2]],C.fill1,.32);
+        this.seg(S,P[2],{strokeColor:C.muted,strokeWidth:1});
+        if(lvl===4){ this.add("line",[S,P[1]],{strokeColor:C.given,strokeWidth:2.5,straightFirst:false,straightLast:false});
+                     this.add("line",[c1,P[2]],{strokeColor:C.accent,strokeWidth:1,dash:3}); this.add("line",[S,P[1]],{strokeColor:C.given,strokeWidth:1,dash:3}); }
+      }
+      // passo 6: D, E, F
+      if(show(5)){
+        for(let k=2;k<5;k++){
+          this.tri([S,P[k],P[k+1]],k%2?C.fill1:C.fill2,k%2?.32:.22);
+          this.seg(P[k],R.c[k],{dash:2,strokeWidth:1.2});
+          this.seg(R.c[k],P[k+1],{dash:2,strokeColor:C.accent,strokeWidth:1.5});
+          this.pt(R.c[k],small[k],{size:2,face:"o",fillColor:"#fff",label:{fontSize:20,offset:[7,4],cssStyle:"font-style:italic"}});
+          this.seg(P[k],P[k+1],{strokeWidth:3});
+          this.seg(S,P[k+1],{strokeColor:C.muted,strokeWidth:1});
+          this.pt(P[k+1],names[k+1],{label:{fontSize:20,offset:[-24,-10],color:C.ink}});
+        }
+      }
+      // passo 7: SADS e SAFS
+      if(show(6)){
+        this.add("polygon",[S,P[0],P[1],P[2],P[3]],{fillColor:C.accent,fillOpacity:.10,borders:{strokeColor:C.accent,strokeWidth:2},vertices:{visible:false},hasInnerPoints:false});
+      }
+      // aree
+      if(lvl>=1) areas.push(["SAB",triArea(S,P[0],P[1])]);
+      if(lvl>=1 && lvl<5) areas.push(["SBc",triArea(S,P[1],c1)]);
+      if(lvl>=4) areas.push(["SBC",triArea(S,P[1],P[2])]);
+      if(lvl>=5) for(let k=2;k<5;k++) areas.push(["S"+names[k]+names[k+1],triArea(S,P[k],P[k+1])]);
+    } else {
+      // ---- passaggio al limite ----
+      const m=Math.round(3*n/5);
+      const sector=[S].concat(P.slice(0,m+1));
+      this.add("polygon",sector,{fillColor:C.accent,fillOpacity:.10,borders:{visible:false},vertices:{visible:false},hasInnerPoints:false});
+      const all=[S].concat(P);
+      this.add("polygon",all,{fillColor:C.fill1,fillOpacity:.18,borders:{visible:false},vertices:{visible:false},hasInnerPoints:false});
+      const xs=[],ys=[]; const step=Math.max(1,Math.round(n/40));
+      for(let k=0;k<=n;k+=step){ xs.push(S[0],P[k][0],NaN); ys.push(S[1],P[k][1],NaN); }
+      this.add("curve",[xs,ys],{strokeColor:C.muted,strokeWidth:.7});
+      const hasRef = law!=="rand" && !noncentral;
+      const ref = hasRef ? rk4(S,A,v,law,4000) : [];
+      if(hasRef) this.add("curve",[ref.map(p=>p[0]),ref.map(p=>p[1])],{strokeColor:C.given,strokeWidth:1.2,dash:2});
+      this.add("curve",[P.map(p=>p[0]),P.map(p=>p[1])],{strokeColor:C.ink,strokeWidth:n>40?2.2:2.6});
+      if(n<=40) P.forEach((p,k)=>{ if(k>0) this.pt(p,"",{size:1.5}); });
+      this.pt(P[m],"D",{size:3}); this.pt(P[n],"F",{size:3});
+      const aD=P.slice(0,m).reduce((s,p,k)=>s+triArea(S,p,P[k+1]),0);
+      const aF=P.slice(0,n).reduce((s,p,k)=>s+triArea(S,p,P[k+1]),0);
+      let dmax=0; if(hasRef){ for(let k=0;k<=n;k++){ const q=ref[Math.round(k*4000/n)]; dmax=Math.max(dmax,Math.hypot(P[k][0]-q[0],P[k][1]-q[1])); } }
+      this.limitInfo={aD,aF,dmax};
+      const xsAll=P.concat(ref,[S]).map(p=>p[0]), ysAll=P.concat(ref,[S]).map(p=>p[1]);
+      const [x0,y1,x1,y0]=b.getBoundingBox(); const mx0=Math.min(...xsAll), mx1=Math.max(...xsAll), my0=Math.min(...ysAll), my1=Math.max(...ysAll);
+      if(mx0<x0||mx1>x1||my0<y0||my1>y1){ const pad=0.8; b.setBoundingBox([Math.min(x0,mx0-pad),Math.max(y1,my1+pad),Math.max(x1,mx1+pad),Math.min(y0,my0-pad)],true); }
+    }
+    b.unsuspendUpdate();
+    this.renderAreas(areas,lvl,n,R);
+  },
+  renderAreas(areas,lvl,n,R){
+    const box=$("#p1-areas"); box.innerHTML="";
+    const {noncentral,law}=this.last;
+    if(n>5 && this.limitInfo){
+      const {aD,aF,dmax}=this.limitInfo;
+      box.innerHTML=`<div class="chip"><b>n = ${n}</b> triangoli</div>
+        <div class="chip ${Math.abs(aD/aF-0.6)<1e-6?'ok':'bad'}">SADS : SAFS = <b>${(aD/aF).toFixed(4)}</b><br>tempi 3 : 5 = 0.6000</div>
+        ${law!=="rand"&&!noncentral?`<div class="chip">distanza max dalla traiettoria continua<br>(calcolata a parte con RK4): <b>${dmax.toFixed(3)}</b></div>`:(noncentral?`<div class="chip bad"><span class="warn">Forza non centrale:</span><br>le aree non sono proporzionali ai tempi</div>`:`<div class="chip">con impulsi casuali non c'è<br>una traiettoria limite unica</div>`)}${this.warnHTML()}`;
+      return;
+    }
+    if(!areas.length){ box.innerHTML=`<div class="chip">Avanza con ▶ per vedere le aree</div>`; return; }
+    const mx=Math.max(...areas.map(a=>a[1]));
+    const eq = areas.every(a=>Math.abs(a[1]-areas[0][1])<1e-9*Math.max(1,mx));
+    areas.forEach(([nm,a])=>{ const d=document.createElement("div"); d.className="chip"+(eq?" ok":" bad");
+      d.innerHTML=`${nm} = <b>${a.toFixed(3)}</b><div class="bar" style="width:${Math.max(6,60*a/mx)}px"></div>`; box.appendChild(d); });
+    if(lvl>=6){ const P=R.P,S=this.last.S; const sD=[0,1,2].reduce((s,k)=>s+triArea(S,P[k],P[k+1]),0), sF=[0,1,2,3,4].reduce((s,k)=>s+triArea(S,P[k],P[k+1]),0);
+      const d=document.createElement("div"); d.className="chip"+(Math.abs(sD/sF-0.6)<1e-9?" ok":" bad"); d.innerHTML=`SADS : SAFS = <b>${(sD/sF).toFixed(4)}</b><br>tempi 3 : 5`; box.appendChild(d); }
+    if(this.warn&&this.warn.length) box.insertAdjacentHTML("beforeend",this.warnHTML());
+    if(noncentral){ const d=document.createElement("div"); d.className="chip bad"; d.innerHTML=`<span class="warn">Forza non centrale:</span><br>le aree non sono uguali`; box.appendChild(d); }
+  },
+  warnHTML(){ return (this.warn||[]).map(w=>`<div class="chip bad">⚠ ${w}</div>`).join(""); },
+  /* animazione del corpo lungo la spezzata, con l'area spazzata */
+  toggleAnim(){ if(this.anim && this.anim.running) return this.stopAnim(); this.stopAnim(); this.startAnim(); },
+  stopAnim(){ if(this.anim){ cancelAnimationFrame(this.anim.raf); this.anim.objs.forEach(o=>{try{this.board.removeObject(o)}catch(e){}}); this.anim=null; } $("#p1-anim").textContent="▶ Anima"; },
+  startAnim(){
+    if(this.mode==="guida" && this.step<5) setStep("prop-1",5);
+    const {P,S}=this.last; const n=P.length-1; const b=this.board;
+    let u=0; const pos=()=>{ const k=Math.min(n-1,Math.floor(u)), f=u-k; return [P[k][0]+f*(P[k+1][0]-P[k][0]), P[k][1]+f*(P[k+1][1]-P[k][1])]; };
+    const body=b.create("point",[()=>pos()[0],()=>pos()[1]],{name:"",size:7,fillColor:C.accent,strokeColor:"#fff",strokeWidth:2,fixed:true,withLabel:false});
+    const rad=b.create("segment",[[S[0],S[1]],body],{strokeColor:C.accent,strokeWidth:2,fixed:true});
+    const txt=b.create("text",[()=>b.getBoundingBox()[0]+0.3,()=>b.getBoundingBox()[1]-0.5,()=>{
+      const k=Math.min(n-1,Math.floor(u)), f=u-k; let a=0; for(let i=0;i<k;i++) a+=triArea(S,P[i],P[i+1]); a+=f*triArea(S,P[k],P[k+1]);
+      const t=u*P1.T/n; return `tempo ${t.toFixed(2)} · area ${a.toFixed(2)} · area/tempo ${(t>0?a/t:0).toFixed(3)}`; }],{fontSize:14,color:C.ink,fixed:true,cssStyle:"font-family:Inter,system-ui,sans-serif"});
+    this.anim={objs:[body,rad,txt],raf:0,running:true}; $("#p1-anim").textContent="■ Ferma";
+    let t0=null; const dur=reducedMotion?1:6000;
+    const f=ts=>{ if(!this.anim) return; if(t0===null) t0=ts; u=Math.min(n,n*(ts-t0)/dur); b.update(); if(u<n) this.anim.raf=requestAnimationFrame(f); else { this.anim.running=false; $("#p1-anim").textContent="▶ Rianima"; } };
+    this.anim.raf=requestAnimationFrame(f);
+  }
+};
+
+
+/* ================= PROPOSIZIONE XI ================= */
+STEPS["prop-11"] = [
+  {it:"Sia S il fuoco dell'ellisse. Si conduca SP, che tagli il diametro DK dell'ellisse in E e l'ordinata Qv in x; e si completi il parallelogramma QxPR.",
+   en:"Let S be the focus of the ellipsis. Draw SP cutting the diameter DK of the ellipsis in E, and the ordinate Qv in x; and complete the parallelogram QxPR.",
+   alt:"Ellisse con centro C e fuoco S; il punto P con la tangente; il diametro DK parallelo alla tangente, tagliato da SP in E; l'ordinata Qv tagliata da SP in x; il parallelogramma QxPR."},
+  {it:"È evidente che EP è uguale al semiasse maggiore AC: infatti, conducendo dall'altro fuoco H dell'ellisse HI parallela a EC, poiché CS e CH sono uguali, saranno uguali anche ES ed EI;",
+   en:"It is evident that EP is equal to the greater semi-axis AC: for drawing HI from the other focus H of the ellipsis parallel to EC, because CS, CH are equal, ES, EI will be also equal;",
+   alt:"Dal secondo fuoco H si conduce HI parallela a EC: i segmenti ES ed EI, evidenziati, sono uguali."},
+  {it:"cosicché EP è la semisomma di PS e PI, cioè (a causa delle parallele HI, PR e degli angoli uguali IPR, HPZ) di PS e PH, che prese insieme sono uguali all'intero asse 2AC.",
+   en:"so that EP is the half sum of PS, PI, that is (because of the parallels HI, PR, and the equal angles IPR, HPZ), of PS, PH, which taken together are equal to the whole axis 2AC.",
+   alt:"Gli angoli IPR e HPZ sono uguali, il triangolo PIH è isoscele: EP è la semisomma di PS e PH, cioè il semiasse AC."},
+  {it:"Si conduca QT perpendicolare a SP e, chiamato L il lato retto principale dell'ellisse (cioè \\(\\tfrac{2BC^2}{AC}\\)), avremo che L × QR sta a L × Pv come QR sta a Pv, cioè come PE, ossia AC, sta a PC;",
+   en:"Draw QT perpendicular to SP, and putting L for the principal latus rectum of the ellipsis (or for 2BC²/AC), we shall have L × QR to L × Pv as QR to Pv, that is, as PE or AC to PC;",
+   alt:"QT perpendicolare a SP; il lato retto L è la corda per S perpendicolare all'asse. QR sta a Pv come AC sta a PC."},
+  {it:"e L × Pv sta a Gv × vP come L sta a Gv; e Gv × vP sta a Qv² come PC² sta a CD²;",
+   en:"and L × Pv to GvP as L to Gv; and GvP to Qv² as PC² to CD²;",
+   alt:"Il diametro PG con il punto v: il rettangolo Gv per vP sta al quadrato dell'ordinata Qv come PC² sta a CD²."},
+  {it:"e (per il Cor. 2 del Lemma VII), quando i punti Q e P coincidono, Qv² sta a Qx² in rapporto di uguaglianza; e Qx², o Qv², sta a QT² come EP² sta a PF², cioè come CA² sta a PF², ovvero (per il Lemma XII) come CD² sta a CB².",
+   en:"and by (Corol. 2, Lem. VII) the points Q and P coinciding, Qv² is to Qx² in the ratio of equality; and Qx² or Qv² is to QT² as EP² to PF², that is, as CA² to PF², or (by Lem. XII) as CD² to CB².",
+   alt:"PF perpendicolare a DK. I triangoli QxT ed EPF sono simili; per il Lemma XII PF per CD è uguale ad AC per CB."},
+  {it:"E componendo tutti questi rapporti avremo che L × QR sta a QT² come AC × L × PC² × CD², ossia 2CB² × PC² × CD², sta a PC × Gv × CD² × CB², ossia come 2PC sta a Gv.",
+   en:"And compounding all those ratios together, we shall have L × QR to QT² as AC × L × PC² × CD², or 2CB² × PC² × CD² to PC × Gv × CD² × CB², or as 2PC to Gv.",
+   alt:"Composizione dei rapporti: L per QR sta a QT² come 2PC sta a Gv."},
+  {it:"Ma quando i punti Q e P coincidono, 2PC e Gv sono uguali. Quindi anche le quantità L × QR e QT², che sono proporzionali a esse, saranno uguali.",
+   en:"But the points Q and P coinciding, 2PC and Gv are equal. And therefore the quantities L × QR and QT², proportional to these, will be also equal.",
+   alt:"Con il cursore Q va verso P: Gv tende a 2PC e il rapporto L per QR su QT² tende a 1."},
+  {it:"Si moltiplichino questi uguali per \\(\\tfrac{SP^2}{QR}\\), e L × SP² diventerà uguale a \\(\\tfrac{SP^2\\times QT^2}{QR}\\). Perciò (per i Cor. 1 e 5 della Prop. VI) la forza centripeta è inversamente proporzionale a L × SP², cioè inversamente in ragione duplicata della distanza SP. <span class='qed'>C.V.T.</span>",
+   en:"Let those equals be drawn into SP²/QR, and L × SP² will become equal to SP² × QT²/QR. And therefore (by Corol. 1 and 5, Prop. VI) the centripetal force is reciprocally as L × SP², that is, reciprocally in the duplicate ratio of the distance SP. Q.E.I.",
+   alt:"Conclusione: la forza diretta verso il fuoco S è inversamente proporzionale al quadrato della distanza SP. Con «Fai orbitare P» la freccia della forza si accorcia quando P si allontana da S."}
+];
+
+function lineInter(p,d,q,e){ const det=d[0]*(-e[1])-d[1]*(-e[0]); const rx=q[0]-p[0], ry=q[1]-p[1]; const t=(rx*(-e[1])-ry*(-e[0]))/det; return [p[0]+t*d[0],p[1]+t*d[1]]; }
+function footOn(q,p,d){ const n=Math.hypot(d[0],d[1]), u=[d[0]/n,d[1]/n], t=(q[0]-p[0])*u[0]+(q[1]-p[1])*u[1]; return [p[0]+t*u[0],p[1]+t*u[1]]; }
+const dist=(p,q)=>Math.hypot(p[0]-q[0],p[1]-q[1]);
+const lerpPt=(p,q,t)=>[p[0]+t*(q[0]-p[0]),p[1]+t*(q[1]-p[1])];
+
+VIEWS["prop-11"] = {
+  step:0, dyn:[], a:4.2, zoom:false, anim:null,
+  e(){ return +$("#p11-e").value; },
+  b(){ const e=this.e(); return this.a*Math.sqrt(1-e*e); },
+  delta(){ const s=+$("#p11-d").value; return 0.45*Math.pow(0.004/0.45, s); },
+  bbox0(){ return [-5.4,4.6,5.4,-4.6]; },
+  init(){
+    const b=this.board=makeBoard("b-prop-11",this.bbox0());
+    const a=this.a;
+    this.ell=b.create("curve",[t=>a*Math.cos(t), t=>this.b()*Math.sin(t), 0, 2*Math.PI],{strokeColor:C.ink,strokeWidth:2,fixed:true,highlight:false});
+    this.P=b.create("glider",[a*Math.cos(0.8), this.b()*Math.sin(0.8), this.ell],{name:"P",size:6,face:"o",fillColor:"#fff",strokeColor:C.given,strokeWidth:2.5,label:{offset:[8,10],fontSize:20,color:C.ink}});
+    this.P.on("drag",()=>this.queue());
+    $("#p11-d").addEventListener("input",()=>this.queue());
+    $("#p11-e").addEventListener("input",()=>{ this.stopOrbit(); $("#p11-ev").textContent=this.e().toFixed(2); this.queue(); });
+    $("#p11-qp").addEventListener("click",()=>this.animQP());
+    $("#p11-orbit").addEventListener("click",()=>this.toggleOrbit());
+    $("#p11-zoom").addEventListener("click",()=>{ this.zoom=!this.zoom; $("#p11-zoom").setAttribute("aria-pressed",this.zoom); $("#p11-zoom").textContent=this.zoom?"🔍 Vista intera":"🔍 Ingrandisci attorno a P"; if(!this.zoom) b.setBoundingBox(this.bbox0(),true); this.queue(); });
+    $("#p11-reset").addEventListener("click",()=>{ this.stopOrbit(); $("#p11-e").value=0.7; $("#p11-ev").textContent="0.70"; $("#p11-d").value=0; this.setTheta(0.8); this.zoom=false; $("#p11-zoom").setAttribute("aria-pressed",false); $("#p11-zoom").textContent="🔍 Ingrandisci attorno a P"; b.setBoundingBox(this.bbox0(),true); this.queue(); });
+    this.draw();
+  },
+  theta(){ return Math.atan2(this.P.Y()/this.b(), this.P.X()/this.a); },
+  setTheta(t){ this.P.moveTo([this.a*Math.cos(t), this.b()*Math.sin(t)]); },
+  onStep(){ this.queue(); },
+  queue(){ if(this._q) return; this._q=requestAnimationFrame(()=>{ this._q=null; this.draw(); }); },
+  clear(){ const b=this.board; for(let i=this.dyn.length-1;i>=0;i--){ try{ b.removeObject(this.dyn[i]); }catch(e){} } this.dyn=[]; },
+  add(type,parents,attr){ const o=this.board.create(type,parents,Object.assign({fixed:true,highlight:false,withLabel:false},attr||{})); this.dyn.push(o); return o; },
+  pt(xy,name,off,opt){ return this.add("point",xy,Object.assign({name:name,withLabel:!!name,size:2.5,fillColor:C.ink,strokeColor:C.ink,label:{fontSize:18,offset:off||[6,8],color:C.ink}},opt||{})); },
+  seg(p,q,opt){ return this.add("segment",[p,q],Object.assign({strokeColor:C.ink,strokeWidth:1.5},opt||{})); },
+  geom(){
+    const a=this.a, bb=this.b(), c=Math.sqrt(a*a-bb*bb), th=this.theta(), dl=this.delta();
+    const C0=[0,0], S=[-c,0], H=[c,0], A=[a,0], B=[0,bb];
+    const P=[a*Math.cos(th), bb*Math.sin(th)], tg=[-a*Math.sin(th), bb*Math.cos(th)];
+    const D=[-a*Math.sin(th), bb*Math.cos(th)], K=[-D[0],-D[1]], G=[-P[0],-P[1]];
+    const Q=[a*Math.cos(th+dl), bb*Math.sin(th+dl)];
+    const v=lineInter(Q,tg,C0,P), x=lineInter(Q,tg,S,[P[0]-S[0],P[1]-S[1]]);
+    const R=[Q[0]+P[0]-x[0], Q[1]+P[1]-x[1]];
+    const E=lineInter(S,[P[0]-S[0],P[1]-S[1]],C0,tg), I=lineInter(S,[P[0]-S[0],P[1]-S[1]],H,tg);
+    const T=footOn(Q,S,[P[0]-S[0],P[1]-S[1]]), F=footOn(P,C0,tg);
+    const tn=Math.hypot(tg[0],tg[1]), Z=[P[0]-1.4*tg[0]/tn, P[1]-1.4*tg[1]/tn], Rf=[P[0]+1.6*tg[0]/tn, P[1]+1.6*tg[1]/tn];
+    const L=2*bb*bb/a;
+    const m={EP:dist(E,P),AC:a,ES:dist(E,S),EI:dist(E,I),PS:dist(P,S),PH:dist(P,H),QR:dist(Q,R),Pv:dist(P,v),PC:dist(P,C0),
+      Gv:dist(G,v),Qv:dist(Q,v),Qx:dist(Q,x),QT:dist(Q,T),PF:dist(P,F),CD:dist(D,C0),CB:bb,SP:dist(S,P),L};
+    return {a,bb,c,th,dl,C0,S,H,A,B,P,tg,D,K,G,Q,v,x,R,E,I,T,F,Z,Rf,L,m};
+  },
+  draw(){
+    const b=this.board; if(!b) return;
+    b.suspendUpdate(); this.clear();
+    const g=this.geom(), lvl=this.step;
+    const {C0,S,H,A,B,P,D,K,G,Q,v,x,R,E,I,T,F,Z,Rf,L,m}=g;
+    const ext=(p,q,k)=>[p[0]+k*(q[0]-p[0]),p[1]+k*(q[1]-p[1])];
+    // sempre: assi, centro, fuoco, tangente, diametri, costruzione base
+    this.seg([-g.a,0],A,{strokeColor:C.muted,strokeWidth:1}); this.seg([0,-g.bb],B,{strokeColor:C.muted,strokeWidth:1});
+    this.pt(C0,"C",[-16,-12]); this.pt(A,"A",[6,-14],{size:1.5}); this.pt(B,"B",[6,10],{size:1.5});
+    this.pt(S,"S",[-8,-16],{size:3.5});
+    this.seg(Z,Rf,{strokeColor:C.ink,strokeWidth:1.5});
+    this.seg(D,K,{strokeColor:C.given,strokeWidth:1.5}); this.pt(D,"D",[-16,10],{size:1.5}); this.pt(K,"K",[6,-12],{size:1.5});
+    if(lvl>=3) this.seg(P,C0,{strokeColor:C.muted,strokeWidth:1,dash:2});
+    const par=q=>{ const d=[P[0]-S[0],P[1]-S[1]]; return ((q[0]-S[0])*d[0]+(q[1]-S[1])*d[1])/(d[0]*d[0]+d[1]*d[1]); };
+    const tmin=Math.min(0,par(E),lvl>=1?par(I):0);
+    this.seg(ext(S,P,tmin-0.05),ext(S,P,1.08),{strokeColor:C.ink,strokeWidth:1.5});
+    this.pt(E,"E",[-6,-18]);
+    this.seg(Q,v,{strokeColor:C.accent,strokeWidth:1.5}); this.pt(Q,"Q",[-6,12],{size:3}); this.pt(v,"v",[6,-6],{size:2,label:{fontSize:18,offset:[6,-8],cssStyle:"font-style:italic"}});
+    this.pt(x,"x",[-14,-6],{size:2,label:{fontSize:18,offset:[-14,-8],cssStyle:"font-style:italic"}});
+    this.add("polygon",[Q,x,P,R],{fillColor:C.accent,fillOpacity:.10,borders:{strokeColor:C.accent,strokeWidth:1.2,dash:1},vertices:{visible:false},hasInnerPoints:false});
+    this.pt(R,"R",[4,10],{size:2});
+    // passo 2: H, HI parallela a EC
+    if(lvl>=1){ this.pt(H,"H",[4,-16],{size:3}); this.seg(H,I,{strokeColor:C.given,strokeWidth:1.5,dash:2}); this.pt(I,"I",[-14,8]);
+      if(lvl<=2){ this.seg(E,S,{strokeColor:C.fill1,strokeWidth:5}); this.seg(E,I,{strokeColor:C.ok,strokeWidth:5}); } }
+    // passo 3: PH, Z, angoli uguali
+    if(lvl>=2){ this.seg(P,H,{strokeColor:C.given,strokeWidth:1.5}); this.pt(Z,"Z",[4,-12],{size:1.5});
+      if(lvl===2){ const iv=q=>this.add("point",q,{visible:false});
+                   const pR=iv(Rf), pP=iv(P), pI=iv(I), pH=iv(H), pZ=iv(Z);
+                   const ang={radius:0.5,fillColor:C.accent,fillOpacity:.25,strokeColor:C.accent,name:"",withLabel:false};
+                   this.add("nonreflexangle",[pR,pP,pI],ang); this.add("nonreflexangle",[pH,pP,pZ],ang);
+                   this.seg(E,P,{strokeColor:C.accent,strokeWidth:4}); } }
+    // passo 4: QT, lato retto
+    if(lvl>=3){ this.seg(Q,T,{strokeColor:C.given,strokeWidth:1.5}); this.pt(T,"T",[-14,-4],{size:2});
+      this.seg([S[0],-L/2],[S[0],L/2],{strokeColor:C.ok,strokeWidth:2.5}); this.add("text",[S[0]+0.08,-L/2+0.25,"L"],{fontSize:18,color:C.ok});
+      if(lvl===3){ this.seg(Q,R,{strokeColor:C.accent,strokeWidth:4}); this.seg(P,v,{strokeColor:C.given,strokeWidth:4}); } }
+    // passo 5: G, Gv
+    if(lvl>=4){ this.seg(C0,G,{strokeColor:C.muted,strokeWidth:1,dash:2}); this.pt(G,"G",[-16,-10],{size:2});
+      if(lvl===4){ this.seg(G,v,{strokeColor:C.given,strokeWidth:3}); } }
+    // passo 6: F, PF
+    if(lvl>=5){ this.seg(P,F,{strokeColor:C.given,strokeWidth:1.5,dash:2}); this.pt(F,"F",[6,-10],{size:2});
+      if(lvl===5){ this.add("polygon",[Q,x,T],{fillColor:C.fill1,fillOpacity:.35,borders:{visible:false},vertices:{visible:false}}); this.add("polygon",[E,P,F],{fillColor:C.fill1,fillOpacity:.35,borders:{visible:false},vertices:{visible:false}}); } }
+    // passo 9: freccia della forza
+    if(lvl>=8){ const k=1.6*Math.pow(g.a-g.c,2), f=Math.min(2.4,k/(m.SP*m.SP)); const u=[(S[0]-P[0])/m.SP,(S[1]-P[1])/m.SP];
+      this.add("arrow",[P,[P[0]+f*u[0],P[1]+f*u[1]]],{strokeColor:C.accent,strokeWidth:3.5,lastArrow:{type:2,size:5}}); }
+    // vista ingrandita
+    if(this.zoom){ const r=Math.max(0.02, 2.6*dist(P,Q)); b.setBoundingBox([P[0]-r,P[1]+r,P[0]+r,P[1]-r],true); }
+    b.unsuspendUpdate();
+    this.last=g; this.renderChips(g,lvl);
+    $("#p11-dv").textContent="corda QP ≈ "+dist(g.P,g.Q).toFixed(3);
+  },
+  renderChips(g,lvl){
+    const m=g.m, box=$("#p11-ratios"); const f=v=>v.toFixed(4);
+    const rel=(u,w)=>Math.abs(u-w)/Math.max(1e-12,Math.abs(w));
+    const chip=(lab,l,r,kind)=>{ const ok = kind==="esatto" ? rel(l,r)<1e-7 : null;
+      const cls = kind==="esatto" ? (ok?"ok":"bad") : "";
+      const mark = kind==="esatto" ? (ok?"✓":"✗") : "→";
+      return `<div class="chip ${cls}"><b>${mark}</b> ${lab}<br>${f(l)} : ${f(r)}</div>`; };
+    const out=[];
+    if(lvl>=1) out.push(chip("ES = EI",m.ES,m.EI,"esatto"));
+    if(lvl>=2) out.push(chip("EP = AC",m.EP,m.AC,"esatto"), chip("(PS+PH)/2 = AC",(m.PS+m.PH)/2,m.AC,"esatto"));
+    if(lvl>=3) out.push(chip("QR/Pv = AC/PC",m.QR/m.Pv,m.AC/m.PC,"esatto"));
+    if(lvl>=4) out.push(chip("Gv·vP/Qv² = PC²/CD²",m.Gv*m.Pv/(m.Qv*m.Qv),m.PC*m.PC/(m.CD*m.CD),"esatto"));
+    if(lvl>=5) out.push(chip("Qv²/Qx² → 1",m.Qv*m.Qv/(m.Qx*m.Qx),1,"limite"), chip("Qx²/QT² = EP²/PF²",m.Qx*m.Qx/(m.QT*m.QT),m.EP*m.EP/(m.PF*m.PF),"esatto"), chip("CA²/PF² = CD²/CB² (Lemma XII)",m.AC*m.AC/(m.PF*m.PF),m.CD*m.CD/(m.CB*m.CB),"esatto"));
+    if(lvl>=6) out.push(chip("L·QR/QT² e 2PC/Gv",m.L*m.QR/(m.QT*m.QT),2*m.PC/m.Gv,"limite"));
+    if(lvl>=7) out.push(chip("Gv → 2PC",m.Gv,2*m.PC,"limite"), chip("L·QR/QT² → 1",m.L*m.QR/(m.QT*m.QT),1,"limite"));
+    if(lvl>=8) out.push(chip("QT²/QR → L",m.QT*m.QT/m.QR,m.L,"limite"), `<div class="chip">forza ∝ QR/(SP²·QT²)<br>forza × SP² ≈ <b>${f(m.QR/(m.QT*m.QT))}</b> (≈ 1/L = ${f(1/m.L)})</div>`);
+    if(lvl===6) out.push(`<div class="chip">a meno del fattore Qv²/Qx²,<br>che tende a 1</div>`);
+    box.innerHTML = out.length ? out.reverse().join("") : `<div class="chip">Avanza con ▶; con il cursore «Q → P» avvicini Q a P</div>`;
+  },
+  animQP(){
+    const r=$("#p11-d"); const start=+r.value>0.95?0:+r.value; let t0=null;
+    if(reducedMotion){ r.value=1; this.draw(); return; }
+    const f=ts=>{ if(t0===null) t0=ts; const u=Math.min(1,(ts-t0)/3000); r.value=start+(1-start)*u; this.draw(); if(u<1) requestAnimationFrame(f); };
+    requestAnimationFrame(f);
+  },
+  toggleOrbit(){ if(this.anim) return this.stopOrbit(); this.startOrbit(); },
+  stopOrbit(){ if(this.anim){ cancelAnimationFrame(this.anim); this.anim=null; } $("#p11-orbit").textContent="▶ Fai orbitare P"; },
+  startOrbit(){
+    if(this.step<8) setStep("prop-11",8);
+    $("#p11-orbit").textContent="■ Ferma";
+    // equazione di Keplero con il fuoco in S=(-c,0): M = E + e·sin E  (anomalia eccentrica E = parametro dell'ellisse)
+    const e=this.e(); let Eecc=this.theta(); let M=Eecc+e*Math.sin(Eecc); let last=null;
+    const step=ts=>{ if(last===null) last=ts; const dt=(ts-last)/1000; last=ts; M+= dt*2*Math.PI/8;
+      for(let i=0;i<20;i++){ Eecc -= (Eecc+e*Math.sin(Eecc)-M)/(1+e*Math.cos(Eecc)); }
+      this.setTheta(Eecc); this.draw(); this.anim=requestAnimationFrame(step); };
+    this.anim=requestAnimationFrame(step);
+  }
+};
+
+/* ---------------- Avvio ---------------- */
+Object.keys(STEPS).forEach(renderSteps);
+if(window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise();
+window.addEventListener("hashchange",route);
+route();
+</script>
+</body>
+</html>

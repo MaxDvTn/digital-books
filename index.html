@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Classici della scienza interattivi</title>
+<meta name="description" content="Newton e Galileo in edizioni didattiche interattive per il liceo scientifico.">
+<style>
+  :root { --carta:#f6f1e7; --inchiostro:#2b2622; --rubrica:#8c2f1f; --tenue:#6d645a; --filo:#d8cdb9; }
+  @media (prefers-color-scheme: dark) {
+    :root { --carta:#1d1b19; --inchiostro:#ece5d8; --rubrica:#e08a6d; --tenue:#a89d8f; --filo:#3b362f; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--carta); color:var(--inchiostro);
+         font-family: "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; line-height:1.55; }
+  main { max-width: 860px; margin:0 auto; padding: 3.5rem 1.25rem 4rem; }
+  header { text-align:center; border-bottom:1px solid var(--filo); padding-bottom:2rem; margin-bottom:2rem; }
+  .occhiello { font-variant: small-caps; letter-spacing:.12em; color:var(--rubrica); margin:0 0 .4rem; }
+  h1 { font-weight:normal; font-size: clamp(1.9rem, 5vw, 2.8rem); margin:0 0 .6rem; }
+  header p { color:var(--tenue); margin:0 auto; max-width: 36rem; }
+  h2 { font-variant: small-caps; letter-spacing:.08em; font-weight:normal; color:var(--rubrica);
+       font-size:1.15rem; margin: 2.4rem 0 1rem; }
+  .libri { display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); }
+  .libro { border:1px solid var(--filo); padding:1.1rem 1.2rem 1.2rem; border-radius:3px; display:flex; flex-direction:column; }
+  .libro h3 { margin:0 0 .15rem; font-size:1.2rem; font-weight:normal; font-style:italic; }
+  .autore { margin:0 0 .6rem; color:var(--tenue); font-size:.92rem; }
+  .libro p.desc { margin:0 0 1rem; font-size:.95rem; flex:1; }
+  .azioni { display:flex; flex-wrap:wrap; gap:.5rem; }
+  .azioni a { text-decoration:none; font-size:.9rem; padding:.35rem .8rem; border-radius:2px;
+              border:1px solid var(--rubrica); color:var(--rubrica); }
+  .azioni a.prim { background:var(--rubrica); color:var(--carta); }
+  .azioni a:hover { opacity:.85; }
+  footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--filo); color:var(--tenue); font-size:.85rem; text-align:center; }
+  footer a { color:inherit; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="occhiello">Liceo scientifico «Leonardo da Vinci» · Trento</p>
+    <h1>Classici della scienza interattivi</h1>
+    <p>Newton e Galileo letti come li leggevano i loro contemporanei, con le figure che si costruiscono passo dopo passo insieme alle dimostrazioni.</p>
+  </header>
+
+  <h2>Isaac Newton</h2>
+  <div class="libri">
+    <article class="libro">
+      <h3>Principi matematici della filosofia naturale</h3>
+      <p class="autore">Nuova traduzione italiana dal latino del 1726</p>
+      <p class="desc">Pagina pilota: Leggi del moto, Lemma I, Prop. I (legge delle aree), Prop. XI (forza verso il fuoco dell'ellisse). Traduzione completa dei tre Libri in 27 fascicoli (versione di lavoro).</p>
+      <div class="azioni">
+        <a class="prim" href="principia-interattivi/verifiche/index_v041.html">Apri il pilota</a>
+        <a href="https://github.com/MaxDvTn/digital-books/tree/main/principia-interattivi/traduzione-pubblica">Fascicoli</a>
+      </div>
+    </article>
+  </div>
+
+  <h2>Galileo Galilei</h2>
+  <div class="libri">
+    <article class="libro">
+      <h3>Sidereus Nuncius</h3>
+      <p class="autore">1610 · trad. di Luisa Lanzillotta, con il latino</p>
+      <p class="desc">Libro sfogliabile con le figure interattive: le fasi della Luna e le osservazioni dei satelliti di Giove confrontate con un modello moderno.</p>
+      <div class="azioni">
+        <a class="prim" href="sidereus_nuncius/interattivo/index.html">Leggi</a>
+        <a href="sidereus_nuncius/sidereus_nuncius.pdf">PDF</a>
+      </div>
+    </article>
+    <article class="libro">
+      <h3>Discorsi e dimostrazioni matematiche intorno a due nuove scienze</h3>
+      <p class="autore">1638</p>
+      <p class="desc">Libro sfogliabile con le schede interattive sul moto equabile e sul moto accelerato.</p>
+      <div class="azioni">
+        <a class="prim" href="discorsi/interattivo/index.html">Leggi</a>
+        <a href="discorsi/discorsi.pdf">PDF</a>
+      </div>
+    </article>
+    <article class="libro">
+      <h3>Dialogo sopra i due massimi sistemi del mondo</h3>
+      <p class="autore">1632</p>
+      <p class="desc">Edizione tipografica completa. La versione interattiva è in preparazione.</p>
+      <div class="azioni">
+        <a class="prim" href="dialogo_massimi_sistemi/dialogo_massimi_sistemi.pdf">PDF</a>
+      </div>
+    </article>
+    <article class="libro">
+      <h3>Il Saggiatore</h3>
+      <p class="autore">1623</p>
+      <p class="desc">Edizione tipografica completa sull'Edizione Nazionale, con le incisioni originali. La versione interattiva è in preparazione.</p>
+      <div class="azioni">
+        <a class="prim" href="il_saggiatore/il_saggiatore.pdf">PDF</a>
+      </div>
+    </article>
+  </div>
+
+  <footer>
+    A cura di Massimo Bosetti · <i>Principia</i> CC BY-SA 4.0 · libri di Galileo CC BY-NC-SA 4.0 · codice MIT<br>
+    <a href="https://github.com/MaxDvTn/digital-books">Sorgenti su GitHub</a>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,1399 @@
+[
+ {
+  "tipo": "titolo",
+  "livello": "chapter",
+  "testo": "Astronomicus Nuncius",
+  "riga": 559
+ },
+ {
+  "tipo": "par",
+  "id": "p001",
+  "testo": "<i>Observationes recens habitae beneficio perspicilli in Lunae facie, Lacteo Circulo Stelliisque nebulosis, Innumeris Fixis, necnon in quatuor Planetis Medicea Sidera nuncupatis, nunquam in hanc usque diem cognitis</i>",
+  "note": [],
+  "riga": 560
+ },
+ {
+  "tipo": "par",
+  "id": "p002",
+  "testo": "Magna equidem in hac exigua tractatione singulis de natura speculantibus inspicienda contemplandaque propono. Magna, inquam, tum ob rei ipsius præstantiam, tum ob inauditam per ævum novitatem, tum etiam propter Organum, cuius beneficio eadem sensui nostro obviam sese fecerunt.",
+  "note": [],
+  "riga": 565
+ },
+ {
+  "tipo": "par",
+  "id": "p003",
+  "testo": "Magnum sane est, supra numerosam inerrantium Stellarum multitudinem, quæ naturali facultate in hunc usque diem conspici potuerunt, alias innumeras superaddere oculisque palam exponere, antehac conspectas nunquam, et quæ veteres ac notas plusquam supra decuplam multiplicitatem superent.",
+  "note": [],
+  "riga": 567
+ },
+ {
+  "tipo": "par",
+  "id": "p004",
+  "testo": "Pulcherrimum atque visu iucundissimum est, lunare corpus, per sex denas fere terrestres semidiametros<span class=\"sc\"> </span>a nobis remotum, tam ex propinquo intueri, ac si per duas tantum easdem dimensiones distaret; adeo ut eiusdem Lunæ diameter vicibus quasi terdenis, superficies vero noningentis, solidum autem corpus vicibus proxime viginti septem millibus, maius appareat, quam dum libera tantum oculorum acie spectatur: ex quo deinde sensata certitudine quispiam intelligat, Lunam superficie leni et perpolita nequaquam esse indutam, sed aspera et inæquali; ac, veluti ipsiusmet Telluris facies, ingentibus tumoribus, profundis lacunis atque anfractibus undiquaque confertam existere.",
+  "note": [],
+  "riga": 569
+ },
+ {
+  "tipo": "par",
+  "id": "p005",
+  "testo": "Altercationes insuper de Galaxia, seu de Lacteo circulo, substulisse, eiusque essentiam sensui, nedum intellectui, manifestasse, parvi momenti existimandum minime videtur; insuperque substantiam Stellarum, quas Nebulosas hucusque Astronomorum quilibet appellavit, digito demonstrare, longeque aliam esse quam creditum hactenus est, iocundum erit atque perpulcrum.",
+  "note": [],
+  "riga": 571
+ },
+ {
+  "tipo": "par",
+  "id": "p006",
+  "testo": "Verum, quod omnem admirationem longe superat, quodve admonitos faciendos cunctos Astronomos atque Philosophos nos apprime impulit, illud est, quod scilicet quatuor Erraticas Stellas, nemini eorum qui ante nos cognitas aut observatas, adinvenimus, quæ circa Stellam quandam insignem e numero cognitarum, instar Veneris atque Mercurii circa Solem, suas habent periodos, eamque modo præeunt, modo subsequuntur, nunquam extra certos limites ab illa digredientes. Quæ omnia ope Perspicilli a me excogitati, divina prius illuminante gratia, paucis abhinc diebus, reperta atque observata fuerunt.",
+  "note": [],
+  "riga": 573
+ },
+ {
+  "tipo": "par",
+  "id": "p007",
+  "testo": "Alia forte præstantiora, vel a me, vel ab aliis, in dies adinvenientur consimilis Organi beneficio; cuius formam et apparatum, necnon illius excogitandi occasionem, prius breviter commemorabo, deinde habitarum a me observationum historiam recensebo.",
+  "note": [],
+  "riga": 575
+ },
+ {
+  "tipo": "par",
+  "id": "p008",
+  "testo": "Mensibus abhinc decem fere, rumor ad aures nostras increpuit, fuisse a quodam Belga Perspicillum elaboratum, cuius beneficio obiecta visibilia, licet ab oculo inspicientis longe dissita, veluti propinqua distincte cernebantur; ac huius profecto admirabilis effectus nonnullæ experientiæ circumferebantur, quibus fidem alii præbebant, negabant alii. Idem paucos post dies mihi per literas a nobili Gallo Iacobo Badovere<span class=\"sc\"> </span>ex Lutetia confirmatum est; quod tandem in causa fuit, ut ad rationes inquirendas, necnon media excogitanda, per quæ ad consimilis Organi inventionem devenirem, me totum converterem; quam paulo post, doctrinæ de refractionibus innixus, assequutus sum: ac tubum primo plumbeum mihi paravi, in cuius extremitatibus vitrea duo Perspicilla, ambo ex altera parte plana, ex altera vero unum sphærice convexum, alterum vero cavum aptavi; oculum deinde ad cavum admovens obiecta satis magna et propinqua intuitus sum; triplo enim viciniora, nonuplo vero maiora apparebant, quam dum sola naturali acie spectarentur. Alium postmodum exactiorem mihi elaboravi, qui obiecta plusquam sexagesies maiora repræsentabat. Tandem, labori nullo nullisque sumptibus parcens, eo a me deventum est, ut Organum mihi construxerim adeo excellens, ut res per ipsum visæ millies fere maiores appareant, ac plusquam in terdecupla ratione viciniores, quam si naturali tantum facultate spectentur. Huius Instrumenti quot quantaque sint commoda, tam in re terrestri quam in maritima, omnino supervacaneum foret enumerare. Sed, missis terrenis, ad Cælestium speculationes me contuli; ac Lunam prius tam ex propinquo sum intuitus, ac si vix per duas Telluris diametros<span class=\"sc\"> </span>abesset. Post hanc, Stellas tum fixas, tum vagas,<span class=\"sc\"> </span>incredibili animi iucunditate sæpius observavi; cumque harum maximam frequentiam viderem, de ratione, qua illarum interstitia dimetiri possem, excogitare cœpi, ac demum reperi. Qua de re singulos præmonitos esse decet, qui ad huiuscemodi observationes accedere volunt. Primo enim necessarium est, ut sibi Perspicillum parent exactissimum, quod obiecta perlucida, distincta et nulla caligine obducta repræsentet; eademque ad minus secundum quatercentuplam rationem multiplicet; tunc enim illa bisdecuplo viciniora commonstrabit: nisi enim tale fuerit Instrumentum, ea omnia quæ a nobis conspecta sunt in cælis, quæve infra enumerabuntur, intueri tentabitur frustra. Ut autem de multiplicatione instrumenti quilibet parvo negotio certior reddatur, circulos binos aut quadrata bina chartacea contornabit, quorum alterum quatercenties altero maius existat; id autem erit tunc, cum maioris diameter ad diametrum alterius longitudine fuerit vigecupla: deinde superficies ambas in eodem pariete infixas simul a longe spectabit, minorem quidem altero oculo ad Perspicillum admoto, maiorem vero altero oculo libero; commode enim id fieri licet uno eodemque tempore, oculis ambobus adapertis: tunc enim figuræ ambæ eiusdem apparebunt magnitudinis, si Organum secundum optatam proportionem obiecta multiplicaverit. Consimili parato Instrumento, de ratione distantiarum dimetiendarum inquirendum erit: quod tali artificio assequemur.",
+  "note": [],
+  "riga": 577
+ },
+ {
+  "tipo": "figura",
+  "id": "figura05",
+  "file": "images/figura05.png",
+  "riga": 579
+ },
+ {
+  "tipo": "par",
+  "id": "p009",
+  "testo": "Sit enim, facilioris intelligentiæ gratia, tubus ABCD. Oculus inspicientis esto E. Radii, dum nulla in tubo adessent Perspicilla, ad obiectum FG secundum lineas rectas ECF, EDG ferrentur; sed, appositis Perspicillis, ferantur secundum lineas refractas ECH, EDI: coarctantur enim, et qui prius liberi ad FG obiectum dirigebantur, partem tantummodo HI compræhendent. Accepta deinde ratione distantiæ EH ad lineam HI, per tabulam sinuum reperietur quantitas anguli in oculo ex obiecto HI constituti, quem minuta quædam tantum continere comperiemus. Quod si Specillo CD bracteas, alias maioribus, alias vero minoribus perforatas foraminibus, aptaverimus, modo hanc, modo illam, prout opus fuerit, superimponentes, angulos alios atque alios pluribus paucioribusque minutis subtendentes, pro libito constituemus; quorum ope Stellarum intercapedines, per aliquot minuta adinvicem dissitarum, citra unius aut alterius minuti peccatum, commode dimetiri poterimus. Hæc tamen sic leviter tetigisse, et quasi primoribus libasse labiis, in præsentiarum sit satis; per aliam enim occasionem absolutam huius Organi theoriam in medium proferemus. Nunc observationes a nobis duobus proxime elapsis mensibus habitas recenseamus, ad magnarum profecto contemplationum exordia omnes veræ philosophiæ<span class=\"sc\"> </span>cupidos convocantes.",
+  "note": [],
+  "riga": 580
+ },
+ {
+  "tipo": "par",
+  "id": "p010",
+  "testo": "De facie autem Lunæ, quæ ad aspectum nostrum vergit, primo loco dicamus. Quam, facilioris intelligentiæ gratia, in duas partes distinguo, alteram nempe clariorem, obscuriorem alteram: clarior videtur totum hemisphærium ambire atque perfundere, obscurior vero, veluti nubes quædam, faciem ipsam inficit maculosamque reddit. Istæ autem maculæ, subobscuræ et satis amplæ, unicuique sunt obviæ, illasque ævum omne conspexit; quapropter magnas, seu antiquas, eas appellabimus, ad differentiam aliarum macularum amplitudine minorum, at frequentia ita consitarum, ut totam Lunarem superficiem, præsertim vero lucidiorem partem, conspergant; hæ vero a nemine ante nos observatæ fuerunt: ex ipsarum autem sæpius iteratis inspectionibus in eam deducti sumus sententiam, ut certo intelligamus, Lunæ superficiem, non perpolitam, æquabilem, exactissimæque sphæricitatis existere, ut magna philosophorum cohors de ipsa deque reliquis corporibus cælestibus opinata est, sed, contra, inæqualem, asperam, cavitatibus tumoribusque confertam, non secus ac ipsiusmet Telluris facies, quæ montium iugis valliumque profunditatibus hinc inde distinguitur. Apparentiæ vero, ex quibus haec colligere licuit, eiusmodi sunt.",
+  "note": [],
+  "riga": 582
+ },
+ {
+  "tipo": "par",
+  "id": "p011",
+  "testo": "Quarta aut quinta post coniunctionem<span class=\"sc\"> </span>die, cum splendidis Luna sese nobis cornibus offert, iam terminus partem obscuram a luminosa dividens non æquabiliter secundum ovalem lineam extenditur, veluti in solido perfecte sphærico accideret; sed inæquabili, aspera et admodum sinuosa linea designatur, veluti apposita figura repræsentat: complures enim veluti excrescentiæ lucidæ ultra lucis tenebrarumque confinia in partem obscuram extenduntur, et, contra, tenebricosæ particulæ intra lumen ingrediuntur. Quinimmo, et magna nigricantium macularum exiguarum copia, omnino a tenebrosa parte separatarum, totam fere plagam iam Solis lumine perfusam undiquaque conspergit, illa saltem excepta parte, quæ magnis et antiquis maculis est affecta. Adnotavimus autem, modo dictas exiguas maculas in hoc semper et omnes, convenire, ut partem habeant nigricantem locum Solis respicientem; ex adverso autem Solis lucidioribus terminis, quasi candentibus iugis coronentur. At consimilem penitus aspectum habemus in Terra circa Solis exortum, dum valles nondum lumine perfusas, montes vero illas ex adverso Solis circundantes iam iam splendore fulgentes intuemur: ac veluti terrestrium cavitatum umbræ, Sole sublimiora petente, imminuuntur, ita et lunares istæ maculæ, crescente parte luminosa, tenebras amittunt.",
+  "note": [
+   "<sup>Vedi figura 1.</sup>"
+  ],
+  "riga": 584
+ },
+ {
+  "tipo": "figura",
+  "id": "figura01",
+  "file": "images/figura01.png",
+  "riga": 586
+ },
+ {
+  "tipo": "par",
+  "id": "p012",
+  "testo": "Verum, non modo tenebrarum et luminis confinia in Luna inæqualia ac sinuosa cernuntur; sed, quod maiorem infert admirationem, permultæ apparent lucidæ cuspides intra tenebrosam Lunæ partem, omnino ab illuminata plaga divisæ et avulsæ, ab eaque non per exiguam intercapedinem dissitæ; quæ paulatim, aliqua interiecta mora, magnitudine et lumine augentur, post vero secundam horam aut tertiam reliquæ parti lucidæ et ampliori iam factæ iunguntur; interim tamen aliæ atque aliæ, hinc inde quasi pullulantes, intra tenebrosam partem accenduntur, augentur, ac demum eidem luminosæ superficiei, magis adhuc extensæ, copulantur. Huius exemplum eadem figura nobis exhibet. At nonne in terris ante Solis exortum, umbra adhuc planities occupante, altissimorum cacumina montium solaribus radiis illustrantur? Nonne exiguo interiecto tempore ampliatur lumen, dum mediæ et largiores eorundem montium partes illuminantur; ac tandem, orto iam Sole, planicierum et collium illuminationes iunguntur? Huiusmodi autem eminentiarum et cavitatum discrimina in Luna longe lateque terrestrem asperitatem superare videntur, ut infra demonstrabimus. Interim silentio minime involvam quid animadversione dignum a me observatum, dum Luna ad primam quadraturam properaret, cuius etiam imaginem eadem supra posita delineatio præ se fert: ingens enim sinus tenebrosus in partem luminosam subit, versus inferius cornu locatus; quem quidem sinum cum diutius observassem, totumque obscurum vidissem, tandem post duas fere horas, paulo infra medium cavitatis, vertex quidam luminosus exsurgere cœpit; hic vero paulatim crescens trigonam figuram præ se ferebat, eratque omnino adhuc a luminosa facie revulsus ac separatus; mox circa illum tres aliæ cuspides exiguæ lucere cœperunt; donec, Luna iam occasum versus tendente, trigona illa figura, extensa et amplior iam facta, cum reliqua luminosa parte nectebatur, ac instar ingentis promontorii, a tribus iam commemoratis lucidis verticibus adhuc obsessa, in tenebrosum sinum erumpebat. In extremis quoque cornibus, tam superiori, quam inferiori, splendida quædam puncta, et omnino a reliquo lumine disiuncta, emergebant, veluti in eadem figura depictum cernitur. Eratque magna obscurarum macularum vis in utroque cornu, maxime autem in inferiori: quarum maiores et obscuriores apparent, quæ termino lucis et tenebrarum viciniores sunt; remotiores vero obscuræ minus ac magis dilutæ. Semper tamen, ut supra quoque meminimus, nigricans ipsius maculæ pars irradiationis solaris locum respicit, splendidior vero limbus nigricantem maculam in parte Soli aversa, et Lunæ tenebrosam plagam respiciente, circundat. Hæc lunaris superficies, qua maculis, instar pavonis caudæ cæruleis oculis, distinguitur, vitreis illis vasculis redditur consimilis, quæ adhuc calentia in frigidam immissa, perfractam undosamque superficiem acquirunt, ex quo a vulgo glaciales Gyathi nuncupantur. Verum magnæ eiusdem Lunæ maculæ consimili modo interruptæ atque lacunis et eminentiis confertæ minime cernuntur, sed magis æquabiles et uniformes; solummodo enim clarioribus nonnullis areolis hac illac scatent; adeo ut, si quis veterem Pythagoreorum sententiam exsuscitare velit, Lunam scilicet esse quasi Tellurem alteram, eius pars lucidior terrenam superficiem, obscurior vero aqueam, magis congrue repræsentet: mibi autem dubium fuit nunquam, terrestris globi a longe conspecti atque a radiis solaribus perfusi, terream superficiem clariorem, obscuriorem vero aqueam, sese in conspectum daturam. Depressiores insuper in Luna cernuntur magnæ maculæ, quam clariores plagæ; in illa enim, tam crescente quam decrescente, semper in lucis tenebrarumque confinio prominent hinc inde circa ipsas magnas maculas contermini partis lucidioris, veluti in describendis figuris observavimus: neque depressiores tantummodo sunt dictarum macularum termini, sed æquabiliores, nec rugis aut asperitatibus interrupti. Lucidior vero pars maxime prope maculas eminet; adeo ut, et ante quadraturam primam, et in ipsa ferme secunda, circa maculam quandam, superiorem, borealem nempe, Lunæ plagam occupantem, valde attollantur, tam supra illam quam infra, ingentes quædam eminentiæ, veluti appositæ præ se ferunt delineationes.",
+  "note": [
+   "<sup>Vedi figure 2 e 3.</sup>"
+  ],
+  "riga": 588
+ },
+ {
+  "tipo": "par",
+  "id": "p013",
+  "testo": "Hæc eadem macula ante secundam quadraturam nigrioribus quibusdam terminis circumvallata conspicitur; qui, tanquam altissima montium iuga, ex parte Soli aversa obscuriores apparent, qua vero Solem respiciunt lucidiores extant: cuius oppositum in cavitatibus accidit; quarum pars Soli aversa splendens apparet, obscura vero ac umbrosa quæ ex parte Solis sita est. Imminuta deinde luminosa superficie, cum primum tota ferme dicta macula tenebris est obducta, clariora montium dorsa eminenter tenebras scandunt. Hanc duplicem apparentiam sequentes figuræ commonstrant.",
+  "note": [
+   "<sup>Vedi figure 4 e 5.</sup>"
+  ],
+  "riga": 590
+ },
+ {
+  "tipo": "par",
+  "id": "p014",
+  "testo": "Unum quoque oblivioni minime tradam, quod non nisi aliqua cum admiratione adnotavi: medium quasi Lunæ locum a cavitate quadam occupatum esse reliquis omnibus maiori, ac figura perfectæ rotunditatis; hanc prope quadraturas ambas conspexi, eandemque in secundis supra positis figuris quantum licuit imitatus sum: eundem, quo ad obumbrationem et illuminationem, facit aspectum, ac faceret in terris regio consimilis Bohemiæ, si montibus altissimis, inque peripheriam perfecti circuli dispositis, occluderetur undique; in Luna enim adeo elatis iugis vallatur, ut extrema ora tenebrosæ Lunæ parti contermina, Solis lumine perfusa spectetur, priusquam lucis umbræque terminus ad mediam ipsius figuræ diametrum pertingat. De more autem reliquarum macularum, umbrosa illius pars Solem respicit, luminosa vero versus tenebras Lunæ constituitur; quod tertio libenter observandum admoneo, tanquam firmissimum argumentum asperitatum inæqualitatumque per totam Lunæ clariorem plagam dispersarum: quarum quidem macularum semper nigriores sunt illæ, quæ confinio luminis et tenebrarum conterminæ sunt, remotiores vero tum minores, tum obscuræ minus apparent; ita ut tandem, cum Luna in oppositione totum impleverit orbem, modico admodumque tenui discrimine cavitatum opacitas ab eminentiarum candore discrepet.",
+  "note": [],
+  "riga": 592
+ },
+ {
+  "tipo": "par",
+  "id": "p015",
+  "testo": "Hæc, quæ recensuimus, in clarioribus Lunæ regionibus observantur; verum in magnis maculis talis non conspicitur lacunarum eminentiarumque differentia, qualem necessario constituere cogimur in parte lucidiori, ob mutationem figurarum ex alia atque alia illuminatione radiorum Solis, prout multiplici positu Lunam respicit: at in magnis maculis existunt quidem areolæ nonnullæ subobscuriores, veluti in figuris adnotavimus; attamen istæ eundem semper faciunt aspectum, neque intenditur earum opacitas aut remittitur, sed exiguo admodum discrimine paululum obscuriores modo apparent, modo vero clariores, si magis aut minus obliqui in eas radii solares incidant: iunguntur præterea cum proximis macularum partibus leni quadam copula, confinia miscentes ac confundentes: secus vero in maculis accidit splendidiorem Lunæ superficiem occupantibus; quasi enim abruptæ rupes asperis et angulatis scopulis consitæ, umbrarum luminumque rudibus discriminibus ad lineam disterminantur. Spectantur insuper intra easdem magnas maculas areolæ quædam, aliæ clariores, imo nonnullæ lucidissimae: verum, et harum et obscuriorum, idem semper est aspectus, nulla aut figurarum aut lucis aut opacitatis mutatio; adeo ut compertum indubitatumque sit, apparere illas ob veram partium dissimilaritatem, non autem ob inæqualitates tantum in figuris earundem partium, umbras ex variis Solis illuminationibus diversimode moventibus: quod bene contingit de maculis aliis minoribus clariorem Lunæ partem occupantibus; in dies enim permutantur, augentur, imminuuntur, abolentur, quippe quæ ab umbris tantum eminentiarum ortum ducunt.",
+  "note": [],
+  "riga": 594
+ },
+ {
+  "tipo": "par",
+  "id": "p016",
+  "testo": "Verum magna hic dubitatione complures affici sentio, adeoque gravi difficultate occupari, ut iam explicatam et tot apparentiis confirmatam conclusionem in dubium revocare cogantur. Si enim pars illa lunaris superficiei, quæ splendidius solares radios retorquet, anfractibus, tumoribus scilicet et lacunis innumeris, est repleta, cur in crescenti Luna extrema circumferentia, quæ occasum versus spectat, in decrescenti vero altera semicircumferentia orientalis, ac in plenilunio tota peripheria, non inæquabilis, aspera et sinuosa, verum exacte rotunda et circinata nullisque tumoribus aut cavitatibus corrosa, conspicitur? atque ex eo maxime, quia totus integer limbus ex clariori Lunæ substantia constat, quam tuberosam lacunosamque totam esse diximus; magnarum enim macularum nulla ad extremum usque perimetrum exporrigitur, sed omnes procul ab orbita aggregatæ cernuntur. Huius apparentiæ, ansam tam graviter dubitandi præbentis, duplicem causam, ac proinde duplicem dubitationis solutionem, in medium affero. Primo enim, si tumores et cavitates in corpore lunari secundum unicam tantum circuli peripheriam, hemisphærium nobis conspicuum terminantem, protenderentur, tunc posset quidem, imo deberet, Luna sub specie quasi dentatæ rotæ sese nobis ostendere, tuberoso, nempe, ac sinuoso ambitu terminata: at si non una tantum eminentiarum series, iuxta unicam solummodo circumferentiam dispositarum, sed permulti montium ordines cum suis lacunis et anfractibus circa extremum Lunæ ambitum coordinati fuerint, iique non modo in hemisphærio apparente, sed in averso etiam (prope tamen hemisphæriorum finitorem), tunc oculus a longe prospiciens eminentiarum cavitatumque discrimina depræhendere minime poterit; intercapedines enim montium, in eodem circulo seu in eadem serie dispositorum, obiectu aliarum eminentiarum in aliis atque aliis ordinibus constitutarum occultantur; idque maxime, si oculus aspicientis in eadem recta cum dictarum eminentiarum verticibus fuerit locatus. Sic in terra multorum ac frequentium montium iuga secundum planam superficiem disposita apparent, si prospiciens procul fuerit et in pari altitudine constitutus. Sic æstuosi pelagi sublimes undarum vertices secundum idem planum videntur extensi, quamvis inter fluctus maxima voraginum et lacunarum sit frequentia, adeoque profundarum, ut sublimium navigiorum non modo carinæ, verum etiam puppes, mali ac vela inter illas abscondantur. Quia igitur in ipsa Luna et circa eius perimetrum multiplex est eminentiarum et cavitatum coordinatio, et oculus e longinquo spectans in eodem fere plano cum verticibus illarum locatur; nemini mirum esse debet, quod radio visorio illos abradenti, secundum æquabilem lineam minimeque anfractuosam sese offerant. Huic rationi altera subnecti potest: quod nempe circa lunare corpus est, veluti circa Terram, orbis quidam densioris substantiæ reliquo æthere, qui Solis irradiationem concipere atque reflectere valet, quamvis tanta non sit opacitate præditus, ut visui (præsertim dum illuminatus non fuerit) transitum inhibere valeat. Orbis iste a radiis solaribus illuminatus lunare corpus sub maioris sphæræ speciem reddit repræsentatque; essetque potis aciem nostram terminare, quominus ad Lunæ soliditatem pertingeret, si crassities eius foret profundior: atque profundior quidem est circa Lunæ peripheriam; profundior, inquam, non absolute, sed ad radios nostros, oblique illum secantes, relatus: ac proinde visum nostrum inhibere potest, ac præsertim luminosus existens, Lunæque peripheriam Soli expositam obtegere. Quod clarius in apposita figura intelligitur, in qua lunare corpus ABC ab orbe vaporoso circundatur DEG; oculus vero ex F ad partes intermedias Lunæ, ut ad A, pertingit per vapores DA minus profundos: at versus extremam oram, profundiorum copia vaporum EB aspectum nostrum suo termino præcludit. Signum huius est, quod pars Lunæ lumine perfusa amplioris circumferentiæ apparet, quam reliquum orbis tenebrosi: atque hanc eandem causam quispiam forte rationabilem existimabit, cur maiores Lunæ maculæ nulla ex parte ad extremum usque ambitum protendi conspiciantur, cum tamen opinabile sit nonnullas etiam circa illum reperiri; inconspicuas tamen esse credibile videtur ex eo, quod sub profundiori ac lucidiori vaporum copia abscondantur.",
+  "note": [],
+  "riga": 596
+ },
+ {
+  "tipo": "figura",
+  "id": "figura06",
+  "file": "images/figura06.png",
+  "riga": 597
+ },
+ {
+  "tipo": "par",
+  "id": "p017",
+  "testo": "Esse igitur clariorem Lunæ superficiem tumoribus atque lacunis undiquaque conspersam, ex iam explicatis apparitionibus satis apertum esse reor. Superest ut de illorum magnitudinibus dicamus, demonstrantes terrestres asperitates lunaribus esse longe minores; minores, inquam, etiam absolute loquendo, non autem in ratione tantum ad suorum globorum magnitudines: idque sic manifeste declaratur.",
+  "note": [],
+  "riga": 600
+ },
+ {
+  "tipo": "par",
+  "id": "p018",
+  "testo": "Cum sæpius a me observatum sit in aliis atque aliis Lunæ ad Solem constitutionibus, vertices nonnullos intra tenebrosam Lunæ partem, licet a termino lucis satis remotos, lumine perfusos apparere, conferens eorum distantiam ad integram Lunæ diametrum, cognovi, interstitium hoc vigesimam interdum diametri partem superare.",
+  "note": [],
+  "riga": 602
+ },
+ {
+  "tipo": "par",
+  "id": "p019",
+  "testo": "Quo sumpto, intelligatur lunaris globus, cuius maximus circulus CAF, centrum vero E, dimetiens CF, qui ad Terræ diametrum est ut duo ad septem; cumque terrestris diameter, secundum exactiores observationes, milliaria Italica 7000 contineat, erit CF 2000, CE vero 1000; pars autem vigesima totius CF, milliaria 100. Sit modo CF dimetiens circuli maximi, luminosam Lunæ partem ab obscura dividentis (ob maximam enim elongationem Solis a Luna hic circulus a maximo sensibiliter non differt), ac secundum vigesimam illius partem distet A a puncto C, et protrahatur semidiameter EA, qui extensus occurrat cum contingente GCD (quæ radium illuminantem repræsentat) in puncto D. Erit igitur arcus CA, seu recta CD, 100 qualium CE est 1000, et aggregatum quadratorum DC, CE 1.010.000, cui quadratum DE æquale est: tota igitur ED erit plusquam 1004, et AD plusquam 4 qualium CE fuit 1000. Sublimitas igitur AD in Luna, quæ verticem quempiam ad usque Solis radium GCD elatum, et a termino C per distantiam CD remotum, designat, eminentior est milliaribus Italicis 4. Verum in Tellure nulli extant montes, qui vix ad unius milliarii altitudinem perpendicularem accedant; manifestum igitur relinquitur, lunares eminentias terrestribus esse sublimiores.",
+  "note": [],
+  "riga": 604
+ },
+ {
+  "tipo": "figura",
+  "id": "figura07",
+  "file": "images/figura07.png",
+  "riga": 606
+ },
+ {
+  "tipo": "par",
+  "id": "p020",
+  "testo": "Lubet hoc loco alterius cuiusdam lunaris apparitionis, admiratione dignæ, causam assignare; quæ licet a nobis non recens, sed multis abhinc annis, observata sit, nonnullisque familiaribus amicis et discipulis ostensa, explicata atque per causam declarata, quia tamen eius observatio Perspicilli ope facilior redditur atque evidentior, non incongrue hoc in loco reponendam esse duxi; idque etiam tum maxime, ut cognatio atque similitudo inter Lunam atque Tellurem clarius appareat.",
+  "note": [],
+  "riga": 607
+ },
+ {
+  "tipo": "par",
+  "id": "p021",
+  "testo": "Dum Luna, tum ante tum etiam post coniunctionem, non procul a Sole reperitur, non modo ipsius globus, ex parte qua lucentibus cornibus exornatur, visui nostro spectandum sese offert; verum etiam tenuis quædam sublucens peripheria tenebrosæ partis, Soli nempe aversæ, orbitam delineare, atque ab ipsius ætheris obscuriori campo seiungere, videtur. Verum, si exactiori inspectione rem consideremus, videbimus, non tantum extremum tenebrosæ partis limbum incerta quadam claritate lucentem, sed integram Lunæ faciem, illam nempe quæ Solis fulgorem nondum sentit, lumine quodam, nec exiguo, albicare: apparet tamen primo intuitu subtilis tantummodo circumferentia lucens propter obscuriores Cæli partes sibi conterminas; reliqua vero superficies obscurior e contra videtur ob fulgentium cornuum, aciem nostram obtenebrantium, contactum. Verum si quis talem sibi eligat situm, ut a tecto vel camino aut aliquo alio obice inter visum et Lunam (sed procul ab oculo posito) cornua ipsa lucentia occultentur, pars vero reliqua lunaris globi aspectui nostro exposita relinquatur; tunc luce non exigua hanc quoque Lunæ plagam, licet solari lumine destitutam, splendere depræhendet, idque potissimum, si iam nocturnus horror ob Solis absentiam increverit; in campo enim obscuriori eadem lux clarior apparet. Compertum insuper est, hanc secundam (ut ita dicam) Lunæ claritatem maiorem esse, quo ipsa minus a Sole distiterit: per elongationem enim ab eo remittitur magis magisque, adeo ut post primam quadraturam, et ante secundam, debilis et admodum incerta comperiatur, licet in obscuriori Cælo spectetur; cum tamen in sextili et minori elongatione, quamvis inter crepuscula, mirum in modum fulgeat; fulgeat, inquam, adeo, ut ope exacti Perspicilli magnæ maculæ in ipsa distinguantur. Hic mirabilis fulgor non modicam philosophantibus intulit admirationem; pro cuius causa afferenda alii alia in medium protulerunt. Quidam enim proprium esse ac naturalem ipsiusmet Lunæ splendorem dixerunt; alii, a Venere illi esse impertitum; alii, a stellis omnibus; alii, a Sole, qui radiis suis profundam Lunæ soliditatem permeet. Verum huiuscemodi prolata exiguo labore coarguuntur, ac falsitatis evincuntur. Si enim aut proprium esset aut a Stellis collatum eiusmodi lumen, illud maxime in Eclipsibus retineret ostenderetque, cum in obscurissimo Cælo destituatur; quod tamen adversatur experientiæ: fulgor enim, qui in deliquiis apparet in Luna, longe minor est, subrufus ac quasi æneus; hic vero clarior et candidior. Est insuper ille mutabilis ac loco mobilis; vagatur enim per Lunæ faciem, adeo ut pars illa, quæ peripheriæ circuli umbræ terrestris propinquior est, clarior, reliqua vero obscurior, semper spectetur: ex quo omni procul dubio id accidere intelligimus, ex radiorum Solarium vicinitate tangentium crassiorem quandam regionem, quæ Lunam orbiculariter ambit; ex quo contactu Aurora quædam in vicinas Lunæ plagas effunditur, non secus ac in terris, tum mane, tum vesperi, crepusculinum spargitur lumen: qua de re fusius in libro <i>De systemate mundi</i> pertractabimus. Asserere autem a Venere impertitam eiusmodi lucem, puerile adeo est, ut responsione sit indignum. Quis enim adeo inscius erit, ut non intelligat, circa coniunctionem et intra sextilem aspectum partem Lunæ Soli aversam, ut a Venere spectetur, omnino esse impossibile? Esse autem ex Sole, qui suo lumine profundam Lunæ soliditatem penetret atque perfundat, pariter est inopinabile: numquam enim imminueretur, cum semper hemisphærium Lunæ a Sole sit illustratum, tempore lunarium Eclipsium excepto; diminuitur tamen dum Luna ad quadraturam properat, et omnino etiam hebetatur, dum quadraturam superaverit. Cum itaque eiusmodi secundarius fulgor nec Lunæ sit congenitus atque proprius, nec a Stellis ullis nec a Sole mutuatus, cumque iam in Mundi vastitate corpus aliud supersit nullum, nisi sola Tellus, quid, quæso, opinandum? quid proferendum? nunquid a Terra ipsum lunare corpus, aut quidpiam aliud opacum atque tenebrosum lumine perfundi? quid mirum? maxime: æqua grataque permutatione rependit Tellus parem illuminationem ipsi Lunæ, qualem et ipsa a Luna in profundioribus noctis tenebris toto fere tempore recipit. Rem clarius aperiamus. Luna in coniunctionibus, cum medium inter Solem et Terram obtinet locum, solaribus radiis in superiori suo hemisphærio Terræ averso perfunditur; hemisphærium vero inferius, quo Terram aspicit, tenebris est obductum; nullatenus igitur terrestrem superficiem illustrat. Luna, paulatim a Sole digressa, iam iam aliqua ex parte in hemisphærio inferiori ad nos vergente illuminatur, albicantia cornua, subtilia tamen, ad nos convertit, et leviter Terram illustrat: crescit in Luna, iam ad quadraturam accedente, Solaris illuminatio, augetur in terris eius luminis reflexio, extenditur adhuc supra semicirculum splendor in Luna, et nostræ clariores effulgent noctes: tandem integer Lunæ vultus, quo terram aspicit, ab opposito Sole clarissimis fulgoribus irradiatur, enitet longe lateque terrestris superficies lunari splendore perfusa: postmodum decrescens Luna debiliores ad nos radios emittit, debilius illuminatur Terra: Luna ad coniunctionem properat, atra nox Terram occupat. Tali itaque periodo alternis vicibus lunaris fulgor menstruas illuminationes, clariores modo, debiliores alias, nobis largitur: verum æqua lance beneficium a Tellure compensatur. Dum enim Luna sub Sole circa coniunctiones reperitur, superficiem terrestris hemisphærii Soli expositi vividisque radiis illustrati integram respicit, reflexumque ab ipsa lumen concipit: ac proinde ex tali reflexione inferius hemisphærium Lunæ, licet solari lumine destitutum, non modice lucens apparet. Eadem Luna, per quadrantem a Sole remota, dimidium tantum terrestris hemisphærii illuminatum conspicit, scilicet occiduum; altera enim medietas orientalis nocte obtenebratur: ergo, et ipsa Luna splendide minus a Terra illustratur, eiusve proinde lux illa secundaria exilior nobis apparet. Quod si Lunam in oppositione ad Solem constituas, spectabit ipsa hemisphærium intermediæ Telluris omnino tenebrosum obscuraque nocte perfusum: si igitur ecliptica fuerit talis oppositio, nullam prorsus illuminationem recipiet Luna, solari simul ac terrestri irradiatione destituta. In aliis atque aliis ad Terram et ad Solem habitudinibus, maius minusve a terrestri reflexione recipit lumen, prout maiorem aut minorem terrestris hemisphærii illuminati partem spectaverit: is enim inter duos hosce globos servatur tenor, ut quibus temporibus maxime a Luna illustratur Tellus, iisdem minus vice versa a Terra illuminetur Luna, et e contra. Atque hæc pauca de hac re in præsenti loco dicta sufficiant, fusius enim in nostro <i>Systemate Mundi</i>; ubi, complurimis et rationibus et experimentis, validissima solaris luminis e Terra reflexio ostenditur illis, qui eam a Stellarum corea arcendam esse iactitant, ex eo potissimum quod a motu et a lumine sit vacua; vagam enim illam ac Lunam splendore superantem, non autem sordium mundanarumque fecum sentinam, esse demonstrationibus et naturalibus quoque rationibus sexcentis confirmabimus.",
+  "note": [],
+  "riga": 609
+ },
+ {
+  "tipo": "par",
+  "id": "p022",
+  "testo": "Diximus hucusque de observationibus circa lunare corpus habitis; nunc de Stellis fixis ea, quæ hactenus a nobis inspecta fuerunt, breviter in medium adferamus. Ac primo illud animadversione dignum est, quod scilicet Stellæ, tam fixæ, quam errabundæ, dum adhibito Perspicillo spectantur, nequaquam magnitudine augeri videntur iuxta proportionem eandem, secundum quam obiecta reliqua, et ipsamet quoque Luna, acquirunt incrementa: verum in Stellis talis auctio longe minor apparet; adeo ut Perspicillum, quod reliqua obiecta secundum centuplam, gratia exempli, rationem multiplicare potens erit, vix secundum quadruplam aut quintuplam Stellas multiplices reddere credas. Ratio autem huius est, quod scilicet Astra, dum libera ac naturali oculorum acie spectantur, non secundum suam simplicem nudamque, ut ita dicam, magnitudinem sese nobis offerunt, sed fulgoribus quibusdam irradiata, micantibusque radiis crinita, idque potissimum cum iam increverit nox; ex quo longe maiores videntur, quam si ascititiis illis crinibus essent exuta: angulus enim visorius, non a primario Stellæ corpusculo, sed a late circumfuso splendore, terminatur. Hoc apertissime intelligas licet ex eo, quod Stellæ in Solis occasu inter prima crepuscula emergentes, tametsi primæ fuerint magnitudinis, exiguæ admodum apparent; et Venus ipsa, si quando circa meridiem se nobis in conspectum dederit, adeo exilis cernitur, ut vix Stellulam magnitudinis ultimæ æquare videatur. Secus in aliis obiectis, et in ipsamet Luna, contingit; quæ, sive in meridiana luce sive inter profundiores tenebras spectetur, eiusdem semper molis apparet. Intonsa igitur in mediis tenebris spectantur Astra, crines tamen illorum diurna lux abradere potest; at non lux ista tantum, sed tenuis quoque nubecula, quæ inter Sidus et oculum aspicientis interponatur: idem quoque præstant nigra velamina ac vitra colorata, quorum obiectu atque interpositione circumfusi fulgores Stellas deserunt. Hoc idem pariter efficit Perspicillum: prius enim adscititios accidentalesque a Stellis fulgores adimit, illarum inde globulos simplices (si tamen figura fuerint globosa) auget; atque adeo secundum minorem multiplicitatem adaucta videntur. Stellula enim quintæ aut sextæ magnitudinis, per Perspicillum visa, tamquam magnitudinis primæ repræsentatur.",
+  "note": [],
+  "riga": 611
+ },
+ {
+  "tipo": "par",
+  "id": "p023",
+  "testo": "Adnotatione quoque dignum videtur esse discrimen inter Planetarum atque fixarum Stellarum aspectus. Planetæ enim globulos suos exacte rotundos ac circinatos obiiciunt, ac, veluti Lunulæ quædam undique lumine perfusæ, orbiculares apparent: fixæ vero Stellæ peripheria circulari nequaquam terminatæ conspiciuntur, sed veluti fulgores quidam radios circumcirca vibrantes atque admodum scintillantes; consimili tandem figura præditæ apparent cum Perspicillo, ac dum naturali intuitu, spectantur, sed adeo maiores ut Stellula quintæ aut sextæ magnitudinis Canem, maximam nempe fixarum omnium, æquare videatur. Verum, infra Stellas magnitudinis sextæ, adeo numerosum gregem aliarum, naturalem intuitum fugientium, per Perspicillum intueberis, ut vix credibile sit: plures enim, quam sex aliæ magnitudinum differentiæ, videas licet; quarum maiores, quas magnitudinis septimæ, seu primæ invisibilium, appellare possumus, Perspicilli beneficio maiores et clariores apparent, quam magnitudinis secundæ Sidera, acie naturali visa. Ut autem de inopinabili fere illarum frequentia unam alteramve attestationem videas, Asterismos duos subscribere placuit, ut ab eorum exemplo de cæteris iudicium feras. In primo integram Orionis Constellationem pingere decreveram; verum ab ingenti Stellarum copia, temporis vero inopia, obrutus, aggressionem hanc in aliam occasionem distuli; adstant enim, et circa veteres, intra unius aut alterius gradus limites, disseminantur, plures quingentis: quapropter tribus quæ in Cingulo, et senis quæ in Ense iampridem adnotatæ fuerunt, alias adiacentes octuaginta recens visas apposuimus; earumque interstitia, quo exactius licuit, servavimus: notas, seu veteres, distinctionis gratia, maiores pinximus, ac duplici linea contornavimus; alias inconspicuas, minores, ac unis lineis notavimus; magnitudinum quoque discrimina, quo magis licuit, servavimus.",
+  "note": [],
+  "riga": 613
+ },
+ {
+  "tipo": "par",
+  "id": "p024",
+  "testo": "In altero exemplo sex Stellas Tauri, PLEIADAS dictas, depinximus (dico autem sex, quandoquidem septima fere nunquam apparet) intra angustissimos in Cælo cancellos obclusas, quibus aliæ, plures quam quadraginta, invisibiles adiacent; quarum nulla ab aliqua ex prædictis sex vix ultra semigradum elongatur: harum nos tantum triginta sex adnotavimus; earumque interstitia, magnitudines, necnon veterum novarumque discrimina, veluti in Orione, servavimus.",
+  "note": [],
+  "riga": 615
+ },
+ {
+  "tipo": "figura",
+  "id": "figura02",
+  "file": "images/figura02.png",
+  "riga": 618
+ },
+ {
+  "tipo": "par",
+  "id": "p025",
+  "testo": "Quod tertio loco a nobis fuit observatum, est ipsiusmet LACTEI Circuli essentia, seu materies, quam Perspicilli beneficio adeo ad sensum licet intueri, ut et altercationes omnes, quæ per tot sæcula philosophos excruciarunt, ab oculata certitudine dirimantur, nosque a verbosis disputationibus liberemur. Est enim GALAXIA nihil aliud, quam innumerarum Stellarum coacervatim consitarum congeries: in quamcumque enim regionem illius Perspicillum dirigas, statim Stellarum ingens frequentia sese in conspectum profert, quarum complures satis magnæ ac valde conspicuæ videntur; sed exiguarum multitudo prorsus inexplorabilis est.",
+  "note": [],
+  "riga": 621
+ },
+ {
+  "tipo": "par",
+  "id": "p026",
+  "testo": "At cum non tantum in GALAXIA lacteus ille candor, veluti albicantis nubis, spectetur, sed complures consimilis coloris areolæ sparsim per æthera subfulgeant, si in illarum quamlibet Specillum convertas, Stellarum constipatarum cœtum offendes. Amplius (quod magis miraberis), Stellæ ab Astronomis singulis in hanc usque diem NEBULOSÆ appellatæ, Stellularum mirum in modum consitarum greges sunt; ex quarum radiorum commixtione, dum unaquæque ob exilitatem, seu maximam a nobis remotionem, oculorum aciem fugit, candor ille consurgit, qui densior pars Cæli, Stellarum aut Solis radios retorquere valens, hucusque creditus est. Nos ex illis nonnullas observavimus, et duarum Asterismos subnectere voluimus.",
+  "note": [],
+  "riga": 623
+ },
+ {
+  "tipo": "par",
+  "id": "p027",
+  "testo": "In primo habes NEBULOSAM, Capitis Orionis appellatam, in qua Stellas vigintiunas numeravimus.",
+  "note": [],
+  "riga": 625
+ },
+ {
+  "tipo": "par",
+  "id": "p028",
+  "testo": "Secundus NEBULOSAM PRÆSEPE nuncupatam continet; quæ non una tantum Stella est, sed congeries Stellularum plurium quam quadraginta: nos, præter Asellos, trigintasex notavimus, in hunc, qui sequitur, ordinem dispositas.",
+  "note": [],
+  "riga": 627
+ },
+ {
+  "tipo": "figura",
+  "id": "figura03",
+  "file": "images/figura03.png",
+  "riga": 630
+ },
+ {
+  "tipo": "par",
+  "id": "p029",
+  "testo": "De Luna, de inerrantibus Stellis ac de Galaxia, quæ hactenus observata sunt, breviter enarravimus. Superest ut, quod maximum in præsenti negotio existimandum videtur, quatuor PLANETAS a primo mundi exordio ad nostra usque tempora nunquam conspectos, occasionem reperiendi atque observandi, necnon ipsorum loca, atque per duos proxime menses observationes circa eorundem lationes ac mutationes habitas, aperiamus ac promulgemus; Astronomos omnes convocantes, ut ad illorum periodos inquirendas atque definiendas se conferant, quod nobis in hanc usque diem, ob temporis angustiam, assequi minime licuit. Illos tamen iterum monitos facimus, ne ad talem inspectionem incassum accedant, Perspicillo exactissimo opus esse, et quale in principio sermonis huius descripsimus.",
+  "note": [],
+  "riga": 633
+ },
+ {
+  "tipo": "par",
+  "id": "p030",
+  "testo": "Die itaque septima Ianuarii, instantis anni millesimi sexcentesimi decimi, hora sequentis noctis prima, cum cælestia sidera per Perspicillum spectarem, Iuppiter sese obviam fecit; cumque admodum excellens mihi parassem instrumentum (quod antea ob alterius organi debilitatem minime contigerat), tres illi adstare Stellulas, exiguas quidem, veruntamen clarissimas, cognovi; quæ, licet e numero inerrantium a me crederentur, nonnullam tamen intulerunt admirationem, eo quod secundum exactam lineam rectam atque Eclipticæ parallelam dispositæ videbantur, ac cæteris magnitudine paribus splendidiores. Eratque illarum inter se et ad Iovem talis constitutio:",
+  "note": [],
+  "riga": 635
+ },
+ {
+  "tipo": "figura",
+  "id": "figura08",
+  "file": "images/figura08.png",
+  "riga": 637
+ },
+ {
+  "tipo": "par",
+  "id": "p031",
+  "testo": "ex parte scilicet orientali duæ aderant Stellæ, una vero occasum versus. Orientalior atque occidentalis, reliqua paulo maiores apparebant: de distantia inter ipsas et Iovem minime sollicitus fui; fixæ enim, uti diximus primo, creditæ fuerunt. Cum autem die octava, nescio quo fato ductus, ad inspectionem eandem reversus essem, longe aliam constitutionem reperi: erant enim tres Stellulæ occidentales omnes, a Iove atque inter se, quam superiori nocte, viciniores, paribusque interstitiis mutuo disseparatæ, veluti apposita præsefert delineatio.",
+  "note": [],
+  "riga": 638
+ },
+ {
+  "tipo": "figura",
+  "id": "figura09",
+  "file": "images/figura09.png",
+  "riga": 640
+ },
+ {
+  "tipo": "par",
+  "id": "p032",
+  "testo": "Hic, licet ad mutuam Stellarum appropinquationem minime cogitationem appulissem, hæsitare tamen cœpi, quonam pacto Iuppiter ab omnibus prædictis fixis posset orientalior reperiri, cum a binis ex illis pridie occidentalis fuisset: ac proinde veritus sum ne forte secus a computo astronomico directus foret, ac propterea motu proprio Stellas illas antevertisset. Quapropter maximo cum desiderio sequentem expectavi noctem; verum a spe frustratus fui, nubibus enim undiquaque obductum fuit cælum.",
+  "note": [],
+  "riga": 641
+ },
+ {
+  "tipo": "par",
+  "id": "p033",
+  "testo": "At die decima apparuerunt Stellæ in eiusmodi ad Iovem positu:",
+  "note": [],
+  "riga": 643
+ },
+ {
+  "tipo": "figura",
+  "id": "figura10",
+  "file": "images/figura10.png",
+  "riga": 645
+ },
+ {
+  "tipo": "par",
+  "id": "p034",
+  "testo": "duæ enim tantum, et orientales ambæ, aderant; tertia, ut opinatus fui, sub Iove latitante. Erant pariter, veluti antea, in eadem recta cum Iove, ac iuxta Zodiaci longitudinem adamussim locatæ. Hæc cum vidissem, cumque mutationes consimiles in Iove nulla ratione reponi posse intelligerem, atque insuper spectatas Stellas semper easdem fuisse cognoscerem (nullæ enim aliæ, aut præcedentes, aut consequentes, intra magnum intervallum iuxta longitudinem Zodiaci aderant), iam ambiguitatem in admirationem permutans, apparentem commutationem, non in Iove, sed in Stellis adnotatis repositam esse comperi; ac proinde oculate et scrupulose magis deinceps observandum fore sum ratus.",
+  "note": [],
+  "riga": 646
+ },
+ {
+  "tipo": "par",
+  "id": "p035",
+  "testo": "Die itaque undecima eiuscemodi constitutionem vidi:",
+  "note": [],
+  "riga": 648
+ },
+ {
+  "tipo": "figura",
+  "id": "figura11",
+  "file": "images/figura11.png",
+  "riga": 650
+ },
+ {
+  "tipo": "par",
+  "id": "p036",
+  "testo": "Stellas scilicet tantum duas orientales; quarum media triplo distabat a Iove, quam ab orientaliori, eratque orientalior duplo fere maior reliqua, cum tamen antecedenti nocte æquales ferme apparuissent. Statutum ideo omnique procul dubio a me decretum fuit, tres in cælis adesse Stellas vagantes circa Iovem, instar Veneris atque Mercurii circa Solem; quod tandem luce meridiana clarius in aliis postmodum compluribus inspectionibus observatum est: ac non tantum tres, verum quatuor esse vaga Sidera circa Iovem suas circumvolutiones obeuntia; quorum permutationes, exactius consequenter observatas, subsequens narratio ministrabit: interstitia quoque inter ipsa per Perspicillum, superius explicata ratione, dimetitus sum: horas insuper observationum, præsertim cum plures in eadem nocte habitæ fuerunt, apposui; adeo enim celeres horum Planetarum extant revolutiones, ut horarias quoque differentias plerunque liceat accipere.",
+  "note": [],
+  "riga": 651
+ },
+ {
+  "tipo": "par",
+  "id": "p037",
+  "testo": "Die igitur duodecima, hora sequentis noctis prima, hac ratione disposita Sidera vidi:",
+  "note": [],
+  "riga": 653
+ },
+ {
+  "tipo": "figura",
+  "id": "figura12",
+  "file": "images/figura12.png",
+  "riga": 655
+ },
+ {
+  "tipo": "par",
+  "id": "p038",
+  "testo": "erat orientalior Stella occidentaliori maior, ambæ tamen valde conspicuæ ac splendidæ: utraque distabat a Iove scrupulis primis duobus: tertia quoque Stellula apparere cœpit hora tertia, prius minime conspecta, quæ ex parte orientali Iovem fere tangebat, eratque admodum exigua. Omnes fuerunt in eadem recta et secundum Eclipticæ longitudinem coordinatæ.",
+  "note": [],
+  "riga": 656
+ },
+ {
+  "tipo": "par",
+  "id": "p039",
+  "testo": "Die decimatertia primum a me quatuor conspectæ fuerunt Stellulæ in hac ad Iovem constitutione:",
+  "note": [],
+  "riga": 658
+ },
+ {
+  "tipo": "figura",
+  "id": "figura13",
+  "file": "images/figura13.png",
+  "riga": 660
+ },
+ {
+  "tipo": "par",
+  "id": "p040",
+  "testo": "erant tres occidentales et una orientalis: lineam proxime rectam constituebant; media enim occidentalium paululum a recta septentrionem versus deflectebat. Aberat orientalior a Iove minuta duo: reliquarum et Iovis intercapedines erant singulae unius tantum minuti. Stellæ omnes eandem præ se ferebant magnitudinem, ac, licet exiguam, lucidissimæ tamen erant ac fixis eiusdem magnitudinis longe splendidiores.",
+  "note": [],
+  "riga": 661
+ },
+ {
+  "tipo": "par",
+  "id": "p041",
+  "testo": "Die decimaquarta nubilosa fuit tempestas.",
+  "note": [],
+  "riga": 663
+ },
+ {
+  "tipo": "par",
+  "id": "p042",
+  "testo": "Die decimaquinta, hora noctis tertia, in proxime depicta fuerunt habitudine quatuor Stellæ ad Iovem:",
+  "note": [],
+  "riga": 665
+ },
+ {
+  "tipo": "figura",
+  "id": "figura14",
+  "file": "images/figura14.png",
+  "riga": 667
+ },
+ {
+  "tipo": "par",
+  "id": "p043",
+  "testo": "occidentales omnes ac in eadem proxime recta linea dispositæ; quæ enim tertia a Iove numerabatur paululum in boream attollebatur: propinquior Iovi erat omnium minima, reliquæ consequenter maiores apparebant: intervalla inter Iovem et tria consequentia Sidera erant æqualia omnia ac duorum minutorum; at occidentalius aberat a sibi propinquo minutis quatuor. Erant lucida valde, et nihil scintillantia, qualia semper, tum ante, tum post, apparuerunt. Verum hora septima tres solummodo aderant Stellæ, in huiuscemodi cum Iove aspectu:",
+  "note": [],
+  "riga": 668
+ },
+ {
+  "tipo": "figura",
+  "id": "figura15",
+  "file": "images/figura15.png",
+  "riga": 670
+ },
+ {
+  "tipo": "par",
+  "id": "p044",
+  "testo": "erant nempe in eadem recta ad unguem: vicinior Iovi erat admodum exigua, et ab illo semota per minuta prima tria; ab hac secunda distabat min. uno; tertia vero a secunda min. pr. 4, sec. 30. Post vero aliam horam duæ Stellulæ mediæ adhuc viciniores erant: aberant enim min. sc. vix 30 tantum.",
+  "note": [],
+  "riga": 671
+ },
+ {
+  "tipo": "par",
+  "id": "p045",
+  "testo": "Die decimasexta, hora prima noctis, tres vidimus Stellas iuxta hunc ordinem dispositas:",
+  "note": [],
+  "riga": 673
+ },
+ {
+  "tipo": "figura",
+  "id": "figura16",
+  "file": "images/figura16.png",
+  "riga": 675
+ },
+ {
+  "tipo": "par",
+  "id": "p046",
+  "testo": "duae Iovem intercipiebant, ab eo per min. 0, sec. 40 hinc inde remotæ; tertia vero occidentalis a Iove distabat min. 8. Iovi proximæ non maiores, sed lucidiores apparebant remotiori.",
+  "note": [],
+  "riga": 676
+ },
+ {
+  "tipo": "par",
+  "id": "p047",
+  "testo": "Die decimaseptima, hora ab occasu 0, min. 30, huiusmodi fuit configuratio:",
+  "note": [],
+  "riga": 678
+ },
+ {
+  "tipo": "figura",
+  "id": "figura17",
+  "file": "images/figura17.png",
+  "riga": 680
+ },
+ {
+  "tipo": "par",
+  "id": "p048",
+  "testo": "Stella una tantum orientalis a Iove distabat min. 3; occidentalis pariter una, a Iove distans min. 11. Orientalis duplo maior apparebat occidentali; nec plures aderant quam istæ duæ. Verum post horas quatuor, hora nempe proxime quinta, tertia ex parte orientali emergere cœpit, quæ antea, ut opinor, cum priori iuncta erat; fuitque talis positio:",
+  "note": [],
+  "riga": 681
+ },
+ {
+  "tipo": "figura",
+  "id": "figura18",
+  "file": "images/figura18.png",
+  "riga": 683
+ },
+ {
+  "tipo": "par",
+  "id": "p049",
+  "testo": "Media Stella, orientali quam proxima, min. tantum sec. 20 elongabatur ab illa, et a linea recta, per extremas et Iovem producta, paululum versus austrum declinabat.",
+  "note": [],
+  "riga": 684
+ },
+ {
+  "tipo": "par",
+  "id": "p050",
+  "testo": "Die decima octava, hora 0, min. 20 ab occasu, talis fuit aspectus:",
+  "note": [],
+  "riga": 686
+ },
+ {
+  "tipo": "figura",
+  "id": "figura19",
+  "file": "images/figura19.png",
+  "riga": 688
+ },
+ {
+  "tipo": "par",
+  "id": "p051",
+  "testo": "erat Stella orientalis maior occidentali, et a Iove distans min. pr. 8: occidentalis vero a Iove aberat min. 10.",
+  "note": [],
+  "riga": 689
+ },
+ {
+  "tipo": "par",
+  "id": "p052",
+  "testo": "Die decimanona, hora noctis secunda, talis fuit Stellarum coordinatio:",
+  "note": [],
+  "riga": 691
+ },
+ {
+  "tipo": "figura",
+  "id": "figura20",
+  "file": "images/figura20.png",
+  "riga": 693
+ },
+ {
+  "tipo": "par",
+  "id": "p053",
+  "testo": "erant nempe secundum rectam lineam ad unguem tres cum Iove Stellæ: orientalis una, a Iove distans min. pr. 6: inter Iovem et primam sequentem occidentalem mediabat min. 5 interstitium: hæc autem ab occidentaliori aberat min. 4. Anceps eram tunc, nunquid inter orientalem Stellam et Iovem Stellula mediaret, verum Iovi quamproxima, adeo ut illum fere tangeret. At, hora quinta, hanc manifeste vidi medium iam inter Iovem et orientalem Stellam locum exquisite occupantem, ita ut talis fuerit configuratio:",
+  "note": [],
+  "riga": 694
+ },
+ {
+  "tipo": "figura",
+  "id": "figura21",
+  "file": "images/figura21.png",
+  "riga": 696
+ },
+ {
+  "tipo": "par",
+  "id": "p054",
+  "testo": "Stella insuper novissime conspecta admodum exigua fuit; veruntamen, hora sexta, reliquis magnitudine fere fuit æqualis.",
+  "note": [],
+  "riga": 697
+ },
+ {
+  "tipo": "par",
+  "id": "p055",
+  "testo": "Die vigesima, hora 1, min. 15, constitutio consimilis visa est:",
+  "note": [],
+  "riga": 699
+ },
+ {
+  "tipo": "figura",
+  "id": "figura22",
+  "file": "images/figura22.png",
+  "riga": 701
+ },
+ {
+  "tipo": "par",
+  "id": "p056",
+  "testo": "aderant tres Stellulæ adeo exiguæ, ut vix percipi possent: a Iove, et inter se non magis distabant minuto uno: incertus eram, nunquid ex occidente duæ, an tres, adessent Stellulæ. Circa horam sextam hoc pacto erant dispositæ:",
+  "note": [],
+  "riga": 702
+ },
+ {
+  "tipo": "figura",
+  "id": "figura23",
+  "file": "images/figura23.png",
+  "riga": 704
+ },
+ {
+  "tipo": "par",
+  "id": "p057",
+  "testo": "orientalis enim a Iove duplo magis aberat quam antea, nempe min. 2; media occidentalis a Iove distabat min. 0, sec. 40, ab occidentaliori vero min. 0, sec. 20. Tandem, hora septima, tres ex occidente visæ fuerunt Stellulæ:",
+  "note": [],
+  "riga": 705
+ },
+ {
+  "tipo": "figura",
+  "id": "figura24",
+  "file": "images/figura24.png",
+  "riga": 707
+ },
+ {
+  "tipo": "par",
+  "id": "p058",
+  "testo": "Iovi proxima aberat ab eo min. 0, sec. 20; inter hanc et occidentaliorem intervallum erat minutorum secundorum 40: inter has vero alia spectabatur paululum ad meridiem deflectens, ab occidentaliori non pluribus decem secundis remota.",
+  "note": [],
+  "riga": 708
+ },
+ {
+  "tipo": "par",
+  "id": "p059",
+  "testo": "Die vigesimaprima, hora 0, min. 30, aderant ex oriente Stellulæ tres, æqualiter inter se et a Iove distantes:",
+  "note": [],
+  "riga": 710
+ },
+ {
+  "tipo": "figura",
+  "id": "figura25",
+  "file": "images/figura25.png",
+  "riga": 712
+ },
+ {
+  "tipo": "par",
+  "id": "p060",
+  "testo": "interstitia vero, secundum existimationem, 50 secundorum minutorum fuere. Aderat quoque Stella ex occidente, a Iove distans min. pr. 4. Orientalis Iovi proxima erat omnium minima; reliquæ vero aliquanto maiores, atque inter se proxime æquales.",
+  "note": [],
+  "riga": 713
+ },
+ {
+  "tipo": "par",
+  "id": "p061",
+  "testo": "Die vigesima secunda, hora 2, consimilis fuit Stellarum dispositio:",
+  "note": [],
+  "riga": 715
+ },
+ {
+  "tipo": "figura",
+  "id": "figura26",
+  "file": "images/figura26.png",
+  "riga": 717
+ },
+ {
+  "tipo": "par",
+  "id": "p062",
+  "testo": "a Stella orientali ad Iovem minutorum primorum 5 fuit intervallum, a Iove ad occidentaliorem pr. 7. Duæ vero occidentales intermediæ distabant ad invicem min. 0, sec. 40; propinquior vero Iovi aberat ab illo m. p. 1. Ipsæ mediæ Stellulæ minores erant extremis: fuerunt vero secundum eandem rectam lineam iuxta Zodiaci longitudinem extensæ, nisi quod trium occidentalium media paululum in austrum deflectebat. Sed, hora noctis sexta, in hac constitutione visæ sunt:",
+  "note": [],
+  "riga": 718
+ },
+ {
+  "tipo": "figura",
+  "id": "figura27",
+  "file": "images/figura27.png",
+  "riga": 720
+ },
+ {
+  "tipo": "par",
+  "id": "p063",
+  "testo": "orientalis admodum exigua erat, distans a Iove, ut antea, min. pr. 5. Tres vero occidentales, et a Iove et ad invicem, æqualiter dirimebantur, erantque intercapedines singulæ min. 1, sec. 20 proxime: et Stella Iovi vicinior, reliquis duabus sequentibus minor apparebat: omnesque in eadem recta exquisite dispositæ videbantur.",
+  "note": [],
+  "riga": 721
+ },
+ {
+  "tipo": "par",
+  "id": "p064",
+  "testo": "Die vigesima tertia, hora 0, min. 40 ab occasu, in hunc ferme modum Stellarum constitutio se habuit:",
+  "note": [],
+  "riga": 723
+ },
+ {
+  "tipo": "figura",
+  "id": "figura28",
+  "file": "images/figura28.png",
+  "riga": 725
+ },
+ {
+  "tipo": "par",
+  "id": "p065",
+  "testo": "erant tres Stellæ cum Iove in recta linea secundum Zodiaci longitudinem, veluti semper fuerunt: orientales erant duæ, una vero occidentalis. Orientalior aberat a sequenti min. pr. 7, hæc vero a Iove min. 2, sec. 40, Iuppiter ab occidentali min. 3, sec. 20: erantque omnes magnitudine fere æquales. Sed, hora quinta, duæ Stellæ, quæ prius Iovi erant proximæ, amplius non cernebantur, sub Iove, ut arbitror, latitantes; fuitque talis aspectus:",
+  "note": [],
+  "riga": 726
+ },
+ {
+  "tipo": "figura",
+  "id": "figura29",
+  "file": "images/figura29.png",
+  "riga": 728
+ },
+ {
+  "tipo": "par",
+  "id": "p066",
+  "testo": "Die vigesimaquarta, tres Stellæ, orientales omnes, visæ sunt, ac fere in eadem cum Iove recta linea:",
+  "note": [],
+  "riga": 729
+ },
+ {
+  "tipo": "figura",
+  "id": "figura30",
+  "file": "images/figura30.png",
+  "riga": 731
+ },
+ {
+  "tipo": "par",
+  "id": "p067",
+  "testo": "media enim modice in austrum deflectebat. Iovi propinquior distabat ab eo min. 2, sequens ab hac min. 0, sec. 30, ab hac vero aberat orientalior min. 9: erantque omnes admodum spiendidæ. Hora vero sexta, duæ solummodo sese offerebant Stellæ in hoc positu:",
+  "note": [],
+  "riga": 732
+ },
+ {
+  "tipo": "figura",
+  "id": "figura31",
+  "file": "images/figura31.png",
+  "riga": 734
+ },
+ {
+  "tipo": "par",
+  "id": "p068",
+  "testo": "nempe cum Iove in eadem recta linea ad ungem, a quo elongabatur propinquior min. p. 3, altera vero ab hac min. p. 8: in unam, ni fallor, coierant duæ mediæ prius observatæ Stellulæ.",
+  "note": [],
+  "riga": 735
+ },
+ {
+  "tipo": "par",
+  "id": "p069",
+  "testo": "Die vigesimaquinta, hora 1, min. 40, ita se habebat constitutio:",
+  "note": [],
+  "riga": 737
+ },
+ {
+  "tipo": "figura",
+  "id": "figura32",
+  "file": "images/figura32.png",
+  "riga": 739
+ },
+ {
+  "tipo": "par",
+  "id": "p070",
+  "testo": "aderant enim duæ tantum Stellæ ex orientali plaga, eæque satis magnæ: orientalior a media distabat min. 5, media vero a Iove min. 6.",
+  "note": [],
+  "riga": 740
+ },
+ {
+  "tipo": "par",
+  "id": "p071",
+  "testo": "Die vigesima sexta, hora 0, min. 40, Stellarum coordinatio eiusmodi fuit:",
+  "note": [],
+  "riga": 742
+ },
+ {
+  "tipo": "figura",
+  "id": "figura33",
+  "file": "images/figura33.png",
+  "riga": 744
+ },
+ {
+  "tipo": "par",
+  "id": "p072",
+  "testo": "spectabantur enim Stellæ tres, quarum duæ orientales, tertia occidentalis a Iove: hæc ab eo min. 5 aberat, media vero orientalis ab eodem distabat min. 5, sec. 20; orientalior vero a media min. 6: in eadem recta constitutæ, et eiusdem magnitudinis erant. Hora deinde quinta, constitutio fere eadem fuit; in hoc tantum discrepans, quod prope Iovem quarta Stellula ex oriente emergebat, cæteris minor, a Iove tunc remota min. 30, sed paululum a recta linea versus Boream attollebatur, ut apposita figura demonstrat:",
+  "note": [],
+  "riga": 745
+ },
+ {
+  "tipo": "figura",
+  "id": "figura34",
+  "file": "images/figura34.png",
+  "riga": 747
+ },
+ {
+  "tipo": "par",
+  "id": "p073",
+  "testo": "Die vigesima septima, hora 1 ab occasu, unica tantum Stellula conspiciebatur, eaque orientalis, secundum hanc constitutionem:",
+  "note": [],
+  "riga": 748
+ },
+ {
+  "tipo": "figura",
+  "id": "figura35",
+  "file": "images/figura35.png",
+  "riga": 750
+ },
+ {
+  "tipo": "par",
+  "id": "p074",
+  "testo": "eratque admodum exigua, et a Iove remota min. 7.",
+  "note": [],
+  "riga": 751
+ },
+ {
+  "tipo": "par",
+  "id": "p075",
+  "testo": "Die vigesima octava et vigesima nona, ob nubium interpositionem nihil observare licuit.",
+  "note": [],
+  "riga": 753
+ },
+ {
+  "tipo": "par",
+  "id": "p076",
+  "testo": "Die trigesima, hora prima noctis, tali pacto constituta spectabantur Sidera:",
+  "note": [],
+  "riga": 755
+ },
+ {
+  "tipo": "figura",
+  "id": "figura36",
+  "file": "images/figura36.png",
+  "riga": 757
+ },
+ {
+  "tipo": "par",
+  "id": "p077",
+  "testo": "unum aderat orientale, a Iove distans min. 2, sec. 30, duo vero ex occidente, quorum Iovi propinquius aberat ab eo min. 3, reliquum ab hoc min. 1: extremorum et Iovis positus in eadem recta linea fuit, at media Stella paululum in Boream attollebatur: occidentalior fuit reliquis minor.",
+  "note": [],
+  "riga": 758
+ },
+ {
+  "tipo": "par",
+  "id": "p078",
+  "testo": "Die ultima, hora secunda, visæ sunt orientales Stellæie duæ, una vero occidua:",
+  "note": [],
+  "riga": 760
+ },
+ {
+  "tipo": "figura",
+  "id": "figura37",
+  "file": "images/figura37.png",
+  "riga": 762
+ },
+ {
+  "tipo": "par",
+  "id": "p079",
+  "testo": "Orientalium media a Iove aberat min. 2, sec. 20; orientalior vero ab ipsa media min. 0, sec. 30; occidentalis distabat a Iove min. 10: erant in eadem recta linea proxime, orientalis tantum Iovi vicinior modicum quiddam in Septentrionem elevabatur. Hora vero quarta,",
+  "note": [],
+  "riga": 763
+ },
+ {
+  "tipo": "figura",
+  "id": "figura38",
+  "file": "images/figura38.png",
+  "riga": 765
+ },
+ {
+  "tipo": "par",
+  "id": "p080",
+  "testo": "duæ orientales viciniores ad invicem adhuc erant; aberant enim solummodo min. sec. 20. Apparuit in hisce observationibus occidentalis Stella satis exigua.",
+  "note": [],
+  "riga": 766
+ },
+ {
+  "tipo": "par",
+  "id": "p081",
+  "testo": "Die Februarii prima, hora noctis secunda, consimilis fuit constitutio:",
+  "note": [],
+  "riga": 768
+ },
+ {
+  "tipo": "figura",
+  "id": "figura39",
+  "file": "images/figura39.png",
+  "riga": 770
+ },
+ {
+  "tipo": "par",
+  "id": "p082",
+  "testo": "Distabat orientalior Stella a Iove min. 6, occidentalis vero 8; ex parte orientali Stella quædam, admodum exigua, a Iove distabat minutis secundis 20: rectam ad unguem designabant lineam.",
+  "note": [],
+  "riga": 771
+ },
+ {
+  "tipo": "par",
+  "id": "p083",
+  "testo": "Die secunda, iuxta hunc ordinem visæ sunt Stellæ:",
+  "note": [],
+  "riga": 773
+ },
+ {
+  "tipo": "figura",
+  "id": "figura40",
+  "file": "images/figura40.png",
+  "riga": 775
+ },
+ {
+  "tipo": "par",
+  "id": "p084",
+  "testo": "Una tantum orientalis a Iove distabat min. 6; Iuppiter ab occidentali viciniori aberat min. 4; inter hanc et occidentaliorem min. 8 fuit intercapedo: erant in eadem recta ad unguem, et eiusdem fere magnitudinis. Sed, hora septima, quatuor aderant Stellæ:",
+  "note": [],
+  "riga": 776
+ },
+ {
+  "tipo": "figura",
+  "id": "figura41",
+  "file": "images/figura41.png",
+  "riga": 778
+ },
+ {
+  "tipo": "par",
+  "id": "p085",
+  "testo": "inter quas Iuppiter mediam occupabat sedem. Harum Stellarum orientalior distabat a sequenti min. 4, hæc a Iove min. 1, sec. 40: Iuppiter ab occidentali sibi viciniori aberat min. 6, hæc vero ab occidentaliori min. 8: erantque pariter omnes in eadem recta linea, secundum Zodiaci longitudinem extensa.",
+  "note": [],
+  "riga": 779
+ },
+ {
+  "tipo": "par",
+  "id": "p086",
+  "testo": "Die tertia, hora septima, in hac serie dispositæ fuerunt Stellæ:",
+  "note": [],
+  "riga": 781
+ },
+ {
+  "tipo": "figura",
+  "id": "figura42",
+  "file": "images/figura42.png",
+  "riga": 783
+ },
+ {
+  "tipo": "par",
+  "id": "p087",
+  "testo": "orientalis a Iove distabat min. 1, sec. 30, occidentalis proxima min. 2: ab hac vero elongabatur occidentalior altera min. 10: erant præcise in eadem recta, et magnitudinis æqualis.",
+  "note": [],
+  "riga": 784
+ },
+ {
+  "tipo": "par",
+  "id": "p088",
+  "testo": "Die quarta, hora secunda, circa Iovem quatuor stabant Stellæ, orientales duæ, ac duæ occidentales, in eadem ad unguem recta linea dispositæ, ut in proxima figura:",
+  "note": [],
+  "riga": 786
+ },
+ {
+  "tipo": "figura",
+  "id": "figura43",
+  "file": "images/figura43.png",
+  "riga": 788
+ },
+ {
+  "tipo": "par",
+  "id": "p089",
+  "testo": "Orientalior distabat a sequenti min. 3, hæc vero a Iove aberat min. 0, sec. 40, Iuppiter a proxima occidentali min. 4, hæc ab occidentaliori min. 6. Magnitudine erant fere æquales; proximior Iovi reliquis paulo minor apparebat. Hora autem septima, orientales Stellæ distabant tantum min. 0, sec. 30.",
+  "note": [],
+  "riga": 789
+ },
+ {
+  "tipo": "figura",
+  "id": "figura44",
+  "file": "images/figura44.png",
+  "riga": 791
+ },
+ {
+  "tipo": "par",
+  "id": "p090",
+  "testo": "Iuppiter ab orientali viciniori aberat min. 2, ab occidentali vero sequente min. 4, hæc vero ab occidentaliori distabat min. 3: erantque æquales omnes, et in eadem recta secundum Eclipticam extensa.",
+  "note": [],
+  "riga": 792
+ },
+ {
+  "tipo": "par",
+  "id": "p091",
+  "testo": "Die quinta, Cælum fuit nubilosum.",
+  "note": [],
+  "riga": 794
+ },
+ {
+  "tipo": "par",
+  "id": "p092",
+  "testo": "Die sexta, duæ solummodo apparuerunt Stellæ, medium Iovem intercipientes, ut in figura apposita spectatur:",
+  "note": [],
+  "riga": 796
+ },
+ {
+  "tipo": "figura",
+  "id": "figura45",
+  "file": "images/figura45.png",
+  "riga": 798
+ },
+ {
+  "tipo": "par",
+  "id": "p093",
+  "testo": "orientalis a Iove distabat min. 2, occidentalis vero min. 3: erant in eadem recta cum Iove, et magnitudine pares.",
+  "note": [],
+  "riga": 799
+ },
+ {
+  "tipo": "par",
+  "id": "p094",
+  "testo": "Die septima, duæ adstabant Stellæ, a Iove orientales ambæ, in hunc dispositæ modum:",
+  "note": [],
+  "riga": 801
+ },
+ {
+  "tipo": "figura",
+  "id": "figura46",
+  "file": "images/figura46.png",
+  "riga": 803
+ },
+ {
+  "tipo": "par",
+  "id": "p095",
+  "testo": "intercapedines inter ipsas et Iovem erant æquales, unius nempe minuti primi; ac per ipsas et centrum Iovis recta linea incedebat.",
+  "note": [],
+  "riga": 804
+ },
+ {
+  "tipo": "par",
+  "id": "p096",
+  "testo": "Die octava, hora prima, aderant tres Stellæ orientales omnes, ut in descriptione:",
+  "note": [],
+  "riga": 806
+ },
+ {
+  "tipo": "figura",
+  "id": "figura47",
+  "file": "images/figura47.png",
+  "riga": 808
+ },
+ {
+  "tipo": "par",
+  "id": "p097",
+  "testo": "Iovi proxima, exigua satis, distabat ab eo min. 1, sec. 20; media vero ab hac min. 4, eratque satis magna; orientalior, admodum exigua, ab hac distabat min. 0, sec. 20. Anceps eram, nunquid Iovi proxima una tantum, an duæ forent Stellulæ; videbatur enim interdum huic alia adesse versus ortum, mirum in modum exigua, et ab illa seiuncta per min. 0, sec. 10 tantum: fuerunt omnes in eadem recta linea secundum Zodiaci ductum extensæ. Hora vero tertia, Stella Iovi proxima illum fere tangebat; distabat enim ab eo min. 0, sec. 10 tantum: reliquæ vero a Iove remotiores factæ fuerunt; aberat enim media a Iove min. 6. Tandem, hora quarta, quæ prius Iovi proxima erat, cum eo iuncta, non cernebatur amplius.",
+  "note": [],
+  "riga": 809
+ },
+ {
+  "tipo": "par",
+  "id": "p098",
+  "testo": "Die nona, hora 0, m. 30, adstabant Iovi Stellæ duæ orientales, et una occidentalis, in tali dispositione:",
+  "note": [],
+  "riga": 811
+ },
+ {
+  "tipo": "figura",
+  "id": "figura48",
+  "file": "images/figura48.png",
+  "riga": 813
+ },
+ {
+  "tipo": "par",
+  "id": "p099",
+  "testo": "Orientalior, quæ satis exigua erat, a sequenti distabat min. 4; media, maior, a Iove aberat min. 7; Iuppiter ab occidentali, quæ parva erat, distabat min. 4.",
+  "note": [],
+  "riga": 814
+ },
+ {
+  "tipo": "par",
+  "id": "p100",
+  "testo": "Die decima, hora prima, min. 30, Stellulæ binæ, admodum exiguæ, orientales ambæ, in tali dispositione visæ sunt:",
+  "note": [],
+  "riga": 816
+ },
+ {
+  "tipo": "figura",
+  "id": "figura49",
+  "file": "images/figura49.png",
+  "riga": 818
+ },
+ {
+  "tipo": "par",
+  "id": "p101",
+  "testo": "remotior distabat a Iove min. 10, vicinior vero min. 0, sec. 20; erantque in eadem recta. Hora autem quarta, Stella Iovi proxima amplius non apparebat: altera quoque adeo imminuta videbatur, ut vix cerni posset, licet aër præclarus esset; et a Iove remotior, quam antea, erat; distabat siquidem min. 12.",
+  "note": [],
+  "riga": 819
+ },
+ {
+  "tipo": "par",
+  "id": "p102",
+  "testo": "Die undecima, hora prima, aderant ab oriente Stellæ duæ, et una ab occasu. Distabat occidentalis a Iove min. 4; orientalis vicinior",
+  "note": [],
+  "riga": 821
+ },
+ {
+  "tipo": "figura",
+  "id": "figura50",
+  "file": "images/figura50.png",
+  "riga": 823
+ },
+ {
+  "tipo": "par",
+  "id": "p103",
+  "testo": "aberat pariter a Iove min. 4; orientalior vero ab hac distabat min. 8: erant satis perspicuæ, et in eadem recta. Sed hora tertia, Stella quarta, Iovi proxima, ab oriente visa est, reliquis minor, a Iove dissita",
+  "note": [],
+  "riga": 824
+ },
+ {
+  "tipo": "figura",
+  "id": "figura51",
+  "file": "images/figura51.png",
+  "riga": 826
+ },
+ {
+  "tipo": "par",
+  "id": "p104",
+  "testo": "per min. 0, sec. 30, et a recta linea per reliquas Stellas protracta, modicum in aquilonem deflectens: splendidissimæ erant omnes, ac valde conspicuæ. Hora vero quinta cum dimidia, iam Stella orientalis, Iovi proxima, ab illo remotior facta, medium inter ipsum et Stellam orientaliorem, sibi propinquam, obtinebat locum; erantque omnes in eadem recta linea ad unguem, et eiusdem magnitudinis, ut in apposita descriptione videre licet:",
+  "note": [],
+  "riga": 827
+ },
+ {
+  "tipo": "figura",
+  "id": "figura52",
+  "file": "images/figura52.png",
+  "riga": 829
+ },
+ {
+  "tipo": "par",
+  "id": "p105",
+  "testo": "Die duodecima, hora 0, min. 40, Stellæ binæ ab ortu, binæ pariter ab occasu, adstabant. Orientalis remotior a Iove distabat min. 10, longinquior vero occidentalis aberat min. 8,",
+  "note": [],
+  "riga": 830
+ },
+ {
+  "tipo": "figura",
+  "id": "figura53",
+  "file": "images/figura53.png",
+  "riga": 832
+ },
+ {
+  "tipo": "par",
+  "id": "p106",
+  "testo": "erantque ambæ satis conspicuæ; reliquæ duæ Iovi erant vicinissimæ, et admodum exiguæ, præsertim orientalis, quæ a Iove distabat min. 0, sec. 40; occidentalis vero, min. 1. Hora vero quarta, Stellula, quæ Iovi erat proxima ex oriente, amplius non apparebat.",
+  "note": [],
+  "riga": 833
+ },
+ {
+  "tipo": "par",
+  "id": "p107",
+  "testo": "Die decimatertia, hora 0, min. 30, duæ Stellæ apparebant ab ortu,",
+  "note": [],
+  "riga": 835
+ },
+ {
+  "tipo": "figura",
+  "id": "figura54",
+  "file": "images/figura54.png",
+  "riga": 837
+ },
+ {
+  "tipo": "par",
+  "id": "p108",
+  "testo": "duæ insuper ab occasu. Orientalis ac Iovi vicinior, satis perspicua, distabat ab eo min. 2; ab hac orientalior, minus apparens, aberat min. 4. Ex occidentalibus, remotior a Iove, conspicua valde, ab eo dirimebatur min. 4; inter hanc et Iovem intercidebat Stellula exigua ac occidentaliori Stellæ vicinior, cum ab ea non magis abesset min. 0, sec. 30. Erant omnes in eadem recta secundum Eclipticæ longitudinem ad unguem.",
+  "note": [],
+  "riga": 838
+ },
+ {
+  "tipo": "par",
+  "id": "p109",
+  "testo": "Die decimaquinta (nam decimaquarta Cælum nubibus fuit obductum), hora prima, talis fuit astrorum positus:",
+  "note": [],
+  "riga": 840
+ },
+ {
+  "tipo": "figura",
+  "id": "figura55",
+  "file": "images/figura55.png",
+  "riga": 842
+ },
+ {
+  "tipo": "par",
+  "id": "p110",
+  "testo": "tres nempe erant orientales Stellæ, nulla vero cernebatur occidentalis: orientalis Iovi proxima distabat ab eo min. 0, sec. 50; sequens ab hac aberat min. 0, sec. 20, ab hac vero orientalior min. 2; eratque reliquis maior; viciniores enim Iovi erant admodum exiguæ. Sed, hora proxime quinta, ex Stellis Iovi proximis una tantum cernebatur, a",
+  "note": [],
+  "riga": 843
+ },
+ {
+  "tipo": "figura",
+  "id": "figura56",
+  "file": "images/figura56.png",
+  "riga": 845
+ },
+ {
+  "tipo": "par",
+  "id": "p111",
+  "testo": "Iove distans min. 0, sec. 30; orientalioris vero elongatio a Iove adaucta erat; fuit enim tunc min. 4. At, hora sexta, præter duas, ut modo dictum est, ab oriente constitutas, una versus occasum cernebatur Stellula, admodum exigua, a Iove remota min. 2.",
+  "note": [],
+  "riga": 846
+ },
+ {
+  "tipo": "figura",
+  "id": "figura57",
+  "file": "images/figura57.png",
+  "riga": 848
+ },
+ {
+  "tipo": "par",
+  "id": "p112",
+  "testo": "Die decimasexta, hora sexta, in tali constitutione steterunt:",
+  "note": [],
+  "riga": 849
+ },
+ {
+  "tipo": "figura",
+  "id": "figura58",
+  "file": "images/figura58.png",
+  "riga": 851
+ },
+ {
+  "tipo": "par",
+  "id": "p113",
+  "testo": "Stella nempe orientalis a Iove min. 7 aberat, Iuppiter a sequenti occidua min. 5, hæc vero a reliqua occidentaliori min. 3: erant omnes eiusdem proxime magnitudinis, satis conspicuæ, et in eadem recta linea exquisite secundum Zodiaci ductum.",
+  "note": [],
+  "riga": 852
+ },
+ {
+  "tipo": "par",
+  "id": "p114",
+  "testo": "Die decimaseptima, hora 1, duæ aderant Stellæ:",
+  "note": [],
+  "riga": 854
+ },
+ {
+  "tipo": "figura",
+  "id": "figura59",
+  "file": "images/figura59.png",
+  "riga": 856
+ },
+ {
+  "tipo": "par",
+  "id": "p115",
+  "testo": "orientalis una, a Iove distans min. 3, occidentalis altera, distans min. 10: hæc erat aliquanto minor orientali. Sed, hora 6, orientalis proximior erat Iovi, distabat nempe min. 0, sec. 50; occidentalis vero remotior fuit, scilicet min. 12. Fuerunt in utraque observatione in eadem recta, et ambæ satis exiguæ, præsertim orientalis in secunda observatione.",
+  "note": [],
+  "riga": 857
+ },
+ {
+  "tipo": "par",
+  "id": "p116",
+  "testo": "Die 18, hora 1, tres aderant Stellæ, quarum duæ occidentales, orientalis vero una: distabat orientalis a Iove min. 3, occidentalis",
+  "note": [],
+  "riga": 859
+ },
+ {
+  "tipo": "figura",
+  "id": "figura60",
+  "file": "images/figura60.png",
+  "riga": 861
+ },
+ {
+  "tipo": "par",
+  "id": "p117",
+  "testo": "proxima m. 2; occidentalior reliqua aberat a media min. 8: omnes fuerunt in eadem recta ad unguem, et eiusdem fere magnitudinis. At, hora 2, Stellæ viciniores paribus a Iove aberant interstitiis: occidua enim aberat ipsa quoque min. 3. Sed, hora 6, quarta Stellula visa est inter orientaliorem et Iovem, in tali configuratione:",
+  "note": [],
+  "riga": 862
+ },
+ {
+  "tipo": "figura",
+  "id": "figura61",
+  "file": "images/figura61.png",
+  "riga": 864
+ },
+ {
+  "tipo": "par",
+  "id": "p118",
+  "testo": "orientalior distabat a sequenti min. 3, sequens a Iove min. 1, sec. 50, Iuppiter ab occidentali sequenti min. 3, hæc vero ab occidentaliori min. 7: erant fere æquales; orientalis tantum Iovi proxima reliquis erat paulo minor: erantque in eadem recta Eclipticæ parallela.",
+  "note": [],
+  "riga": 865
+ },
+ {
+  "tipo": "par",
+  "id": "p119",
+  "testo": "Die 19, hora 0, min. 40, Stellæ duæ solummodo occiduæ a Iove",
+  "note": [],
+  "riga": 867
+ },
+ {
+  "tipo": "figura",
+  "id": "figura62",
+  "file": "images/figura62.png",
+  "riga": 869
+ },
+ {
+  "tipo": "par",
+  "id": "p120",
+  "testo": "conspectæ fuerunt, satis magnæ, et in eadem recta cum Iove ad unguem, ac secundum Eclipticæ ductum dispositæ. Propinquior a Iove distabat min. 7, hæc vero ab occidentaliori min. 6.",
+  "note": [],
+  "riga": 870
+ },
+ {
+  "tipo": "par",
+  "id": "p121",
+  "testo": "Die 20, nubilosum fuit cælum.",
+  "note": [],
+  "riga": 872
+ },
+ {
+  "tipo": "par",
+  "id": "p122",
+  "testo": "Die 21, hora 1, min. 30, Stellulæ tres satis exiguæ cernebantur in hac constitutione:",
+  "note": [],
+  "riga": 874
+ },
+ {
+  "tipo": "figura",
+  "id": "figura63",
+  "file": "images/figura63.png",
+  "riga": 876
+ },
+ {
+  "tipo": "par",
+  "id": "p123",
+  "testo": "orientalis aberat a Iove min. 2, Iuppiter ab occidentali sequente min. 3, hæc vero ab occidentaliori min. 7: erant ad unguem in eadem recta Eclipticæ parallela.",
+  "note": [],
+  "riga": 877
+ },
+ {
+  "tipo": "par",
+  "id": "p124",
+  "testo": "Die 25, hora 1, min. 30 (nam superioribus tribus noctibus cælum fuit nubibus obductum), tres apparuerunt Stellæ:",
+  "note": [],
+  "riga": 879
+ },
+ {
+  "tipo": "figura",
+  "id": "figura64",
+  "file": "images/figura64.png",
+  "riga": 881
+ },
+ {
+  "tipo": "par",
+  "id": "p125",
+  "testo": "orientales duæ, quarum distantiæ inter se et a Iove æquales fuerunt, ac. min. 4; occidentalis una aberat a Iove min. 2: erant in eadem recta ad unguem, secundum Eclipticæ ductum.",
+  "note": [],
+  "riga": 882
+ },
+ {
+  "tipo": "par",
+  "id": "p126",
+  "testo": "Die 26, hora 0, min. 30, binæ tantum aderant Stellæ:",
+  "note": [],
+  "riga": 884
+ },
+ {
+  "tipo": "figura",
+  "id": "figura65",
+  "file": "images/figura65.png",
+  "riga": 886
+ },
+ {
+  "tipo": "par",
+  "id": "p127",
+  "testo": "orientalis una, distans a Iove min. 10; occidentalis altera, distans min. 6: orientalis erat aliquanto minor occidentali. Sed hora 5, tres visæ sunt Stellæ:",
+  "note": [],
+  "riga": 887
+ },
+ {
+  "tipo": "figura",
+  "id": "figura66",
+  "file": "images/figura66.png",
+  "riga": 889
+ },
+ {
+  "tipo": "par",
+  "id": "p128",
+  "testo": "præter enim duas iam adnotatas, tertia ex occidente prope Iovem, admodum exigua, cernebatur, quæ prius sub Iove latitabat, distabatque ab eo min. 1; orientalis vero remotior, quam antea, videbatur, distans nempe a Iove min. 11. Hac nocte primum Iovis et adiacentium planetarum progressum, secundum Zodiaci longitudinem, facta relatione ad fixam quandam, observare placuit: spectabatur enim fixa Stella orientem versus, distans a Planeta orientali min. 11, et paululum in austrum deflectebat, in hunc qui sequitur modum:",
+  "note": [],
+  "riga": 890
+ },
+ {
+  "tipo": "figura",
+  "id": "figura67",
+  "file": "images/figura67.png",
+  "riga": 892
+ },
+ {
+  "tipo": "par",
+  "id": "p129",
+  "testo": "Die 27, hora 1, min. 4, apparebant Stellæ in tali configuratione:",
+  "note": [],
+  "riga": 893
+ },
+ {
+  "tipo": "figura",
+  "id": "figura68",
+  "file": "images/figura68.png",
+  "riga": 895
+ },
+ {
+  "tipo": "par",
+  "id": "p130",
+  "testo": "orientalior distabat a Iove min. 10, sequens, Iovi proxima, min. 0, sec. 30; occidentalis sequens aberat min. 2, sec. 30; ab hac occidentalior distabat min. 1. Viciniores Iovi exiguæ apparebant, præsertim orientalis; extremæ vero erant admodum conspicuæ, in primis vero occidua; rectamque lineam secundum Eclipticæ ductum designabant ad unguem. Horum Planetarum progressus versus ortum ex collatione ad praedictam fixam manifeste cernebatur; ipsi enim Iuppiter cum adstantibus Planetis vicinior erat, ut in apposita figura videre licet. Sed hora 5, Stella orientalis Iovi proxima aberat ab eo min. 1.",
+  "note": [],
+  "riga": 896
+ },
+ {
+  "tipo": "par",
+  "id": "p131",
+  "testo": "Die 28, hora 1, duæ tantum Stellæ videbantur; orientalis, distans a Iove min. 9; occidentalis vero, min. 2: erant satis conspicuæ et in eadem recta: ad quam lineam fixa perpendiculariter incidebat in Planetam orientalem, veluti in figura:",
+  "note": [],
+  "riga": 898
+ },
+ {
+  "tipo": "figura",
+  "id": "figura69",
+  "file": "images/figura69.png",
+  "riga": 900
+ },
+ {
+  "tipo": "par",
+  "id": "p132",
+  "testo": "sed, hora 5, tertia Stellula, ex oriente distans a Iove min. 2, conspecta est in eiusmodi constitutione:",
+  "note": [],
+  "riga": 901
+ },
+ {
+  "tipo": "figura",
+  "id": "figura70",
+  "file": "images/figura70.png",
+  "riga": 903
+ },
+ {
+  "tipo": "par",
+  "id": "p133",
+  "testo": "Die 1 Martii, hora 0, min. 40, quatuor Stellæ orientales omnes conspectæ sunt, quarum Iovi proxima aberat ab eo min. 2, sequens ab hac m. 1, tertia m. 0, sec. 2, eratque reliquis clarior; ab ista vero distabat orientalior min. 4, et reliquis erat minor. Rectam proxime designabant lineam, nisi quod tertia a Iove paululum attollebatur. Fixa cum Iove et orientaliori trigonum æquilaterum constituebat, ut in figura:",
+  "note": [],
+  "riga": 904
+ },
+ {
+  "tipo": "figura",
+  "id": "figura71",
+  "file": "images/figura71.png",
+  "riga": 906
+ },
+ {
+  "tipo": "par",
+  "id": "p134",
+  "testo": "Die 2, hora 0, min. 40, tres adstabant Planetæ, orientales duo, unus vero occiduus, in tali configuratione:",
+  "note": [],
+  "riga": 907
+ },
+ {
+  "tipo": "figura",
+  "id": "figura72",
+  "file": "images/figura72.png",
+  "riga": 909
+ },
+ {
+  "tipo": "par",
+  "id": "p135",
+  "testo": "Aberat orientalior a Iove min. 7, ab hoc distabat sequens min. 0, sec. 30; occidentalis vero elongabatur a Iove min. 2: erant extremi lucidiores ac maiores reliquo, qui admodum exiguus apparebat. Orientalior a recta linea, per reliquos et Iovem ducta, paululum in boream videbatur elatus. Fixa iam adnotata ab occidentali Planeta min. 8 distabat, secundum perpendicularem ab ipso Planeta ductam super lineam rectam per Planetas omnes extensam; veluti apposita figura demonstrat.",
+  "note": [],
+  "riga": 910
+ },
+ {
+  "tipo": "par",
+  "id": "p136",
+  "testo": "Hasce Iovis et adiacentium Planetarum ad Fixam collationes apponere placuit, ut ex illis eorundem Planetarum progressus, tum secundum longitudinem, tum etiam secundum latitudinem, cum motibus, qui ex tabulis hauriuntur, ad unguem congruere, quilibet intelligere possit.",
+  "note": [],
+  "riga": 912
+ },
+ {
+  "tipo": "par",
+  "id": "p137",
+  "testo": "Hæ sunt observationes quatuor Mediceorum Planetarum, recens ac primo a me repertorum, ex quibus, quamvis illorum periodos numeris colligere nondum detur, licet saltem quædam animadversione digna pronunciare. Ac primo, cum Iovem consimilibus interstitiis modo consequantur, modo præeant, ab eoque tum versus ortum, tum in occasum angustissimis tantum divaricationibus elongentur, eundemque retrogradum pariter atque directum concomitentur, quin circa illum suas conficiant conversiones, interea dum circa mundi centrum omnes una duodecennales periodos absolvunt, nemini dubium esse potest. Convertuntur insuper in circulis inæqualibus: quod manifeste colligitur ex eo, quia in maioribus a Iove digressionibus nunquam binos Planetas iunctos videre licuit; cum tamen prope Iovem duo, tres et interdum omnes simul constipati reperti sint. Depræhenditur insuper, velociores esse conversiones Planetarum angustiores circa Iovem circulos describentium: propinquiores enim Iovi Stellæ sæpius spectantur orientales, cum pridie ex occasu apparuerint, et e contra: at Planeta, maximum permeans orbem, accurate præadnotatas reversiones perpendenti, restitutiones semimenstruas habere videtur. Eximium præterea præclarumque habemus argumentum pro scrupulo ab illis demendo, qui in Systemate Copernicano conversionem Planetarum circa Solem æquo animo ferentes, adeo perturbantur ab unius Lunæ circa Terram latione, interea dum ambo annuum orbem circa Solem absolvunt, ut hanc universi constitutionem, tanquam impossibilem, evertendam esse arbitrentur: nunc enim, nedum Planetam unum circa alium convertibilem habemus, dum ambo magnum circa Solem perlustrant orbem, verum quatuor circa Iovem, instar Lunæ circa Tellurem, sensus nobis vagantes offert Stellas, dum omnes simul cum Iove, 12 annorum spatio, magnum circa Solem permeant orbem. Prætereundum tandem non est, quanam ratione contingat, ut Medicea Sidera, dum angustissimas circa Iovem rotationes absolvunt, semetipsis interdum plusquam duplo maiora videantur. Causam in vaporibus terrenis minime quærere possumus; apparent enim aucta, seu minuta, dum Iovis et propinquarum fixarum moles nil immutatæ cernuntur. Accedere autem illos, adeoque a terra elongari, circa suæ conversionis perigæum, aut apogæum, ut tantæ mutationis causam nanciscantur, omnino inopinabile videtur: nam arcta circularis latio id nulla ratione præstare valet; ovalis vero motus (qui in hoc casu rectus fere esset) et inopinabilis, et iis quæ apparent nulla ratione consonus, esse videtur. Quod hac in re succurrit, lubens profero, ac recte philosophantium iudicio censuræque exhibeo. Constat, terrestrium vaporum obiectu Solem Lunamque maiores, sed fixas atque Planetas minores, apparere: hinc Luminaria prope horizontem maiora, Stellæ vero, minores ac plerunque inconspicuæ, imminuuntur etiam magis, si iidem vapores lumine fuerint perfusi; idcirco Stellæ interdiu ac intra crepuscula admodum exiles apparent; Luna non item, ut supra quoque monuimus. Constat insuper, non modo Tellurem, sed etiam Lunam, suum habere vaporosum orbem circumfusum, tum ex his quæ supra diximus, tum maxime ex iis, quæ fusius in nostro <i>Systemate</i> dicentur: at idem quoque de reliquis Planetis ferre iudicium congrue possumus; adeo ut etiam circa Iovem densiorem reliquo æthere ponere orbem, inopinabile minime videatur; circa quem, instar Lunæ circa elementorum sphæram, Planetæ MEDICEI circumducantur, atque huius orbis obiectu, dum apogæi fuerint, minores, dum vero perigæi, per eiusdem orbis ablationem, seu attenuationem, maiores, appareant. Ulterius progredi temporis angustia inhibet; plura de his brevi candidus Lector expectet.",
+  "note": [],
+  "riga": 914
+ }
+]

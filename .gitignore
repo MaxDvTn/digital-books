@@ -1,0 +1,29 @@
+# Sistema e Python
+.DS_Store
+__pycache__/
+*.pyc
+
+# File ausiliari LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Latino 1726, trascrizione © The Newton Project:
+# non si pubblica finché non se ne chiariscono le condizioni d'uso
+principia-interattivi/fonti/latino-1726/
+principia-interattivi/fonti/fonte_la.md
+principia-interattivi/fonti/fonte_fm.md
+# i pacchetti per i traduttori contengono anche il latino
+*.zip
+
+# Vecchie versioni e copie di sicurezza
+*_backup*
+*_v03_prima_copertina*
+
+# Fascicoli completi (con le frasi latine della Parte B): si pubblica
+# traduzione-pubblica/, rigenerata da strumenti/pubblica_fascicoli.py
+principia-interattivi/traduzione/

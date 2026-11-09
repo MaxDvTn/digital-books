@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sidereus Nuncius — Avviso Astronomico interattivo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--carta:#fbf8f2;--inchiostro:#22201c;--rubrica:#871919;--attivo:#1f5fa8;--dato:#6b6458;--linea:#d9d1c3;--pannello:#f3eee4;
+--s1:#c0392b;--s2:#1f7a4d;--s3:#1f5fa8;--s4:#8a5a00}
+*{box-sizing:border-box}
+html{scroll-padding-top:72px}
+body{margin:0;background:var(--carta);color:var(--inchiostro);font:19px/1.6 "EB Garamond",Georgia,serif}
+.ui,button,select,input,label,nav,.lettura,.cifre,.legenda,summary{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header.barra{position:sticky;top:0;z-index:10;background:rgba(251,248,242,.96);border-bottom:1px solid var(--linea);backdrop-filter:blur(4px)}
+header.barra .dentro{max-width:1040px;margin:0 auto;display:flex;align-items:center;gap:.6rem;padding:.45rem .8rem;flex-wrap:wrap}
+header.barra .marchio{font:600 1rem "EB Garamond",serif;color:var(--rubrica);margin-right:auto;font-variant:small-caps;letter-spacing:.03em}
+nav{display:flex;overflow-x:auto;scrollbar-width:none}nav a{font-size:.82rem;color:var(--inchiostro);text-decoration:none;padding:.55rem .55rem;border-radius:6px;border:1px solid transparent;display:inline-block;min-height:44px;line-height:1.6;white-space:nowrap}
+nav a:hover,nav a:focus{border-color:var(--linea)}
+main{max-width:760px;margin:0 auto;padding:1rem 1.1rem 5rem}
+h1{font-weight:400;font-variant:small-caps;color:var(--rubrica);text-align:center;font-size:2rem;margin:1.6rem 0 .2rem;letter-spacing:.04em}
+.sottotitolo{text-align:center;font-style:italic;color:var(--dato);margin:0 0 1.4rem}
+h2{font-weight:400;font-variant:small-caps;color:var(--rubrica);font-size:1.45rem;margin:2.2rem 0 .6rem;letter-spacing:.03em}
+p.t{margin:0 0 .9rem;text-align:justify;hyphens:auto;text-indent:1.2em}
+p.t.breve{text-indent:0}
+.sc{font-variant:small-caps}
+figure.fac{margin:1rem auto;text-align:center}
+figure.fac img{max-width:100%;height:auto}
+figure.fac.piccola img{width:436px;max-width:100%;image-rendering:auto}
+figure.fac figcaption{font-size:.8rem;color:var(--dato);font-family:Inter,system-ui,sans-serif}
+.ricostruito{display:none;margin:.2rem auto 0;max-width:436px}
+body.cielo-on .ricostruito{display:block}
+.ricostruito svg{width:100%;height:auto;display:block}
+.minibtn{font-size:.72rem;border:1px solid var(--linea);background:#fff;border-radius:5px;padding:.2rem .6rem;cursor:pointer;color:var(--attivo);min-height:44px}
+.nota{font-size:.78rem;color:var(--dato);font-family:Inter,system-ui,sans-serif;white-space:nowrap}
+.avviso{background:var(--pannello);border-left:3px solid var(--rubrica);padding:.7rem .9rem;font-size:.95rem;border-radius:0 6px 6px 0;margin:1rem 0}
+.avviso.ui{font-size:.82rem;line-height:1.5}
+/* schede interattive */
+section.scheda{background:#fff;border:1px solid var(--linea);border-radius:10px;margin:1.6rem -.4rem;padding:.9rem .9rem 1rem;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+section.scheda>h3{margin:.1rem 0 .3rem;font:600 1.15rem "EB Garamond",serif;color:var(--rubrica);font-variant:small-caps;letter-spacing:.03em}
+section.scheda .intro{font-size:.95rem;color:var(--dato);margin:0 0 .6rem}
+.fig svg{width:100%;height:auto;display:block;touch-action:none;background:#fffdf8;border:1px solid var(--linea);border-radius:6px}
+.controlli{display:flex;flex-wrap:wrap;gap:.5rem .9rem;align-items:center;margin:.6rem 0;font-size:.85rem}
+.controlli label{display:flex;align-items:center;gap:.45rem;flex:1 1 260px}
+.controlli input[type=range]{flex:1;min-width:120px;height:44px;accent-color:var(--attivo)}
+button.b{font-size:.85rem;border:1px solid var(--linea);background:#fff;border-radius:8px;padding:.45rem .8rem;cursor:pointer;min-height:44px;min-width:44px;color:var(--inchiostro)}
+button.b:hover{border-color:var(--attivo)}
+button.b[aria-pressed=true]{background:var(--attivo);color:#fff;border-color:var(--attivo)}
+.passi{display:flex;align-items:center;gap:.5rem;margin:.6rem 0}
+.passi .num{font-size:.8rem;color:var(--dato);min-width:5.5em;text-align:center}
+.lettura{font-size:.88rem;line-height:1.5;background:var(--pannello);border-radius:6px;padding:.6rem .8rem;min-height:4.2em}
+.lettura .cit{font-family:"EB Garamond",serif;font-style:italic;font-size:1.02rem}
+.cifre{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.4rem;margin:.6rem 0;font-size:.8rem}
+.cifre div{background:var(--pannello);border-radius:6px;padding:.4rem .55rem}
+.cifre b{display:block;font-size:1.05rem;font-weight:600;color:var(--inchiostro)}
+details{margin:.5rem 0;border:1px solid var(--linea);border-radius:6px;background:#fff}
+details>summary{cursor:pointer;padding:.55rem .7rem;font-size:.85rem;font-weight:600;color:var(--attivo);min-height:44px;display:flex;align-items:center}
+details>div{padding:0 .8rem .7rem;font-size:.92rem}
+details ol{padding-left:1.2rem;margin:.3rem 0}
+details li{margin:.4rem 0}
+details details{margin:.3rem 0 .2rem}
+details details>summary{font-weight:400;font-size:.8rem;min-height:44px}
+.duecol{display:grid;grid-template-columns:1fr;gap:.6rem}
+@media(min-width:768px){.duecol{grid-template-columns:1fr 1fr}}
+.etichetta{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--dato);margin:.3rem 0 .15rem;font-family:Inter,system-ui,sans-serif}
+.disegnoG{background:#fff;border:1px solid var(--linea);border-radius:6px;padding:.3rem;text-align:center;min-height:60px;display:flex;align-items:center;justify-content:center}
+.disegnoG img{max-width:100%;height:auto}
+.legenda{display:flex;flex-wrap:wrap;gap:.3rem .9rem;font-size:.78rem;margin:.3rem 0}
+.legenda span{display:inline-flex;align-items:center;gap:.3rem}
+.legenda i{width:11px;height:11px;border-radius:50%;display:inline-block}
+.testoOss{font-size:.98rem;line-height:1.5;margin:.4rem 0;max-height:12em;overflow:auto}
+.dataoss{font:600 .95rem Inter,system-ui,sans-serif}
+.grafico{max-height:460px;overflow:auto;border:1px solid var(--linea);border-radius:6px}
+.grafico svg{display:block;width:100%;height:auto;background:#fffdf8}
+footer{max-width:760px;margin:0 auto;padding:1rem 1.1rem 3rem;font-size:.82rem;color:var(--dato);font-family:Inter,system-ui,sans-serif}
+.lat{display:none}
+a{color:var(--attivo)}
+:focus-visible{outline:3px solid #f0b400;outline-offset:2px}
+@media(max-width:767px){header.barra .dentro{flex-wrap:nowrap;padding:.25rem .5rem;gap:.3rem}header.barra .marchio{display:none}nav{flex:1;min-width:0}#btnCielo,#btnLibro{font-size:.72rem;padding:.3rem .5rem;flex:none}body{font-size:18px}section.scheda{margin:1.4rem -.6rem;padding:.75rem .65rem .9rem}h1{font-size:1.6rem}.passi{position:sticky;bottom:0;background:#fff;padding:.4rem 0;z-index:2}}
+%%FASI_CSS%%
+%%COPERTINA_CSS%%
+%%LIBRO_CSS%%
+.lGriglia{display:grid;grid-template-columns:1fr;gap:.6rem}
+@media(min-width:700px){.lGriglia{grid-template-columns:1.55fr 1fr;align-items:start}}
+b.chiave{font-weight:600}
+@media(max-width:1023px){header.barra .dentro{flex-wrap:nowrap}header.barra .marchio{display:none}nav{flex:1;min-width:0}}
+</style>
+</head>
+<body>
+<header class="barra"><div class="dentro">
+<span class="marchio">Sidereus Nuncius</span>
+<nav aria-label="Sezioni">
+<a href="#copertina">Copertina</a><a href="#testo">Testo</a><a href="#fasi">Fasi lunari</a><a href="#cannocchiale">Cannocchiale</a><a href="#luna">Monti lunari</a><a href="#giove">Astri Medicei</a><a href="#note">Note</a>
+</nav>
+<button class="b ui" id="btnLibro" aria-pressed="false" title="Leggi come un libro da sfogliare">📖 Libro</button>
+<button class="b ui" id="btnCielo" aria-pressed="false" title="Mostra sotto ogni disegno di Giove il cielo ricostruito con le effemeridi moderne">Cielo ricostruito</button>
+</div></header>
+<main>
+%%COPERTINA%%
+
+<div class="avviso ui">Il testo è completo. In quattro punti il libro si apre in una <b>scheda interattiva</b>: le fasi della Luna, il cannocchiale, l'altezza dei monti lunari, i satelliti di Giove. Con il pulsante <b>📖 Libro</b> lo leggi come un libro da sfogliare, anche con il latino a fronte. Il pulsante <b>Cielo ricostruito</b> mette sotto ogni disegno di Giove la posizione dei satelliti calcolata oggi per la stessa sera: si può controllare Galileo notte per notte.</div>
+
+<div id="testo">
+%%TESTO%%
+</div>
+</main>
+<footer id="note">
+<h2 style="font-family:'EB Garamond',serif">Note all'edizione</h2>
+<p><b>Testo.</b> Traduzione italiana di Luisa Lanzillotta, da Galileo Galilei, <i>Opere</i>, a cura di F. Flora, Milano–Napoli, Ricciardi, 1953, nell'edizione elettronica di Liber Liber, licenza <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it">CC BY-NC-SA 4.0</a>, con il consenso della Casa Editrice Ricciardi. Fonte: <a href="https://liberliber.it/autori/autori-g/galileo-galilei/sidereus-nuncius/">liberliber.it</a>. Le figure riproducono le incisioni dell'edizione veneziana del 1610 (pubblico dominio).</p>
+<p><b>Le frasi in grassetto</b> sono le affermazioni principali di Galileo: la Luna scabra come la Terra, la Via Lattea e le nebulose fatte di stelle, la luce cinerea, i satelliti di Giove, l'argomento a favore di Copernico. La scelta è dei curatori di questa edizione, non di Galileo né della traduzione.</p>
+<p><b>Licenza di questa pagina.</b> Testi e schede: CC BY-NC-SA 4.0 (per la licenza della traduzione). Codice: MIT.</p>
+<p><b>Come è ricostruito il cielo.</b> Le posizioni dei quattro satelliti sono calcolate con il metodo a bassa precisione di J. Meeus (<i>Astronomical Algorithms</i>, 2ª ed., cap. 44), verificato sull'esempio del libro. L'ora: Galileo conta le ore «di notte» all'italiana, cioè dal tramonto; qui l'ora del tramonto a Padova è calcolata giorno per giorno, con un'incertezza di circa mezz'ora sull'inizio del conteggio. Quando Galileo non indica l'ora (8, 10, 11, 13, 24 gennaio; 2, 6, 7 febbraio) si assume un'ora dopo il tramonto, e la scheda lo segnala. Un satellite a meno di un raggio di Giove dal centro è considerato nascosto (dietro il pianeta o davanti al suo disco luminoso); l'ombra di Giove non è calcolata. Le distanze sono in primi d'arco, come quelle di Galileo.</p>
+<p><b>Galileo e il modello a confronto.</b> Nella ricostruzione sono disegnati tutti i satelliti fuori dal disco di Giove. Per confrontarla con i conteggi di Galileo (stelle a oriente e a occidente, trascritte dal testo e dai disegni) bisogna però decidere quando un satellite era davvero visibile con il suo strumento. Considerando visibili quelli a più di 1′ dal centro di Giove e distinguibili quelli separati da almeno 0,3′, la disposizione coincide in 49 disegni su 65; con criteri più severi (0,4′ e 0,7′) si scende a 28. Le differenze riguardano per lo più un satellite a meno di 3′ da Giove che Galileo non annota (era debole o perso nel bagliore del pianeta), due satelliti vicini che Galileo riesce a separare, oppure Callisto molto lontano. Le distanze in primi di Galileo sono spesso più grandi di quelle calcolate: nelle sere controllate il rapporto va da 1,1 a 1,6. Sono buoni punti di discussione in classe.</p>
+<p><b>Limiti.</b> Il metodo di Meeus è tarato sull'epoca attuale: su quattro secoli lo scarto atteso è di qualche decimo di primo, sufficiente per riconoscere le configurazioni, non per misure fini.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script>window.LIBRO_LATINO=%%LATINO%%;window.LIBRO_CONF=%%LIBRO_CONF%%;</script>
+<script>%%LIBRO_JS%%</script>
+<script>%%FASI_JS%%</script>
+<script>%%ASTRO%%</script>
+<script>
+const OSS = %%OSS%%;
+const IMG = %%IMG%%;
+const NOMI=["I · Io","II · Europa","III · Ganimede","IV · Callisto"];
+const COL=["var(--s1)","var(--s2)","var(--s3)","var(--s4)"];
+const MESI=["","gennaio","febbraio","marzo"];
+const $=(s,e=document)=>e.querySelector(s);
+const NS="http://www.w3.org/2000/svg";
+function el(tag,attr,par){const e=document.createElementNS(NS,tag);for(const k in attr)e.setAttribute(k,attr[k]);if(par)par.appendChild(e);return e;}
+function txt(par,x,y,s,attr){const t=el("text",Object.assign({x,y},attr||{}),par);t.textContent=s;return t;}
+function fmtMin(a){a=Math.abs(a);const m=Math.floor(a),s=Math.round((a-m)*60);return s===60?(m+1)+"′":(m+"′"+(s?(" "+String(s).padStart(2,"0")+"″"):""));}
+function oreLabel(h){const H=Math.floor(h+1e-9),M=Math.round((h-H)*60);return H+(M?(" h "+M+" min"):(H===1?" ora":" ore"));}
+
+/* ---------------- Cielo ricostruito: striscia ---------------- */
+function calcola(m,d,h){const r=Astro.satelliti(Astro.jdOsservazione(1610,m,d,h));
+  return {R:r.raggioArcmin,sat:r.sat.map((s,i)=>({i,x:s.X*r.raggioArcmin,y:s.Y*r.raggioArcmin,nascosto:Math.abs(s.X)<1,dietro:s.dietro,u:s.u,r:s.r}))};}
+function striscia(svg,c,opz){
+  opz=opz||{};const W=436,H=opz.alto||64,cx=W/2,cy=H/2+(opz.alto?6:2),k=opz.scala||15; // px per primo
+  svg.setAttribute("viewBox",`0 0 ${W} ${H}`);svg.innerHTML="";
+  el("rect",{x:0,y:0,width:W,height:H,fill:"#11141c",rx:5},svg);
+  for(let a=-14;a<=14;a++){const x=cx+a*k;if(x<4||x>W-4)continue;el("line",{x1:x,x2:x,y1:H-5,y2:H-(a%5?8:12),stroke:"#56607a","stroke-width":1},svg);}
+  txt(svg,6,13,"Ori.",{fill:"#9aa6c4","font-size":11,"font-family":"Inter,sans-serif"});
+  txt(svg,W-6,13,"Occ.",{fill:"#9aa6c4","font-size":11,"font-family":"Inter,sans-serif","text-anchor":"end"});
+  el("circle",{cx,cy,r:Math.max(c.R*k,3),fill:"#f3e3c0"},svg);
+  c.sat.forEach(s=>{    const X=cx+s.x*k, Y=cy-s.y*k;
+    if(X<2||X>W-2)return;
+    if(s.nascosto){el("circle",{cx:X,cy:Y,r:3.2,fill:"none",stroke:opz.nomi?COL[s.i]:"#8a93ab","stroke-width":1.2,"stroke-dasharray":"2 1.5"},svg);}
+    else el("circle",{cx:X,cy:Y,r:3.2,fill:opz.nomi?COL[s.i]:"#fff"},svg);
+    if(opz.nomi)txt(svg,X,cy+(s.i%2?-9:16),["I","II","III","IV"][s.i],{fill:"#dfe5f5","font-size":10,"font-family":"Inter,sans-serif","text-anchor":"middle"});
+  });
+  txt(svg,W/2,13,"1 tacca = 1′",{fill:"#76809a","font-size":9,"font-family":"Inter,sans-serif","text-anchor":"middle"});
+}
+function vistaAlto(svg,c,opz){
+  const W=436,H=230,cx=W/2,cy=100,k=7.6;svg.setAttribute("viewBox",`0 0 ${W} ${H}`);svg.innerHTML="";
+  el("rect",{x:0,y:0,width:W,height:H,fill:"#fffdf8"},svg);
+  [5.9,9.4,15,26.4].forEach((r,i)=>el("ellipse",{cx,cy,rx:r*k,ry:r*k*0.33,fill:"none",stroke:"#d6cdbb","stroke-width":1},svg));
+  el("rect",{x:cx-k,y:cy-26.4*k*0.33-6,width:2*k,height:26.4*k*0.33+6,fill:"#ece6da"},svg);
+  el("rect",{x:cx-k,y:cy,width:2*k,height:H-cy-18,fill:"#e8e1d2"},svg);
+  el("circle",{cx,cy,r:k,fill:"#e6c98e",stroke:"#9b7b3a"},svg);
+  c.sat.forEach(s=>{const X=cx+s.r*Math.sin(s.u*Math.PI/180)*k, Y=cy+s.r*Math.cos(s.u*Math.PI/180)*k*0.33;
+    el("circle",{cx:X,cy:Y,r:5,fill:opz.nomi?COL[s.i]:"#555",stroke:"#fff","stroke-width":1},svg);
+    if(opz.nomi)txt(svg,X,Y-8,["I","II","III","IV"][s.i],{"font-size":10,"text-anchor":"middle","font-family":"Inter,sans-serif",fill:"#333"});});
+  txt(svg,cx,H-5,"↓ verso la Terra (cioè verso di noi)",{"font-size":11,"text-anchor":"middle","font-family":"Inter,sans-serif",fill:"#6b6458"});
+  txt(svg,8,16,"Ori.",{"font-size":11,"font-family":"Inter,sans-serif",fill:"#6b6458"});
+  txt(svg,W-8,16,"Occ.",{"font-size":11,"text-anchor":"end","font-family":"Inter,sans-serif",fill:"#6b6458"});
+  txt(svg,cx+k+3,22,"dietro Giove: nascosto",{"font-size":9,"font-family":"Inter,sans-serif",fill:"#8b8270"});
+  txt(svg,cx+k+3,H-22,"davanti al disco: invisibile",{"font-size":9,"font-family":"Inter,sans-serif",fill:"#8b8270"});
+}
+
+/* righe sotto i disegni del testo */
+let nomiOn=false;
+function disegnaRicostruiti(){document.querySelectorAll(".ricostruito").forEach(d=>{const o=OSS[+d.dataset.i];striscia($("svg",d),calcola(o.m,o.d,o.h),{nomi:nomiOn});});}
+$("#btnCielo").addEventListener("click",e=>{const on=!document.body.classList.contains("cielo-on");document.body.classList.toggle("cielo-on",on);e.currentTarget.setAttribute("aria-pressed",on);if(on)disegnaRicostruiti();});
+document.querySelectorAll(".vaiOss").forEach(b=>b.addEventListener("click",()=>{osserva(+b.dataset.i);location.hash="giove";$("#giove").scrollIntoView({behavior:"smooth"});}));
+
+/* ---------------- Osservatorio di Giove ---------------- */
+let iOss=0, tCont=null;
+function osserva(i){iOss=Math.max(0,Math.min(OSS.length-1,i));tCont=null;const o=OSS[iOss];
+  $("#tempo").value=oreDa7(o.m,o.d,o.h);aggiornaGiove();}
+function oreDa7(m,d,h){const g=(m===1?d-7:m===2?24+d:24+28+d);return g*24+h;}
+function daOre(t){let g=Math.floor(t/24),h=t-g*24;let m=1,d=7+g;if(d>31){m=2;d-=31;if(d>28){m=3;d-=28;}}return{m,d,h};}
+function aggiornaGiove(){
+  const t=+$("#tempo").value;const cont=tCont!==null;
+  const o=cont?null:OSS[iOss];const q=cont?daOre(t):o;
+  const c=calcola(q.m,q.d,q.h);
+  striscia($("#gStriscia"),c,{nomi:nomiOn,alto:84,scala:15});
+  vistaAlto($("#gAlto"),c,{nomi:nomiOn});
+  $("#gData").textContent=`${q.d} ${MESI[q.m]} 1610 · ${oreLabel(q.h)} dopo il tramonto`+(o&&!o.ora?" (ora non indicata: si assume 1 ora)":"");
+  $("#gNum").textContent=cont?"tempo libero":`disegno ${iOss+1} di ${OSS.length}`;
+  if(o){$("#gImg").innerHTML=`<img alt="Disegno di Galileo: Giove e i suoi satelliti il ${o.d} ${MESI[o.m]} 1610" src="${IMG[o.f]}">`;$("#gTesto").innerHTML=o.testo;}
+  else{$("#gImg").innerHTML='<span class="ui" style="font-size:.8rem;color:var(--dato)">Nessun disegno di Galileo per questo istante: scegli una sua osservazione con ◀ ▶</span>';$("#gTesto").innerHTML="";}
+  const vis=c.sat.filter(s=>!s.nascosto);
+  $("#gCifre").innerHTML=c.sat.map(s=>`<div>${nomiOn?NOMI[s.i]:"satellite ?"}<b>${s.nascosto?"nascosto":(fmtMin(s.x)+(s.x<0?" a oriente":" a occidente"))}</b></div>`).join("");
+  if(!nomiOn)$("#gCifre").innerHTML=`<div>visibili<b>${vis.length} su 4</b></div><div>a oriente<b>${vis.filter(s=>s.x<0).sort((a,b)=>b.x-a.x).map(s=>fmtMin(s.x)).join(" · ")||"—"}</b></div><div>a occidente<b>${vis.filter(s=>s.x>0).sort((a,b)=>a.x-b.x).map(s=>fmtMin(s.x)).join(" · ")||"—"}</b></div>`;
+  marcaGrafico(t);
+}
+$("#gPrec").addEventListener("click",()=>osserva(tCont!==null?trovaVicino(-1):iOss-1));
+$("#gSucc").addEventListener("click",()=>osserva(tCont!==null?trovaVicino(1):iOss+1));
+function trovaVicino(dir){const t=tCont;let best=dir>0?OSS.length-1:0;for(let i=0;i<OSS.length;i++){const ti=oreDa7(OSS[i].m,OSS[i].d,OSS[i].h);if(dir>0&&ti>t+0.01){best=i;break;}if(dir<0&&ti<t-0.01)best=i;}return best;}
+$("#tempo").addEventListener("input",e=>{tCont=+e.target.value;aggiornaGiove();});
+$("#gNomi").addEventListener("click",e=>{nomiOn=!nomiOn;e.currentTarget.setAttribute("aria-pressed",nomiOn);aggiornaGiove();disegnaGrafico();if(document.body.classList.contains("cielo-on"))disegnaRicostruiti();});
+let anim=null;
+$("#gPlay").addEventListener("click",e=>{const b=e.currentTarget;if(anim){clearInterval(anim);anim=null;b.setAttribute("aria-pressed","false");b.textContent="▶ Anima";return;}
+  b.setAttribute("aria-pressed","true");b.textContent="❚❚ Ferma";tCont=+$("#tempo").value;
+  anim=setInterval(()=>{tCont+=0.5;if(tCont>+$("#tempo").max)tCont=0;$("#tempo").value=tCont;aggiornaGiove();},60);});
+$("#giove").addEventListener("keydown",e=>{if(e.target.tagName==="INPUT")return;if(e.key==="ArrowRight"){osserva(iOss+1);e.preventDefault();}if(e.key==="ArrowLeft"){osserva(iOss-1);e.preventDefault();}});
+
+/* grafico delle elongazioni: tempo verso il basso, oriente a sinistra */
+const GR={W:436,top:24,pxGiorno:9,k:15};
+function disegnaGrafico(){
+  const svg=$("#gGrafico"),giorni=55,H=GR.top+giorni*GR.pxGiorno+10,W=GR.W,cx=W/2,k=GR.k/1.6;
+  svg.setAttribute("viewBox",`0 0 ${W} ${H}`);svg.innerHTML="";
+  for(let g=0;g<=giorni;g++){const y=GR.top+g*GR.pxGiorno;const {m,d}=daOre(g*24);
+    if(d===1||g%7===0){el("line",{x1:0,x2:W,y1:y,y2:y,stroke:"#ece6da"},svg);txt(svg,3,y-2,`${d} ${MESI[m].slice(0,3)}`,{"font-size":8.5,"font-family":"Inter,sans-serif",fill:"#8b8270"});}}
+  el("line",{x1:cx,x2:cx,y1:GR.top,y2:H,stroke:"#e6c98e","stroke-width":5},svg);
+  txt(svg,6,12,"Ori.",{"font-size":10,"font-family":"Inter,sans-serif",fill:"#6b6458"});
+  txt(svg,W-6,12,"Occ.",{"font-size":10,"text-anchor":"end","font-family":"Inter,sans-serif",fill:"#6b6458"});
+  for(let i=0;i<4;i++){let dpath="";for(let t=0;t<=giorni*24;t+=1){const q=daOre(t),c=calcola(q.m,q.d,q.h);const x=cx+c.sat[i].x*k,y=GR.top+t/24*GR.pxGiorno;dpath+=(t?"L":"M")+x.toFixed(1)+" "+y.toFixed(1);}
+    el("path",{d:dpath,fill:"none",stroke:nomiOn?COL[i]:"#9aa0ad","stroke-width":1.3},svg);}
+  OSS.forEach((o,j)=>{const y=GR.top+oreDa7(o.m,o.d,o.h)/24*GR.pxGiorno;el("rect",{x:0,y:y-1.5,width:10,height:3,fill:"var(--rubrica)"},svg);});
+  svg.style.cursor="pointer";
+  svg.onclick=ev=>{const p=svg.createSVGPoint();p.x=ev.clientX;p.y=ev.clientY;const q=p.matrixTransform(svg.getScreenCTM().inverse());
+    const t=(q.y-GR.top)/GR.pxGiorno*24;let best=0,bd=1e9;OSS.forEach((o,j)=>{const dd=Math.abs(oreDa7(o.m,o.d,o.h)-t);if(dd<bd){bd=dd;best=j;}});osserva(best);};
+  el("line",{id:"gMarca",x1:0,x2:W,y1:0,y2:0,stroke:"var(--attivo)","stroke-width":1.5},svg);
+}
+function marcaGrafico(t){const m=$("#gMarca");if(!m)return;const y=GR.top+t/24*GR.pxGiorno;m.setAttribute("y1",y);m.setAttribute("y2",y);}
+
+/* ---------------- Cannocchiale ---------------- */
+(function(){
+  const svg=$("#cRaggi"),W=600,H=270;svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
+  const E={x:40,y:135},L=200,ap=46,O=560;
+  function disegna(){
+    const m=+$("#cM").value,foro=+$("#cForo").value/100;svg.innerHTML="";
+    const a=ap*foro;const C={x:L,y:E.y-a},D={x:L,y:E.y+a};
+    const s=(O-E.x)/(L-E.x);const F={x:O,y:E.y-a*s},G={x:O,y:E.y+a*s};
+    const Hh={x:O,y:E.y-a*s/m},I={x:O,y:E.y+a*s/m};
+    el("rect",{x:E.x+20,y:E.y-ap-14,width:L-E.x-20,height:2*ap+28,fill:"#efe9dc",stroke:"#cfc6b4"},svg);
+    txt(svg,E.x+28,E.y-ap-20,"tubo",{"font-size":11,"font-family":"Inter,sans-serif",fill:"#8b8270"});
+    el("line",{x1:O,x2:O,y1:20,y2:H-20,stroke:"#bbb","stroke-dasharray":"3 3"},svg);
+    el("line",{x1:E.x,y1:E.y,x2:F.x,y2:F.y,stroke:"#b9b2a4","stroke-width":1.3,"stroke-dasharray":"5 4"},svg);
+    el("line",{x1:E.x,y1:E.y,x2:G.x,y2:G.y,stroke:"#b9b2a4","stroke-width":1.3,"stroke-dasharray":"5 4"},svg);
+    el("polyline",{points:`${E.x},${E.y} ${C.x},${C.y} ${Hh.x},${Hh.y}`,fill:"none",stroke:"var(--attivo)","stroke-width":2},svg);
+    el("polyline",{points:`${E.x},${E.y} ${D.x},${D.y} ${I.x},${I.y}`,fill:"none",stroke:"var(--attivo)","stroke-width":2},svg);
+    el("line",{x1:L,y1:C.y-6,x2:L,y2:D.y+6,stroke:"var(--rubrica)","stroke-width":4},svg);
+    el("line",{x1:O,y1:F.y,x2:O,y2:G.y,stroke:"var(--dato)","stroke-width":3},svg);
+    el("line",{x1:O,y1:Hh.y,x2:O,y2:I.y,stroke:"var(--attivo)","stroke-width":6},svg);
+    el("circle",{cx:E.x,cy:E.y,r:5,fill:"var(--inchiostro)"},svg);
+    const T=(x,y,s,c,anc)=>txt(svg,x,y,s,{"font-size":15,"font-style":"italic","font-family":"EB Garamond,serif",fill:c||"var(--inchiostro)","text-anchor":anc||"middle"});
+    T(E.x-14,E.y+5,"E");T(L-10,C.y-8,"C");T(L-10,D.y+18,"D");
+    T(O+12,Math.max(F.y,14)+4,"F","var(--dato)","start");T(O+12,Math.min(G.y,H-6),"G","var(--dato)","start");
+    T(O-10,Hh.y-4,"H","var(--attivo)","end");T(O-10,I.y+14,"I","var(--attivo)","end");
+    const ang0=2*Math.atan(a/(L-E.x))*180/Math.PI;const ang=ang0/m;
+    $("#cCifre").innerHTML=`<div>ingrandimento dei diametri<b>${m}×</b></div><div>ingrandimento delle superfici<b>${m*m}×</b></div><div>angolo FEG a occhio nudo<b>${ang0>=1?ang0.toFixed(1)+"°":fmtMin(ang0*60)}</b></div><div>angolo HEI col cannocchiale<b>${ang>=1?ang.toFixed(2)+"°":fmtMin(ang*60)}</b></div>`;
+    // prova dei due quadrati
+    const q=$("#cQuadri"),Wq=600,Hq=200;q.setAttribute("viewBox",`0 0 ${Wq} ${Hq}`);q.innerHTML="";
+    const big=120,small=big/20*m;const ok=Math.abs(m-20)<0.5;
+    txt(q,150,18,"occhio libero: quadrato grande (lato 20)",{"font-size":12,"text-anchor":"middle","font-family":"Inter,sans-serif",fill:"#6b6458"});
+    txt(q,450,18,"occhio al cannocchiale: quadrato piccolo (lato 1)",{"font-size":12,"text-anchor":"middle","font-family":"Inter,sans-serif",fill:"#6b6458"});
+    el("rect",{x:150-big/2,y:100-big/2,width:big,height:big,fill:"none",stroke:"var(--dato)","stroke-width":2},q);
+    const sm=Math.min(small,160);el("rect",{x:450-sm/2,y:100-sm/2,width:sm,height:sm,fill:ok?"rgba(31,122,77,.15)":"rgba(31,95,168,.08)",stroke:ok?"var(--s2)":"var(--attivo)","stroke-width":2},q);
+    el("rect",{x:450-big/2,y:100-big/2,width:big,height:big,fill:"none",stroke:"var(--dato)","stroke-width":1,"stroke-dasharray":"4 4"},q);
+    txt(q,300,Hq-6,ok?"Le due figure coincidono: lo strumento ingrandisce i diametri 20 volte, le superfici 400.":`Il quadrato piccolo appare ${m} volte più largo: ${m<20?"ancora troppo piccolo":"già troppo grande"}.`,{"font-size":12.5,"text-anchor":"middle","font-family":"Inter,sans-serif",fill:ok?"var(--s2)":"var(--inchiostro)"});
+  }
+  $("#cM").addEventListener("input",disegna);$("#cForo").addEventListener("input",disegna);
+  document.querySelectorAll("[data-strum]").forEach(b=>b.addEventListener("click",()=>{$("#cM").value=b.dataset.strum;disegna();}));
+  disegna();
+})();
+
+/* ---------------- Monti della Luna ---------------- */
+(function(){
+  const svg=$("#lFig"),W=440,H=445;svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
+  const cx=215,cy=235,R=170;
+  const PASSI=[
+   {vis:["cerchio"],t:"Galileo osserva cime illuminate nella parte buia, lontane dal confine della luce: misurandole, trova che la distanza «supera talvolta la ventesima parte del diametro».",c:"accertai che questa distanza supera talvolta la ventesima parte del diametro"},
+   {vis:["cerchio","E","CF"],t:"Il globo lunare: cerchio massimo CAF, centro E, diametro CF. La Luna sta alla Terra come 2 a 7; la Terra misura 7000 miglia: dunque CF = 2000 miglia e CE = 1000.",c:"sarà CF 2000, CE 1000"},
+   {vis:["cerchio","E","CF","luce"],t:"Il Sole è lontanissimo: i suoi raggi arrivano paralleli e il confine tra luce e buio è, di fatto, un cerchio massimo. Qui lo vediamo di taglio, come il diametro CF.",c:"per la grandissima lontananza del Sole dalla Luna questo circolo non differisce sensibilmente dal circolo massimo"},
+   {vis:["cerchio","E","CF","luce","GCD"],t:"Il raggio di Sole che sfiora la Luna in C è la tangente GCD: è l'ultimo raggio che passa sopra la parte buia.",c:"la tangente GCD (che rappresenta il raggio illuminante)"},
+   {vis:["cerchio","E","CF","luce","GCD","A","EAD"],t:"La cima sta sopra il punto A, lontano da C un ventesimo del diametro (100 miglia). Si prolunga il raggio EA fino a incontrare la tangente in D: la cima è illuminata se arriva fino a D.",c:"si prolunghi il semidiametro EA, fino all'incontro nel punto D della tangente GCD"},
+   {vis:["cerchio","E","CF","luce","GCD","A","EAD","triangolo"],t:"Il triangolo ECD è rettangolo in C. Per il teorema di Pitagora DE² = DC² + CE² = 100² + 1000² = 1 010 000.",c:"la somma dei quadrati di DC e di CE 1.010.000, alla quale è uguale il quadrato di DE"},
+   {vis:["cerchio","E","CF","luce","GCD","A","EAD","triangolo","AD","zoom"],t:"Dunque ED è più di 1004 e l'altezza AD = ED − EA è più di 4 miglia: i monti della Luna superano quelli della Terra.",c:"Nella Luna dunque l'altezza AD [...] supera le 4 miglia italiane"}];
+  let passo=PASSI.length-1;
+  function disegna(){
+    const CDm=+$("#lF").value;$("#lFv").textContent=CDm+" miglia";const f=CDm/2000;const tanA=2*f;const alpha=Math.atan(tanA);
+    const vis=new Set(PASSI[passo].vis);svg.innerHTML="";
+    const C={x:cx,y:cy-R},F={x:cx,y:cy+R},E={x:cx,y:cy};
+    const A={x:cx+R*Math.sin(alpha),y:cy-R*Math.cos(alpha)},D={x:cx+R*tanA,y:cy-R};
+    const nuovo=k=>vis.has(k)&&!(passo>0&&new Set(PASSI[passo-1].vis).has(k));
+    const st=(k,base)=>Object.assign(base,nuovo(k)?{class:"nuovo"}:{});
+    if(vis.has("luce")){
+      el("path",{d:`M${cx} ${cy-R} A${R} ${R} 0 0 1 ${cx} ${cy+R} Z`,fill:"#3a3d48"},svg);
+      el("path",{d:`M${cx} ${cy-R} A${R} ${R} 0 0 0 ${cx} ${cy+R} Z`,fill:"#f4ecd8"},svg);
+      for(let j=0;j<5;j++){const y=cy-R+30+j*70;el("line",{x1:10,x2:cx-R-8,y1:y,y2:y,stroke:"#e0b84a","stroke-width":1.5,"marker-end":"url(#fr)"},svg);}
+      txt(svg,10,cy+R+26,"raggi del Sole →",{"font-size":12,"font-family":"Inter,sans-serif",fill:"#a07c1a"});
+    }
+    const defs=el("defs",{},svg);const mk=el("marker",{id:"fr",markerWidth:8,markerHeight:8,refX:6,refY:3,orient:"auto"},defs);el("path",{d:"M0,0 L6,3 L0,6 z",fill:"#e0b84a"},mk);
+    if(vis.has("cerchio"))el("circle",st("cerchio",{cx,cy,r:R,fill:"none",stroke:"var(--inchiostro)","stroke-width":1.5}),svg);
+    if(vis.has("CF"))el("line",st("CF",{x1:C.x,y1:C.y,x2:F.x,y2:F.y,stroke:"#b9b0a0","stroke-width":1.5}),svg);
+    if(vis.has("GCD"))el("line",st("GCD",{x1:cx-R-20,y1:C.y,x2:Math.min(D.x+60,W-10),y2:C.y,stroke:"#d39b12","stroke-width":2}),svg);
+    if(vis.has("EAD"))el("line",st("EAD",{x1:E.x,y1:E.y,x2:D.x,y2:D.y,stroke:"#8fb8ff","stroke-width":2.2}),svg);
+    if(vis.has("triangolo"))el("polygon",st("triangolo",{points:`${E.x},${E.y} ${C.x},${C.y} ${D.x},${D.y}`,fill:"rgba(143,184,255,.28)",stroke:"#8fb8ff","stroke-width":1,"stroke-dasharray":"4 3"}),svg);
+    if(vis.has("AD"))el("line",st("AD",{x1:A.x,y1:A.y,x2:D.x,y2:D.y,stroke:"#ff8a7a","stroke-width":4}),svg);
+    const T=(p,s,dx,dy,c)=>txt(svg,p.x+dx,p.y+dy,s,{"font-size":19,"font-style":"italic","font-family":"EB Garamond,serif",fill:c||"var(--inchiostro)","text-anchor":"middle"});
+    if(vis.has("cerchio")){T(C,"C",-12,-6);T(F,"F",0,22);T({x:cx-R,y:cy},"",0,0);}
+    if(vis.has("E")){el("circle",{cx,cy,r:3.5,fill:"#fff",stroke:"var(--inchiostro)","stroke-width":1.5},svg);T(E,"E",-14,5);}
+    if(vis.has("GCD")){T({x:cx-R-14,y:C.y},"G",0,-6,"#a07c1a");}
+    if(vis.has("A")){el("circle",{cx:A.x,cy:A.y,r:3.5,fill:"#ff8a7a"},svg);T(A,"A",13,20,"#ffb3a8");}
+    if(vis.has("EAD")){T(D,"D",8,-8,"var(--attivo)");}
+    // riquadro ingrandito intorno a C–D, in scala vera: stesso ingrandimento in ogni direzione,
+    // così la montagna resta perpendicolare alla superficie, lungo il raggio EA prolungato fino a D
+    const zs=$("#lZoom");zs.innerHTML="";$(".lZoomBox").hidden=!vis.has("zoom");
+    if(vis.has("zoom")){
+      const zx=0,zy=0,zw=192,zh=210;zs.setAttribute("viewBox",`0 0 ${zw} ${zh}`);const zdefs=el("defs",{},zs);const CDpx=R*tanA;const z=20;const Rz=R*z; // ingrandimento fisso: la montagna deve crescere con CD
+      const g=el("g",{},zs);el("rect",{x:zx,y:zy,width:zw,height:zh,fill:"#fff"},g);
+      const oy=zy+62,ox=zx+zw*0.58-CDpx*z; // C può stare fuori dal riquadro, a sinistra
+      const clip=el("clipPath",{id:"zc"},zdefs);el("rect",{x:zx,y:zy,width:zw,height:zh},clip);
+      const gz=el("g",{"clip-path":"url(#zc)"},g);
+      const P=th=>({x:ox+Rz*Math.sin(th),y:oy+Rz*(1-Math.cos(th))}); // punto della superficie all'angolo th da C
+      let p="";const th0=Math.max(-0.02,alpha-(zx+zw*0.6)/Rz),th1=alpha+(zw*0.6)/Rz;for(let th=th0;th<=th1+1e-9;th+=(th1-th0)/80){const q=P(th);p+=(p?"L":"M")+q.x.toFixed(1)+" "+q.y.toFixed(1);}
+      el("path",{d:p+` L${zx+zw} ${zy+zh} L${zx} ${zy+zh} Z`,fill:"#3a3d48"},gz);
+      el("line",{x1:zx,x2:zx+zw,y1:oy,y2:oy,stroke:"#d39b12","stroke-width":2},gz);
+      const Az=P(alpha),Dz={x:ox+CDpx*z,y:oy};
+      // direzione del raggio EA (verso l'esterno) e tratteggio verso il centro E
+      const ux=Math.sin(alpha),uy=-Math.cos(alpha);
+      el("line",{x1:Dz.x,y1:Dz.y,x2:Az.x-ux*60,y2:Az.y-uy*60,stroke:"var(--attivo)","stroke-width":1,"stroke-dasharray":"3 3"},gz);
+      txt(gz,Az.x-ux*34+6,Az.y-uy*34,"verso E",{"font-size":10,"font-family":"Inter,sans-serif",fill:"#9db7e0"});
+      // la montagna: base sulla superficie, cima in D
+      const d=11/Rz,B1=P(alpha-d),B2=P(alpha+d);
+      el("polygon",{points:`${B1.x},${B1.y} ${Dz.x},${Dz.y} ${B2.x},${B2.y}`,fill:"#6a6c76",stroke:"#9a9ca6","stroke-width":.8},gz);
+      const k=0.22;el("polygon",{points:`${Dz.x+(B1.x-Dz.x)*k},${Dz.y+(B1.y-Dz.y)*k} ${Dz.x},${Dz.y} ${Dz.x+(B2.x-Dz.x)*k},${Dz.y+(B2.y-Dz.y)*k}`,fill:"#f4ecd8"},gz);
+      el("line",{x1:Az.x,y1:Az.y,x2:Dz.x,y2:Dz.y,stroke:"var(--rubrica)","stroke-width":2},gz);
+      el("circle",{cx:Az.x,cy:Az.y,r:2.5,fill:"var(--rubrica)"},gz);
+      el("circle",{cx:Dz.x,cy:Dz.y,r:3.5,fill:"#ffd34a",stroke:"#a07c1a"},gz);
+      if(ox>zx+6)txt(g,ox-4,oy-7,"C",{"font-size":15,"font-style":"italic","font-family":"EB Garamond,serif"});
+      else txt(g,zx+6,oy-7,`← C, a ${Math.round(2000*f)} miglia`,{"font-size":11,"font-family":"Inter,sans-serif",fill:"#6b6458"});
+      txt(g,Dz.x+5,Dz.y-7,"D",{"font-size":15,"font-style":"italic","font-family":"EB Garamond,serif",fill:"var(--attivo)"});
+      txt(g,Az.x+8,Az.y+14,"A",{"font-size":15,"font-style":"italic","font-family":"EB Garamond,serif",fill:"#f0b0b0"});
+      txt(g,zx+8,zy+zh-8,`scala vera, ×${z}`,{"font-size":10,"font-family":"Inter,sans-serif",fill:"#c9c2b2"});
+      const m10=10*R/1000*z; // 10 miglia in pixel
+      el("line",{x1:zx+zw-10-m10,x2:zx+zw-10,y1:zy+zh-12,y2:zy+zh-12,stroke:"#f3ecdb","stroke-width":2},g);
+      [zx+zw-10-m10,zx+zw-10].forEach(x=>el("line",{x1:x,x2:x,y1:zy+zh-16,y2:zy+zh-8,stroke:"#f3ecdb","stroke-width":1.5},g));
+      txt(g,zx+zw-10-m10/2,zy+zh-19,"10 miglia",{"font-size":9.5,"text-anchor":"middle","font-family":"Inter,sans-serif",fill:"#f3ecdb"});
+      const ADm=Math.sqrt((2000*f)**2+1e6)-1000;
+      txt(g,zx+8,zy+34,`AD ≈ ${ADm.toFixed(1).replace(".",",")} miglia`,{"font-size":11,"font-weight":600,"font-family":"Inter,sans-serif",fill:"var(--rubrica)"});
+      txt(g,zx+8,zy+16,"la cima tocca il raggio radente",{"font-size":10,"font-family":"Inter,sans-serif",fill:"#6b6458"});
+    }
+    // cifre
+    const CD=2000*f,ED=Math.sqrt(CD*CD+1e6),AD=ED-1000;
+    $("#lCifre").innerHTML=`<div>CD (distanza dal confine)<b>${CD.toFixed(0)} miglia = ${(1/f)%1?"circa ":""}1/${Math.round(1/f)} di CF</b></div><div>DE² = DC² + CE²<b>${Math.round(CD*CD+1e6).toLocaleString("it-IT")}</b></div><div>ED<b>${ED.toFixed(2).replace(".",",")} miglia</b></div><div>altezza AD<b>${AD.toFixed(2).replace(".",",")} miglia ≈ ${(AD/2000*3474).toFixed(1).replace(".",",")} km</b></div>`;
+    $("#lTesto").innerHTML=`<b>Passo ${passo+1}.</b> ${PASSI[passo].t}<br><span class="cit">«${PASSI[passo].c}»</span>`;
+    $("#lNum").textContent=`passo ${passo+1} di ${PASSI.length}`;
+    $("#lFig").setAttribute("aria-label","Figura di Galileo per l'altezza dei monti lunari, passo "+(passo+1)+": "+PASSI[passo].t);
+  }
+  $("#lPrec").addEventListener("click",()=>{passo=Math.max(0,passo-1);disegna();});
+  $("#lSucc").addEventListener("click",()=>{passo=Math.min(PASSI.length-1,passo+1);disegna();});
+  $("#lInizio").addEventListener("click",()=>{passo=0;$("#lF").value=100;disegna();});
+  $("#lF").addEventListener("input",()=>{passo=PASSI.length-1;disegna();});
+  $("#luna").addEventListener("keydown",e=>{if(e.target.tagName==="INPUT")return;if(e.key==="ArrowRight"){$("#lSucc").click();e.preventDefault();}if(e.key==="ArrowLeft"){$("#lPrec").click();e.preventDefault();}});
+  passo=0;disegna();
+})();
+const st=document.createElement("style");st.textContent="@keyframes lamp{0%,100%{opacity:1}50%{opacity:.15}} .nuovo{animation:lamp .5s ease 2}";document.head.appendChild(st);
+disegnaGrafico();osserva(0);
+try{Libro.init();}catch(e){console.error(e);}
+try{window.FASI=FasiLuna(document.getElementById('fasi'),%%FASI_IMG%%);}catch(e){console.error(e);}
+function apriDaHash(){const h=location.hash.slice(1);if(h){const e=document.getElementById(h);if(e)e.scrollIntoView();}}
+window.addEventListener("hashchange",apriDaHash);
+</script>
+</body>
+</html>
