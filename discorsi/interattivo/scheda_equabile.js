@@ -7,7 +7,7 @@
   if (!E || !D || !$("#equabile")) return;
   function el(tag, attr, par) { const e = document.createElementNS(NS, tag); for (const k in attr) e.setAttribute(k, attr[k]); if (par) par.appendChild(e); return e; }
   function txt(par, x, y, s, attr) { const t = el("text", Object.assign({ x, y }, attr || {}), par); t.textContent = s; return t; }
-  const fmt = (x, d = 2) => (Math.round(x * 10 ** d) / 10 ** d).toLocaleString("it-IT");
+  const fmt = (x, d = 2) => (Math.round(x * 10 ** d) / 10 ** d).toLocaleString(document.documentElement.lang || "it");
   const SEGNO = { 1: ">", 0: "=", "-1": "<" };
   const PAROLA = { 1: "maggiore", 0: "eguale", "-1": "minore" };
   const INK = "#22201c", ATT = "var(--attivo)", RUB = "var(--rubrica)", DATO = "#6b6458", OCRA = "#8a5a00";

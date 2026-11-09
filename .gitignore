@@ -30,3 +30,8 @@ principia-interattivi/traduzione/
 
 # copia di lavoro del build multilingue (pagina italiana senza testo del libro)
 **/i18n/.sorgente_it.html
+
+# fonti inglesi: l'OCR di Internet Archive non serve più; l'EPUB della Online Library of Liberty
+# si usa per allineare ma non si ridistribuisce (vedi README, «Lingue»)
+fonti_en/crew1914_two_new_sciences_ocr.txt
+fonti_en/*.epub

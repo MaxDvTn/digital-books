@@ -1,0 +1,1358 @@
+[
+[
+"Discorsi e dimostrazioni matematiche intorno a due nuove scienze — edizione interattiva",
+"Dialogues Concerning Two New Sciences — interactive edition"
+],
+[
+"Discorsi · 1638",
+"Two New Sciences · 1638"
+],
+[
+"Sezioni",
+"Sections"
+],
+[
+"Copertina",
+"Cover"
+],
+[
+"Testo",
+"Text"
+],
+[
+"Giornata I",
+"Day I"
+],
+[
+"Giornata II",
+"Day II"
+],
+[
+"Giornata III",
+"Day III"
+],
+[
+"Moto equabile",
+"Uniform motion"
+],
+[
+"Giornata IV",
+"Day IV"
+],
+[
+"Appendice",
+"Appendix"
+],
+[
+"Note",
+"Notes"
+],
+[
+"Leggi come un libro da sfogliare",
+"Read it as a book you can leaf through"
+],
+[
+"📖 Libro",
+"📖 Book"
+],
+[
+"Galileo Galilei Linceo",
+"="
+],
+[
+"Discorsi e dimostrazioni",
+"Discourses and Mathematical"
+],
+[
+"matematiche",
+"Demonstrations"
+],
+[
+"intorno a due nuove scienze",
+"concerning two new sciences"
+],
+[
+"attenenti alla mecanica e i movimenti locali: la resistenza dei corpi solidi all'essere spezzati, il moto equabile e naturalmente accelerato, il moto dei proietti. Con una appendice del centro di gravità d'alcuni solidi",
+"pertaining to mechanics and local motions: the resistance of solid bodies to fracture, uniform and naturally accelerated motion, the motion of projectiles. With an appendix on the centre of gravity of some solids"
+],
+[
+"In Leida, appresso gli Elsevirii · MDCXXXVIII",
+"Leiden, at the Elzevirs · MDCXXXVIII"
+],
+[
+"Il frontespizio dell&#x27;edizione del 1638: DISCORSI E DIMOSTRAZIONI MATEMATICHE, con il nome di Galileo e la marca tipografica degli Elzevier, un vecchio sotto un albero con il motto NON SOLUS.",
+"The title page of the 1638 edition: DISCORSI E DIMOSTRAZIONI MATEMATICHE, with Galileo's name and the Elzevir printer's mark, an old man under a tree with the motto NON SOLUS."
+],
+[
+"Il frontespizio originale, Leida 1638 (Google Books, Wikimedia Commons, pubblico dominio)",
+"The original title page, Leiden 1638 (Google Books, Wikimedia Commons, public domain)"
+],
+[
+"Edizione interattiva per la classe",
+"Interactive edition for the classroom"
+],
+[
+"testo dell'edizione UTET (1980, a cura di F. Brunetti), da Liber Liber",
+"English translation by Henry Crew and Alfonso de Salvio, <i>Dialogues Concerning Two New Sciences</i> (1914)"
+],
+[
+"dimostrazioni latine del 1638 nelle tavole, con traduzione dei curatori",
+"Latin demonstrations of 1638 in the panels, with the English of Crew and de Salvio"
+],
+[
+"Tavole interattive",
+"Interactive plates"
+],
+[
+"Tav. I",
+"Plate I"
+],
+[
+"Il moto equabile e il Teorema I",
+"Uniform motion and Theorem I"
+],
+[
+"Tav. II",
+"Plate II"
+],
+[
+"Il moto naturalmente accelerato",
+"Naturally accelerated motion"
+],
+[
+"in preparazione",
+"in preparation"
+],
+[
+"Tav. III",
+"Plate III"
+],
+[
+"L'esperimento del piano inclinato",
+"The inclined-plane experiment"
+],
+[
+"Tav. IV",
+"Plate IV"
+],
+[
+"La parabola dei proietti",
+"The parabola of projectiles"
+],
+[
+"Comincia a leggere ↓",
+"Start reading ↓"
+],
+[
+"📖 Sfoglia il libro",
+"📖 Leaf through the book"
+],
+[
+"Liceo scientifico «Leonardo da Vinci» · Trento — v0.2, novembre 2026",
+"Liceo scientifico «Leonardo da Vinci» · Trento, Italy — v0.2, November 2026"
+],
+[
+"Testi CC BY-NC-SA 4.0 · codice MIT ·",
+"Texts CC BY-NC-SA 4.0 · code MIT ·"
+],
+[
+"note all'edizione",
+"notes on this edition"
+],
+[
+"click",
+"="
+],
+[
+"Il testo è completo. Le parti del trattato latino",
+"The text is complete. The parts of the Latin treatise"
+],
+[
+"De motu locali",
+"="
+],
+[
+", che Salviati «legge» ai compagni nelle Giornate Terza e Quarta, hanno un filetto rosso a sinistra: nell'edizione da cui è tratto il testo sono tradotte in italiano e ridotte ai soli enunciati. Nei punti in cui il libro si apre in una",
+", which Salviati “reads” to his companions in the Third and Fourth Days, have a red rule on the left: in this English translation they are given in full, demonstrations included. Where the book opens into an"
+],
+[
+"scheda interattiva",
+"interactive panel"
+],
+[
+"trovi anche la dimostrazione di Galileo, in latino e in traduzione. Con il pulsante",
+"you also find Galileo's demonstration, in Latin and in English. With the"
+],
+[
+"lo leggi come un libro da sfogliare.",
+"button you read it as a book you can leaf through."
+],
+[
+"Salv.",
+"="
+],
+[
+"Sagr.",
+"="
+],
+[
+"Simp.",
+"="
+],
+[
+"Scheda · Il moto equabile: «comunque presi» e il Teorema I",
+"Panel · Uniform motion: “any” intervals and Theorem I"
+],
+[
+"Galileo apre il suo trattato con una definizione corretta in un punto preciso e con un teorema dimostrato senza un solo numero. Prima guarda due mobili che sembrano andare alla pari; poi segui la sua dimostrazione passo per passo.",
+"Galileo opens his treatise with a definition corrected at one precise point and with a theorem proved without a single number. First watch two moving bodies that seem to keep pace; then follow his demonstration step by step."
+],
+[
+"1 · Due mobili: perché «comunque presi»",
+"1 · Two moving bodies: why “any”"
+],
+[
+"«può accadere che in determinati tempi eguali un mobile percorra spazi eguali, mentre spazi, percorsi in frazioni di tempo minori, sebbene eguali, non siano eguali.»",
+"“it may happen that the moving body will traverse equal distances during some equal intervals of time and yet the distances traversed during some small portion of these time-intervals may not be equal, even though the time-intervals be equal.”"
+],
+[
+"Avvertenza (trad. UTET)",
+"Caution (transl. Crew and de Salvio)"
+],
+[
+"Due mobili su due binari paralleli, divisi in braccia. Il primo va di moto equabile, il secondo a scatti: ad ogni battuta sono alla pari, in mezzo no. Sotto, le barre degli spazi percorsi in ogni parte eguale di tempo.",
+"Two moving bodies on two parallel tracks, divided into cubits. The first moves uniformly, the second in jerks: at every beat they are level, in between they are not. Below, the bars of the distances traversed in each equal part of time."
+],
+[
+"▶ Fai partire",
+"▶ Start"
+],
+[
+"Da capo",
+"Start again"
+],
+[
+"Dividi ogni battuta in parti eguali",
+"Divide each beat into equal parts"
+],
+[
+"Numero di parti eguali in cui si divide ogni battuta",
+"Number of equal parts into which each beat is divided"
+],
+[
+"1 parte",
+"1 part"
+],
+[
+"2 · Teorema I, Proposizione I — la dimostrazione di Galileo",
+"2 · Theorem I, Proposition I — Galileo's demonstration"
+],
+[
+"Teorema 1. Proposizione 1",
+"Theorem I, Proposition I"
+],
+[
+"Se un mobile, dotato di moto equabile, percorre due spazi con una stessa velocità, i tempi dei moti staranno tra di loro come gli spazi percorsi.",
+"If a moving particle, carried uniformly at a constant speed, traverses two distances the time-intervals required are to each other in the ratio of these distances."
+],
+[
+"Figura ricostruita (sopra i tempi, sotto gli spazi)",
+"Reconstructed figure (times above, distances below)"
+],
+[
+"Figura del Teorema I",
+"Figure of Theorem I"
+],
+[
+"L'incisione del 1638, p. 152",
+"The 1638 engraving, p. 152"
+],
+[
+"Incisione del 1638: in alto la linea dei tempi I, D, E, F, K, in basso la linea degli spazi G, A, B, C, H; le tacche segnano le copie di DE e di AB a sinistra, di EF e di BC a destra.",
+"1638 engraving: above, the line of times I, D, E, F, K; below, the line of distances G, A, B, C, H; the ticks mark the copies of DE and AB on the left, of EF and BC on the right."
+],
+[
+"Passo precedente",
+"Previous step"
+],
+[
+"Passo successivo",
+"Next step"
+],
+[
+"Spazio AB",
+"Distance AB"
+],
+[
+"Lunghezza di AB in braccia",
+"Length of AB in cubits"
+],
+[
+"Spazio BC",
+"Distance BC"
+],
+[
+"Lunghezza di BC in braccia",
+"Length of BC in cubits"
+],
+[
+"Velocità",
+"Speed"
+],
+[
+"Velocità del mobile in braccia per battuta",
+"Speed of the body in cubits per beat"
+],
+[
+"m, copie a sinistra",
+"m, copies on the left"
+],
+[
+"Numero m di copie di AB e di DE",
+"Number m of copies of AB and DE"
+],
+[
+"n, copie a destra",
+"n, copies on the right"
+],
+[
+"Numero n di copie di BC e di EF",
+"Number n of copies of BC and EF"
+],
+[
+"Mostra il latino",
+"Show the Latin"
+],
+[
+"▶ Il mobile percorre GH",
+"▶ The body runs along GH"
+],
+[
+"AB : BC = √2 : 1",
+"="
+],
+[
+"Controprova: su BC il mobile rallenta",
+"Counter-check: on BC the body slows down"
+],
+[
+"Tutte le coppie (m, n) fino a 12: in alto a sinistra il confronto degli spazi, in basso a destra quello dei tempi",
+"All the pairs (m, n) up to 12: top left the comparison of distances, bottom right that of times"
+],
+[
+"Griglia dei confronti tra moltiplici, per m e n da 1 a 12",
+"Grid of comparisons between multiples, for m and n from 1 to 12"
+],
+[
+"Tocca una casella per portare m e n su quella coppia; con la tastiera, seleziona la griglia e usa le frecce (oppure i cursori). Le caselle con il bordo spesso e «≠» sono quelle in cui i due confronti non danno lo stesso esito.",
+"Tap a cell to set m and n to that pair; with the keyboard, select the grid and use the arrows (or the sliders). Cells with a thick border and “≠” are those where the two comparisons do not give the same outcome."
+],
+[
+"Il latino del 1638",
+"The Latin of 1638"
+],
+[
+"Per la classe",
+"For the class"
+],
+[
+"Il mobile «a scatti» percorre un braccio in ogni battuta, proprio come quello equabile. Perché secondo Galileo non è equabile?",
+"The “jerky” body covers one cubit in every beat, just like the uniform one. Why, according to Galileo, is it not uniform?"
+],
+[
+"Risposta",
+"Answer"
+],
+[
+"Perché, dividendo la battuta in due metà (tempi eguali), percorre 0,8 braccia nella prima e 0,2 nella seconda: spazi diseguali. La parola «comunque presi» (",
+"Because, dividing the beat into two halves (equal times), it covers 0.8 cubits in the first and 0.2 in the second: unequal distances. The word “any” ("
+],
+[
+"quibuscunque",
+"="
+],
+[
+") chiede l'eguaglianza per",
+") demands equality for"
+],
+[
+"tutti",
+"all"
+],
+[
+"i tempi eguali, anche i più piccoli.",
+"equal times, even the smallest."
+],
+[
+"Galileo non misura i rapporti AB : BC e DE : EF con dei numeri. Che cosa confronta invece?",
+"Galileo does not measure the ratios AB : BC and DE : EF with numbers. What does he compare instead?"
+],
+[
+"Confronta i moltiplici: m volte AB con n volte BC, e m volte DE con n volte EF. Mostra che i due confronti danno sempre lo stesso esito (maggiore, eguale, minore), qualunque siano m e n. Per Euclide questo vuol dire che le due ragioni sono eguali.",
+"He compares multiples: m times AB with n times BC, and m times DE with n times EF. He shows that the two comparisons always give the same outcome (greater, equal, less), whatever m and n are. For Euclid this means that the two ratios are equal."
+],
+[
+"Su quale assioma si appoggia il passaggio «se GB è maggiore di BH, anche IE sarà maggiore di EK»?",
+"Which axiom supports the step “if GB is greater than BH, then also IE will be greater than EK”?"
+],
+[
+"Sull'Assioma II: nello stesso moto equabile, lo spazio maggiore richiede il tempo più lungo. Per il caso eguale serve l'Assioma I usato al contrario: se i tempi IE ed EK fossero diversi, anche gli spazi GB e BH lo sarebbero.",
+"Axiom II: in the same uniform motion, the greater distance requires the longer time. For the case of equality Axiom I is used the other way round: if the times IE and EK were different, so would be the distances GB and BH."
+],
+[
+"Premi «AB : BC = √2 : 1». Nella griglia compare mai il segno «=»? Perché la dimostrazione vale lo stesso?",
+"Press “AB : BC = √2 : 1”. Does the sign “=” ever appear in the grid? Why does the demonstration still hold?"
+],
+[
+"No: √2 non è un rapporto tra numeri interi, quindi m volte AB non è mai esattamente n volte BC. Ma i due confronti continuano a coincidere in ogni casella, ed è solo questo che la definizione di Euclide richiede. Per questo Galileo usa i moltiplici e non i numeri: funzionano anche con grandezze incommensurabili.",
+"No: √2 is not a ratio of whole numbers, so m times AB is never exactly n times BC. But the two comparisons keep agreeing in every cell, and that is all Euclid's definition requires. This is why Galileo uses multiples and not numbers: they work even with incommensurable magnitudes."
+],
+[
+"Con la controprova il mobile percorre BC più lentamente. Quali caselle lo smascherano, e quale ipotesi del teorema è caduta?",
+"With the counter-check the body covers BC more slowly. Which cells expose it, and which hypothesis of the theorem has failed?"
+],
+[
+"Le caselle in cui GB è eguale a BH o di poco maggiore: lì il tempo EK, percorso più lentamente, raggiunge o supera il tempo IE, e i due confronti non coincidono più. È caduta l'ipotesi «con una stessa velocità» (",
+"The cells where GB is equal to BH or slightly greater: there the time EK, covered more slowly, reaches or exceeds the time IE, and the two comparisons no longer agree. The hypothesis “at a constant speed” ("
+],
+[
+"eadem cum velocitate",
+"="
+],
+[
+"Lettura moderna",
+"Modern reading"
+],
+[
+"Con velocità costante v, lo spazio è s = v·t. Allora t",
+"With constant speed v, distance is s = v·t. Then t"
+],
+[
+"/v, e quindi t",
+"/v, and so t"
+],
+[
+". In una riga: è il Teorema I.",
+". In one line: it is Theorem I."
+],
+[
+"Galileo non può scrivere così, perché per lui una «velocità» non è un numero che si moltiplica per un tempo: spazi, tempi e velocità sono grandezze di specie diversa, e si confrontano solo con grandezze della stessa specie. Per questo usa la definizione 5 del libro V di Euclide: a : b = c : d quando, per ogni coppia di interi m, n, m·a è maggiore, eguale o minore di n·b esattamente quando m·c lo è di n·d. Più di due secoli dopo (1872) Dedekind partirà da un'idea vicina, una grandezza individuata dalle frazioni che le stanno sotto e sopra, per",
+"Galileo cannot write this, because for him a “speed” is not a number to be multiplied by a time: distances, times and speeds are magnitudes of different kinds, and are compared only with magnitudes of the same kind. This is why he uses definition 5 of Book V of Euclid: a : b = c : d when, for every pair of whole numbers m, n, m·a is greater than, equal to or less than n·b exactly when m·c is so with respect to n·d. More than two centuries later (1872) Dedekind will start from a related idea, a magnitude identified by the fractions lying below and above it, to"
+],
+[
+"costruire",
+"construct"
+],
+[
+"i numeri reali; Euclide e Galileo invece confrontano ragioni tra grandezze già date.",
+"the real numbers; Euclid and Galileo instead compare ratios between magnitudes already given."
+],
+[
+"Come è fatta",
+"How it is made"
+],
+[
+"Il latino è trascritto dalla stampa del 1638 (pp. 151–152); la traduzione della dimostrazione è nostra, quella degli enunciati è dell'edizione UTET. La figura ricostruita usa le lettere di Galileo; spazi e tempi sono disegnati alla stessa scala (un braccio e una battuta hanno la stessa lunghezza), allineati a sinistra in G e in I. Nell'incisione le due linee hanno scale diverse.",
+"The Latin is transcribed from the 1638 printing (pp. 151–152); the English of the statements and of the demonstration is that of Crew and de Salvio (1914). The reconstructed figure uses Galileo's letters; distances and times are drawn at the same scale (a cubit and a beat have the same length), aligned on the left at G and I. In the engraving the two lines have different scales."
+],
+[
+"Semplificazioni dichiarate: m e n arrivano a 12, nella figura e nella griglia, mentre la definizione di Euclide chiede",
+"Declared simplifications: m and n go up to 12, in the figure and in the grid, whereas Euclid's definition requires"
+],
+[
+"tutte",
+"all"
+],
+[
+"le coppie; il confronto «eguale» è deciso con una tolleranza relativa di 10",
+"pairs; the comparison “equal” is decided with a relative tolerance of 10"
+],
+[
+", perciò con √2 (che il calcolatore conosce solo approssimato) la griglia mostra il comportamento per m, n ≤ 12, non una prova. Il mobile a scatti è un esempio inventato per illustrare l'Avvertenza: Galileo non lo descrive. La controprova riduce la velocità su BC all'80 %. Con m = 1 (o n = 1) il punto G coincide con A (o H con C): è il caso in cui non si prende nessuna copia in più. La dimostrazione dà per scontato che il moto prosegua su tutta GH e che tempi e spazi contigui si sommino.",
+", so with √2 (which the computer knows only approximately) the grid shows the behaviour for m, n ≤ 12, not a proof. The jerky body is an example invented to illustrate the Caution: Galileo does not describe it. The counter-check reduces the speed on BC to 80 %. With m = 1 (or n = 1) the point G coincides with A (or H with C): this is the case in which no extra copy is taken. The demonstration takes for granted that the motion continues over the whole of GH and that adjacent times and distances add up."
+],
+[
+"(Il brano in forma di dialogo tra le interlinee, che Galileo voleva inserire in questo punto, è stato scritto dal suo discepolo Vincenzo Viviani (Firenze 1622–1703).",
+""
+],
+[
+"Nota per l extquotesingle edizione elettronica Manuzio",
+""
+],
+[
+"(In realtà, avendo l extquotesingle edizione U.T.E.T. omesso una dimostrazione, ci si riferisce qui all extquotesingle ultima figura.",
+""
+],
+[
+"Note all'edizione",
+"Notes on this edition"
+],
+[
+"Testo.",
+""
+],
+[
+"Galileo Galilei,",
+""
+],
+[
+"Discorsi e dimostrazioni matematiche intorno a due nuove scienze",
+""
+],
+[
+"(Leida, 1638), nell'edizione elettronica del Progetto Manuzio di Liber Liber (1998; a cura di Catia Righi, revisione di Giovanni Mazzarello), che indica come opera di riferimento",
+""
+],
+[
+"Opere di Galileo Galilei",
+""
+],
+[
+", a cura di Franz Brunetti, UTET, Classici della Scienza, 1980 (ISBN 88-02-03457-5). Licenza:",
+""
+],
+[
+"CC BY-NC-SA 4.0",
+""
+],
+[
+", come indicato dalla pagina di",
+""
+],
+[
+"Liber Liber",
+""
+],
+[
+"(controllata l'8 novembre 2026). Il testo è stato ricomposto in LaTeX dal curatore e importato in questa pagina con uno script che non modifica le parole.",
+""
+],
+[
+"Le parti latine.",
+""
+],
+[
+"Nel 1638 il trattato",
+""
+],
+[
+", letto da Salviati nelle Giornate Terza e Quarta, è stampato in latino. Il testo qui riprodotto ne dà una traduzione italiana moderna ridotta agli enunciati (definizioni, assiomi, teoremi, problemi, corollari), con brevi integrazioni tra parentesi quadre, qui in grigio; le dimostrazioni sono omesse, come segnala anche una nota dell'edizione Manuzio («avendo l'edizione U.T.E.T. omesso una dimostrazione»). Né Liber Liber né la fonte LaTeX indicano l'autore della traduzione: è verosimilmente quella del volume UTET, da verificare sulla stampa.",
+""
+],
+[
+"Le dimostrazioni nelle schede.",
+""
+],
+[
+"Il latino è trascritto dai curatori dalla stampa del 1638 (esemplare digitalizzato da Google Books, file «Galilei - Discorsi e dimostrazioni matematiche intorno a due nuove scienze - 1638.djvu» su Wikimedia Commons, pubblico dominio). La traduzione italiana delle dimostrazioni è dei curatori di questa edizione e segue la stessa licenza del volume. Il facsimile nella scheda del moto equabile è ritagliato dalla stessa stampa (p. 152).",
+""
+],
+[
+"Le figure del testo.",
+""
+],
+[
+"Le 96 figure provengono dalla fonte LaTeX; se siano riproduzioni delle incisioni del 1638 o ridisegni è ancora da verificare.",
+""
+],
+[
+"Una correzione alla nota storica della fonte.",
+""
+],
+[
+"La traduzione latina pubblicata a Strasburgo nel 1635 da Matthias Bernegger (",
+""
+],
+[
+"Systema cosmicum",
+""
+],
+[
+") è quella del",
+""
+],
+[
+"Dialogo sopra i due massimi sistemi",
+""
+],
+[
+", non dei",
+""
+],
+[
+"Discorsi",
+""
+],
+[
+"Licenza di questa pagina.",
+""
+],
+[
+"Testi e schede: CC BY-NC-SA 4.0 (per la licenza del testo). Codice: MIT.",
+""
+],
+[
+"sottotitolo",
+"="
+],
+[
+"h2, h3.sez",
+"="
+],
+[
+"figure",
+"="
+],
+[
+"fig",
+"="
+],
+[
+"loop",
+"="
+],
+[
+"tavola",
+"="
+],
+[
+"titolo",
+"="
+],
+[
+"figura",
+"="
+],
+[
+"par",
+"="
+],
+[
+" <span class=\"nota\">(${n.replace(/<\\/?sup>/g, \"\")})</span>",
+"="
+],
+[
+"t breve",
+"="
+],
+[
+"img",
+"="
+],
+[
+"figcaption",
+"="
+],
+[
+"piccola",
+"="
+],
+[
+"<canvas width=\"420\" height=\"420\" role=\"img\" aria-label=\"Animazione: le fasi della Luna in un mese, nello stile delle incisioni di Galileo\"></canvas><figcaption>Un mese lunare in otto secondi, come al cannocchiale (simulazione). Tocca per fermare.</figcaption>",
+"<canvas width=\"420\" height=\"420\" role=\"img\" aria-label=\"Animation: the phases of the Moon over a month, in the style of Galileo's engravings\"></canvas><figcaption>A lunar month in eight seconds, as through the telescope (simulation). Tap to stop.</figcaption>"
+],
+[
+"div",
+"="
+],
+[
+"<div class=\"lb-tav-et\">Tavola interattiva</div><div class=\"lb-tav-tit\">${it.titolo}</div><button class=\"b lb-apri\" data-scheda=\"${it.id}\">Apri la scheda ↗</button>",
+"<div class=\"lb-tav-et\">Interactive plate</div><div class=\"lb-tav-tit\">${it.titolo}</div><button class=\"b lb-apri\" data-scheda=\"${it.id}\">Open the panel ↗</button>"
+],
+[
+"cont",
+"="
+],
+[
+"la",
+"="
+],
+[
+" latina",
+"="
+],
+[
+"<div class=\"lb-testata\"><span></span><span></span></div><div class=\"lb-corpo\"></div><div class=\"lb-piede\"></div>",
+"="
+],
+[
+"spezzato",
+"="
+],
+[
+"px",
+"="
+],
+[
+".lb-testata span",
+"="
+],
+[
+"latina",
+"="
+],
+[
+"sx",
+"="
+],
+[
+"dx",
+"="
+],
+[
+"vuota",
+"="
+],
+[
+"<div class=\"lb-frontespizio\">",
+"="
+],
+[
+"<img src=\"${fr.src}\" alt=\"${fr.alt.replace(/\"/g, \"&quot;\")}\" width=\"${fr.naturalWidth || fr.width}\" height=\"${fr.naturalHeight || fr.height}\">",
+"="
+],
+[
+"<div class=\"p\">${CONF.frontespizioNota}</div>",
+"="
+],
+[
+"</div>",
+"="
+],
+[
+" doppia",
+"="
+],
+[
+"(prefers-reduced-motion: reduce)",
+"="
+],
+[
+"pag. ${ps.join(\"–\")} di ${stato.pagine}",
+"p. ${ps.join(\"–\")} of ${stato.pagine}"
+],
+[
+".lb-corpo > p[id]:not(.cont), .lb-corpo > figure",
+"="
+],
+[
+"avanti",
+"="
+],
+[
+"indietro",
+"="
+],
+[
+"lb-faccia fronte",
+"="
+],
+[
+"lb-faccia retro",
+"="
+],
+[
+"hidden",
+"="
+],
+[
+"via",
+"="
+],
+[
+"figure[data-fig=\"${anc.dataset.fig}\"]",
+"="
+],
+[
+".lb-palco .lb-loop canvas",
+"="
+],
+[
+"italic 22px 'EB Garamond', Georgia, serif",
+"="
+],
+[
+"center",
+"="
+],
+[
+"preparo l'animazione…",
+"preparing the animation…"
+],
+[
+"right",
+"="
+],
+[
+"luna nuova",
+"new moon"
+],
+[
+"giorno ",
+"day "
+],
+[
+"scheda",
+"="
+],
+[
+"resize",
+"="
+],
+[
+"true",
+"="
+],
+[
+"false",
+"="
+],
+[
+"libro",
+"="
+],
+[
+"role",
+"="
+],
+[
+"region",
+"="
+],
+[
+"Il libro sfogliabile",
+"The flip book"
+],
+[
+"\n      <div class=\"lb-barra ui\">\n        <button class=\"b lb-esci\">← Pagina continua</button>\n        <button class=\"b lb-latino\" aria-pressed=\"false\">Latino a fronte</button>\n        <span class=\"lb-num\" aria-live=\"polite\"></span>\n        <input type=\"range\" class=\"lb-salto\" min=\"0\" max=\"1\" value=\"0\" aria-label=\"Vai a pagina\">\n      </div>\n      <div class=\"lb-tavolo\">\n        <button class=\"lb-freccia sx\" aria-label=\"Pagina precedente\">‹</button>\n        <div class=\"lb-palco\" tabindex=\"0\"></div>\n        <button class=\"lb-freccia dx\" aria-label=\"Pagina successiva\">›</button>\n      </div>\n      <div class=\"lb-misura\" aria-hidden=\"true\"></div>",
+"\n      <div class=\"lb-barra ui\">\n        <button class=\"b lb-esci\">← Continuous page</button>\n        <button class=\"b lb-latino\" aria-pressed=\"false\">Latin facing</button>\n        <span class=\"lb-num\" aria-live=\"polite\"></span>\n        <input type=\"range\" class=\"lb-salto\" min=\"0\" max=\"1\" value=\"0\" aria-label=\"Go to page\">\n      </div>\n      <div class=\"lb-tavolo\">\n        <button class=\"lb-freccia sx\" aria-label=\"Previous page\">‹</button>\n        <div class=\"lb-palco\" tabindex=\"0\"></div>\n        <button class=\"lb-freccia dx\" aria-label=\"Next page\">›</button>\n      </div>\n      <div class=\"lb-misura\" aria-hidden=\"true\"></div>"
+],
+[
+"dialog",
+"="
+],
+[
+"Scheda interattiva",
+"Interactive panel"
+],
+[
+"<div class=\"lb-modale-barra ui\"><button class=\"b lb-chiudi\">✕ Torna al libro</button></div><div class=\"lb-modale-corpo\"></div>",
+"<div class=\"lb-modale-barra ui\"><button class=\"b lb-chiudi\">✕ Back to the book</button></div><div class=\"lb-modale-corpo\"></div>"
+],
+[
+"input",
+"="
+],
+[
+"keydown",
+"="
+],
+[
+"Escape",
+"="
+],
+[
+"INPUT",
+"="
+],
+[
+"pointerdown",
+"="
+],
+[
+"pointerup",
+"="
+],
+[
+"button, a, input",
+"="
+],
+[
+"giove",
+"="
+],
+[
+"id",
+"="
+],
+[
+"Del moto equabile · Teorema I, Proposizione I",
+"Of uniform motion · Theorem I, Proposition I"
+],
+[
+"Galileo Galilei, Discorsi e dimostrazioni matematiche, Leida, Elzevier, 1638, pp. 151–152 (DE MOTU ÆQUABILI). Trascrizione dei curatori dalla scansione del volume (Google Books, su Wikimedia Commons: «Galilei - Discorsi e dimostrazioni matematiche intorno a due nuove scienze - 1638.djvu», pagine 160–161 del file). Normalizzazione: s lunga resa con s; legature æ, &, accenti (à, quàm) e grafie (j, quotcunque) conservati; lettere dei punti unite (A B → AB).",
+"Galileo Galilei, Discorsi e dimostrazioni matematiche, Leiden, Elzevir, 1638, pp. 151–152 (DE MOTU ÆQUABILI). Transcribed by the editors from the scan of the volume (Google Books, on Wikimedia Commons: “Galilei - Discorsi e dimostrazioni matematiche intorno a due nuove scienze - 1638.djvu”, pages 160–161 of the file). Normalisation: long s rendered as s; ligatures æ, &, accents (à, quàm) and spellings (j, quotcunque) kept; letters of points joined (A B → AB)."
+],
+[
+"Traduzione dei curatori di questa edizione digitale (2026). L'enunciato in italiano nel testo del libro è quello dell'edizione UTET 1980 riprodotta da Liber Liber, che omette la dimostrazione.",
+"English translation by Henry Crew and Alfonso de Salvio (1914), divided into sentences to follow the Latin."
+],
+[
+"Introduzione",
+"Introduction"
+],
+[
+"Circa Motum æquabilem, seu uniformem unica opus habemus definitione, quam ejusmodi profero.",
+"="
+],
+[
+"Definitio",
+"="
+],
+[
+"Æqualem, seu uniformem motum intelligo eum, cujus partes, quibuscunque temporibus æqualibus à mobili peractæ, sunt inter se æquales.",
+"="
+],
+[
+"Admonitio",
+"="
+],
+[
+"Visum est addere veteri definitioni (quæ simpliciter appellat motum æquabilem dum temporibus æqualibus æqualia transiguntur spatia) particulam, quibuscunque, hoc est omnibus temporibus æqualibus: fieri enim potest, ut temporibus aliquibus æqualibus mobile pertranseat spatia æqualia, dum tamen spatia transacta in partibus eorundem temporum minoribus, licet æqualibus, æqualia non sint. Ex allata Definitione quatuor pendent Axiomata: scilicet.",
+"="
+],
+[
+"Axioma I",
+"="
+],
+[
+"Spatium transactum tempore longiori in eodem Motu æquabili majus esse spatio transacto tempore breviori.",
+"="
+],
+[
+"Axioma II",
+"="
+],
+[
+"Tempus, quo majus spatium conficitur, in eodem motu æquabili longius est tempore, quo conficitur spatium minus.",
+"="
+],
+[
+"Axioma III",
+"="
+],
+[
+"Spatium à majori velocitate confectum tempore eodem majus est spatio confecto à minori velocitate.",
+"="
+],
+[
+"Axioma IV",
+"="
+],
+[
+"Velocitas, qua tempore eodem conficitur majus spatium, major est velocitate, qua conficitur spatium minus.",
+"="
+],
+[
+"Theorema I. Propositio I",
+"="
+],
+[
+"Si Mobile æquabiliter latum, eademque cum velocitate duo pertranseat spatia, tempora lationum erunt inter se ut spatia peracta.",
+"="
+],
+[
+"frasi",
+"="
+],
+[
+"Pertranseat enim Mobile æquabiliter latum eadem cum velocitate duo spatia AB, BC, & sit tempus motus per AB, DE; tempus vero motus per BC esto EF.",
+"="
+],
+[
+"it",
+"="
+],
+[
+"Il mobile, mosso di moto equabile, percorra dunque con la medesima velocità due spazi AB, BC; e sia DE il tempo del moto per AB, ed EF il tempo del moto per BC.",
+"Let a particle move uniformly with constant speed through two distances AB, BC, and let the time required to traverse AB be represented by DE; the time required to traverse BC, by EF;"
+],
+[
+"Dico, ut spatium AB ad spatium BC, ita esse tempus DE ad tempus EF.",
+"="
+],
+[
+"Dico che come lo spazio AB sta allo spazio BC, così il tempo DE sta al tempo EF.",
+"then I say that the distance AB is to the distance BC as the time DE is to the time EF."
+],
+[
+"Protrahantur utrinque spatia, & tempora versus G H & I K, & in AG sumantur quotcunque spatia ipsi AB æqualia, & totidem tempora in DI tempori DE similiter æqualia.",
+"="
+],
+[
+"Si prolunghino da entrambe le parti gli spazi e i tempi, verso G, H e verso I, K; e in AG si prendano quanti si vogliano spazi eguali ad AB, e altrettanti tempi in DI, similmente eguali al tempo DE.",
+"Let the distances and times be extended on both sides towards G, H and I, K; let AG be divided into any number whatever of spaces each equal to AB, and in like manner lay off in DI exactly the same number of time-intervals each equal to DE."
+],
+[
+"Et rursus in CH sumantur secundum quamcunque multitudinem spatia ipsi CB æqualia, & totidem tempora in FK tempori EF æqualia.",
+"="
+],
+[
+"E di nuovo in CH si prendano, in numero qualsiasi, spazi eguali a CB, e altrettanti tempi in FK, eguali al tempo EF.",
+"Again lay off in CH any number whatever of distances each equal to BC; and in FK exactly the same number of time-intervals each equal to EF;"
+],
+[
+"Erunt jam spatium BG & tempus EI, æque multiplicia spatii BA & temporis ED, juxta quamcunque multiplicationem accepta, & similiter spatium HB & tempus KE, spatii CB temporisque FE æque multiplicia in qualibet multiplicatione.",
+"="
+],
+[
+"Lo spazio BG e il tempo EI saranno allora egualmente moltiplici dello spazio BA e del tempo ED, secondo una moltiplicazione presa a piacere; e similmente lo spazio HB e il tempo KE saranno egualmente moltiplici dello spazio CB e del tempo FE, secondo una moltiplicazione qualsiasi.",
+"then will the distance BG and the time EI be equal and arbitrary multiples of the distance BA and the time ED; and likewise the distance HB and the time KE are equal and arbitrary multiples of the distance CB and the time FE."
+],
+[
+"Et quia DE est tempus lationis per AB, erit totum EI tempus totius BG, cum motus ponatur æquabilis, sintque in EI tot tempora ipsi DE æqualia, quot sunt in BG spatia æqualia BA, & similiter concludetur KE esse tempus lationis per HB.",
+"="
+],
+[
+"E poiché DE è il tempo del moto per AB, l'intero EI sarà il tempo dell'intero BG, dato che il moto si suppone equabile e che in EI ci sono tanti tempi eguali a DE quanti sono in BG gli spazi eguali a BA; e similmente si concluderà che KE è il tempo del moto per HB.",
+"And since DE is the time required to traverse AB, the whole time EI will be required for the whole distance BG, and when the motion is uniform there will be in EI as many time-intervals each equal to DE as there are distances in BG each equal to BA; and likewise it follows that KE represents the time required to traverse HB."
+],
+[
+"Cum autem motus ponatur æquabilis, si spatium GB esset æquale ipsi BH, tempus quoque IE tempori EK foret æquale: & si GB majus sit quàm BH, etiam IE, quàm EK majus erit: & si minus, minus.",
+"="
+],
+[
+"E poiché il moto si suppone equabile, se lo spazio GB fosse eguale a BH, anche il tempo IE sarebbe eguale al tempo EK; e se GB è maggiore di BH, anche IE sarà maggiore di EK; e se minore, minore.",
+"Since, however, the motion is uniform, it follows that if the distance GB is equal to the distance BH, then must also the time IE be equal to the time EK; and if GB is greater than BH, then also IE will be greater than EK; and if less, less."
+],
+[
+"Sunt itaque quatuor magnitudines: AB prima, BC secunda, DE tertia, EF quarta, & primæ & tertiæ, nempe spatii AB & temporis DE, sumpta sunt æque multiplicia juxta quamcunque multiplicationem, tempus IE & spatium GB, ac demonstratum est hæc vel una æquari, vel una deficere, vel una excedere tempus EK & spatium BH, æque multiplicia, scilicet secundæ & quartæ.",
+"="
+],
+[
+"Abbiamo dunque quattro grandezze: AB la prima, BC la seconda, DE la terza, EF la quarta. Della prima e della terza, cioè dello spazio AB e del tempo DE, si sono presi egualmente moltiplici secondo una moltiplicazione qualsiasi, il tempo IE e lo spazio GB; ed è stato dimostrato che questi o sono insieme eguali, o insieme minori, o insieme maggiori del tempo EK e dello spazio BH, che sono egualmente moltiplici della seconda e della quarta.",
+"There are then four quantities, the first AB, the second BC, the third DE, and the fourth EF; the time IE and the distance GB are arbitrary multiples of the first and the third, namely of the distance AB and the time DE. But it has been proved that both of these latter quantities are either equal to, greater than, or less than the time EK and the space BH, which are arbitrary multiples of the second and the fourth."
+],
+[
+"Ergo prima ad secundam, nempe spatium AB ad spatium BC, eandem habet rationem quam tertia & quarta, nempe tempus DE ad tempus EF. quod erat demonstrandum.",
+"="
+],
+[
+"Dunque la prima sta alla seconda, cioè lo spazio AB allo spazio BC, nella medesima ragione in cui la terza sta alla quarta, cioè il tempo DE al tempo EF: il che si doveva dimostrare.",
+"Therefore the first is to the second, namely the distance AB is to the distance BC, as the third is to the fourth, namely the time DE is to the time EF. Q. E. D."
+],
+[
+"passi",
+"="
+],
+[
+"mostra",
+"="
+],
+[
+"AB",
+"="
+],
+[
+"BC",
+"="
+],
+[
+"DE",
+"="
+],
+[
+"EF",
+"="
+],
+[
+"nota",
+"="
+],
+[
+"L'ipotesi. Lo stesso mobile, con la stessa velocità, percorre AB nel tempo DE e BC nel tempo EF. Galileo disegna gli spazi e i tempi come due linee: sotto gli spazi, sopra i tempi.",
+"The hypothesis. The same body, at the same speed, covers AB in the time DE and BC in the time EF. Galileo draws distances and times as two lines: distances below, times above."
+],
+[
+"tesi",
+"="
+],
+[
+"La tesi è una proporzione tra grandezze di specie diversa: due spazi da una parte, due tempi dall'altra. Per Galileo, come per Euclide, non si «divide» uno spazio per un tempo: si confrontano solo spazi con spazi e tempi con tempi.",
+"The thesis is a proportion between magnitudes of different kinds: two distances on one side, two times on the other. For Galileo, as for Euclid, one does not “divide” a distance by a time: distances are compared only with distances and times with times."
+],
+[
+"A sinistra Galileo ripete AB fino a G e, altrettante volte, DE fino a I. Con il cursore m scegli quante volte: «quanti si vogliano».",
+"On the left Galileo repeats AB up to G and, as many times, DE up to I. With the slider m choose how many times: “any number whatever”."
+],
+[
+"A destra ripete BC fino a H e EF fino a K, un numero n di volte scelto in modo indipendente da m.",
+"On the right he repeats BC up to H and EF up to K, a number n of times chosen independently of m."
+],
+[
+"coppie",
+"="
+],
+[
+"Poiché il moto è equabile, ogni copia di AB richiede un tempo DE: tutto BG è percorso nel tempo EI, tutto BH nel tempo EK. Fai correre il mobile e guarda il segno sulla linea dei tempi.",
+"Since the motion is uniform, each copy of AB requires a time DE: the whole of BG is covered in the time EI, the whole of BH in the time EK. Let the body run and watch the mark on the line of times."
+],
+[
+"confronto",
+"="
+],
+[
+"Il cuore della prova: se GB è maggiore di BH, il mobile impiega più tempo (Assioma II); se sono eguali, tempi eguali. Il confronto tra gli spazi e quello tra i tempi danno sempre lo stesso esito.",
+"The heart of the proof: if GB is greater than BH, the body takes more time (Axiom II); if they are equal, equal times. The comparison of distances and that of times always give the same outcome."
+],
+[
+"griglia",
+"="
+],
+[
+"Euclide (Elementi, libro V, definizione 5): quattro grandezze sono in proporzione se, per ogni scelta di m e di n, i moltiplici sono insieme maggiori, insieme eguali o insieme minori. La griglia prova tutte le coppie fino a 12: guarda se qualche casella discorda.",
+"Euclid (Elements, Book V, definition 5): four magnitudes are in proportion if, for every choice of m and n, the multiples are together greater, together equal or together less. The grid tries all the pairs up to 12: see whether any cell disagrees."
+],
+[
+"Nella frase 9 il latino ha «eandem habet rationem quam tertia & quarta»: si intende «quam tertia ad quartam»; la traduzione rende il senso.",
+"In sentence 9 the Latin has “eandem habet rationem quam tertia & quarta”: “quam tertia ad quartam” is meant; the translation renders the sense."
+],
+[
+"Il testo dei Discorsi riportato nel sito «Galileo's Discorsi / Ms. Gal. 72» (Museo Galileo – MPIWG), che segue l'Edizione Nazionale, ha qui «temporisque EE» e «demostrandum»; la stampa del 1638 legge «temporisque F E» e «demonstrandum». L'Edizione Nazionale a stampa non è stata controllata.",
+"The text of the Discorsi given on the site “Galileo's Discorsi / Ms. Gal. 72” (Museo Galileo – MPIWG), which follows the National Edition, has here “temporisque EE” and “demostrandum”; the 1638 printing reads “temporisque F E” and “demonstrandum”. The printed National Edition has not been checked."
+],
+[
+"Il caso dell'eguaglianza (GB = BH implica IE = EK) non è un assioma: segue dall'Assioma I (se i tempi fossero diversi, anche gli spazi lo sarebbero). Galileo lo dà come evidente («cum motus ponatur æquabilis»).",
+"The case of equality (GB = BH implies IE = EK) is not an axiom: it follows from Axiom I (if the times were different, so would be the distances). Galileo gives it as evident (“cum motus ponatur æquabilis”)."
+],
+[
+"Ipotesi implicite della dimostrazione: il moto equabile prosegue su tutta la retta GH (i moltiplici sono percorsi davvero), e tempi e spazi contigui si sommano (il tempo di BG è la somma dei tempi delle sue parti).",
+"Implicit hypotheses of the demonstration: the uniform motion continues over the whole straight line GH (the multiples are really traversed), and adjacent times and distances add up (the time of BG is the sum of the times of its parts)."
+],
+[
+"equabile",
+"uniform"
+],
+[
+"undefined",
+"="
+],
+[
+"text",
+"="
+],
+[
+"maggiore",
+"greater than"
+],
+[
+"eguale",
+"equal to"
+],
+[
+"minore",
+"less than"
+],
+[
+"a scatti",
+"jerky"
+],
+[
+"line",
+"="
+],
+[
+" battuta",
+" beat"
+],
+[
+"middle",
+"="
+],
+[
+"scatti",
+"jerky"
+],
+[
+"circle",
+"="
+],
+[
+"un braccio per tacca",
+"one cubit per tick"
+],
+[
+"end",
+"="
+],
+[
+"spazio percorso in ogni parte eguale di tempo",
+"distance covered in each equal part of time"
+],
+[
+"rect",
+"="
+],
+[
+"none",
+"="
+],
+[
+"<div>In ogni battuta<b>1 braccio tutti e due</b></div>",
+"<div>In every beat<b>1 cubit, both of them</b></div>"
+],
+[
+"<div>Equabile, in ogni ${P === 1 ? \"battuta\" : \"1/\" + P + \" di battuta\"}<b>${P1.map(x => fmt(x)).join(\" · \")} braccia</b></div>",
+"!<div>Uniform, in each ${P === 1 ? \"beat\" : \"1/\" + P + \" of a beat\"}<b>${P1.map(x => fmt(x)).join(\" · \")} cubits</b></div>"
+],
+[
+"<div>A scatti, in ogni ${P === 1 ? \"battuta\" : \"1/\" + P + \" di battuta\"}<b>${P2.map(x => fmt(x)).join(\" · \")} braccia</b></div>",
+"!<div>Jerky, in each ${P === 1 ? \"beat\" : \"1/\" + P + \" of a beat\"}<b>${P2.map(x => fmt(x)).join(\" · \")} cubits</b></div>"
+],
+[
+"<div>Spazi eguali in tempi eguali «comunque presi»?<b>equabile: sì · a scatti: ${eg2 ? \"sì, per ora\" : \"no\"}</b></div>",
+"!<div>Equal distances in “any” equal times?<b>uniform: yes · jerky: ${eg2 ? \"yes, so far\" : \"no\"}</b></div>"
+],
+[
+" parti",
+" parts"
+],
+[
+"❚❚ Ferma",
+"❚❚ Stop"
+],
+[
+" nuovo",
+"="
+],
+[
+"tempi",
+"times"
+],
+[
+"spazi",
+"distances"
+],
+[
+"'EB Garamond',Georgia,serif",
+"="
+],
+[
+"path",
+"="
+],
+[
+" volta ",
+" time "
+],
+[
+" volte ",
+" times "
+],
+[
+"${da(V.m, \"EI\", \"ED\")} = ${V.m}${v(V.m)}DE",
+"="
+],
+[
+"${da(V.n, \"EK\", \"EF\")} = ${V.n}${v(V.n)}EF",
+"="
+],
+[
+"${da(V.m, \"BG\", \"BA\")} = ${V.m}${v(V.m)}AB",
+"="
+],
+[
+"${da(V.n, \"BH\", \"BC\")} = ${V.n}${v(V.n)}BC",
+"="
+],
+[
+"AB : BC  =  DE : EF ?",
+"="
+],
+[
+"Segmento molto corto: lettere sovrapposte",
+"Very short segment: overlapping letters"
+],
+[
+"Attenzione: un segmento è molto corto rispetto agli altri e alcune lettere si sovrappongono.",
+"Note: one segment is very short compared with the others and some letters overlap."
+],
+[
+"M${X(tt)},${yT + 4} l-6,12 h12 z",
+"="
+],
+[
+"Passo ${S.passo + 1}. Sotto, la linea degli spazi con A, B, C; sopra, la linea dei tempi con D, E, F. AB misura ${fmt(V.AB)} braccia, BC ${fmt(V.BC)}; DE ${fmt(c.DE)} battute, EF ${fmt(c.EF)}.",
+"Step ${S.passo + 1}. Below, the line of distances with A, B, C; above, the line of times with D, E, F. AB measures ${fmt(V.AB)} cubits, BC ${fmt(V.BC)}; DE ${fmt(c.DE)} beats, EF ${fmt(c.EF)}."
+],
+[
+" A sinistra AB è ripetuto ${V.m} volte fino a G e DE fino a I.",
+" On the left AB is repeated ${V.m} times up to G and DE up to I."
+],
+[
+" A destra BC è ripetuto ${V.n} volte fino a H e EF fino a K.",
+" On the right BC is repeated ${V.n} times up to H and EF up to K."
+],
+[
+" GB è ${PAROLA[c.spazi]} di BH e IE è ${PAROLA[c.tempi]} di EK.",
+" GB is ${PAROLA[c.spazi]} BH and IE is ${PAROLA[c.tempi]} EK."
+],
+[
+"<div>AB · BC<b>${S.rad2 ? \"√2 · BC\" : fmt(V.AB)} · ${fmt(V.BC)} braccia</b></div><div>DE · EF<b>${fmt(c.DE)} · ${fmt(c.EF)} battute</b></div>",
+"<div>AB · BC<b>${S.rad2 ? \"√2 · BC\" : fmt(V.AB)} · ${fmt(V.BC)} cubits</b></div><div>DE · EF<b>${fmt(c.DE)} · ${fmt(c.EF)} beats</b></div>"
+],
+[
+"<div>Spazi<b>GB ${SEGNO[c.spazi]} BH</b></div><div>Tempi<b>IE ${SEGNO[c.tempi]} EK</b></div>",
+"<div>Distances<b>GB ${SEGNO[c.spazi]} BH</b></div><div>Times<b>IE ${SEGNO[c.tempi]} EK</b></div>"
+],
+[
+"<div>Stesso esito?<b style=\"color:${ok ? \"inherit\" : \"var(--rubrica)\"}\">${ok ? \"sì\" : \"no ≠\"}</b></div>",
+"!<div>Same outcome?<b style=\"color:${ok ? \"inherit\" : \"var(--rubrica)\"}\">${ok ? \"yes\" : \"no ≠\"}</b></div>"
+],
+[
+"√2·BC",
+"="
+],
+[
+"Griglia dei confronti per m e n da 1 a ${N_GRIGLIA}: ${G.discordi === 0 ? \"in tutte le caselle i due confronti danno lo stesso esito\" : G.discordi + \" caselle discordano\"}; caselle con moltiplici eguali: ${G.eguali}.",
+"!Grid of comparisons for m and n from 1 to ${N_GRIGLIA}: ${G.discordi === 0 ? \"in every cell the two comparisons give the same outcome\" : G.discordi + \" cells disagree\"}; cells with equal multiples: ${G.eguali}."
+],
+[
+"Nessuna casella discorda su ${N_GRIGLIA * N_GRIGLIA}${G.eguali ? \"\" : \" (e nessuna ha «=»: la ragione non è tra numeri interi piccoli)\"}.",
+"!No cell disagrees out of ${N_GRIGLIA * N_GRIGLIA}${G.eguali ? \"\" : \" (and none has “=”: the ratio is not one of small whole numbers)\"}."
+],
+[
+"${G.discordi} caselle discordano: AB : BC e DE : EF non sono la stessa ragione.",
+"${G.discordi} cells disagree: AB : BC and DE : EF are not the same ratio."
+],
+[
+"ui nota-ui",
+"="
+],
+[
+"Passo ${S.passo + 1} di ${D.passi.length}",
+"Step ${S.passo + 1} of ${D.passi.length}"
+],
+[
+"<span class=\"cit\">«${it}»</span>",
+"<span class=\"cit\">“${it}”</span>"
+],
+[
+"<span class=\"latino\">${la}</span>",
+"="
+],
+[
+"<span class=\"spieg\">${p.nota}</span>",
+"="
+],
+[
+"▶ Di nuovo",
+"▶ Again"
+],
+[
+"<p class=\"ui nota-ui\">${D.fonte_latino}</p>",
+"="
+],
+[
+"<p class=\"lat1638\"><span class=\"sc\">${t}.</span> <i>${s}</i></p>",
+"="
+],
+[
+"<p class=\"lat1638\">${D.frasi.map(f => f.la).join(\" \")}</p>",
+"="
+],
+[
+"hashchange",
+"="
+]
+]

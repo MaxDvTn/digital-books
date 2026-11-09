@@ -72,8 +72,11 @@ NT_APRI, NT_CHIUDI = "<!--n-->", "<!--/n-->"
 def nt(testo):
     """segna un testo che non passa dal dizionario (testo del libro, testi già nella lingua giusta)"""
     return NT_APRI + testo + NT_CHIUDI
+NT_ATTR = "\u2063"   # separatore invisibile: in testa al valore di un attributo che non si traduce
+def nt_attr(testo):
+    return NT_ATTR + testo
 def togli_marcatori(pagina):
-    return pagina.replace(NT_APRI, "").replace(NT_CHIUDI, "")
+    return pagina.replace(NT_APRI, "").replace(NT_CHIUDI, "").replace(NT_ATTR, "")
 
 def estrai(pagina, salta_script=()):
     """Restituisce [(inizio, fine, testo, tipo)] in ordine di posizione.
@@ -92,7 +95,7 @@ def estrai(pagina, salta_script=()):
             _segmenti_script(js, m.start(1), out)
         elif m.group(2) is not None:
             for a in re.finditer(r'\b(alt|title|aria-label|placeholder|data-tip)="([^"]*)"', m.group(2)):
-                if _TRADUCIBILE.search(a.group(2)) and not SEGNAPOSTO.fullmatch(a.group(2)):
+                if _TRADUCIBILE.search(a.group(2)) and not SEGNAPOSTO.fullmatch(a.group(2)) and not a.group(2).startswith(NT_ATTR):
                     s = m.start(2) + a.start(2)
                     out.append((s, s + len(a.group(2)), a.group(2), "attr"))
         elif m.group(3) is not None:

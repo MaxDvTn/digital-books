@@ -56,12 +56,15 @@ if doppi:
 if LINGUA != "it":
     blocchi = json.load(open(P("blocchi_%s.json" % LINGUA), encoding="utf-8"))
 
-def paragrafi(classe, ident, testo, coda=""):
+LINGUA_ATT = [None]   # lingua del blocco corrente, se diversa da quella della pagina
+def paragrafi(classe, ident, testo, coda="", prefisso=""):
     """un blocco; nelle altre lingue il testo può avere più paragrafi separati da una riga vuota"""
     parti = [x for x in testo.split("\n\n") if x.strip()] or [""]
-    h = '<p class="%s" id="%s">%s%s</p>' % (classe, ident, nt(parti[0]), coda)
+    lang = ' lang="%s"' % LINGUA_ATT[0] if LINGUA_ATT[0] else ""
+    h = '<p class="%s" id="%s"%s>%s%s%s</p>' % (classe, ident, lang, prefisso, nt(parti[0]), coda)
     for x in parti[1:]:
-        h += '\n<p class="%s cont">%s</p>' % (classe.replace("battuta", "").strip() or "t", nt(x))
+        seguito = "t trattato" if classe.startswith("enunciato") and "citato" not in classe else (classe.replace("battuta", "").strip() or "t")
+        h += '\n<p class="%s cont">%s</p>' % (seguito, nt(x))
     return h
 
 # ---------------------------------------------------------------- figure
@@ -93,6 +96,11 @@ schede_html = {"equabile": leggi("scheda_equabile.html").replace("%%FAC_EQ%%", u
 
 out, residui, in_tratt_prec = [], [], False
 for b in blocchi:
+    if b.get("omesso"):
+        continue
+    LINGUA_ATT[0] = b.get("lingua_testo") if LINGUA != "it" else None
+    if b.get("prima"):
+        out.append('<p class="avviso ui">%s</p>' % nt(b["prima"]))
     t = b.get("testo", "")
     if b["tipo"] == "titolo":
         in_tratt_prec = False
@@ -102,13 +110,15 @@ for b in blocchi:
             out.append('<h2 id="%s">%s%s</h2>' % (i, nt(b.get("testo_lingua", b["testo"])), sotto))
         else:
             out.append('<h3 class="sez" id="%s">%s</h3>' % (id_sezione(b["testo"]), nt(titolo_sezione(b.get("testo_lingua", b["testo"])))))
+        for x in b.get("paragrafi_dopo", []):
+            out.append('<p class="t">%s</p>' % nt(x))
         continue
     if b["tipo"] == "figura":
         f = os.path.join(LIBRO, b["file"])
         w, h = dimensioni_png(f)
         n = re.sub(r"\D", "", b["id"]) or b["id"]
         out.append('<figure class="fac" data-fig="%s"><img width="%d" height="%d" alt="%s" src="%s"><figcaption>%s</figcaption></figure>'
-                   % (b["id"], w, h, nt(T["alt_fig"] % n), uri(f), nt(T["fig"] % n)))
+                   % (b["id"], w, h, lingue.nt_attr(T["alt_fig"] % n), uri(f), nt(T["fig"] % n)))
         continue
     note = "".join(' <span class="nota">(%s)</span>' % x for x in b.get("note", []))
     t = pulisci_latex_residuo(t)
@@ -118,7 +128,7 @@ for b in blocchi:
         else:
             residui.append((b.get("riga"), t[:80]))
     if b["tipo"] == "battuta":
-        out.append(paragrafi("t battuta", b["id"], t, note).replace('id="%s">' % b["id"], 'id="%s"><span class="voce">%s</span> ' % (b["id"], b["voce"]), 1))
+        out.append(paragrafi("t battuta", b["id"], t, note, '<span class="voce">%s</span> ' % b["voce"]))
         in_tratt_prec = False
         continue
     if b["tipo"] == "rimando":
@@ -126,13 +136,13 @@ for b in blocchi:
         continue
     trattato = b["tipo"] == "enunciato" and b["genere"] != "citato" or b["tipo"] == "par" and nel_trattato(b["riga"])
     if trattato and not in_tratt_prec and b["riga"] < 2058:
-        out.append('<p class="etichetta-trattato">%s</p>' % T["etichetta_trattato"])
+        out.append('<p class="etichetta-trattato">%s</p>' % nt(T["etichetta_trattato"]))
     in_tratt_prec = trattato
     if b["tipo"] == "enunciato":
         if b["genere"] == "citato":
             out.append(paragrafi("enunciato citato", b["id"], t, note))
         else:
-            out.append(paragrafi("enunciato " + b["genere"], b["id"], t, note).replace('id="%s">' % b["id"], 'id="%s"><span class="int">%s</span>' % (b["id"], nt(b.get("intestazione_lingua", b["intestazione"]))), 1))
+            out.append(paragrafi("enunciato " + b["genere"], b["id"], t, note, '<span class="int">%s</span>' % nt(b.get("intestazione_lingua", b["intestazione"]))))
             if b["id"] in SCHEDE_DOPO:
                 out.append(schede_html.pop(SCHEDE_DOPO[b["id"]]))
                 in_tratt_prec = False

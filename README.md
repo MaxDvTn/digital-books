@@ -20,6 +20,7 @@ Ogni libro interattivo ha una pagina per lingua (`index.html` in italiano, `inde
 
 - Il testo inglese del libro sta in `blocchi_en.json`, con gli stessi id dei paragrafi italiani; lo produce `allinea_en.py` a partire dalla traduzione storica in `fonti_en/`.
 - I testi dell'interfaccia (schede, pulsanti, note) stanno in `i18n/en.json`: coppie italiano → inglese; `"="` vuol dire «lascia com'è». Il build segnala ogni testo senza traduzione.
+- Fonti inglesi: `fonti_en/carlos1880_sidereal_messenger.txt` (Project Gutenberg #46036) è nel repository. L'EPUB di Crew–de Salvio non c'è: si scarica dalla Online Library of Liberty (https://oll.libertyfund.org/titles/galilei-dialogues-concerning-two-new-sciences, file `.epub`) e si salva come `fonti_en/crew1914_two_new_sciences_oll.epub` prima di lanciare `discorsi/interattivo/allinea_en.py`.
 - Per aggiungere una lingua: una voce in `LINGUE` in `strumenti/lingue.py`, un `blocchi_xx.json` e un `i18n/xx.json` (si genera con `python3 build.py xx --scheletro`).
 
 ## Metodo di lavoro

@@ -213,7 +213,7 @@ body.lb-on{overflow:hidden}
 <a href="#copertina">Copertina</a><a href="#testo">Testo</a><a href="#g1">Giornata I</a><a href="#g2">Giornata II</a><a href="#g3">Giornata III</a><a href="#equabile">Moto equabile</a><a href="#g4">Giornata IV</a><a href="#appendice">Appendice</a><a href="#note">Note</a>
 </nav>
 <button class="b ui" id="btnLibro" aria-pressed="false" title="Leggi come un libro da sfogliare">📖 Libro</button>
-<label class="lingua ui" title="Italiano"><select id="selLingua" aria-label="Lingua / Language: Italiano" data-attuale="it"><option value="it" lang="it" selected>IT</option></select></label></div></header>
+<label class="lingua ui" title="Italiano · English"><select id="selLingua" aria-label="Lingua / Language: Italiano · English" data-attuale="it"><option value="it" lang="it" selected>IT</option><option value="en" lang="en">EN</option></select></label></div></header>
 <main>
 <section id="copertina" class="copertina" aria-labelledby="copTitolo">
 <div class="cop-cornice">
@@ -1570,7 +1570,7 @@ body.lb-on{overflow:hidden}
   if (!E || !D || !$("#equabile")) return;
   function el(tag, attr, par) { const e = document.createElementNS(NS, tag); for (const k in attr) e.setAttribute(k, attr[k]); if (par) par.appendChild(e); return e; }
   function txt(par, x, y, s, attr) { const t = el("text", Object.assign({ x, y }, attr || {}), par); t.textContent = s; return t; }
-  const fmt = (x, d = 2) => (Math.round(x * 10 ** d) / 10 ** d).toLocaleString("it-IT");
+  const fmt = (x, d = 2) => (Math.round(x * 10 ** d) / 10 ** d).toLocaleString(document.documentElement.lang || "it");
   const SEGNO = { 1: ">", 0: "=", "-1": "<" };
   const PAROLA = { 1: "maggiore", 0: "eguale", "-1": "minore" };
   const INK = "#22201c", ATT = "var(--attivo)", RUB = "var(--rubrica)", DATO = "#6b6458", OCRA = "#8a5a00";
@@ -1870,9 +1870,8 @@ window.addEventListener("hashchange",apriDaHash);
     location.href = FILES[l] + ancora(); }
   sel.addEventListener("change", () => vai(sel.value));
   let pref = null; try { pref = localStorage.getItem("lingua"); } catch (e) {}
-  if (pref && pref !== attuale && disponibili.includes(pref) && !sessionStorage.getItem("lingua-scelta")) {
-    sessionStorage.setItem("lingua-scelta", "1"); location.replace(FILES[pref] + location.hash); return; }
-  try { sessionStorage.setItem("lingua-scelta", "1"); } catch (e) {}
+  // la lingua scelta l'ultima volta (il menu la aggiorna sempre, quindi non ci sono rimbalzi)
+  if (pref && pref !== attuale && disponibili.includes(pref)) { location.replace(FILES[pref] + location.hash); return; }
   // primo accesso con il browser in un'altra lingua: un suggerimento, non un reindirizzamento
   const nav = (navigator.language || "").slice(0, 2).toLowerCase();
   if (!pref && nav !== attuale && disponibili.includes(nav === "it" ? "it" : "en") && (nav === "it" || attuale === "it")) {
