@@ -1338,7 +1338,7 @@ b.chiave{font-weight:600}
     // ---- controlli dell'interfaccia
     const cursore = radice.querySelector(".fl-eta");
     function aggiornaTesto() {
-      const giorni = eta.toFixed(1).replace(".", ",");
+      const giorni = eta.toLocaleString(document.documentElement.lang || "it", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
       radice.querySelector(".fl-stato").textContent = `${giorni} days since new moon · ${faseNome(eta)} · Sun–Earth–Moon angle ${Math.round(angolo() / D2R) % 360 > 180 ? 360 - Math.round(angolo() / D2R) % 360 : Math.round(angolo() / D2R) % 360}°`;
     }
     cursore.addEventListener("input", () => { eta = +cursore.value; scegliFigura(null); aggiornaTesto(); });
