@@ -27,3 +27,6 @@ principia-interattivi/fonti/fonte_fm.md
 # Fascicoli completi (con le frasi latine della Parte B): si pubblica
 # traduzione-pubblica/, rigenerata da strumenti/pubblica_fascicoli.py
 principia-interattivi/traduzione/
+
+# copia di lavoro del build multilingue (pagina italiana senza testo del libro)
+**/i18n/.sorgente_it.html

@@ -2,16 +2,51 @@
 """Genera index.html del Sidereus interattivo da blocchi.json + immagini + astro.js."""
 import base64, json, html, sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "strumenti"))
-import copertina
+import copertina, lingue
 
 BASE = os.environ.get("SIDEREUS_DIR", os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")) + "/"
 QUI = os.path.dirname(os.path.abspath(__file__))
-blocchi = json.load(open(os.path.join(QUI, "blocchi.json")))
+DISPONIBILI = ["it"] + [l for l in lingue.LINGUE if l != "it" and os.path.exists(os.path.join(QUI, "blocchi_%s.json" % l))]
+LINGUA = sys.argv[1] if len(sys.argv) > 1 else None
+if LINGUA is None:   # senza argomenti: tutte le lingue disponibili
+    import subprocess
+    for l in DISPONIBILI:
+        subprocess.run([sys.executable, os.path.abspath(__file__), l], check=True)
+    sys.exit(0)
+suf = "" if LINGUA == "it" else "_" + LINGUA
+blocchi = json.load(open(os.path.join(QUI, "blocchi%s.json" % suf), encoding="utf-8"))
+# testi generati dal build (date, didascalie): uno per lingua
+T = {
+ "it": {"mesi": ["", "gennaio", "febbraio", "marzo"], "mesi_brevi": ["", "gen.", "feb.", "mar."],
+        "alt_oss": "Disegno di Galileo: Giove e i suoi satelliti, %d %s 1610", "apri": "apri nell'osservatorio",
+        "incisione": "%s (incisione dell'edizione 1610)",
+        "alt_fig": {"figura01": "Le fasi della Luna disegnate da Galileo", "figura02": "La Cintura e la Spada di Orione",
+                    "figura03": "La Nebulosa della Testa di Orione e il Presepe", "figura05": "Schema dei raggi nel cannocchiale",
+                    "figura06": "La Luna e i suoi rilievi lungo il bordo", "figura07": "La figura per l'altezza dei monti lunari",
+                    "figura04": "Figura"}, "figura": "Figura",
+        "conf": {"titolo": "Avviso Astronomico", "testaTrad": "trad. L. Lanzillotta", "frontespizioNota": "Venezia, 1610 · frontespizio originale"}},
+ "en": {"mesi": ["", "January", "February", "March"], "mesi_brevi": ["", "Jan.", "Feb.", "Mar."],
+        "alt_oss": "Galileo's drawing: Jupiter and its satellites, %d %s 1610", "apri": "open in the observatory",
+        "incisione": "%s (engraving from the 1610 edition)",
+        "alt_fig": {"figura01": "The phases of the Moon drawn by Galileo", "figura02": "The Belt and Sword of Orion",
+                    "figura03": "The Nebula of Orion's Head and Praesepe", "figura05": "Diagram of the rays in the telescope",
+                    "figura06": "The Moon and its relief along the edge", "figura07": "The figure for the height of the lunar mountains",
+                    "figura04": "Figure"}, "figura": "Figure",
+        "conf": {"titolo": "The Sidereal Messenger", "testaTrad": "transl. E. S. Carlos", "frontespizioNota": "Venice, 1610 · original title page"}},
+}[LINGUA]
+CONT = {}   # testo del libro, inserito dopo la traduzione dell'interfaccia
+def fisso(testo):   # testo già nella lingua giusta, generato qui: non passa dal dizionario
+    k = "F%d" % len(CONT)
+    CONT[k] = testo
+    return "⟦%s⟧" % k
+def segnaposto(pid, testo):
+    CONT[pid] = testo
+    return "⟦%s⟧" % pid
 oss_raw = json.load(open(os.path.join(QUI, "osservazioni.json")))
 par = {b["id"]: b for b in blocchi if b["tipo"] == "par"}
 
 # affermazioni principali in grassetto (scelta editoriale, dichiarata nelle note della pagina)
-EVIDENZE = json.load(open(os.path.join(QUI, "evidenze.json")))
+EVIDENZE = json.load(open(os.path.join(QUI, "evidenze%s.json" % suf), encoding="utf-8"))
 for pid, frase, _ in EVIDENZE:
     t = par[pid]["testo"]
     n = t.count(frase)
@@ -19,6 +54,8 @@ for pid, frase, _ in EVIDENZE:
         sys.exit("evidenze.json: la frase non compare esattamente una volta in %s (trovata %d volte): %s" % (pid, n, frase[:60]))
     par[pid]["testo"] = t.replace(frase, '<b class="chiave">' + frase + "</b>")
 print("affermazioni in grassetto:", len(EVIDENZE))
+for pid in par:
+    par[pid]["testo"] = segnaposto(pid, par[pid]["testo"])
 
 def uri(f):
     return "data:image/png;base64," + base64.b64encode(open(BASE + "images/" + f + ".png", "rb").read()).decode()
@@ -31,6 +68,10 @@ for i, (f, m, d, h, p_prima, p_dopo, ora) in enumerate(oss_raw):
         testo = par[p_dopo]["testo"]
     else:  # la figura chiude il paragrafo che la introduce
         testo = par[p_prima]["testo"]
+    if True:
+        pid = testo[1:-1]
+        CONT["J:" + pid] = json.dumps(CONT[pid], ensure_ascii=False)[1:-1]
+        testo = "⟦J:%s⟧" % pid
     OSS.append({"f": f, "m": m, "d": d, "h": h, "ora": ora, "testo": testo})
     idx[f] = i
 IMG = {o["f"]: uri(o["f"]) for o in OSS}
@@ -144,18 +185,17 @@ for b in blocchi:
         f = b["id"]
         if f in idx:
             i = idx[f]; o = OSS[i]
-            alt = "Disegno di Galileo: Giove e i suoi satelliti, %d %s 1610" % (o["d"], ["", "gennaio", "febbraio", "marzo"][o["m"]])
+            alt = fisso(T["alt_oss"] % (o["d"], T["mesi"][o["m"]]))
             out.append('<figure class="fac piccola" data-fig="%s"><img alt="%s" src="%s">'
                        '<div class="ricostruito" data-i="%d"><svg role="img" aria-label="Cielo ricostruito per la stessa sera"></svg></div>'
-                       '<figcaption>%s <button class="minibtn vaiOss" data-i="%d">apri nell\'osservatorio</button></figcaption></figure>'
-                       % (f, alt, IMG[f], i, "%d %s" % (o["d"], ["", "gen.", "feb.", "mar."][o["m"]]), i))
+                       '<figcaption>%s <button class="minibtn vaiOss" data-i="%d">%s</button></figcaption></figure>'
+                       % (f, alt, IMG[f], i, fisso("%d %s" % (o["d"], T["mesi_brevi"][o["m"]])), i, fisso(T["apri"])))
         else:
-            alt = {"figura01": "Le fasi della Luna disegnate da Galileo", "figura02": "La Cintura e la Spada di Orione",
-                   "figura03": "La Nebulosa della Testa di Orione e il Presepe", "figura05": "Schema dei raggi nel cannocchiale",
-                   "figura06": "La Luna e i suoi rilievi lungo il bordo", "figura07": "La figura per l'altezza dei monti lunari",
-                   "figura04": "Figura"}.get(f, "Figura")
+            alt = T["alt_fig"].get(f, T["figura"])
+            didasc = fisso(T["incisione"] % alt)
+            alt = fisso(alt)
             cls = "fac"
-            out.append('<figure class="%s" data-fig="%s"><img alt="%s" src="%s"><figcaption>%s (incisione dell\'edizione 1610)</figcaption></figure>' % (cls, f, alt, uri(f), alt))
+            out.append('<figure class="%s" data-fig="%s"><img alt="%s" src="%s"><figcaption>%s</figcaption></figure>' % (cls, f, alt, uri(f), didasc))
             if f == "figura07":
                 out.append(SCHEDA_LUNA)
             if f == "figura01":
@@ -167,9 +207,8 @@ print("figure nel testo:", len(usate), "osservazioni:", len(OSS))
 
 STRUMENTI = os.path.join(QUI, "..", "..", "strumenti")
 COP = json.load(open(os.path.join(QUI, "copertina.json"), encoding="utf-8"))
-CONF = {"titolo": "Avviso Astronomico", "autore": "Galileo Galilei", "loopFig": "figura01",
-        "testaLat0": "Sidereus Nuncius", "testaLat1": "Venetiis, MDCX", "testaTrad": "trad. L. Lanzillotta",
-        "frontespizioDa": "#copertina .cop-fac img", "frontespizioNota": "Venezia, 1610 · frontespizio originale"}
+CONF = dict({"autore": "Galileo Galilei", "loopFig": "figura01", "testaLat0": "Sidereus Nuncius", "testaLat1": "Venetiis, MDCX",
+        "frontespizioDa": "#copertina .cop-fac img"}, **T["conf"])
 tpl = open(os.path.join(QUI, "template.html")).read()
 page = (tpl.replace("%%TESTO%%", "\n".join(out))
         .replace("%%ASTRO%%", open(os.path.join(QUI, "astro.js")).read())
@@ -184,6 +223,29 @@ page = (tpl.replace("%%TESTO%%", "\n".join(out))
         .replace("%%FASI_CSS%%", open(os.path.join(QUI, "fasi_css.css")).read())
         .replace("%%FASI_JS%%", open(os.path.join(QUI, "fasi.js")).read())
         .replace("%%FASI_IMG%%", json.dumps(["data:image/png;base64," + base64.b64encode(open(os.path.join(QUI, "fasi", "g%d.png" % k), "rb").read()).decode() for k in range(1, 6)])))
+# --- lingua: menu, traduzione dell'interfaccia, testo del libro
+page = (page.replace('<html lang="it">', '<html lang="%s">' % LINGUA)
+        .replace("</div></header>", lingue.menu_html(LINGUA, DISPONIBILI) + "</div></header>", 1)
+        .replace("</head>", "<style>%s</style>\n</head>" % lingue.MENU_CSS, 1)
+        .replace("</body>", "<script>%s</script>\n</body>" % lingue.MENU_JS, 1))
+SALTA = ("window.LIBRO_LATINO", "/*lingue*/")
+DIZ = os.path.join(QUI, "i18n", "%s.json" % LINGUA)
+SORGENTE = os.path.join(QUI, "i18n", ".sorgente_it.html")   # pagina italiana senza testo del libro (non va nel repository)
+if LINGUA == "it":
+    os.makedirs(os.path.dirname(SORGENTE), exist_ok=True)
+    open(SORGENTE, "w", encoding="utf-8").write(page)
+    page = lingue.riempi(page, CONT)
+else:
+    os.makedirs(os.path.dirname(DIZ), exist_ok=True)
+    if "--scheletro" in sys.argv or not os.path.exists(DIZ):
+        print("testi da tradurre:", lingue.scheletro(open(SORGENTE, encoding="utf-8").read(), DIZ, SALTA))
+    page, mancanti = lingue.traduci(page, lingue.carica(DIZ), SALTA)
+    page = lingue.riempi(page, CONT)
+    if mancanti:
+        print("ATTENZIONE: %d testi senza traduzione (restano in italiano):" % len(mancanti))
+        for tipo, t in mancanti[:15]:
+            print("  ", tipo, repr(t[:90]))
 copertina.controlla_ancore(COP, page)
-open(os.path.join(QUI, "index.html"), "w").write(page)
-print("index.html", len(page) // 1024, "KB")
+nome = lingue.nome_file(LINGUA)
+open(os.path.join(QUI, nome), "w", encoding="utf-8").write(page)
+print(nome, len(page) // 1024, "KB")

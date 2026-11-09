@@ -1,0 +1,25 @@
+{
+ "it": {
+  "alt_fig": "Figura %s del testo",
+  "fig": "Figura %s",
+  "tavola": "[Tavola numerica di Galileo: non ancora convertita, sarà trattata nel lotto della Giornata Quarta.]",
+  "etichetta_trattato": "Dal trattato <i>De motu locali</i> <span>· in latino nel 1638; qui la versione italiana dell'ed. UTET</span>",
+  "conf": {
+   "titolo": "Discorsi e dimostrazioni",
+   "frontespizioNota": "Leida, 1638 · frontespizio originale",
+   "frontespizio": "<div>GALILEO GALILEI</div><div class=\"g\">DISCORSI<br>E DIMOSTRAZIONI</div><div>intorno a due nuove scienze</div><div class=\"p\">Leida, Elzevier, 1638</div>"
+  }
+ },
+ "en": {
+  "alt_fig": "Figure %s of the text",
+  "fig": "Figure %s",
+  "tavola": "[Galileo's numerical table: not yet converted; it will be handled with the Fourth Day.]",
+  "etichetta_trattato": "From the treatise <i>De motu locali</i> <span>· in Latin in 1638; here in the English of Crew and de Salvio</span>",
+  "conf": {
+   "titolo": "Two New Sciences",
+   "frontespizioNota": "Leiden, 1638 · original title page",
+   "frontespizio": "<div>GALILEO GALILEI</div><div class=\"g\">DIALOGUES<br>CONCERNING</div><div>two new sciences</div><div class=\"p\">Leiden, Elzevier, 1638</div>"
+  },
+  "note": "(da scrivere)"
+ }
+}

@@ -1,0 +1,1490 @@
+[
+[
+"Sidereus Nuncius — Avviso Astronomico interattivo",
+"Sidereus Nuncius — The Sidereal Messenger, interactive edition"
+],
+[
+"Sidereus Nuncius",
+"="
+],
+[
+"Sezioni",
+"Sections"
+],
+[
+"Copertina",
+"Cover"
+],
+[
+"Testo",
+"Text"
+],
+[
+"Fasi lunari",
+"Moon phases"
+],
+[
+"Cannocchiale",
+"Telescope"
+],
+[
+"Monti lunari",
+"Lunar mountains"
+],
+[
+"Astri Medicei",
+"Medicean Stars"
+],
+[
+"Note",
+"Notes"
+],
+[
+"Leggi come un libro da sfogliare",
+"Read it as a book you can leaf through"
+],
+[
+"📖 Libro",
+"📖 Book"
+],
+[
+"Mostra sotto ogni disegno di Giove il cielo ricostruito con le effemeridi moderne",
+"Show under each drawing of Jupiter the sky reconstructed with modern ephemerides"
+],
+[
+"Cielo ricostruito",
+"Reconstructed sky"
+],
+[
+"Lingua / Language",
+"="
+],
+[
+"Italiano",
+"="
+],
+[
+"English",
+"="
+],
+[
+"Galileo Galilei",
+"="
+],
+[
+"Avviso Astronomico",
+"The Sidereal Messenger"
+],
+[
+"che contiene e spiega le grandi e oltremodo mirabili osservazioni fatte con l'aiuto del cannocchiale nella faccia della Luna, in innumerevoli Stelle fisse, nella Via Lattea, nelle Stelle nebulose, ma soprattutto in Quattro Pianeti che ruotano intorno alla stella di Giove: gli",
+"which contains and explains the great and most wonderful observations made with the help of the telescope on the face of the Moon, in innumerable Fixed Stars, in the Milky Way, in the Nebulous Stars, but above all in Four Planets revolving round the star of Jupiter: the"
+],
+[
+"In Venezia · MDCX",
+"Venice · MDCX"
+],
+[
+"Il frontespizio dell&#x27;edizione del 1610: SIDEREVS NVNCIVS, con il nome di Galileo, la dedica dei Medicea Sidera e un grande fregio inciso.",
+"The title page of the 1610 edition: SIDEREVS NVNCIVS, with Galileo's name, the dedication of the Medicea Sidera and a large engraved ornament."
+],
+[
+"Il frontespizio originale, Venezia 1610 (Wikimedia Commons, pubblico dominio)",
+"The original title page, Venice 1610 (Wikimedia Commons, public domain)"
+],
+[
+"Edizione interattiva per la classe",
+"Interactive edition for the classroom"
+],
+[
+"traduzione di Luisa Lanzillotta (Ricciardi, 1953), dal testo di Liber Liber",
+"English translation by Edward Stafford Carlos (London, 1880), from Project Gutenberg"
+],
+[
+"con il latino del 1610 a fronte e le 71 figure dell'edizione originale",
+"with the Latin of 1610 facing the text and the 71 figures of the original edition"
+],
+[
+"Tavole interattive",
+"Interactive plates"
+],
+[
+"Tav. I",
+"Plate I"
+],
+[
+"Le fasi della Luna",
+"The phases of the Moon"
+],
+[
+"fig. 1",
+"="
+],
+[
+"Tav. II",
+"Plate II"
+],
+[
+"Come funziona il cannocchiale",
+"How the telescope works"
+],
+[
+"fig. 5",
+"="
+],
+[
+"Tav. III",
+"Plate III"
+],
+[
+"Quanto sono alti i monti della Luna?",
+"How high are the mountains of the Moon?"
+],
+[
+"fig. 7",
+"="
+],
+[
+"Tav. IV",
+"Plate IV"
+],
+[
+"L'osservatorio degli Astri Medicei",
+"The observatory of the Medicean Stars"
+],
+[
+"figg. 8–72",
+"figs. 8–72"
+],
+[
+"Comincia a leggere ↓",
+"Start reading ↓"
+],
+[
+"📖 Sfoglia il libro",
+"📖 Leaf through the book"
+],
+[
+"Liceo scientifico «Leonardo da Vinci» · Trento — v0.3, novembre 2026",
+"Liceo scientifico «Leonardo da Vinci» · Trento, Italy — v0.3, November 2026"
+],
+[
+"Testi CC BY-NC-SA 4.0 · codice MIT ·",
+"Texts CC BY-NC-SA 4.0 · code MIT ·"
+],
+[
+"note all'edizione",
+"notes on this edition"
+],
+[
+"click",
+"="
+],
+[
+"Il testo è completo. In quattro punti il libro si apre in una",
+"The text is complete. At four points the book opens into an"
+],
+[
+"scheda interattiva",
+"interactive panel"
+],
+[
+": le fasi della Luna, il cannocchiale, l'altezza dei monti lunari, i satelliti di Giove. Con il pulsante",
+": the phases of the Moon, the telescope, the height of the lunar mountains, the satellites of Jupiter. With the"
+],
+[
+"lo leggi come un libro da sfogliare, anche con il latino a fronte. Il pulsante",
+"button you read it as a book you can leaf through, also with the Latin on the facing page. The"
+],
+[
+"mette sotto ogni disegno di Giove la posizione dei satelliti calcolata oggi per la stessa sera: si può controllare Galileo notte per notte.",
+"button places under each drawing of Jupiter the positions of the satellites computed today for the same evening: you can check Galileo night by night."
+],
+[
+"Scheda · Come funziona il cannocchiale",
+"Panel · How the telescope works"
+],
+[
+"Galileo spiega in poche righe due cose: quanto il suo strumento ingrandisce, e come usarlo per misurare piccoli angoli tra le stelle.",
+"In a few lines Galileo explains two things: how much his instrument magnifies, and how to use it to measure small angles between stars."
+],
+[
+"I raggi senza lenti (tratteggio) e con le lenti (blu)",
+"The rays without lenses (dashed) and with the lenses (blue)"
+],
+[
+"Schema dei raggi: l'occhio E, l'apertura CD, l'oggetto FG; con le lenti si vede solo la parte HI",
+"Diagram of the rays: the eye E, the aperture CD, the object FG; with the lenses only the part HI is seen"
+],
+[
+"Ingrandimento",
+"Magnification"
+],
+[
+"Ingrandimento dei diametri",
+"Magnification of the diameters"
+],
+[
+"Foro della lamina",
+"Hole in the plate"
+],
+[
+"Apertura della lamina in percentuale",
+"Aperture of the plate in percent"
+],
+[
+"Gli strumenti di Galileo",
+"Galileo's instruments"
+],
+[
+"Gli strumenti di Galileo:",
+"Galileo's instruments:"
+],
+[
+"primo, 3×",
+"first, 3×"
+],
+[
+"secondo, 8×",
+"second, 8×"
+],
+[
+"l'ultimo, 30×",
+"the last, 30×"
+],
+[
+"La prova dei due quadrati di carta",
+"The test of the two paper squares"
+],
+[
+"Il quadrato grande visto a occhio nudo e il piccolo visto col cannocchiale: coincidono quando l'ingrandimento è 20",
+"The large square seen with the naked eye and the small one seen through the telescope: they coincide when the magnification is 20"
+],
+[
+"Per la classe",
+"For the class"
+],
+[
+"Galileo dice che il suo ultimo strumento mostra gli oggetti «ingranditi quasi mille volte e trenta volte più vicini». Come stanno insieme i due numeri?",
+"Galileo says that his last instrument shows objects “magnified nearly a thousand times, and more than thirty times nearer”. How do the two numbers fit together?"
+],
+[
+"Risposta",
+"Answer"
+],
+[
+"«Mille» si riferisce alle superfici, «trenta» ai diametri: 30 × 30 = 900, cioè quasi mille. Per Galileo «ingrandito» vuol dire ingrandito in superficie.",
+"“A thousand” refers to areas, “thirty” to diameters: 30 × 30 = 900, that is nearly a thousand. For Galileo “magnified” means magnified in area."
+],
+[
+"Nella prova dei quadrati, perché il lato grande deve essere 20 volte il piccolo per verificare un ingrandimento di 400?",
+"In the test of the squares, why must the large side be 20 times the small one to check a magnification of 400?"
+],
+[
+"Perché l'area cresce come il quadrato del lato: 20² = 400.",
+"Because area grows as the square of the side: 20² = 400."
+],
+[
+"Restringendo il foro della lamina, l'angolo HEI diventa di pochi primi. Perché questo serve a misurare la distanza tra due stelle?",
+"Narrowing the hole in the plate, the angle HEI becomes a few minutes of arc. Why does this help to measure the distance between two stars?"
+],
+[
+"Ogni foro corrisponde a un angolo noto. Se due stelle stanno appena dentro il campo, la loro distanza è al massimo quell'angolo: il foro fa da righello angolare.",
+"Each hole corresponds to a known angle. If two stars lie just inside the field, their distance is at most that angle: the hole works as an angular ruler."
+],
+[
+"Lettura moderna",
+"Modern reading"
+],
+[
+"Il cannocchiale di Galileo ha un obiettivo convergente e un oculare divergente; l'ingrandimento angolare vale circa il rapporto tra le distanze focali, M ≈ f",
+"Galileo's telescope has a converging objective and a diverging eyepiece; the angular magnification is roughly the ratio of the focal lengths, M ≈ f"
+],
+[
+"ob",
+"="
+],
+[
+"oc",
+"="
+],
+[
+". Un angolo α diventa M·α: per questo il campo inquadrato (l'angolo HEI) è M volte più stretto di quello a occhio nudo. Nello schema la rifrazione è rappresentata in modo semplificato, come nella figura di Galileo.",
+". An angle α becomes M·α: this is why the field of view (the angle HEI) is M times narrower than with the naked eye. In the diagram refraction is shown in a simplified way, as in Galileo's figure."
+],
+[
+"(Vedi figura 1.)",
+"(See figure 1.)"
+],
+[
+"Scheda · Le fasi della Luna, dal cannocchiale allo spazio",
+"Panel · The phases of the Moon, from the telescope to space"
+],
+[
+"Prima guardi come Galileo, al cannocchiale: il disco cambia forma giorno dopo giorno e il confine della luce è frastagliato dai monti. Poi esci nello spazio e vedi perché succede: il Sole illumina sempre metà della Luna, ma dalla Terra ne vediamo una parte diversa a seconda di dove si trova.",
+"First you look like Galileo, through the telescope: the disc changes shape day after day and the edge of the light is jagged by mountains. Then you go out into space and see why it happens: the Sun always lights half of the Moon, but from the Earth we see a different part of it depending on where it is."
+],
+[
+"Simulazione delle fasi della Luna in stile incisione",
+"Simulation of the phases of the Moon in the style of an engraving"
+],
+[
+"dalla Terra",
+"from the Earth"
+],
+[
+"Giorni dalla luna nuova",
+"Days since new moon"
+],
+[
+"Le cinque figure di Galileo",
+"Galileo's five figures"
+],
+[
+"Fig. 1",
+"="
+],
+[
+"Fig. 2",
+"="
+],
+[
+"Fig. 3",
+"="
+],
+[
+"Fig. 4",
+"="
+],
+[
+"Fig. 5",
+"="
+],
+[
+"▶ Anima",
+"▶ Animate"
+],
+[
+"Esci nello spazio ↗",
+"Go out into space ↗"
+],
+[
+"Luce cinerea",
+"Earthshine"
+],
+[
+"Il disegno di Galileo",
+"Galileo's drawing"
+],
+[
+"Nello spazio: trascina per girare intorno, pizzica o usa la rotella per avvicinarti. Distanze e dimensioni non sono in scala: nello spazio la Luna è disegnata più grande; in realtà è lontana 30 diametri terrestri, e il Sole circa 400 volte più in là.",
+"In space: drag to turn around, pinch or use the wheel to zoom. Distances and sizes are not to scale: in space the Moon is drawn larger; in reality it is 30 Earth diameters away, and the Sun about 400 times farther."
+],
+[
+"Nella vista dallo spazio, quanta parte della Luna è illuminata alla luna nuova? E alla luna piena?",
+"In the view from space, how much of the Moon is lit at new moon? And at full moon?"
+],
+[
+"Sempre metà: il Sole illumina sempre un emisfero. Cambia solo quanto di quell'emisfero è rivolto verso la Terra.",
+"Always half: the Sun always lights one hemisphere. What changes is only how much of that hemisphere faces the Earth."
+],
+[
+"Perché nella figura 1 il confine tra luce e ombra è frastagliato e non una linea ovale?",
+"Why in figure 1 is the boundary between light and shadow jagged and not an oval line?"
+],
+[
+"Perché la superficie ha rilievi e cavità: vicino al confine il Sole è radente, le cime si illuminano prima delle valli e proiettano ombre lunghe. Su una sfera liscia il confine sarebbe un'ellisse perfetta. È l'argomento di Galileo: la Luna non è un corpo perfettamente sferico.",
+"Because the surface has heights and hollows: near the boundary the sunlight is grazing, the peaks are lit before the valleys and cast long shadows. On a smooth sphere the boundary would be a perfect ellipse. This is Galileo's argument: the Moon is not a perfectly spherical body."
+],
+[
+"Le figure 3 e 5 mostrano la stessa grande cavità rotonda. Perché nella 2 la parte luminosa della cavità è a sinistra e nella 3 a destra?",
+"Figures 3 and 5 show the same large round cavity. Why in figure 2 is the bright part of the cavity on the left and in figure 3 on the right?"
+],
+[
+"Nel primo quarto il Sole illumina da destra, nell'ultimo quarto da sinistra. Dentro una cavità si illumina la parete rivolta al Sole, cioè quella dalla parte opposta da cui arriva la luce: Galileo lo descrive con precisione.",
+"At first quarter the Sun lights from the right, at last quarter from the left. Inside a cavity the wall facing the Sun is lit, that is the one on the side opposite to where the light comes from: Galileo describes this precisely."
+],
+[
+"Che cos'è la luce cinerea e quando è più forte?",
+"What is earthshine and when is it strongest?"
+],
+[
+"È la luce del Sole riflessa dalla Terra che illumina debolmente la parte buia della Luna. È più forte vicino alla luna nuova, quando dalla Luna la Terra appare «piena». Galileo la spiega più avanti nel testo.",
+"It is sunlight reflected by the Earth that faintly lights the dark part of the Moon. It is strongest near new moon, when from the Moon the Earth appears “full”. Galileo explains it later in the text."
+],
+[
+"Come è fatta la simulazione",
+"How the simulation is made"
+],
+[
+"La superficie della Luna è ricostruita in modo schematico: i mari principali (con i contorni semplificati), circa 2600 crateri di dimensioni casuali, la grande cavità centrale vicino al confine del primo e dell'ultimo quarto (oggi Albategnius), gli Appennini al bordo del Mare Imbrium. I rilievi sono esagerati, come nei disegni di Galileo. La luce è calcolata punto per punto e poi tradotta in tratteggio: tratti obliqui fitti per l'ombra, tratti orizzontali per i mari, puntini per i rilievi. Non è una carta lunare: le età delle cinque figure sono stimate dalla forma del confine.",
+"The surface of the Moon is reconstructed schematically: the main seas (with simplified outlines), about 2600 craters of random sizes, the large central cavity near the boundary at first and last quarter (today Albategnius), the Apennines at the edge of Mare Imbrium. Heights are exaggerated, as in Galileo's drawings. Light is computed point by point and then turned into hatching: dense oblique strokes for shadow, horizontal strokes for the seas, dots for the heights. It is not a lunar map: the ages of the five figures are estimated from the shape of the boundary."
+],
+[
+"(Vedi figure 2 e 3.)",
+"(See figures 2 and 3.)"
+],
+[
+"(Vedi figure 4 e 5.)",
+"(See figures 4 and 5.)"
+],
+[
+"Scheda · Quanto sono alti i monti della Luna?",
+"Panel · How high are the mountains of the Moon?"
+],
+[
+"Una cima illuminata dentro la parte buia, un raggio di Sole radente e il teorema di Pitagora. Segui la costruzione passo per passo, poi cambia la distanza della cima dal confine della luce.",
+"A lit peak inside the dark part, a grazing ray of sunlight and Pythagoras' theorem. Follow the construction step by step, then change the distance of the peak from the edge of the light."
+],
+[
+"Riquadro in scala vera intorno alla cima: la montagna sale lungo il raggio fino a toccare il raggio di Sole radente",
+"Box at true scale around the peak: the mountain rises along the radius until it touches the grazing ray of sunlight"
+],
+[
+"Passo precedente",
+"Previous step"
+],
+[
+"Passo successivo",
+"Next step"
+],
+[
+"Da capo",
+"Start again"
+],
+[
+"Distanza della cima dal confine della luce, CD",
+"Distance of the peak from the edge of the light, CD"
+],
+[
+"Distanza CD in miglia",
+"Distance CD in miles"
+],
+[
+"100 miglia",
+"100 miles"
+],
+[
+"Galileo scrive che ED è «più di 1004» e AD «più di 4». Calcola il valore esatto. Perché Galileo si accontenta di «più di»?",
+"Galileo writes that ED is “more than 1004” and AD “more than 4”. Compute the exact value. Why is Galileo content with “more than”?"
+],
+[
+"ED = √1 010 000 ≈ 1004,99, quindi AD ≈ 4,99 miglia. Gli basta dimostrare che i monti superano le 4 miglia: un limite inferiore è più difficile da contestare di un valore preciso.",
+"ED = √1 010 000 ≈ 1004.99, so AD ≈ 4.99 miles. He only needs to show that the mountains exceed 4 miles: a lower bound is harder to dispute than a precise value."
+],
+[
+"Se la cima fosse lontana dal confine un decimo del diametro, quanto sarebbe alta?",
+"If the peak were a tenth of the diameter away from the boundary, how high would it be?"
+],
+[
+"CD = 200, DE² = 1 040 000, ED ≈ 1019,8: AD ≈ 19,8 miglia. Raddoppiando la distanza, l'altezza diventa circa quattro volte maggiore.",
+"CD = 200, DE² = 1 040 000, ED ≈ 1019.8: AD ≈ 19.8 miles. Doubling the distance makes the height about four times greater."
+],
+[
+"Galileo afferma che sulla Terra nessun monte arriva a un miglio di altezza. Che cosa ne pensi oggi?",
+"Galileo states that on the Earth no mountain reaches a height of one mile. What do you think today?"
+],
+[
+"È falso: l'Everest supera gli 8800 m, cioè circa cinque miglia. Ai tempi di Galileo le altezze dei monti erano molto sottostimate. Il suo ragionamento sulla Luna resta valido; è il confronto con la Terra a essere sbagliato.",
+"It is false: Everest exceeds 8800 m, that is about five miles. In Galileo's time the heights of mountains were greatly underestimated. His reasoning about the Moon still holds; it is the comparison with the Earth that is wrong."
+],
+[
+"Con raggio lunare R, distanza dal terminatore d e altezza h: (R + h)² = R² + d². Se d è piccola rispetto a R, h ≈ d² / (2R). Con d = 100 e R = 1000: h ≈ 10 000 / 2000 = 5 miglia. Per avere i chilometri si usa il rapporto con il diametro: Galileo stima la Luna 2000 miglia, oggi sappiamo che misura 3474 km.",
+"With lunar radius R, distance from the terminator d and height h: (R + h)² = R² + d². If d is small compared to R, h ≈ d² / (2R). With d = 100 and R = 1000: h ≈ 10 000 / 2000 = 5 miles. To get kilometres use the ratio to the diameter: Galileo estimates the Moon at 2000 miles, today we know it measures 3474 km."
+],
+[
+"Scheda · L'osservatorio di Galileo: gli Astri Medicei",
+"Panel · Galileo's observatory: the Medicean Stars"
+],
+[
+"Dal 7 gennaio al 2 marzo 1610 Galileo disegna 65 volte Giove con le sue «stelle». Qui ogni disegno è affiancato al cielo di quella sera ricostruito con un modello moderno. All'inizio i satelliti non hanno nome: prova a capire da solo quale è quale.",
+"From 7 January to 2 March 1610 Galileo drew Jupiter with its “stars” 65 times. Here each drawing is set beside the sky of that evening reconstructed with a modern model. At first the satellites have no names: try to work out on your own which is which."
+],
+[
+"Disegno precedente",
+"Previous drawing"
+],
+[
+"Disegno successivo",
+"Next drawing"
+],
+[
+"Mostra i nomi",
+"Show the names"
+],
+[
+"Il cielo ricostruito (oriente a sinistra, come nei disegni)",
+"The reconstructed sky (east on the left, as in the drawings)"
+],
+[
+"Posizioni calcolate di Giove e dei quattro satelliti",
+"Computed positions of Jupiter and the four satellites"
+],
+[
+"Tempo libero, dal 7 gennaio al 2 marzo 1610",
+"Free time, from 7 January to 2 March 1610"
+],
+[
+"Tempo in ore dal 7 gennaio",
+"Time in hours since 7 January"
+],
+[
+"Che cosa ha scritto Galileo",
+"What Galileo wrote"
+],
+[
+"Visto dall'alto: perché a volte se ne vedono meno di quattro",
+"Seen from above: why sometimes fewer than four are visible"
+],
+[
+"Le orbite viste dall'alto; i satelliti nella fascia davanti o dietro a Giove non si vedono",
+"The orbits seen from above; satellites in the band in front of or behind Jupiter cannot be seen"
+],
+[
+"Tutte le notti in un grafico (il tempo scorre verso il basso)",
+"All the nights in one graph (time runs downwards)"
+],
+[
+"Distanza dei satelliti da Giove in funzione del tempo; le tacche rosse sono le osservazioni di Galileo",
+"Distance of the satellites from Jupiter as a function of time; the red ticks are Galileo's observations"
+],
+[
+"Ogni disegno di Galileo è una fetta orizzontale di questo grafico. Le tacche rosse a sinistra sono le sue osservazioni: tocca il grafico per aprire quella più vicina (con la tastiera usa ◀ ▶).",
+"Each of Galileo's drawings is a horizontal slice of this graph. The red ticks on the left are his observations: tap the graph to open the nearest one (with the keyboard use ◀ ▶)."
+],
+[
+"Galileo scrive che il satellite con l'orbita più grande ha un «periodo semimensile». Usa il grafico (con i nomi) per misurare il periodo di Callisto, da un massimo a oriente al successivo.",
+"Galileo writes that the satellite with the largest orbit has “a periodic time of half a month”. Use the graph (with the names) to measure the period of Callisto, from one maximum to the east to the next."
+],
+[
+"Circa 16 giorni e 2/3 (oggi: 16,69 giorni). «Semimensile» è una buona stima.",
+"About 16 and 2/3 days (today: 16.69 days). “Half a month” is a good estimate."
+],
+[
+"Il 24 gennaio, all'ora sesta, Galileo scrive che due stelline «s'erano unite in una». Che cosa è successo davvero?",
+"On 24 January, at the sixth hour, Galileo writes that two little stars “had come together, and appeared as one”. What really happened?"
+],
+[
+"Europa e Ganimede, a oriente, si trovavano quasi alla stessa distanza da Giove (circa 3,5′): con quel cannocchiale non si potevano più distinguere.",
+"Europa and Ganymede, to the east, were at almost the same distance from Jupiter (about 3.5′): with that telescope they could no longer be told apart."
+],
+[
+"In molte sere Galileo vede tre satelliti, a volte due. Elenca le ragioni per cui uno può mancare.",
+"On many evenings Galileo sees three satellites, sometimes two. List the reasons why one can be missing."
+],
+[
+"Si trova dietro Giove o davanti al suo disco luminoso; è troppo vicino al pianeta e si perde nel suo bagliore; è sovrapposto a un altro satellite; è nell'ombra di Giove (eclissi, non calcolata qui).",
+"It is behind Jupiter or in front of its bright disc; it is too close to the planet and lost in its glare; it overlaps another satellite; it is in Jupiter's shadow (eclipse, not computed here)."
+],
+[
+"Perché la scoperta è un argomento a favore di Copernico? (rileggi l'ultimo paragrafo)",
+"Why is the discovery an argument in favour of Copernicus? (read the last paragraph again)"
+],
+[
+"Chi rifiutava Copernico obiettava che la Terra non poteva girare intorno al Sole portandosi dietro la Luna. Giove mostra quattro lune che lo seguono mentre gira: un sistema del genere esiste davvero.",
+"Those who rejected Copernicus objected that the Earth could not go round the Sun carrying the Moon with it. Jupiter shows four moons that follow it as it moves: such a system really exists."
+],
+[
+"Lettura moderna: la terza legge di Keplero",
+"Modern reading: Kepler's third law"
+],
+[
+"Raggi delle orbite (in raggi di Giove) e periodi: Io 5,9 e 1,77 giorni; Europa 9,4 e 3,55; Ganimede 15,0 e 7,15; Callisto 26,4 e 16,69. Il rapporto r³/T² è circa lo stesso per tutti e quattro (≈ 66): è la stessa legge che vale per i pianeti intorno al Sole. Nota anche le risonanze: i periodi di Io, Europa e Ganimede stanno quasi come 1 : 2 : 4.",
+"Orbital radii (in Jupiter radii) and periods: Io 5.9 and 1.77 days; Europa 9.4 and 3.55; Ganymede 15.0 and 7.15; Callisto 26.4 and 16.69. The ratio r³/T² is about the same for all four (≈ 66): it is the same law that holds for the planets around the Sun. Notice also the resonances: the periods of Io, Europa and Ganymede are nearly as 1 : 2 : 4."
+],
+[
+"Cielo ricostruito per la stessa sera",
+"Sky reconstructed for the same evening"
+],
+[
+"Note all'edizione",
+"Notes on this edition"
+],
+[
+"Testo.",
+"Text."
+],
+[
+"Traduzione italiana di Luisa Lanzillotta, da Galileo Galilei,",
+"English translation by Edward Stafford Carlos,"
+],
+[
+"Opere",
+"The Sidereal Messenger of Galileo Galilei"
+],
+[
+", a cura di F. Flora, Milano–Napoli, Ricciardi, 1953, nell'edizione elettronica di Liber Liber, licenza",
+"(London, Rivingtons, 1880; public domain), from Project Gutenberg no. 46036. The paragraphs are aligned with the Italian edition by the editors of this page; Carlos's footnotes are omitted. The Italian edition (translation by Luisa Lanzillotta, Liber Liber) is licensed"
+],
+[
+"CC BY-NC-SA 4.0",
+"="
+],
+[
+", con il consenso della Casa Editrice Ricciardi. Fonte:",
+". Italian source:"
+],
+[
+"liberliber.it",
+"="
+],
+[
+". Le figure riproducono le incisioni dell'edizione veneziana del 1610 (pubblico dominio).",
+". The figures reproduce the engravings of the Venice edition of 1610 (public domain)."
+],
+[
+"Le frasi in grassetto",
+"The sentences in bold"
+],
+[
+"sono le affermazioni principali di Galileo: la Luna scabra come la Terra, la Via Lattea e le nebulose fatte di stelle, la luce cinerea, i satelliti di Giove, l'argomento a favore di Copernico. La scelta è dei curatori di questa edizione, non di Galileo né della traduzione.",
+"are Galileo's main claims: the Moon rough like the Earth, the Milky Way and the nebulae made of stars, earthshine, the satellites of Jupiter, the argument for Copernicus. The choice is the editors' of this edition, not Galileo's or the translator's."
+],
+[
+"Licenza di questa pagina.",
+"Licence of this page."
+],
+[
+"Testi e schede: CC BY-NC-SA 4.0 (per la licenza della traduzione). Codice: MIT.",
+"Texts and panels: CC BY-NC-SA 4.0 (because of the licence of the Italian translation; Carlos's English text is public domain). Code: MIT."
+],
+[
+"Come è ricostruito il cielo.",
+"How the sky is reconstructed."
+],
+[
+"Le posizioni dei quattro satelliti sono calcolate con il metodo a bassa precisione di J. Meeus (",
+"The positions of the four satellites are computed with the low-precision method of J. Meeus ("
+],
+[
+"Astronomical Algorithms",
+"="
+],
+[
+", 2ª ed., cap. 44), verificato sull'esempio del libro. L'ora: Galileo conta le ore «di notte» all'italiana, cioè dal tramonto; qui l'ora del tramonto a Padova è calcolata giorno per giorno, con un'incertezza di circa mezz'ora sull'inizio del conteggio. Quando Galileo non indica l'ora (8, 10, 11, 13, 24 gennaio; 2, 6, 7 febbraio) si assume un'ora dopo il tramonto, e la scheda lo segnala. Un satellite a meno di un raggio di Giove dal centro è considerato nascosto (dietro il pianeta o davanti al suo disco luminoso); l'ombra di Giove non è calcolata. Le distanze sono in primi d'arco, come quelle di Galileo.",
+", 2nd ed., ch. 44), checked against the book's example. Time: Galileo counts the hours “of the night” in the Italian way, that is from sunset; here the time of sunset in Padua is computed day by day, with an uncertainty of about half an hour on the start of the count. When Galileo does not give the time (8, 10, 11, 13, 24 January; 2, 6, 7 February) one hour after sunset is assumed, and the panel says so. A satellite less than one Jupiter radius from the centre is considered hidden (behind the planet or in front of its bright disc); Jupiter's shadow is not computed. Distances are in minutes of arc, like Galileo's."
+],
+[
+"Galileo e il modello a confronto.",
+"Galileo and the model compared."
+],
+[
+"Nella ricostruzione sono disegnati tutti i satelliti fuori dal disco di Giove. Per confrontarla con i conteggi di Galileo (stelle a oriente e a occidente, trascritte dal testo e dai disegni) bisogna però decidere quando un satellite era davvero visibile con il suo strumento. Considerando visibili quelli a più di 1′ dal centro di Giove e distinguibili quelli separati da almeno 0,3′, la disposizione coincide in 49 disegni su 65; con criteri più severi (0,4′ e 0,7′) si scende a 28. Le differenze riguardano per lo più un satellite a meno di 3′ da Giove che Galileo non annota (era debole o perso nel bagliore del pianeta), due satelliti vicini che Galileo riesce a separare, oppure Callisto molto lontano. Le distanze in primi di Galileo sono spesso più grandi di quelle calcolate: nelle sere controllate il rapporto va da 1,1 a 1,6. Sono buoni punti di discussione in classe.",
+"In the reconstruction all the satellites outside Jupiter's disc are drawn. To compare it with Galileo's counts (stars to the east and to the west, taken from the text and the drawings) one must decide when a satellite was really visible with his instrument. Counting as visible those more than 1′ from Jupiter's centre and as distinguishable those at least 0.3′ apart, the arrangement agrees in 49 drawings out of 65; with stricter criteria (0.4′ and 0.7′) it drops to 28. The differences mostly concern a satellite less than 3′ from Jupiter that Galileo does not record (it was faint or lost in the planet's glare), two close satellites that Galileo manages to separate, or Callisto very far away. Galileo's distances in minutes are often larger than the computed ones: on the evenings checked the ratio ranges from 1.1 to 1.6. They are good points for discussion in class."
+],
+[
+"Limiti.",
+"Limits."
+],
+[
+"Il metodo di Meeus è tarato sull'epoca attuale: su quattro secoli lo scarto atteso è di qualche decimo di primo, sufficiente per riconoscere le configurazioni, non per misure fini.",
+"Meeus's method is calibrated on the present epoch: over four centuries the expected error is a few tenths of a minute, enough to recognise the configurations, not for fine measurements."
+],
+[
+"sottotitolo",
+"="
+],
+[
+"h2, h3.sez",
+"="
+],
+[
+"figure",
+"="
+],
+[
+"fig",
+"="
+],
+[
+"loop",
+"="
+],
+[
+"tavola",
+"="
+],
+[
+"titolo",
+"="
+],
+[
+"figura",
+"="
+],
+[
+"par",
+"="
+],
+[
+" <span class=\"nota\">(${n.replace(/<\\/?sup>/g, \"\")})</span>",
+"="
+],
+[
+"t breve",
+"="
+],
+[
+"img",
+"="
+],
+[
+"figcaption",
+"="
+],
+[
+"piccola",
+"="
+],
+[
+"<canvas width=\"420\" height=\"420\" role=\"img\" aria-label=\"Animazione: le fasi della Luna in un mese, nello stile delle incisioni di Galileo\"></canvas><figcaption>Un mese lunare in otto secondi, come al cannocchiale (simulazione). Tocca per fermare.</figcaption>",
+"<canvas width=\"420\" height=\"420\" role=\"img\" aria-label=\"Animation: the phases of the Moon over a month, in the style of Galileo's engravings\"></canvas><figcaption>A lunar month in eight seconds, as through the telescope (simulation). Tap to stop.</figcaption>"
+],
+[
+"div",
+"="
+],
+[
+"<div class=\"lb-tav-et\">Tavola interattiva</div><div class=\"lb-tav-tit\">${it.titolo}</div><button class=\"b lb-apri\" data-scheda=\"${it.id}\">Apri la scheda ↗</button>",
+"<div class=\"lb-tav-et\">Interactive plate</div><div class=\"lb-tav-tit\">${it.titolo}</div><button class=\"b lb-apri\" data-scheda=\"${it.id}\">Open the panel ↗</button>"
+],
+[
+"cont",
+"="
+],
+[
+"la",
+"="
+],
+[
+" latina",
+"="
+],
+[
+"<div class=\"lb-testata\"><span></span><span></span></div><div class=\"lb-corpo\"></div><div class=\"lb-piede\"></div>",
+"="
+],
+[
+"spezzato",
+"="
+],
+[
+"px",
+"="
+],
+[
+".lb-testata span",
+"="
+],
+[
+"latina",
+"="
+],
+[
+"sx",
+"="
+],
+[
+"dx",
+"="
+],
+[
+"vuota",
+"="
+],
+[
+"<div class=\"lb-frontespizio\">",
+"="
+],
+[
+"<img src=\"${fr.src}\" alt=\"${fr.alt.replace(/\"/g, \"&quot;\")}\" width=\"${fr.naturalWidth || fr.width}\" height=\"${fr.naturalHeight || fr.height}\">",
+"="
+],
+[
+"<div class=\"p\">${CONF.frontespizioNota}</div>",
+"="
+],
+[
+"</div>",
+"="
+],
+[
+" doppia",
+"="
+],
+[
+"(prefers-reduced-motion: reduce)",
+"="
+],
+[
+"pag. ${ps.join(\"–\")} di ${stato.pagine}",
+"p. ${ps.join(\"–\")} of ${stato.pagine}"
+],
+[
+".lb-corpo > p[id]:not(.cont), .lb-corpo > figure",
+"="
+],
+[
+"avanti",
+"="
+],
+[
+"indietro",
+"="
+],
+[
+"lb-faccia fronte",
+"="
+],
+[
+"lb-faccia retro",
+"="
+],
+[
+"hidden",
+"="
+],
+[
+"via",
+"="
+],
+[
+"figure[data-fig=\"${anc.dataset.fig}\"]",
+"="
+],
+[
+".lb-palco .lb-loop canvas",
+"="
+],
+[
+"italic 22px 'EB Garamond', Georgia, serif",
+"="
+],
+[
+"center",
+"="
+],
+[
+"preparo l'animazione…",
+"preparing the animation…"
+],
+[
+"right",
+"="
+],
+[
+"luna nuova",
+"new moon"
+],
+[
+"giorno ",
+"day "
+],
+[
+"scheda",
+"="
+],
+[
+"resize",
+"="
+],
+[
+"true",
+"="
+],
+[
+"false",
+"="
+],
+[
+"libro",
+"="
+],
+[
+"role",
+"="
+],
+[
+"region",
+"="
+],
+[
+"Il libro sfogliabile",
+"The flip book"
+],
+[
+"\n      <div class=\"lb-barra ui\">\n        <button class=\"b lb-esci\">← Pagina continua</button>\n        <button class=\"b lb-latino\" aria-pressed=\"false\">Latino a fronte</button>\n        <span class=\"lb-num\" aria-live=\"polite\"></span>\n        <input type=\"range\" class=\"lb-salto\" min=\"0\" max=\"1\" value=\"0\" aria-label=\"Vai a pagina\">\n      </div>\n      <div class=\"lb-tavolo\">\n        <button class=\"lb-freccia sx\" aria-label=\"Pagina precedente\">‹</button>\n        <div class=\"lb-palco\" tabindex=\"0\"></div>\n        <button class=\"lb-freccia dx\" aria-label=\"Pagina successiva\">›</button>\n      </div>\n      <div class=\"lb-misura\" aria-hidden=\"true\"></div>",
+"\n      <div class=\"lb-barra ui\">\n        <button class=\"b lb-esci\">← Continuous page</button>\n        <button class=\"b lb-latino\" aria-pressed=\"false\">Latin facing</button>\n        <span class=\"lb-num\" aria-live=\"polite\"></span>\n        <input type=\"range\" class=\"lb-salto\" min=\"0\" max=\"1\" value=\"0\" aria-label=\"Go to page\">\n      </div>\n      <div class=\"lb-tavolo\">\n        <button class=\"lb-freccia sx\" aria-label=\"Previous page\">‹</button>\n        <div class=\"lb-palco\" tabindex=\"0\"></div>\n        <button class=\"lb-freccia dx\" aria-label=\"Next page\">›</button>\n      </div>\n      <div class=\"lb-misura\" aria-hidden=\"true\"></div>"
+],
+[
+"dialog",
+"="
+],
+[
+"Scheda interattiva",
+"Interactive panel"
+],
+[
+"<div class=\"lb-modale-barra ui\"><button class=\"b lb-chiudi\">✕ Torna al libro</button></div><div class=\"lb-modale-corpo\"></div>",
+"<div class=\"lb-modale-barra ui\"><button class=\"b lb-chiudi\">✕ Back to the book</button></div><div class=\"lb-modale-corpo\"></div>"
+],
+[
+"input",
+"="
+],
+[
+"keydown",
+"="
+],
+[
+"Escape",
+"="
+],
+[
+"INPUT",
+"="
+],
+[
+"pointerdown",
+"="
+],
+[
+"pointerup",
+"="
+],
+[
+"button, a, input",
+"="
+],
+[
+"giove",
+"="
+],
+[
+"<p class=\"ui\" style=\"padding:1rem\">Non è stato possibile caricare la libreria grafica (three.js): controlla la connessione.</p>",
+"<p class=\"ui\" style=\"padding:1rem\">The graphics library (three.js) could not be loaded: check your connection.</p>"
+],
+[
+"Figura 1",
+"Figure 1"
+],
+[
+"«Nel quarto o quinto giorno dopo la congiunzione»: falce crescente, il confine tra luce e ombra è «ineguale, aspro e assai sinuoso».",
+"“On the fourth or fifth day after new-moon”: waxing crescent, the boundary between light and shadow is “an irregular, uneven, and very wavy line”."
+],
+[
+"Figura 2",
+"Figure 2"
+],
+[
+"Primo quarto. Sul confine, in basso, la grande cavità rotonda «quasi nel mezzo della Luna».",
+"First quarter. On the boundary, at the bottom, the large round cavity that “occupies the middle of the Moon”."
+],
+[
+"Figura 3",
+"Figure 3"
+],
+[
+"Ultimo quarto: ora la luce è a sinistra. La stessa cavità rotonda, illuminata dalla parte opposta.",
+"Last quarter: now the light is on the left. The same round cavity, lit from the opposite side."
+],
+[
+"Figura 4",
+"Figure 4"
+],
+[
+"Poco prima dell'ultimo quarto: il confine oltrepassa il centro e mostra un grande anello di monti.",
+"Shortly before last quarter: the boundary passes the centre and shows a great ring of mountains."
+],
+[
+"Figura 5",
+"Figure 5"
+],
+[
+"Ancora l'ultimo quarto: la cavità centrale è di nuovo sul confine, «circondata da contorni più oscuri».",
+"Last quarter again: the central cavity is once more on the boundary, “walled round with boundaries of a deeper shade”."
+],
+[
+"canvas",
+"="
+],
+[
+"<p class=\"ui\" style=\"padding:1rem\">Il tuo browser non supporta WebGL: la simulazione non si può mostrare.</p>",
+"<p class=\"ui\" style=\"padding:1rem\">Your browser does not support WebGL: the simulation cannot be shown.</p>"
+],
+[
+"Sole",
+"Sun"
+],
+[
+"Terra",
+"Earth"
+],
+[
+"Luna",
+"Moon"
+],
+[
+"falce crescente",
+"waxing crescent"
+],
+[
+"primo quarto",
+"first quarter"
+],
+[
+"gibbosa crescente",
+"waxing gibbous"
+],
+[
+"luna piena",
+"full moon"
+],
+[
+"gibbosa calante",
+"waning gibbous"
+],
+[
+"ultimo quarto",
+"last quarter"
+],
+[
+"falce calante",
+"waning crescent"
+],
+[
+"block",
+"="
+],
+[
+"none",
+"="
+],
+[
+"${giorni} giorni dalla luna nuova · ${faseNome(eta)} · angolo Sole–Terra–Luna ${Math.round(angolo() / D2R) % 360 > 180 ? 360 - Math.round(angolo() / D2R) % 360 : Math.round(angolo() / D2R) % 360}°",
+"${giorni} days since new moon · ${faseNome(eta)} · Sun–Earth–Moon angle ${Math.round(angolo() / D2R) % 360 > 180 ? 360 - Math.round(angolo() / D2R) % 360 : Math.round(angolo() / D2R) % 360}°"
+],
+[
+"❚❚ Ferma",
+"❚❚ Stop"
+],
+[
+"↩ Torna al cannocchiale",
+"↩ Back to the telescope"
+],
+[
+"<span class=\"ui\" style=\"font-size:.8rem;color:var(--dato)\">Scegli una delle cinque figure di Galileo per confrontarla.</span>",
+"<span class=\"ui\" style=\"font-size:.8rem;color:var(--dato)\">Choose one of Galileo's five figures to compare.</span>"
+],
+[
+"<img alt=\"${f.nome} di Galileo\" src=\"${immaginiGalileo[k]}\">",
+"<img alt=\"Galileo's ${f.nome}\" src=\"${immaginiGalileo[k]}\">"
+],
+[
+"undefined",
+"="
+],
+[
+"ora",
+"="
+],
+[
+"testo",
+"="
+],
+[
+"I · Io",
+"="
+],
+[
+"II · Europa",
+"="
+],
+[
+"III · Ganimede",
+"III · Ganymede"
+],
+[
+"IV · Callisto",
+"="
+],
+[
+"gennaio",
+"January"
+],
+[
+"febbraio",
+"February"
+],
+[
+"marzo",
+"March"
+],
+[
+"text",
+"="
+],
+[
+" min",
+"="
+],
+[
+" ora",
+" hour"
+],
+[
+" ore",
+" hours"
+],
+[
+"rect",
+"="
+],
+[
+"line",
+"="
+],
+[
+"end",
+"="
+],
+[
+"circle",
+"="
+],
+[
+"II",
+"="
+],
+[
+"III",
+"="
+],
+[
+"IV",
+"="
+],
+[
+"middle",
+"="
+],
+[
+"1 tacca = 1′",
+"1 tick = 1′"
+],
+[
+"ellipse",
+"="
+],
+[
+"↓ verso la Terra (cioè verso di noi)",
+"↓ towards the Earth (that is, towards us)"
+],
+[
+"dietro Giove: nascosto",
+"behind Jupiter: hidden"
+],
+[
+"davanti al disco: invisibile",
+"in front of the disc: invisible"
+],
+[
+"svg",
+"="
+],
+[
+"smooth",
+"="
+],
+[
+"${q.d} ${MESI[q.m]} 1610 · ${oreLabel(q.h)} dopo il tramonto",
+"${MESI[q.m]} ${q.d}, 1610 · ${oreLabel(q.h)} after sunset"
+],
+[
+" (ora non indicata: si assume 1 ora)",
+" (time not given: 1 hour assumed)"
+],
+[
+"tempo libero",
+"free time"
+],
+[
+"disegno ${iOss+1} di ${OSS.length}",
+"drawing ${iOss+1} of ${OSS.length}"
+],
+[
+"<img alt=\"Disegno di Galileo: Giove e i suoi satelliti il ${o.d} ${MESI[o.m]} 1610\" src=\"${IMG[o.f]}\">",
+"<img alt=\"Galileo's drawing: Jupiter and its satellites on ${MESI[o.m]} ${o.d}, 1610\" src=\"${IMG[o.f]}\">"
+],
+[
+"<span class=\"ui\" style=\"font-size:.8rem;color:var(--dato)\">Nessun disegno di Galileo per questo istante: scegli una sua osservazione con ◀ ▶</span>",
+"<span class=\"ui\" style=\"font-size:.8rem;color:var(--dato)\">No drawing by Galileo at this moment: choose one of his observations with ◀ ▶</span>"
+],
+[
+"<div>${nomiOn?NOMI[s.i]:\"satellite ?\"}<b>${s.nascosto?\"nascosto\":(fmtMin(s.x)+(s.x<0?\" a oriente\":\" a occidente\"))}</b></div>",
+"!<div>${nomiOn?NOMI[s.i]:\"satellite ?\"}<b>${s.nascosto?\"hidden\":(fmtMin(s.x)+(s.x<0?\" east\":\" west\"))}</b></div>"
+],
+[
+"<div>visibili<b>${vis.length} su 4</b></div><div>a oriente<b>${vis.filter(s=>s.x<0).sort((a,b)=>b.x-a.x).map(s=>fmtMin(s.x)).join(\" · \")||\"—\"}</b></div><div>a occidente<b>${vis.filter(s=>s.x>0).sort((a,b)=>a.x-b.x).map(s=>fmtMin(s.x)).join(\" · \")||\"—\"}</b></div>",
+"<div>visible<b>${vis.length} of 4</b></div><div>to the east<b>${vis.filter(s=>s.x<0).sort((a,b)=>b.x-a.x).map(s=>fmtMin(s.x)).join(\" · \")||\"—\"}</b></div><div>to the west<b>${vis.filter(s=>s.x>0).sort((a,b)=>a.x-b.x).map(s=>fmtMin(s.x)).join(\" · \")||\"—\"}</b></div>"
+],
+[
+"${d} ${MESI[m].slice(0,3)}",
+"${MESI[m].slice(0,3)} ${d}"
+],
+[
+"path",
+"="
+],
+[
+"pointer",
+"="
+],
+[
+"tubo",
+"="
+],
+[
+"polyline",
+"="
+],
+[
+"${E.x},${E.y} ${C.x},${C.y} ${Hh.x},${Hh.y}",
+"="
+],
+[
+"italic",
+"="
+],
+[
+"EB Garamond,serif",
+"="
+],
+[
+"start",
+"="
+],
+[
+"<div>ingrandimento dei diametri<b>${m}×</b></div><div>ingrandimento delle superfici<b>${m*m}×</b></div><div>angolo FEG a occhio nudo<b>${ang0>=1?ang0.toFixed(1)+\"°\":fmtMin(ang0*60)}</b></div><div>angolo HEI col cannocchiale<b>${ang>=1?ang.toFixed(2)+\"°\":fmtMin(ang*60)}</b></div>",
+"<div>magnification of diameters<b>${m}×</b></div><div>magnification of areas<b>${m*m}×</b></div><div>angle FEG with the naked eye<b>${ang0>=1?ang0.toFixed(1)+\"°\":fmtMin(ang0*60)}</b></div><div>angle HEI with the telescope<b>${ang>=1?ang.toFixed(2)+\"°\":fmtMin(ang*60)}</b></div>"
+],
+[
+"0 0 ${Wq} ${Hq}",
+"="
+],
+[
+"occhio libero: quadrato grande (lato 20)",
+"naked eye: large square (side 20)"
+],
+[
+"occhio al cannocchiale: quadrato piccolo (lato 1)",
+"eye at the telescope: small square (side 1)"
+],
+[
+"Le due figure coincidono: lo strumento ingrandisce i diametri 20 volte, le superfici 400.",
+"The two figures coincide: the instrument magnifies diameters 20 times, areas 400."
+],
+[
+"Il quadrato piccolo appare ${m} volte più largo: ${m<20?\"ancora troppo piccolo\":\"già troppo grande\"}.",
+"!The small square appears ${m} times wider: ${m<20?\"still too small\":\"already too big\"}."
+],
+[
+"cerchio",
+"="
+],
+[
+"Galileo osserva cime illuminate nella parte buia, lontane dal confine della luce: misurandole, trova che la distanza «supera talvolta la ventesima parte del diametro».",
+"Galileo sees lit peaks in the dark part, away from the edge of the light: measuring them, he finds that the distance “sometimes exceeded the one-twentieth part of the diameter”."
+],
+[
+"accertai che questa distanza supera talvolta la ventesima parte del diametro",
+"I learnt that it sometimes exceeded the one-twentieth (1/20th) part of the diameter"
+],
+[
+"CF",
+"="
+],
+[
+"Il globo lunare: cerchio massimo CAF, centro E, diametro CF. La Luna sta alla Terra come 2 a 7; la Terra misura 7000 miglia: dunque CF = 2000 miglia e CE = 1000.",
+"The lunar globe: great circle CAF, centre E, diameter CF. The Moon is to the Earth as 2 to 7; the Earth measures 7000 miles: so CF = 2000 miles and CE = 1000."
+],
+[
+"sarà CF 2000, CE 1000",
+"C F will be 2000, and C E 1000"
+],
+[
+"luce",
+"="
+],
+[
+"Il Sole è lontanissimo: i suoi raggi arrivano paralleli e il confine tra luce e buio è, di fatto, un cerchio massimo. Qui lo vediamo di taglio, come il diametro CF.",
+"The Sun is very far away: its rays arrive parallel and the boundary between light and dark is, in effect, a great circle. Here we see it edge-on, as the diameter CF."
+],
+[
+"per la grandissima lontananza del Sole dalla Luna questo circolo non differisce sensibilmente dal circolo massimo",
+"owing to the very great distance of the Sun from the Moon this circle does not differ sensibly from a great one"
+],
+[
+"GCD",
+"="
+],
+[
+"Il raggio di Sole che sfiora la Luna in C è la tangente GCD: è l'ultimo raggio che passa sopra la parte buia.",
+"The ray of sunlight grazing the Moon at C is the tangent GCD: it is the last ray passing over the dark part."
+],
+[
+"la tangente GCD (che rappresenta il raggio illuminante)",
+"the tangent line G C D, which represents the ray that illumines the summit"
+],
+[
+"EAD",
+"="
+],
+[
+"La cima sta sopra il punto A, lontano da C un ventesimo del diametro (100 miglia). Si prolunga il raggio EA fino a incontrare la tangente in D: la cima è illuminata se arriva fino a D.",
+"The peak stands above the point A, a twentieth of the diameter (100 miles) from C. The radius EA is extended until it meets the tangent at D: the peak is lit if it reaches up to D."
+],
+[
+"si prolunghi il semidiametro EA, fino all'incontro nel punto D della tangente GCD",
+"let the radius E A be drawn, and let it be produced to cut the tangent line G C D […] in the point D"
+],
+[
+"triangolo",
+"="
+],
+[
+"Il triangolo ECD è rettangolo in C. Per il teorema di Pitagora DE² = DC² + CE² = 100² + 1000² = 1 010 000.",
+"The triangle ECD has a right angle at C. By Pythagoras' theorem DE² = DC² + CE² = 100² + 1000² = 1 010 000."
+],
+[
+"la somma dei quadrati di DC e di CE 1.010.000, alla quale è uguale il quadrato di DE",
+"The sum of the squares of D C, C E is therefore 1,010,000, and the square of D E is equal to this"
+],
+[
+"AD",
+"="
+],
+[
+"zoom",
+"="
+],
+[
+"Dunque ED è più di 1004 e l'altezza AD = ED − EA è più di 4 miglia: i monti della Luna superano quelli della Terra.",
+"So ED is more than 1004 and the height AD = ED − EA is more than 4 miles: the mountains of the Moon are higher than those of the Earth."
+],
+[
+"Nella Luna dunque l'altezza AD [...] supera le 4 miglia italiane",
+"the height of A D in the Moon […] is more than 4 Italian miles"
+],
+[
+" miglia",
+" miles"
+],
+[
+"nuovo",
+"="
+],
+[
+"M${cx} ${cy-R} A${R} ${R} 0 0 1 ${cx} ${cy+R} Z",
+"="
+],
+[
+"M${cx} ${cy-R} A${R} ${R} 0 0 0 ${cx} ${cy+R} Z",
+"="
+],
+[
+"raggi del Sole →",
+"Sun's rays →"
+],
+[
+"defs",
+"="
+],
+[
+"marker",
+"="
+],
+[
+"fr",
+"="
+],
+[
+"auto",
+"="
+],
+[
+"polygon",
+"="
+],
+[
+"0 0 ${zw} ${zh}",
+"="
+],
+[
+"zc",
+"="
+],
+[
+" L${zx+zw} ${zy+zh} L${zx} ${zy+zh} Z",
+"="
+],
+[
+"verso E",
+"towards E"
+],
+[
+"${B1.x},${B1.y} ${Dz.x},${Dz.y} ${B2.x},${B2.y}",
+"="
+],
+[
+"${Dz.x+(B1.x-Dz.x)*k},${Dz.y+(B1.y-Dz.y)*k} ${Dz.x},${Dz.y} ${Dz.x+(B2.x-Dz.x)*k},${Dz.y+(B2.y-Dz.y)*k}",
+"="
+],
+[
+"← C, a ${Math.round(2000*f)} miglia",
+"← C, ${Math.round(2000*f)} miles away"
+],
+[
+"scala vera, ×${z}",
+"true scale, ×${z}"
+],
+[
+"10 miglia",
+"10 miles"
+],
+[
+"AD ≈ ${ADm.toFixed(1).replace(\".\",\",\")} miglia",
+"!AD ≈ ${ADm.toFixed(1)} miles"
+],
+[
+"la cima tocca il raggio radente",
+"the peak touches the grazing ray"
+],
+[
+"<div>CD (distanza dal confine)<b>${CD.toFixed(0)} miglia = ${(1/f)%1?\"circa \":\"\"}1/${Math.round(1/f)} di CF</b></div><div>DE² = DC² + CE²<b>${Math.round(CD*CD+1e6).toLocaleString(\"it-IT\")}</b></div><div>ED<b>${ED.toFixed(2).replace(\".\",\",\")} miglia</b></div><div>altezza AD<b>${AD.toFixed(2).replace(\".\",\",\")} miglia ≈ ${(AD/2000*3474).toFixed(1).replace(\".\",\",\")} km</b></div>",
+"!<div>CD (distance from the boundary)<b>${CD.toFixed(0)} miles = ${(1/f)%1?\"about \":\"\"}1/${Math.round(1/f)} of CF</b></div><div>DE² = DC² + CE²<b>${Math.round(CD*CD+1e6).toLocaleString(\"en-GB\")}</b></div><div>ED<b>${ED.toFixed(2)} miles</b></div><div>height AD<b>${AD.toFixed(2)} miles ≈ ${(AD/2000*3474).toFixed(1)} km</b></div>"
+],
+[
+"<b>Passo ${passo+1}.</b> ${PASSI[passo].t}<br><span class=\"cit\">«${PASSI[passo].c}»</span>",
+"<b>Step ${passo+1}.</b> ${PASSI[passo].t}<br><span class=\"cit\">“${PASSI[passo].c}”</span>"
+],
+[
+"passo ${passo+1} di ${PASSI.length}",
+"step ${passo+1} of ${PASSI.length}"
+],
+[
+"Figura di Galileo per l'altezza dei monti lunari, passo ",
+"Galileo's figure for the height of the lunar mountains, step "
+],
+[
+"style",
+"="
+],
+[
+"fasi",
+"="
+],
+[
+"hashchange",
+"="
+]
+]

@@ -198,6 +198,13 @@ body.lb-on{overflow:hidden}
 
 @media(max-width:1023px){header.barra .dentro{flex-wrap:nowrap}header.barra .marchio{display:none}nav{flex:1;min-width:0}}
 </style>
+<style>
+.lingua{display:inline-flex;align-items:center;gap:.2rem;font-size:.82rem}
+.lingua{flex:none}.lingua select{font:inherit;font-weight:600;letter-spacing:.04em;border:1px solid var(--linea);border-radius:8px;background:#fff;color:var(--inchiostro);min-height:44px;padding:0 .4rem;cursor:pointer}
+.suggerimento-lingua{position:fixed;left:50%;bottom:1rem;transform:translateX(-50%);z-index:50;background:#fff;border:1px solid var(--linea);border-radius:10px;box-shadow:0 4px 16px rgba(0,0,0,.12);padding:.6rem .8rem;display:flex;gap:.6rem;align-items:center;font:.85rem Inter,system-ui,sans-serif}
+.suggerimento-lingua button{font:inherit;border:1px solid var(--linea);background:#fff;border-radius:8px;min-height:40px;padding:0 .7rem;cursor:pointer}
+.suggerimento-lingua button.si{background:var(--attivo);border-color:var(--attivo);color:#fff}
+</style>
 </head>
 <body>
 <header class="barra"><div class="dentro">
@@ -206,7 +213,7 @@ body.lb-on{overflow:hidden}
 <a href="#copertina">Copertina</a><a href="#testo">Testo</a><a href="#g1">Giornata I</a><a href="#g2">Giornata II</a><a href="#g3">Giornata III</a><a href="#equabile">Moto equabile</a><a href="#g4">Giornata IV</a><a href="#appendice">Appendice</a><a href="#note">Note</a>
 </nav>
 <button class="b ui" id="btnLibro" aria-pressed="false" title="Leggi come un libro da sfogliare">📖 Libro</button>
-</div></header>
+<label class="lingua ui" title="Italiano"><select id="selLingua" aria-label="Lingua / Language: Italiano" data-attuale="it"><option value="it" lang="it" selected>IT</option></select></label></div></header>
 <main>
 <section id="copertina" class="copertina" aria-labelledby="copTitolo">
 <div class="cop-cornice">
@@ -1107,7 +1114,7 @@ body.lb-on{overflow:hidden}
 <p><b>Licenza di questa pagina.</b> Testi e schede: CC BY-NC-SA 4.0 (per la licenza del testo). Codice: MIT.</p>
 
 </footer>
-<script>window.LIBRO_LATINO=[];window.LIBRO_CONF={"titolo": "Discorsi e dimostrazioni", "autore": "Galileo Galilei", "frontespizioDa": "#copertina .cop-fac img", "frontespizioNota": "Leida, 1638 · frontespizio originale", "frontespizio": "<div>GALILEO GALILEI</div><div class=\"g\">DISCORSI<br>E DIMOSTRAZIONI</div><div>intorno a due nuove scienze</div><div class=\"p\">Leida, Elzevier, 1638</div>"};</script>
+<script>window.LIBRO_LATINO=[];window.LIBRO_CONF={"autore": "Galileo Galilei", "frontespizioDa": "#copertina .cop-fac img", "titolo": "Discorsi e dimostrazioni", "frontespizioNota": "Leida, 1638 · frontespizio originale", "frontespizio": "<div>GALILEO GALILEI</div><div class=\"g\">DISCORSI<br>E DIMOSTRAZIONI</div><div>intorno a due nuove scienze</div><div class=\"p\">Leida, Elzevier, 1638</div>"};</script>
 <script>// Modalità «libro sfogliabile», comune a tutti i libri interattivi (strumenti/libro/).
 // Testi, testatine e frontespizio da window.LIBRO_CONF: titolo, autore, loopFig, testaLat0/1, testaTrad,
 // frontespizioDa (selettore di un'immagine già nella pagina, es. il facsimile della copertina), frontespizioNota, frontespizio (HTML di ripiego).
@@ -1844,6 +1851,41 @@ body.lb-on{overflow:hidden}
 try{Libro.init();}catch(e){console.error(e);}
 function apriDaHash(){const h=location.hash.slice(1);if(h&&!h.startsWith("pagina-")){const e=document.getElementById(h);if(e)e.scrollIntoView();}}
 window.addEventListener("hashchange",apriDaHash);
+</script>
+<script>/*lingue*/
+(function(){
+  const FILES = {"it": "index.html", "en": "index.en.html"};
+  const sel = document.getElementById("selLingua"); if (!sel) return;
+  const attuale = sel.dataset.attuale, disponibili = [...sel.options].map(o => o.value);
+  // il punto di lettura: il primo elemento con id visibile in alto
+  function ancora(){
+    let best = null;
+    for (const sel of ["#testo > [id]", "main > [id]"]) {
+      for (const e of document.querySelectorAll(sel)) { const r = e.getBoundingClientRect(); if (r.bottom > 80) { best = e; break; } }
+      if (best) break;
+    }
+    return best && window.scrollY > 200 ? "#" + best.id : location.hash;
+  }
+  function vai(l){ try { localStorage.setItem("lingua", l); } catch (e) {}
+    location.href = FILES[l] + ancora(); }
+  sel.addEventListener("change", () => vai(sel.value));
+  let pref = null; try { pref = localStorage.getItem("lingua"); } catch (e) {}
+  if (pref && pref !== attuale && disponibili.includes(pref) && !sessionStorage.getItem("lingua-scelta")) {
+    sessionStorage.setItem("lingua-scelta", "1"); location.replace(FILES[pref] + location.hash); return; }
+  try { sessionStorage.setItem("lingua-scelta", "1"); } catch (e) {}
+  // primo accesso con il browser in un'altra lingua: un suggerimento, non un reindirizzamento
+  const nav = (navigator.language || "").slice(0, 2).toLowerCase();
+  if (!pref && nav !== attuale && disponibili.includes(nav === "it" ? "it" : "en") && (nav === "it" || attuale === "it")) {
+    const l = nav === "it" ? "it" : "en";
+    if (l === attuale) return;
+    const box = document.createElement("div"); box.className = "suggerimento-lingua"; box.setAttribute("role", "dialog");
+    box.innerHTML = l === "en" ? '<span>This book is also available in English.</span><button class="si">Read in English</button><button class="no">Stay in Italian</button>'
+                               : '<span>Questo libro è disponibile anche in italiano.</span><button class="si">Leggi in italiano</button><button class="no">Continue in English</button>';
+    box.querySelector(".si").onclick = () => vai(l);
+    box.querySelector(".no").onclick = () => { try { localStorage.setItem("lingua", attuale); } catch (e) {} box.remove(); };
+    document.body.appendChild(box);
+  }
+})();
 </script>
 </body>
 </html>
