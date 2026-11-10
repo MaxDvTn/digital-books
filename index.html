@@ -120,6 +120,18 @@ h2{margin:0;font-size:clamp(32px,4vw,40px);font-weight:500;font-variant:small-ca
 .fregio{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--rubrica);padding:8px 32px 0}
 .fregio i{height:1px;width:120px;background:#c9bda8}
 
+/* video delle fasi */
+.film{display:flex;flex-wrap:wrap;gap:36px;align-items:center;padding-top:64px}
+.film .schermo{flex:3 1 460px;min-width:0;margin:0;background:#f2ebd9;border:1px solid var(--linea2);border-radius:14px;overflow:hidden;position:relative;box-shadow:0 10px 30px rgba(60,40,20,.08)}
+.film video{display:block;width:100%;height:auto;aspect-ratio:720/534;background:#f2ebd9}
+.film .vista-lab{position:absolute;top:12px;right:12px;padding:4px 10px;border-radius:999px;background:var(--rubrica);color:#fff;font:600 11px var(--sans);letter-spacing:.08em;text-transform:uppercase;transition:opacity .3s}
+.film .play{position:absolute;right:12px;bottom:12px;min-width:44px;min-height:44px;border-radius:999px;border:1px solid var(--linea);background:rgba(255,255,255,.9);color:var(--inchiostro);font:600 14px var(--sans);cursor:pointer;padding:0 14px}
+.film .testo{flex:2 1 300px;min-width:0}
+.film h2{margin-bottom:14px}
+.film p{margin:0 0 14px;font-size:19px;line-height:1.5;color:var(--testo)}
+.film ol{margin:0 0 22px;padding-left:1.2em;font-size:18px;line-height:1.5;color:var(--testo)}
+.film ol li{margin-bottom:6px}
+
 footer{margin-top:64px;border-top:1px solid var(--linea);background:var(--carta2)}
 footer .dentro{padding-top:32px;padding-bottom:32px;display:flex;flex-wrap:wrap;gap:16px 40px;justify-content:space-between;font:14px/1.6 var(--sans);color:#5a534a}
 footer p{margin:0}
@@ -168,6 +180,25 @@ footer p{margin:0}
     <div><b>1610</b><span class="i-it">–1726, da Galileo a Newton</span><span class="i-en">–1726, from Galileo to Newton</span></div>
   </div>
 </div>
+
+<section class="film dentro" id="luna" aria-labelledby="titoloLuna">
+  <figure class="schermo">
+    <video id="filmLuna" muted loop playsinline preload="none" poster="media/luna-poster.jpg" width="720" height="534" aria-describedby="descLuna">
+      <source src="media/luna.mp4" type="video/mp4">
+    </video>
+    <span class="vista-lab" id="vistaLab" aria-hidden="true"></span>
+    <button class="play" id="filmPlay" type="button"></button>
+  </figure>
+  <div class="testo">
+    <h2 id="titoloLuna"><span class="i-it">La Luna di Galileo in 30 secondi</span><span class="i-en">Galileo's Moon in 30 seconds</span></h2>
+    <p id="descLuna"><span class="i-it">Un mese lunare nella tavola delle fasi del <i>Sidereus Nuncius</i>:</span><span class="i-en">A lunar month in the phases plate of the <i>Sidereus Nuncius</i>:</span></p>
+    <ol>
+      <li><span class="i-it">al cannocchiale, come la vedeva Galileo: il confine della luce è frastagliato dai monti;</span><span class="i-en">through the telescope, as Galileo saw it: the edge of the light is jagged with mountains;</span></li>
+      <li><span class="i-it">dallo spazio: Sole, Terra e orbita della Luna spiegano perché la fase cambia.</span><span class="i-en">from space: the Sun, the Earth and the Moon's orbit explain why the phase changes.</span></li>
+    </ol>
+    <a class="btn pieno" href="sidereus_nuncius/interattivo/index.html#fasi" data-en="sidereus_nuncius/interattivo/index.en.html#fasi"><span class="i-it">Prova la tavola delle fasi</span><span class="i-en">Try the phases plate</span></a>
+  </div>
+</section>
 
 <section id="biblioteca" class="blocco dentro">
   <div class="titolo-sez">
@@ -360,6 +391,33 @@ footer p{margin:0}
   }
   imposta(l);
   sel.addEventListener("change", () => { try { localStorage.setItem("lingua", sel.value); } catch (e) {} imposta(sel.value); });
+})();
+</script>
+<script>
+(function(){
+  // Video delle fasi: parte (muto, in loop) quando è sullo schermo e si ferma quando esce.
+  // Con «riduci movimento» attivo non parte da solo: c'è il pulsante.
+  const v = document.getElementById("filmLuna"), b = document.getElementById("filmPlay"), lab = document.getElementById("vistaLab");
+  if (!v) return;
+  const en = () => document.documentElement.classList.contains("l-en");
+  const fermo = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let voluto = !fermo;
+  function etichette(){
+    b.textContent = v.paused ? (en() ? "▶ Play" : "▶ Guarda") : (en() ? "❚❚ Pause" : "❚❚ Pausa");
+    b.setAttribute("aria-label", b.textContent.slice(2));
+    // nel video: 0–13,4 s al cannocchiale, poi nello spazio, dagli ultimi secondi di nuovo al cannocchiale
+    const t = v.currentTime, spazio = t > 13.4 && t < 30.4;
+    lab.textContent = spazio ? (en() ? "From space" : "Dallo spazio") : (en() ? "Through the telescope" : "Al cannocchiale");
+  }
+  v.addEventListener("play", etichette); v.addEventListener("pause", etichette); v.addEventListener("timeupdate", etichette);
+  b.addEventListener("click", () => { if (v.paused) { voluto = true; v.play().catch(() => {}); } else { voluto = false; v.pause(); } });
+  document.getElementById("lingua").addEventListener("change", etichette);
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting && voluto) v.play().catch(() => {}); else if (!e.isIntersecting) v.pause();
+    }), {threshold: .4}).observe(v);
+  }
+  etichette();
 })();
 </script>
 </body>
