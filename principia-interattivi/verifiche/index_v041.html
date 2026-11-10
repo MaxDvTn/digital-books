@@ -260,6 +260,7 @@
 html,body{margin:0;background:var(--paper);color:var(--ink)}
 body{font-family:var(--serif);font-size:19px;line-height:1.5;-webkit-text-size-adjust:100%}
 button,select,input{font-family:var(--sans)}
+header.top .navbtn{display:inline-flex;align-items:center;justify-content:center;min-width:40px;text-decoration:none;font-size:16px;padding:6px 10px}
 header.top{position:sticky;top:0;z-index:30;height:var(--hdr);display:flex;align-items:center;gap:12px;
   padding:0 14px;background:var(--paper);border-bottom:1px solid var(--rule)}
 .brand{font-family:var(--serif);font-weight:600;font-size:19px;white-space:nowrap}
@@ -347,6 +348,8 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </head>
 <body>
 <header class="top">
+  <a class="iconbtn navbtn" href="../../index.html" title="Torna alla home del sito" aria-label="Home">⌂</a>
+  <button class="iconbtn navbtn" id="navIndietro" type="button" title="Torna al punto precedente" aria-label="Indietro">←</button>
   <div class="brand">Principia <small>· Libro I, edizione interattiva</small></div>
   <nav class="tabs" aria-label="Sezioni">
     <a href="#leggi" data-view="leggi">Leggi</a>
@@ -1192,6 +1195,11 @@ VIEWS["prop-11"] = {
 Object.keys(STEPS).forEach(renderSteps);
 if(window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise();
 window.addEventListener("hashchange",route);
+// Indietro: alla vista precedente se ci si è spostati nel libro o si arriva dal sito, altrimenti alla home
+document.getElementById("navIndietro").addEventListener("click",()=>{
+  const daSito=document.referrer&&document.referrer.indexOf(location.origin)===0;
+  if(history.length>1&&(daSito||sessionStorage.getItem("pSalti")>0)){history.back();} else location.href="../../index.html";});
+window.addEventListener("hashchange",()=>{try{sessionStorage.setItem("pSalti",(+sessionStorage.getItem("pSalti")||0)+1);}catch(e){}});
 route();
 </script>
 </body>

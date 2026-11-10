@@ -2,7 +2,7 @@
 """Genera index.html del Sidereus interattivo da blocchi.json + immagini + astro.js."""
 import base64, json, html, sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "strumenti"))
-import copertina, lingue
+import copertina, lingue, navigazione
 
 BASE = os.environ.get("SIDEREUS_DIR", os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")) + "/"
 QUI = os.path.dirname(os.path.abspath(__file__))
@@ -223,6 +223,17 @@ page = (tpl.replace("%%TESTO%%", "\n".join(out))
         .replace("%%FASI_CSS%%", open(os.path.join(QUI, "fasi_css.css")).read())
         .replace("%%FASI_JS%%", open(os.path.join(QUI, "fasi.js")).read())
         .replace("%%FASI_IMG%%", json.dumps(["data:image/png;base64," + base64.b64encode(open(os.path.join(QUI, "fasi", "g%d.png" % k), "rb").read()).decode() for k in range(1, 6)])))
+# --- navigazione: home, indietro, indice e ricerca (il testo non ha titoli: indice scritto qui)
+SOMMARIO = {
+ "it": [["p002", "Proemio"], ["p008", "Il cannocchiale"], ["p011", "La faccia della Luna"],
+        ["p020", "I monti della Luna e la loro altezza"], ["p021", "La luce cinerea"], ["p023", "Le stelle fisse"],
+        ["p026", "La Via Lattea e le nebulose"], ["p029", "I quattro Astri Medicei"], ["p030", "Le osservazioni, dal 7 gennaio 1610", 2],
+        ["p138", "Conclusioni sugli Astri Medicei", 2]],
+ "en": [["p002", "Introduction"], ["p008", "The telescope"], ["p011", "The face of the Moon"],
+        ["p020", "The mountains of the Moon and their height"], ["p021", "Earthshine"], ["p023", "The fixed stars"],
+        ["p026", "The Milky Way and the nebulae"], ["p029", "The four Medicean Stars"], ["p030", "The observations, from 7 January 1610", 2],
+        ["p138", "Conclusions on the Medicean Stars", 2]]}
+page = navigazione.applica(page, casa="../../index.html", sommario=SOMMARIO)
 # --- lingua: menu, traduzione dell'interfaccia, testo del libro
 page = (page.replace('<html lang="it">', '<html lang="%s">' % LINGUA)
         .replace("</div></header>", lingue.menu_html(LINGUA, DISPONIBILI) + "</div></header>", 1)

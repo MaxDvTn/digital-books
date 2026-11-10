@@ -1,0 +1,51 @@
+# Salva ogni giorno il traffico del repository (GitHub lo conserva solo 14 giorni)
+# nel ramo «statistiche», così il sito su GitHub Pages (ramo main) non si ricostruisce ogni giorno.
+# Serve un segreto del repository TRAFFIC_TOKEN: token fine-grained limitato a questo repository,
+# con permesso «Administration: Read-only» (il token automatico delle Action non può leggere il traffico).
+name: Traffico del repository
+
+on:
+  schedule:
+    - cron: "17 4 * * *"   # ogni giorno alle 4:17 UTC
+  workflow_dispatch:        # anche a mano, dalla scheda Actions
+
+permissions:
+  contents: write
+
+jobs:
+  salva:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Script dal ramo principale
+        uses: actions/checkout@v4
+        with:
+          path: sorgente
+          sparse-checkout: strumenti/traffico.py
+          sparse-checkout-cone-mode: false
+
+      - name: Ramo statistiche (lo crea la prima volta)
+        run: |
+          git clone --no-checkout "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" dati
+          cd dati
+          if git ls-remote --exit-code --heads origin statistiche >/dev/null; then
+            git checkout statistiche
+          else
+            git checkout --orphan statistiche
+            git rm -rf --quiet . || true
+          fi
+
+      - name: Scarica il traffico
+        env:
+          GH_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+          REPO: ${{ github.repository }}
+          CARTELLA: dati/statistiche
+        run: python3 sorgente/strumenti/traffico.py
+
+      - name: Salva
+        run: |
+          cd dati
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add statistiche
+          git diff --cached --quiet || git commit -m "Traffico al $(date -u +%F)"
+          git push origin statistiche

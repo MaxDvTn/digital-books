@@ -4,102 +4,363 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Classici della scienza interattivi</title>
-<meta name="description" content="Newton e Galileo in edizioni didattiche interattive per il liceo scientifico.">
+<meta name="description" content="Galileo e Newton in edizioni didattiche interattive per il liceo scientifico: i testi completi, con le figure che si costruiscono passo dopo passo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Contatore delle visite (GoatCounter): togliere il commento e scrivere il codice del sito al posto di CODICE
+<script data-goatcounter="https://CODICE.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+-->
 <style>
-  :root { --carta:#f6f1e7; --inchiostro:#2b2622; --rubrica:#8c2f1f; --tenue:#6d645a; --filo:#d8cdb9; }
-  @media (prefers-color-scheme: dark) {
-    :root { --carta:#1d1b19; --inchiostro:#ece5d8; --rubrica:#e08a6d; --tenue:#a89d8f; --filo:#3b362f; }
-  }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--carta); color:var(--inchiostro);
-         font-family: "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; line-height:1.55; }
-  main { max-width: 860px; margin:0 auto; padding: 3.5rem 1.25rem 4rem; }
-  header { text-align:center; border-bottom:1px solid var(--filo); padding-bottom:2rem; margin-bottom:2rem; }
-  .occhiello { font-variant: small-caps; letter-spacing:.12em; color:var(--rubrica); margin:0 0 .4rem; }
-  h1 { font-weight:normal; font-size: clamp(1.9rem, 5vw, 2.8rem); margin:0 0 .6rem; }
-  header p { color:var(--tenue); margin:0 auto; max-width: 36rem; }
-  h2 { font-variant: small-caps; letter-spacing:.08em; font-weight:normal; color:var(--rubrica);
-       font-size:1.15rem; margin: 2.4rem 0 1rem; }
-  .libri { display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); }
-  .libro { border:1px solid var(--filo); padding:1.1rem 1.2rem 1.2rem; border-radius:3px; display:flex; flex-direction:column; }
-  .libro h3 { margin:0 0 .15rem; font-size:1.2rem; font-weight:normal; font-style:italic; }
-  .autore { margin:0 0 .6rem; color:var(--tenue); font-size:.92rem; }
-  .libro p.desc { margin:0 0 1rem; font-size:.95rem; flex:1; }
-  .azioni { display:flex; flex-wrap:wrap; gap:.5rem; }
-  .azioni a { text-decoration:none; font-size:.9rem; padding:.35rem .8rem; border-radius:2px;
-              border:1px solid var(--rubrica); color:var(--rubrica); }
-  .azioni a.prim { background:var(--rubrica); color:var(--carta); }
-  .azioni a:hover { opacity:.85; }
-  footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--filo); color:var(--tenue); font-size:.85rem; text-align:center; }
-  footer a { color:inherit; }
+:root{--carta:#fbf8f2;--carta2:#f3eee4;--inchiostro:#22201c;--testo:#3d3832;--tenue:#6b6458;--rubrica:#871919;--rubrica-scura:#5e1010;--linea:#d9d1c3;--linea2:#e3dbcc;--rosa:#f3e6e2;--grigio:#eceae4;
+  --serif:"EB Garamond",Georgia,serif;--sans:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--carta);color:var(--inchiostro);font-family:var(--serif)}
+a{color:var(--rubrica)}a:hover{color:var(--rubrica-scura)}
+:focus-visible{outline:3px solid #f0b400;outline-offset:2px}
+html.l-en .i-it,html:not(.l-en) .i-en{display:none!important}
+.dentro{max-width:1180px;margin:0 auto;padding-left:32px;padding-right:32px}
+@media(max-width:600px){.dentro{padding-left:18px;padding-right:18px}}
+
+/* barra */
+header.sito{position:sticky;top:0;z-index:10;border-bottom:1px solid var(--linea);background:rgba(251,248,242,.95);backdrop-filter:blur(6px)}
+header.sito .dentro{padding-top:10px;padding-bottom:10px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 26px}
+.marchio{text-decoration:none;color:var(--rubrica);font-variant:small-caps;letter-spacing:.06em;font-size:22px;font-weight:600;margin-right:auto}
+header.sito nav{display:flex;flex-wrap:wrap;gap:0 22px;font:15px var(--sans)}
+header.sito nav a{color:var(--inchiostro);text-decoration:none;padding:10px 0;display:inline-block}
+header.sito nav a:hover{color:var(--rubrica)}
+.lingua select{font:600 14px var(--sans);min-height:44px;padding:0 10px;border:1px solid var(--linea);border-radius:8px;background:#fff;color:var(--inchiostro);cursor:pointer}
+@media(max-width:720px){header.sito nav{order:3;width:100%;overflow-x:auto;flex-wrap:nowrap;gap:0 18px;scrollbar-width:none}header.sito nav a{white-space:nowrap;padding:6px 0 8px}}
+
+/* apertura */
+.apertura{display:flex;flex-wrap:wrap;gap:48px;align-items:center;padding-top:72px;padding-bottom:56px}
+.apertura .testo{flex:999 1 520px;min-width:0}
+.occhiello{margin:0 0 18px;font:13px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--rubrica)}
+h1{margin:0 0 22px;font-size:clamp(38px,6vw,60px);line-height:1.05;font-weight:500}
+.apertura .lead{margin:0 0 30px;font-size:clamp(19px,2.2vw,22px);line-height:1.5;color:var(--testo);max-width:36em}
+.pulsanti{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:8px;text-decoration:none;font:600 16px var(--sans);border:1px solid var(--rubrica)}
+.btn.pieno{background:var(--rubrica);color:#fff}.btn.pieno:hover{background:var(--rubrica-scura);color:#fff}
+.btn.vuoto{color:var(--rubrica)}.btn.vuoto:hover{background:var(--rosa)}
+.lune{flex:1 1 340px;margin:0;display:flex;flex-direction:column;align-items:center;gap:12px}
+.lune .griglia{display:grid;grid-template-columns:repeat(6,1fr);gap:10px 6px;width:100%;max-width:400px}
+.lune img{width:100%;height:auto;grid-column:span 2;mix-blend-mode:multiply;border-radius:50%}
+.lune img:nth-child(4){grid-column:2/span 2}
+.lune img{opacity:0;transform:translateY(8px);animation:sorgi .9s ease forwards}
+.lune img:nth-child(2){animation-delay:.12s}.lune img:nth-child(3){animation-delay:.24s}.lune img:nth-child(4){animation-delay:.36s}.lune img:nth-child(5){animation-delay:.48s}
+@keyframes sorgi{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.lune img{animation:none;opacity:1;transform:none}}
+.lune figcaption{font:13px var(--sans);color:var(--tenue);text-align:center}
+.lune figcaption i{font:italic 15px var(--serif)}
+
+.cifre{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.cifre div{padding:22px 10px;text-align:center;border-left:1px solid var(--linea)}
+.cifre div:first-child{border-left:0}
+.cifre b{display:block;font-size:40px;font-weight:500;color:var(--rubrica);line-height:1}
+.cifre span{display:block;margin-top:6px;font:13px var(--sans);color:var(--tenue);letter-spacing:.03em}
+@media(max-width:600px){.cifre{grid-template-columns:repeat(2,1fr)}.cifre div:nth-child(3){border-left:0}.cifre div:nth-child(n+3){border-top:1px solid var(--linea)}.cifre b{font-size:32px}}
+
+section.blocco{padding-top:64px;padding-bottom:16px}
+.titolo-sez{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px;margin-bottom:28px}
+h2{margin:0;font-size:clamp(32px,4vw,40px);font-weight:500;font-variant:small-caps;letter-spacing:.04em;color:var(--rubrica)}
+.titolo-sez p{margin:0;font:15px var(--sans);color:var(--tenue)}
+.intro-sez{margin:-12px 0 28px;font-size:20px;line-height:1.5;color:var(--testo);max-width:40em}
+
+/* biblioteca */
+.libri{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:28px}
+@media(max-width:400px){.libri{grid-template-columns:1fr}}
+@media(max-width:480px){.libro{padding:18px;gap:16px}.copertina{width:88px;height:136px}.libro h3{font-size:24px}}
+.libro{background:#fff;border:1px solid var(--linea2);border-radius:12px;padding:22px;display:flex;gap:22px;transition:box-shadow .2s,transform .2s}
+.libro:hover{box-shadow:0 10px 30px rgba(60,40,20,.10);transform:translateY(-2px)}
+.copertina{text-decoration:none;width:120px;height:184px;flex:none;border:1px solid var(--linea2);box-shadow:3px 4px 0 var(--carta2),5px 8px 16px rgba(60,40,20,.18);background:var(--carta);overflow:hidden;border-radius:2px 4px 4px 2px}
+.copertina img{width:100%;height:100%;object-fit:cover;display:block}
+.copertina.tipo{padding:14px 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;font-family:var(--serif);color:var(--inchiostro)}
+.copertina.tipo .filo{height:1px;width:50px;background:var(--rubrica);margin:6px 0}
+.libro .corpo{display:flex;flex-direction:column;gap:8px;min-width:0}
+.libro .chi{margin:0;font:12px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--tenue)}
+.libro h3{margin:0;font-size:27px;font-weight:500;line-height:1.1}
+.libro h3 a{color:inherit;text-decoration:none}
+.libro .desc{margin:0;font-size:17px;line-height:1.4;color:var(--testo)}
+.etichette{margin:4px 0 0;display:flex;flex-wrap:wrap;gap:6px;font:12px var(--sans)}
+.etichette span{padding:3px 9px;border-radius:999px;background:var(--grigio);color:var(--testo)}
+.etichette span.vivo{background:var(--rosa);color:#6e1414}
+.libro .azioni{margin-top:auto;display:flex;flex-wrap:wrap;gap:4px 18px}
+.libro .azioni a{font:600 15px var(--sans);padding:10px 0;text-decoration:none}
+.libro .azioni a.sec{font-weight:500;color:var(--tenue)}
+.libro .azioni a:hover{text-decoration:underline}
+
+/* tavole */
+.tavole{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.tavola{display:flex;flex-direction:column;background:#fff;border:1px solid var(--linea2);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--inchiostro);transition:box-shadow .2s,transform .2s}
+.tavola:hover{box-shadow:0 10px 30px rgba(60,40,20,.10);transform:translateY(-2px);color:var(--inchiostro)}
+.tavola .vista{height:150px;background:var(--carta);border-bottom:1px solid var(--linea2);display:flex;align-items:center;justify-content:center;padding:14px}
+.tavola .vista img{max-width:100%;max-height:100%;mix-blend-mode:multiply}
+.tavola .vista svg{height:100%;width:auto;max-width:100%}
+.tavola .t{padding:16px 18px 20px;display:flex;flex-direction:column;gap:6px}
+.tavola .dove{font:12px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--rubrica)}
+.tavola .nome{font-size:23px;line-height:1.15}
+.tavola .cosa{font-size:16px;color:var(--tenue);line-height:1.4}
+
+/* docenti e metodo */
+.docenti{background:var(--carta2);border-radius:14px;padding:40px;display:flex;flex-wrap:wrap;gap:32px}
+@media(max-width:600px){.docenti{padding:26px 22px}}
+.docenti .sx{flex:1 1 280px;min-width:0}
+.docenti .sx p{margin:12px 0 0;font-size:19px;line-height:1.5;color:var(--testo)}
+.docenti .dx{flex:2 1 520px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+.docenti h3{margin:0 0 6px;font-size:22px;font-weight:600;display:flex;align-items:center;gap:10px}
+.docenti h3 svg{flex:none;color:var(--rubrica)}
+.docenti .dx p{margin:0;font-size:17px;line-height:1.45;color:var(--testo)}
+.metodo{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px}
+.metodo li{display:flex;flex-direction:column;gap:8px;border-top:2px solid var(--rubrica);padding-top:14px}
+.metodo .n{font-size:44px;line-height:1;color:var(--rubrica)}
+.metodo b{font-size:22px;font-weight:600}
+.metodo span{font-size:17px;line-height:1.45;color:var(--testo)}
+.fregio{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--rubrica);padding:8px 32px 0}
+.fregio i{height:1px;width:120px;background:#c9bda8}
+
+footer{margin-top:64px;border-top:1px solid var(--linea);background:var(--carta2)}
+footer .dentro{padding-top:32px;padding-bottom:32px;display:flex;flex-wrap:wrap;gap:16px 40px;justify-content:space-between;font:14px/1.6 var(--sans);color:#5a534a}
+footer p{margin:0}
 </style>
 </head>
 <body>
+<header class="sito"><div class="dentro">
+  <a class="marchio" href="#"><span class="i-it">Classici della scienza</span><span class="i-en">Classics of science</span></a>
+  <nav aria-label="Sezioni del sito">
+    <a href="#biblioteca"><span class="i-it">Biblioteca</span><span class="i-en">Library</span></a>
+    <a href="#tavole"><span class="i-it">Tavole interattive</span><span class="i-en">Interactive plates</span></a>
+    <a href="#docenti"><span class="i-it">Per i docenti</span><span class="i-en">For teachers</span></a>
+    <a href="#metodo"><span class="i-it">Il metodo</span><span class="i-en">Method</span></a>
+  </nav>
+  <label class="lingua"><select id="lingua" aria-label="Lingua / Language"><option value="it" lang="it">IT</option><option value="en" lang="en">EN</option></select></label>
+</div></header>
+
 <main>
-  <header>
+<section class="apertura dentro">
+  <div class="testo">
     <p class="occhiello">Liceo scientifico «Leonardo da Vinci» · Trento</p>
-    <h1>Classici della scienza interattivi</h1>
-    <p>Newton e Galileo letti come li leggevano i loro contemporanei, con le figure che si costruiscono passo dopo passo insieme alle dimostrazioni.</p>
-    <p lang="en" style="margin-top:.6rem;font-style:italic">Interactive classics of science. The Galilean books marked “English” are also available in English, with a language switch on every page.</p>
-  </header>
-
-  <h2>Isaac Newton</h2>
-  <div class="libri">
-    <article class="libro">
-      <h3>Principi matematici della filosofia naturale</h3>
-      <p class="autore">Nuova traduzione italiana dal latino del 1726</p>
-      <p class="desc">Pagina pilota: Leggi del moto, Lemma I, Prop. I (legge delle aree), Prop. XI (forza verso il fuoco dell'ellisse). Traduzione completa dei tre Libri in 27 fascicoli (versione di lavoro).</p>
-      <div class="azioni">
-        <a class="prim" href="principia-interattivi/verifiche/index_v041.html">Apri il pilota</a>
-        <a href="https://github.com/MaxDvTn/digital-books/tree/main/principia-interattivi/traduzione-pubblica">Fascicoli</a>
-      </div>
-    </article>
+    <h1><span class="i-it">Galileo e Newton, letti come li leggevano i loro contemporanei.</span><span class="i-en">Galileo and Newton, read as their contemporaries read them.</span></h1>
+    <p class="lead"><span class="i-it">I testi completi, con le figure originali. Nei punti chiave il libro si apre in una tavola interattiva: la figura si costruisce passo dopo passo insieme alla dimostrazione, e si possono spostare i punti per vedere che cosa cambia.</span><span class="i-en">The complete texts, with the original figures. At the key points the book opens into an interactive plate: the figure is built step by step together with the proof, and you can drag the points to see what changes.</span></p>
+    <div class="pulsanti">
+      <a class="btn pieno" href="#biblioteca"><span class="i-it">Entra nella biblioteca</span><span class="i-en">Enter the library</span></a>
+      <a class="btn vuoto" href="sidereus_nuncius/interattivo/index.html" data-en="sidereus_nuncius/interattivo/index.en.html"><span class="i-it">Comincia dal Sidereus Nuncius</span><span class="i-en">Start with the Sidereus Nuncius</span></a>
+    </div>
   </div>
+  <figure class="lune">
+    <div class="griglia">
+      <img src="sidereus_nuncius/interattivo/fasi/g1.png" alt="" width="228" height="226">
+      <img src="sidereus_nuncius/interattivo/fasi/g2.png" alt="" width="210" height="210">
+      <img src="sidereus_nuncius/interattivo/fasi/g3.png" alt="" width="212" height="212">
+      <img src="sidereus_nuncius/interattivo/fasi/g4.png" alt="" width="218" height="216">
+      <img src="sidereus_nuncius/interattivo/fasi/g5.png" alt="" width="214" height="214">
+    </div>
+    <figcaption><span class="i-it">Le fasi della Luna disegnate da Galileo</span><span class="i-en">The phases of the Moon as drawn by Galileo</span> · <i>Sidereus Nuncius</i>, Venezia 1610</figcaption>
+  </figure>
+</section>
 
-  <h2>Galileo Galilei</h2>
-  <div class="libri">
-    <article class="libro">
-      <h3>Sidereus Nuncius</h3>
-      <p class="autore">1610 · trad. di Luisa Lanzillotta, con il latino</p>
-      <p class="desc">Libro sfogliabile con le figure interattive: le fasi della Luna e le osservazioni dei satelliti di Giove confrontate con un modello moderno.</p>
-      <div class="azioni">
-        <a class="prim" href="sidereus_nuncius/interattivo/index.html">Leggi</a>
-        <a href="sidereus_nuncius/interattivo/index.en.html" lang="en">English</a>
-        <a href="sidereus_nuncius/sidereus_nuncius.pdf">PDF</a>
-      </div>
-    </article>
-    <article class="libro">
-      <h3>Discorsi e dimostrazioni matematiche intorno a due nuove scienze</h3>
-      <p class="autore">1638</p>
-      <p class="desc">Libro sfogliabile con le schede interattive sul moto equabile e sul moto accelerato.</p>
-      <div class="azioni">
-        <a class="prim" href="discorsi/interattivo/index.html">Leggi</a>
-        <a href="discorsi/interattivo/index.en.html" lang="en">English</a>
-        <a href="discorsi/discorsi.pdf">PDF</a>
-      </div>
-    </article>
-    <article class="libro">
-      <h3>Dialogo sopra i due massimi sistemi del mondo</h3>
-      <p class="autore">1632</p>
-      <p class="desc">Edizione tipografica completa. La versione interattiva è in preparazione.</p>
-      <div class="azioni">
-        <a class="prim" href="dialogo_massimi_sistemi/dialogo_massimi_sistemi.pdf">PDF</a>
-      </div>
-    </article>
-    <article class="libro">
-      <h3>Il Saggiatore</h3>
-      <p class="autore">1623</p>
-      <p class="desc">Edizione tipografica completa sull'Edizione Nazionale, con le incisioni originali. La versione interattiva è in preparazione.</p>
-      <div class="azioni">
-        <a class="prim" href="il_saggiatore/il_saggiatore.pdf">PDF</a>
-      </div>
-    </article>
+<div class="dentro">
+  <div class="cifre">
+    <div><b>5</b><span class="i-it">libri</span><span class="i-en">books</span></div>
+    <div><b>9</b><span class="i-it">tavole interattive</span><span class="i-en">interactive plates</span></div>
+    <div><b>2</b><span class="i-it">lingue, italiano e inglese</span><span class="i-en">languages, Italian and English</span></div>
+    <div><b>1610</b><span class="i-it">–1726, da Galileo a Newton</span><span class="i-en">–1726, from Galileo to Newton</span></div>
   </div>
+</div>
 
-  <footer>
-    A cura di Massimo Bosetti · <i>Principia</i> CC BY-SA 4.0 · libri di Galileo CC BY-NC-SA 4.0 · codice MIT<br>
-    <a href="https://github.com/MaxDvTn/digital-books">Sorgenti su GitHub</a>
-  </footer>
+<section id="biblioteca" class="blocco dentro">
+  <div class="titolo-sez">
+    <h2><span class="i-it">La biblioteca</span><span class="i-en">The library</span></h2>
+    <p><span class="i-it">5 libri · 2 già interattivi in italiano e in inglese</span><span class="i-en">5 books · 2 already interactive in Italian and English</span></p>
+  </div>
+  <div class="libri">
+
+    <article class="libro">
+      <a class="copertina" href="sidereus_nuncius/interattivo/index.html" data-en="sidereus_nuncius/interattivo/index.en.html" tabindex="-1" aria-hidden="true"><img src="sidereus_nuncius/interattivo/fac/frontespizio_1610.png" alt="" loading="lazy"></a>
+      <div class="corpo">
+        <p class="chi">Galileo · 1610</p>
+        <h3><a href="sidereus_nuncius/interattivo/index.html" data-en="sidereus_nuncius/interattivo/index.en.html">Sidereus Nuncius</a></h3>
+        <p class="desc"><span class="i-it">La Luna montuosa, la Via Lattea fatta di stelle, i quattro satelliti di Giove.</span><span class="i-en">The mountainous Moon, the Milky Way made of stars, the four moons of Jupiter.</span></p>
+        <p class="etichette"><span class="vivo"><span class="i-it">Interattivo</span><span class="i-en">Interactive</span></span><span><span class="i-it">IT · EN · latino a fronte</span><span class="i-en">IT · EN · Latin facing text</span></span><span><span class="i-it">4 tavole</span><span class="i-en">4 plates</span></span></p>
+        <div class="azioni">
+          <a href="sidereus_nuncius/interattivo/index.html" data-en="sidereus_nuncius/interattivo/index.en.html"><span class="i-it">Apri il libro →</span><span class="i-en">Open the book →</span></a>
+          <a class="sec" href="sidereus_nuncius/sidereus_nuncius.pdf">PDF</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="libro">
+      <a class="copertina" href="discorsi/interattivo/index.html" data-en="discorsi/interattivo/index.en.html" tabindex="-1" aria-hidden="true"><img src="discorsi/interattivo/fac/frontespizio_1638.png" alt="" loading="lazy"></a>
+      <div class="corpo">
+        <p class="chi">Galileo · 1638</p>
+        <h3><a href="discorsi/interattivo/index.html" data-en="discorsi/interattivo/index.en.html"><span class="i-it">Discorsi e dimostrazioni</span><span class="i-en">Two New Sciences</span></a></h3>
+        <p class="desc"><span class="i-it">Le due nuove scienze: la resistenza dei materiali e il moto, dalla caduta dei gravi alla parabola.</span><span class="i-en">The two new sciences: the strength of materials and motion, from falling bodies to the parabola.</span></p>
+        <p class="etichette"><span class="vivo"><span class="i-it">Interattivo</span><span class="i-en">Interactive</span></span><span>IT · EN</span><span><span class="i-it">1 tavola · 3 in preparazione</span><span class="i-en">1 plate · 3 in preparation</span></span></p>
+        <div class="azioni">
+          <a href="discorsi/interattivo/index.html" data-en="discorsi/interattivo/index.en.html"><span class="i-it">Apri il libro →</span><span class="i-en">Open the book →</span></a>
+          <a class="sec" href="discorsi/discorsi.pdf">PDF</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="libro">
+      <a class="copertina tipo" href="principia-interattivi/verifiche/index_v041.html" tabindex="-1" aria-hidden="true">
+        <span style="font-size:9px;letter-spacing:.12em">PHILOSOPHIÆ</span>
+        <span style="font-size:12px;letter-spacing:.08em;font-weight:600">NATURALIS</span>
+        <span style="font-size:10px;letter-spacing:.1em">PRINCIPIA</span>
+        <span style="font-size:9px;letter-spacing:.12em">MATHEMATICA</span>
+        <span class="filo"></span>
+        <span style="font-size:9px;font-style:italic">Londini, MDCCXXVI</span>
+      </a>
+      <div class="corpo">
+        <p class="chi">Newton · 1726</p>
+        <h3><a href="principia-interattivi/verifiche/index_v041.html">Principia</a></h3>
+        <p class="desc"><span class="i-it">Nuova traduzione italiana dal latino della terza edizione, in 27 fascicoli.</span><span class="i-en">A new Italian translation from the Latin of the third edition, in 27 instalments.</span></p>
+        <p class="etichette"><span class="vivo"><span class="i-it">Pilota interattivo</span><span class="i-en">Interactive pilot</span></span><span><span class="i-it">solo italiano</span><span class="i-en">Italian only</span></span><span><span class="i-it">traduzione v0.1</span><span class="i-en">translation v0.1</span></span></p>
+        <div class="azioni">
+          <a href="principia-interattivi/verifiche/index_v041.html"><span class="i-it">Apri il pilota →</span><span class="i-en">Open the pilot →</span></a>
+          <a class="sec" href="https://github.com/MaxDvTn/digital-books/tree/main/principia-interattivi/traduzione-pubblica"><span class="i-it">Fascicoli</span><span class="i-en">Translation</span></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="libro">
+      <a class="copertina tipo" href="dialogo_massimi_sistemi/dialogo_massimi_sistemi.pdf" tabindex="-1" aria-hidden="true">
+        <span style="font-size:13px;letter-spacing:.1em;font-weight:600">DIALOGO</span>
+        <span style="font-size:9px;font-style:italic">sopra i due</span>
+        <span style="font-size:10px;letter-spacing:.1em">MASSIMI SISTEMI</span>
+        <span style="font-size:9px;font-style:italic">del mondo</span>
+        <span class="filo"></span>
+        <span style="font-size:9px;font-style:italic">Fiorenza, MDCXXXII</span>
+      </a>
+      <div class="corpo">
+        <p class="chi">Galileo · 1632</p>
+        <h3><a href="dialogo_massimi_sistemi/dialogo_massimi_sistemi.pdf"><span class="i-it">Dialogo sopra i due massimi sistemi</span><span class="i-en">Dialogue Concerning the Two Chief World Systems</span></a></h3>
+        <p class="desc"><span class="i-it">Tolomeo contro Copernico, in quattro giornate di conversazione.</span><span class="i-en">Ptolemy against Copernicus, in four days of conversation.</span></p>
+        <p class="etichette"><span>PDF</span><span><span class="i-it">scene interattive in preparazione</span><span class="i-en">interactive scenes in preparation</span></span></p>
+        <div class="azioni"><a href="dialogo_massimi_sistemi/dialogo_massimi_sistemi.pdf"><span class="i-it">Scarica il PDF →</span><span class="i-en">Download the PDF (Italian) →</span></a></div>
+      </div>
+    </article>
+
+    <article class="libro">
+      <a class="copertina tipo" href="il_saggiatore/il_saggiatore.pdf" tabindex="-1" aria-hidden="true">
+        <span style="font-size:9px;font-style:italic">Il</span>
+        <span style="font-size:13px;letter-spacing:.1em;font-weight:600">SAGGIATORE</span>
+        <span style="font-size:8px;letter-spacing:.06em;line-height:1.3">NEL QUALE CON BILANCIA<br>ESQUISITA E GIUSTA</span>
+        <span class="filo"></span>
+        <span style="font-size:9px;font-style:italic">Roma, MDCXXIII</span>
+      </a>
+      <div class="corpo">
+        <p class="chi">Galileo · 1623</p>
+        <h3><a href="il_saggiatore/il_saggiatore.pdf"><span class="i-it">Il Saggiatore</span><span class="i-en">The Assayer</span></a></h3>
+        <p class="desc"><span class="i-it">Il libro della natura scritto in lingua matematica, le comete, le qualità dei corpi.</span><span class="i-en">The book of nature written in the language of mathematics, comets, the qualities of bodies.</span></p>
+        <p class="etichette"><span>PDF</span><span><span class="i-it">estratti in preparazione</span><span class="i-en">excerpts in preparation</span></span></p>
+        <div class="azioni"><a href="il_saggiatore/il_saggiatore.pdf"><span class="i-it">Scarica il PDF →</span><span class="i-en">Download the PDF (Italian) →</span></a></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<div class="fregio" aria-hidden="true"><i></i>◆<i></i></div>
+
+<section id="tavole" class="blocco dentro">
+  <div class="titolo-sez"><h2><span class="i-it">Tavole interattive</span><span class="i-en">Interactive plates</span></h2></div>
+  <p class="intro-sez"><span class="i-it">Le figure dei libri che prendono vita. Ogni tavola si apre nel punto del testo in cui serve, oppure da qui, da sola, per una lezione.</span><span class="i-en">The figures of the books come to life. Each plate opens at the point in the text where it is needed, or from here, on its own, for a lesson.</span></p>
+  <div class="tavole">
+    <a class="tavola" href="sidereus_nuncius/interattivo/index.html#fasi" data-en="sidereus_nuncius/interattivo/index.en.html#fasi">
+      <span class="vista"><img src="sidereus_nuncius/interattivo/fasi/g3.png" alt="" loading="lazy"></span>
+      <span class="t"><span class="dove">Sidereus · fig. 1</span><span class="nome"><span class="i-it">Le fasi della Luna</span><span class="i-en">The phases of the Moon</span></span>
+      <span class="cosa"><span class="i-it">Dal cannocchiale allo spazio: perché il confine della luce è frastagliato.</span><span class="i-en">From the telescope to space: why the edge of the light is jagged.</span></span></span>
+    </a>
+    <a class="tavola" href="sidereus_nuncius/interattivo/index.html#cannocchiale" data-en="sidereus_nuncius/interattivo/index.en.html#cannocchiale">
+      <span class="vista"><img src="sidereus_nuncius/images/figura05.png" alt="" loading="lazy"></span>
+      <span class="t"><span class="dove">Sidereus · fig. 5</span><span class="nome"><span class="i-it">Come funziona il cannocchiale</span><span class="i-en">How the telescope works</span></span>
+      <span class="cosa"><span class="i-it">Due lenti e i raggi che entrano nell'occhio: perché gli oggetti appaiono più grandi.</span><span class="i-en">Two lenses and the rays entering the eye: why objects look larger.</span></span></span>
+    </a>
+    <a class="tavola" href="sidereus_nuncius/interattivo/index.html#luna" data-en="sidereus_nuncius/interattivo/index.en.html#luna">
+      <span class="vista"><img src="sidereus_nuncius/images/figura07.png" alt="" loading="lazy"></span>
+      <span class="t"><span class="dove">Sidereus · fig. 7</span><span class="nome"><span class="i-it">Quanto sono alti i monti della Luna?</span><span class="i-en">How high are the mountains of the Moon?</span></span>
+      <span class="cosa"><span class="i-it">Un raggio di Sole radente e il teorema di Pitagora, in sette passi.</span><span class="i-en">A grazing ray of sunlight and Pythagoras' theorem, in seven steps.</span></span></span>
+    </a>
+    <a class="tavola" href="sidereus_nuncius/interattivo/index.html#giove" data-en="sidereus_nuncius/interattivo/index.en.html#giove">
+      <span class="vista"><img src="sidereus_nuncius/images/figura08.png" alt="" loading="lazy"></span>
+      <span class="t"><span class="dove">Sidereus · figg. 8–72</span><span class="nome"><span class="i-it">L'osservatorio degli Astri Medicei</span><span class="i-en">The Medicean Stars observatory</span></span>
+      <span class="cosa"><span class="i-it">65 disegni di Giove accanto al cielo di quella sera, ricostruito oggi.</span><span class="i-en">65 drawings of Jupiter next to the sky of that evening, reconstructed today.</span></span></span>
+    </a>
+    <a class="tavola" href="discorsi/interattivo/index.html#equabile" data-en="discorsi/interattivo/index.en.html#equabile">
+      <span class="vista"><svg viewBox="0 0 220 110" aria-hidden="true"><g stroke="#22201c" stroke-width="1.6" fill="none"><path d="M10 35H210"/><path d="M10 80H210"/></g><g fill="#871919"><circle cx="10" cy="35" r="3.5"/><circle cx="60" cy="35" r="3.5"/><circle cx="110" cy="35" r="3.5"/><circle cx="160" cy="35" r="3.5"/><circle cx="210" cy="35" r="3.5"/></g><g fill="#1f5fa8"><circle cx="10" cy="80" r="3.5"/><circle cx="35" cy="80" r="3.5"/><circle cx="60" cy="80" r="3.5"/><circle cx="85" cy="80" r="3.5"/><circle cx="110" cy="80" r="3.5"/><circle cx="135" cy="80" r="3.5"/><circle cx="160" cy="80" r="3.5"/><circle cx="185" cy="80" r="3.5"/><circle cx="210" cy="80" r="3.5"/></g><g font-family="EB Garamond,serif" font-style="italic" font-size="14" fill="#6b6458"><text x="196" y="26">s</text><text x="196" y="101">t</text></g></svg></span>
+      <span class="t"><span class="dove"><span class="i-it">Discorsi · Giornata Terza</span><span class="i-en">Two New Sciences · Third Day</span></span><span class="nome"><span class="i-it">Il moto equabile e il Teorema I</span><span class="i-en">Uniform motion and Theorem I</span></span>
+      <span class="cosa"><span class="i-it">Una proporzione dimostrata senza numeri, con i moltiplici di Euclide.</span><span class="i-en">A proportion proved without numbers, with Euclid's equimultiples.</span></span></span>
+    </a>
+    <a class="tavola" href="principia-interattivi/verifiche/index_v041.html#prop-1">
+      <span class="vista"><svg viewBox="0 0 200 120" aria-hidden="true"><g stroke="#22201c" stroke-width="1.4" fill="none"><path d="M30 95 L60 22 L112 18 L160 40 L182 82"/></g><g fill="#871919" fill-opacity=".14" stroke="#871919" stroke-width="1"><path d="M95 100 L30 95 L60 22Z"/><path d="M95 100 L60 22 L112 18Z" fill-opacity=".24"/><path d="M95 100 L112 18 L160 40Z"/><path d="M95 100 L160 40 L182 82Z" fill-opacity=".24"/></g><circle cx="95" cy="100" r="4" fill="#22201c"/><text x="101" y="114" font-family="EB Garamond,serif" font-style="italic" font-size="14" fill="#6b6458">S</text></svg></span>
+      <span class="t"><span class="dove">Principia · <span class="i-it">Libro I, Prop. I</span><span class="i-en">Book I, Prop. I</span></span><span class="nome"><span class="i-it">La legge delle aree</span><span class="i-en">The law of areas</span></span>
+      <span class="cosa"><span class="i-it">Impulsi verso un centro e triangoli di area eguale, fino al limite.</span><span class="i-en">Impulses towards a centre and triangles of equal area, up to the limit.</span></span></span>
+    </a>
+    <a class="tavola" href="principia-interattivi/verifiche/index_v041.html#prop-11">
+      <span class="vista"><svg viewBox="0 0 200 120" aria-hidden="true"><ellipse cx="100" cy="60" rx="82" ry="48" fill="none" stroke="#22201c" stroke-width="1.5"/><circle cx="57" cy="60" r="4" fill="#871919"/><circle cx="143" cy="60" r="2.5" fill="#6b6458"/><path d="M150 19 L64 57" stroke="#871919" stroke-width="1.6" marker-end="url(#fr)"/><circle cx="150" cy="19" r="4.5" fill="#1f5fa8"/><defs><marker id="fr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#871919"/></marker></defs><text x="48" y="82" font-family="EB Garamond,serif" font-style="italic" font-size="14" fill="#6b6458">S</text><text x="156" y="16" font-family="EB Garamond,serif" font-style="italic" font-size="14" fill="#6b6458">P</text></svg></span>
+      <span class="t"><span class="dove">Principia · <span class="i-it">Libro I, Prop. XI</span><span class="i-en">Book I, Prop. XI</span></span><span class="nome"><span class="i-it">La forza verso il fuoco dell'ellisse</span><span class="i-en">The force towards the focus of the ellipse</span></span>
+      <span class="cosa"><span class="i-it">Perché un'orbita ellittica chiede una forza come l'inverso del quadrato.</span><span class="i-en">Why an elliptical orbit calls for an inverse-square force.</span></span></span>
+    </a>
+  </div>
+</section>
+
+<section id="docenti" class="blocco dentro">
+  <div class="docenti">
+    <div class="sx">
+      <h2><span class="i-it">Per i docenti</span><span class="i-en">For teachers</span></h2>
+      <p><span class="i-it">Materiali pensati per la classe del liceo scientifico, sulla LIM, sul tablet o sul telefono.</span><span class="i-en">Materials designed for the upper-secondary classroom, on the interactive whiteboard, a tablet or a phone.</span></p>
+    </div>
+    <div class="dx">
+      <div>
+        <h3><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"/><path d="M9.5 9.3a2.6 2.6 0 1 1 3.6 2.4c-.7.3-1.1.9-1.1 1.6v.5"/><circle cx="12" cy="17" r=".6" fill="currentColor"/></svg><span class="i-it">Domande per la classe</span><span class="i-en">Questions for the class</span></h3>
+        <p><span class="i-it">Ogni tavola ha domande con risposta nascosta, dal calcolo di Galileo alla lettura moderna.</span><span class="i-en">Every plate has questions with hidden answers, from Galileo's own calculation to a modern reading.</span></p>
+      </div>
+      <div>
+        <h3><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 19h16"/><path d="M6 15l4-5 3 3 5-7"/></svg><span class="i-it">Lettura moderna</span><span class="i-en">Modern reading</span></h3>
+        <p><span class="i-it">Il ragionamento antico riscritto con la fisica di oggi, e dove Galileo o Newton sbagliano.</span><span class="i-en">The old argument rewritten with today's physics, and where Galileo or Newton go wrong.</span></p>
+      </div>
+      <div>
+        <h3><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 6c-2-1.5-5-2-8-1.5v13c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5v-13c-3-.5-6 0-8 1.5z"/><path d="M12 6v13"/></svg><span class="i-it">Il libro da sfogliare</span><span class="i-en">A book to leaf through</span></h3>
+        <p><span class="i-it">Le pagine si girano come in un volume antico, con il latino a fronte quando c'è. Indice e ricerca in ogni libro.</span><span class="i-en">Pages turn as in an old volume, with the Latin facing text where available. Contents and search in every book.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="metodo" class="blocco dentro">
+  <div class="titolo-sez"><h2><span class="i-it">Il metodo</span><span class="i-en">Method</span></h2></div>
+  <ol class="metodo">
+    <li><span class="n">I</span><b><span class="i-it">Dal testo originale</span><span class="i-en">From the original text</span></b><span><span class="i-it">Si parte sempre dalla stampa d'epoca o da un'edizione critica, mai a memoria.</span><span class="i-en">Always from the period printing or a critical edition, never from memory.</span></span></li>
+    <li><span class="n">II</span><b><span class="i-it">Frase per frase</span><span class="i-en">Sentence by sentence</span></b><span><span class="i-it">Ogni passo della dimostrazione diventa un passo della costruzione geometrica.</span><span class="i-en">Each step of the proof becomes a step of the geometric construction.</span></span></li>
+    <li><span class="n">III</span><b><span class="i-it">Verifica indipendente</span><span class="i-en">Independent check</span></b><span><span class="i-it">Fedeltà, matematica e numeri controllati da chi non ha prodotto il lavoro, con script propri.</span><span class="i-en">Faithfulness, mathematics and numbers checked by someone who did not produce the work, with their own scripts.</span></span></li>
+    <li><span class="n">IV</span><b><span class="i-it">Aperto a tutti</span><span class="i-en">Open to all</span></b><span><span class="i-it">Testi in Creative Commons, codice MIT, sorgenti pubblici su GitHub.</span><span class="i-en">Texts under Creative Commons, code under MIT, public sources on GitHub.</span></span></li>
+  </ol>
+</section>
 </main>
+
+<footer><div class="dentro">
+  <p><span class="i-it">A cura di</span><span class="i-en">Edited by</span> Massimo Bosetti · Liceo scientifico «Leonardo da Vinci», Trento</p>
+  <p><i>Principia</i> CC BY-SA 4.0 · <span class="i-it">libri di Galileo</span><span class="i-en">Galileo's books</span> CC BY-NC-SA 4.0 · <span class="i-it">codice</span><span class="i-en">code</span> MIT · <a href="https://github.com/MaxDvTn/digital-books"><span class="i-it">sorgenti su GitHub</span><span class="i-en">sources on GitHub</span></a></p>
+</div></footer>
+
+<script>
+(function(){
+  // la lingua scelta vale anche nei libri (stessa chiave «lingua» del selettore nelle pagine dei libri)
+  const sel = document.getElementById("lingua");
+  let l = null; try { l = localStorage.getItem("lingua"); } catch (e) {}
+  if (l !== "it" && l !== "en") l = (navigator.language || "it").slice(0, 2).toLowerCase() === "it" ? "it" : "en";
+  function imposta(x){
+    l = x; sel.value = x;
+    document.documentElement.lang = x; document.documentElement.classList.toggle("l-en", x === "en");
+    document.title = x === "en" ? "Interactive classics of science" : "Classici della scienza interattivi";
+    document.querySelectorAll("a[data-en]").forEach(a => { if (!a.dataset.it) a.dataset.it = a.getAttribute("href"); a.setAttribute("href", x === "en" ? a.dataset.en : a.dataset.it); });
+  }
+  imposta(l);
+  sel.addEventListener("change", () => { try { localStorage.setItem("lingua", sel.value); } catch (e) {} imposta(sel.value); });
+})();
+</script>
 </body>
 </html>

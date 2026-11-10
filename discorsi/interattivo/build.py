@@ -10,7 +10,7 @@ fac/*.png e le figure in ../images/.
 """
 import base64, json, os, re, subprocess, sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "strumenti"))
-import copertina, lingue
+import copertina, lingue, navigazione
 from collections import Counter
 
 QUI = os.path.dirname(os.path.abspath(__file__))
@@ -188,6 +188,8 @@ pagina = (leggi("template.html")
           .replace("%%SCHEDA_EQ_JS%%", leggi("scheda_equabile.js")))
 if "%%" in pagina:
     sys.exit("segnaposto non sostituiti: %s" % sorted(set(re.findall(r"%%[A-Z_]+%%", pagina))))
+# ---------------------------------------------------------------- navigazione (indice dai titoli del testo)
+pagina = navigazione.applica(pagina, casa="../../index.html")
 # ---------------------------------------------------------------- lingua
 pagina = (pagina.replace('<html lang="it">', '<html lang="%s">' % LINGUA)
           .replace("</div></header>", lingue.menu_html(LINGUA, DISPONIBILI) + "</div></header>", 1)
