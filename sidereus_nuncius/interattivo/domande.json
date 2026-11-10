@@ -1,0 +1,302 @@
+{
+  "libro": {"it": "Sidereus Nuncius", "en": "Sidereus Nuncius"},
+  "temi": {
+    "cannocchiale": {"it": "Il cannocchiale", "en": "The telescope"},
+    "luna": {"it": "La faccia della Luna", "en": "The face of the Moon"},
+    "monti": {"it": "I monti della Luna", "en": "The mountains of the Moon"},
+    "cinerea": {"it": "La luce cinerea", "en": "Earthshine"},
+    "stelle": {"it": "Stelle, Via Lattea e nebulose", "en": "Stars, Milky Way and nebulae"},
+    "giove": {"it": "Gli Astri Medicei", "en": "The Medicean Stars"},
+    "conclusioni": {"it": "Le conclusioni su Giove", "en": "The conclusions on Jupiter"}
+  },
+  "domande": [
+    {
+      "id": "SN-01", "tema": "cannocchiale", "dopo": "cannocchiale", "tipo": "numero", "livello": 1, "minuti": 3,
+      "testo": {"it": "Nel proemio Galileo scrive che al cannocchiale la Luna, lontana quasi sessanta raggi terrestri, appare vicina come se distasse solo due di queste misure. Di quante volte appare ingrandito il suo diametro?",
+                "en": "In the introduction Galileo writes that through the telescope the Moon, nearly sixty Earth semi-diameters away, looks as near as if it were only two of those measures away. By how many times does its diameter appear magnified?"},
+      "valore": 30, "tolleranza": 0, "unita": {"it": "volte", "en": "times"},
+      "indizio": {"it": "Un oggetto che sembra N volte più vicino appare N volte più largo.", "en": "An object that looks N times nearer looks N times wider."},
+      "passo": {"id": "p004", "termini": {"it": ["sessanta", "trenta volte"], "en": ["sixty", "thirty times"]}},
+      "risposta": {"it": "30 volte: 60 : 2 = 30. Galileo lo dice subito dopo: il diametro appare quasi trenta volte maggiore, la superficie quasi novecento.",
+                   "en": "30 times: 60 : 2 = 30. Galileo says so right after: the diameter appears about thirty times larger, the surface about nine hundred."},
+      "docenti": {
+        "commento": {"it": "Lega la distanza apparente alla dimensione angolare: a parità di oggetto l'angolo è inversamente proporzionale alla distanza. Si può chiedere di continuare con la superficie (900) e il volume (27 000), che Galileo cita nella stessa frase.",
+                     "en": "Links apparent distance to angular size: for the same object the angle is inversely proportional to the distance. Students can go on to the surface (900) and the volume (27,000), which Galileo quotes in the same sentence."},
+        "errori": [{"it": "Rispondere 58: la differenza al posto del rapporto.", "en": "Answering 58: the difference instead of the ratio."},
+                   {"it": "Rispondere 900, confondendo diametro e superficie.", "en": "Answering 900, mixing up diameter and surface."}],
+        "obiettivi": {"it": "Proporzionalità inversa; ingrandimento angolare.", "en": "Inverse proportionality; angular magnification."}
+      }
+    },
+    {
+      "id": "SN-02", "tema": "cannocchiale", "dopo": "cannocchiale", "tipo": "scheda", "livello": 2, "minuti": 5,
+      "testo": {"it": "Il primo cannocchiale di Galileo mostrava gli oggetti «tre volte più vicini e nove volte più grandi»; l'ultimo li mostra «trenta volte più vicini». Imposta nella scheda l'ultimo strumento, poi leggi: di quante volte ingrandisce le superfici?",
+                "en": "Galileo's first telescope showed objects «one-third of the distance off and nine times larger»; the last one shows them «more than thirty times nearer». Set the last instrument in the panel, then read: by how many times does it magnify surfaces?"},
+      "scheda": {"id": "cannocchiale", "apri": {"m": 3}, "verifica": [{"m": [30, 30]}],
+                 "ok": {"it": "Lo strumento è a 30× nei diametri. Ora guarda l'ingrandimento delle superfici.", "en": "The instrument is at 30× in diameter. Now look at the magnification of surfaces."},
+                 "no": {"it": "Non ancora: l'ultimo strumento mostra gli oggetti trenta volte più vicini.", "en": "Not yet: the last instrument shows objects thirty times nearer."}},
+      "indizio": {"it": "Nel primo strumento «tre volte più vicini» e «nove volte più grandi» descrivono la stessa cosa: 3 × 3 = 9.", "en": "For the first instrument «one-third of the distance» and «nine times larger» describe the same thing: 3 × 3 = 9."},
+      "passo": {"id": "p008", "termini": {"it": ["nove volte", "quasi mille"], "en": ["nine times", "thousand"]}},
+      "risposta": {"it": "900 volte (30 × 30): è il «quasi mille volte» di Galileo. Per lui «più vicino» si riferisce ai diametri e «più grande» alle superfici: 3 e 9 per il primo strumento, 30 e 900 per l'ultimo.",
+                   "en": "900 times (30 × 30): Galileo's «nearly a thousand times». For him «nearer» refers to diameters and «larger» to surfaces: 3 and 9 for the first instrument, 30 and 900 for the last."},
+      "docenti": {
+        "commento": {"it": "Galileo misura l'ingrandimento sulle superfici, noi oggi sui diametri (ingrandimento angolare). La domanda fa emergere che i due numeri descrivono lo stesso strumento.",
+                     "en": "Galileo measures magnification on surfaces, we measure it on diameters (angular magnification). The question shows that the two numbers describe the same instrument."},
+        "errori": [{"it": "Pensare che «più vicino» e «più grande» siano due effetti diversi dello strumento.", "en": "Thinking that «nearer» and «larger» are two different effects of the instrument."},
+                   {"it": "Sommare invece di moltiplicare: 30 + 30 = 60.", "en": "Adding instead of multiplying: 30 + 30 = 60."}],
+        "obiettivi": {"it": "Scala dei diametri e delle aree (fattore al quadrato).", "en": "Scaling of lengths and areas (squared factor)."}
+      }
+    },
+    {
+      "id": "SN-03", "tema": "cannocchiale", "dopo": "cannocchiale", "tipo": "scelta", "livello": 1, "minuti": 4,
+      "testo": {"it": "Prima di toccare il cursore. Per controllare uno strumento che ingrandisce le superfici 400 volte, Galileo guarda due quadrati di carta, il piccolo al cannocchiale e il grande a occhio nudo. Quante volte il lato del grande deve superare quello del piccolo perché le due figure coincidano?",
+                "en": "Before touching the slider. To check an instrument that magnifies surfaces 400 times, Galileo looks at two paper squares, the small one through the telescope and the large one with the naked eye. How many times longer than the small one must the side of the large square be for the two figures to match?"},
+      "opzioni": [{"it": "400 volte", "en": "400 times"}, {"it": "20 volte", "en": "20 times"}, {"it": "200 volte", "en": "200 times"}, {"it": "40 volte", "en": "40 times"}],
+      "giusta": 1,
+      "scheda": {"id": "cannocchiale", "apri": {"m": 8}},
+      "indizio": {"it": "L'area di un quadrato cresce come il quadrato del lato.", "en": "The area of a square grows as the square of its side."},
+      "passo": {"id": "p008", "termini": {"it": ["due quadrati", "venti volte"], "en": ["square pieces of paper", "twenty times"]}},
+      "risposta": {"it": "20 volte: 20² = 400. Nella scheda le due figure coincidono quando l'ingrandimento dei diametri vale 20.",
+                   "en": "20 times: 20² = 400. In the panel the two figures match when the magnification of diameters is 20."},
+      "docenti": {
+        "commento": {"it": "Formato «prevedi, poi verifica»: si fa scegliere la risposta prima di aprire la scheda, poi si controlla spostando il cursore. È anche un esempio di misura per confronto, senza strumenti graduati.",
+                     "en": "«Predict, then check» format: students choose before opening the panel, then check with the slider. It is also an example of measurement by comparison, without graduated instruments."},
+        "errori": [{"it": "Scegliere 400: non distinguere tra lato e area.", "en": "Choosing 400: not distinguishing side and area."},
+                   {"it": "Scegliere 200: dimezzare invece di estrarre la radice.", "en": "Choosing 200: halving instead of taking the square root."}],
+        "obiettivi": {"it": "Relazione tra lati e aree nelle figure simili.", "en": "Relation between sides and areas of similar figures."}
+      }
+    },
+    {
+      "id": "SN-04", "tema": "luna", "dopo": "p015", "tipo": "testo", "livello": 1, "minuti": 4,
+      "testo": {"it": "Guardando la Luna di quattro o cinque giorni, Galileo conclude che non è una sfera perfettamente liscia. Che cosa vedrebbe sul confine tra luce e ombra se lo fosse? Che cosa vede invece? Cerca il passo con la ricerca del libro.",
+                "en": "Looking at the Moon four or five days old, Galileo concludes that it is not a perfectly smooth sphere. What would he see along the boundary between light and shadow if it were? What does he see instead? Find the passage with the book's search."},
+      "indizio": {"it": "Prova a cercare «sferico» o «ovale».", "en": "Try searching for «spherical» or «ellipse»."},
+      "passo": {"id": "p012", "termini": {"it": ["linea ovale", "aspra"], "en": ["ellipse", "wavy"]}},
+      "risposta": {"it": "Su una sfera liscia il confine sarebbe una linea regolare, ovale. Galileo vede invece una linea «ineguale, aspra e assai sinuosa»: le cime si illuminano prima delle valli. È il primo indizio di monti e cavità.",
+                   "en": "On a smooth sphere the boundary would be a regular line, an ellipse. Galileo sees instead an «irregular, uneven, and very wavy line»: peaks light up before valleys. It is the first clue of mountains and hollows."},
+      "docenti": {
+        "commento": {"it": "Buona occasione per far lavorare sul testo: si chiede di copiare le parole esatte e poi di spiegare perché una sfera liscia darebbe un'ellisse (proiezione di un cerchio massimo visto di sbieco). Si può aprire la scheda delle fasi alla figura 1 per confrontare.",
+                     "en": "A good chance to work on the text: ask for the exact words, then why a smooth sphere would give an ellipse (projection of a great circle seen at an angle). The phases panel at figure 1 is useful for comparison."},
+        "errori": [{"it": "Rispondere che il confine «è curvo»: è curvo in entrambi i casi, la differenza è la regolarità.", "en": "Answering that the boundary «is curved»: it is curved in both cases, the difference is regularity."}],
+        "obiettivi": {"it": "Leggere un argomento osservativo; dal fenomeno alla causa.", "en": "Reading an observational argument; from phenomenon to cause."}
+      }
+    },
+    {
+      "id": "SN-05", "tema": "luna", "dopo": "p015", "tipo": "scelta", "livello": 2, "minuti": 5,
+      "testo": {"it": "Prevedi, poi verifica nello spazio. Alla luna piena, dove si trova la Luna?",
+                "en": "Predict, then check from space. At full Moon, where is the Moon?"},
+      "opzioni": [{"it": "Dalla parte opposta al Sole rispetto alla Terra", "en": "On the opposite side of the Earth from the Sun"},
+                  {"it": "Tra la Terra e il Sole", "en": "Between the Earth and the Sun"},
+                  {"it": "A 90° dalla direzione del Sole", "en": "At 90° from the direction of the Sun"},
+                  {"it": "Ovunque: la fase dipende da quanta ombra della Terra cade sulla Luna", "en": "Anywhere: the phase depends on how much of the Earth's shadow falls on the Moon"}],
+      "giusta": 0,
+      "scheda": {"id": "fasi", "apri": {"giorno": 14.8, "vista": "spazio"}},
+      "indizio": {"it": "Il Sole illumina sempre metà della Luna. Da dove si vede tutta la metà illuminata?", "en": "The Sun always lights half of the Moon. From where can the whole lit half be seen?"},
+      "risposta": {"it": "Dalla parte opposta al Sole: Sole, Terra e Luna sono quasi allineati, con la Terra in mezzo, e da qui vediamo tutto l'emisfero illuminato. Tra Terra e Sole c'è la luna nuova, a 90° i quarti. L'ombra della Terra entra in gioco solo nelle eclissi.",
+                   "en": "On the opposite side from the Sun: Sun, Earth and Moon are nearly in line with the Earth in the middle, and from here we see the whole lit hemisphere. Between Earth and Sun is new Moon, at 90° the quarters. The Earth's shadow matters only in eclipses."},
+      "docenti": {
+        "commento": {"it": "L'ultima opzione è la misconcezione più diffusa sulle fasi. Conviene far votare la classe prima di aprire la scheda nello spazio e far girare la vista intorno alla Terra.",
+                     "en": "The last option is the most common misconception about phases. Have the class vote before opening the panel in space and orbiting the view around the Earth."},
+        "errori": [{"it": "Spiegare le fasi con l'ombra della Terra (confusione con le eclissi).", "en": "Explaining phases with the Earth's shadow (confusion with eclipses)."},
+                   {"it": "Pensare che alla luna piena la Luna sia «vicina al Sole» perché è molto luminosa.", "en": "Thinking that at full Moon the Moon is «close to the Sun» because it is so bright."}],
+        "obiettivi": {"it": "Modello Sole–Terra–Luna; geometria delle fasi.", "en": "Sun–Earth–Moon model; geometry of phases."}
+      }
+    },
+    {
+      "id": "SN-06", "tema": "monti", "dopo": "figura07", "tipo": "scelta", "livello": 1, "minuti": 3,
+      "testo": {"it": "Da quale osservazione parte Galileo per misurare i monti lunari? A quale distanza dal confine della luce vede, talvolta, delle cime illuminate?",
+                "en": "Which observation does Galileo start from to measure the lunar mountains? How far from the boundary of the light does he sometimes see lit peaks?"},
+      "opzioni": [{"it": "Più di un ventesimo del diametro della Luna", "en": "More than one twentieth of the Moon's diameter"},
+                  {"it": "Circa metà del raggio", "en": "About half the radius"},
+                  {"it": "Un centesimo del diametro", "en": "One hundredth of the diameter"},
+                  {"it": "Proprio sul confine, mai lontano", "en": "Right on the boundary, never far from it"}],
+      "giusta": 0,
+      "indizio": {"it": "Cerca «ventesima» nel testo.", "en": "Search for «twentieth» in the text."},
+      "passo": {"id": "p020", "termini": {"it": ["ventesima parte"], "en": ["twentieth"]}},
+      "risposta": {"it": "«Talvolta più della ventesima parte del diametro»: 100 miglia su 2000. Da questo solo dato, con il teorema di Pitagora, Galileo ricava l'altezza dei monti.",
+                   "en": "«Sometimes more than one twentieth of the diameter»: 100 miles out of 2000. From this single figure, with Pythagoras' theorem, Galileo derives the height of the mountains."},
+      "docenti": {
+        "commento": {"it": "Domanda di ingresso alla scheda dei monti: fissa il dato osservativo prima della costruzione geometrica.", "en": "Entry question for the mountains panel: it fixes the observed figure before the geometric construction."},
+        "errori": [{"it": "Scegliere «proprio sul confine»: è il caso di una Luna liscia, che Galileo sta escludendo.", "en": "Choosing «right on the boundary»: that is the case of a smooth Moon, which Galileo is ruling out."}],
+        "obiettivi": {"it": "Distinguere il dato osservato dal modello.", "en": "Telling the observed data from the model."}
+      }
+    },
+    {
+      "id": "SN-07", "tema": "monti", "dopo": "figura07", "tipo": "scheda", "livello": 2, "minuti": 6,
+      "testo": {"it": "Quanto lontano dal confine della luce deve stare una cima alta circa 20 miglia, perché sia già illuminata? Trova la distanza con il cursore della scheda.",
+                "en": "How far from the boundary of the light must a peak about 20 miles high be, to be already lit? Find the distance with the panel's slider."},
+      "scheda": {"id": "luna", "apri": {"cd": 100}, "verifica": [{"ad": [19, 21]}],
+                 "ok": {"it": "Ci sei: con CD intorno a 200 miglia l'altezza AD è circa 20 miglia.", "en": "Got it: with CD around 200 miles the height AD is about 20 miles."},
+                 "no": {"it": "Non ancora: leggi l'altezza AD nei riquadri sotto la figura e sposta il cursore.", "en": "Not yet: read the height AD in the boxes below the figure and move the slider."}},
+      "indizio": {"it": "Con 100 miglia l'altezza è circa 5. Raddoppiando la distanza, l'altezza raddoppia o fa di più?", "en": "With 100 miles the height is about 5. If you double the distance, does the height double or more?"},
+      "risposta": {"it": "Circa 200 miglia, un decimo del diametro: DE² = 200² + 1000² = 1 040 000, ED ≈ 1019,8, AD ≈ 19,8 miglia. Raddoppiando la distanza l'altezza diventa circa quattro volte: h ≈ d²/(2R).",
+                   "en": "About 200 miles, one tenth of the diameter: DE² = 200² + 1000² = 1,040,000, ED ≈ 1019.8, AD ≈ 19.8 miles. Doubling the distance makes the height about four times larger: h ≈ d²/(2R)."},
+      "docenti": {
+        "commento": {"it": "Problema inverso rispetto a quello di Galileo. Dopo la ricerca col cursore si può chiedere di risolverlo per via algebrica: (R + h)² = R² + d².", "en": "The inverse of Galileo's problem. After the search with the slider, students can solve it algebraically: (R + h)² = R² + d²."},
+        "errori": [{"it": "Aspettarsi una crescita lineare (cercare 400 miglia).", "en": "Expecting linear growth (looking for 400 miles)."},
+                   {"it": "Confondere l'altezza AD con la lunghezza ED.", "en": "Confusing the height AD with the length ED."}],
+        "obiettivi": {"it": "Teorema di Pitagora; dipendenza quadratica; approssimazione per d ≪ R.", "en": "Pythagoras' theorem; quadratic dependence; approximation for d ≪ R."}
+      }
+    },
+    {
+      "id": "SN-08", "tema": "monti", "dopo": "figura07", "tipo": "numero", "livello": 2, "minuti": 4,
+      "testo": {"it": "Galileo stima la Luna 2000 miglia; oggi sappiamo che il diametro misura 3474 km. Quanti chilometri è alta la cima della sua costruzione (CD = 100 miglia)? Usa la scheda o calcola.",
+                "en": "Galileo puts the Moon at 2000 miles; today we know its diameter is 3474 km. How many kilometres high is the peak in his construction (CD = 100 miles)? Use the panel or calculate."},
+      "valore": 8.7, "tolleranza": 0.2, "unita": {"it": "km", "en": "km"},
+      "scheda": {"id": "luna", "apri": {"cd": 100}},
+      "indizio": {"it": "Conta il rapporto con il diametro: AD è circa 5 parti su 2000.", "en": "What matters is the ratio to the diameter: AD is about 5 parts in 2000."},
+      "risposta": {"it": "Circa 8,7 km: 4,99 × 3474 / 2000. Le miglia di Galileo non servono: conta la frazione del diametro lunare. È dello stesso ordine di grandezza dei rilievi lunari più alti, alti alcuni chilometri.",
+                   "en": "About 8.7 km: 4.99 × 3474 / 2000. Galileo's miles are not needed: what counts is the fraction of the lunar diameter. It is the same order of magnitude as the highest lunar relief, several kilometres high."},
+      "docenti": {
+        "commento": {"it": "Fa vedere che il metodo di Galileo è indipendente dall'unità di misura. Si può collegare alla domanda della scheda sul confronto con i monti terrestri (Everest circa 8,8 km).",
+                     "en": "It shows that Galileo's method does not depend on the unit. Link it to the panel's question on Earth's mountains (Everest about 8.8 km)."},
+        "errori": [{"it": "Convertire le miglia in km con un valore del miglio (moderno o italiano antico): il risultato cambia con il miglio scelto, mentre il rapporto con il diametro lunare non dipende dall'unità.", "en": "Converting miles to km with some value of the mile (modern or old Italian): the result depends on the mile chosen, while the ratio to the lunar diameter does not depend on the unit."}],
+        "obiettivi": {"it": "Proporzioni; rapporti adimensionali.", "en": "Proportions; dimensionless ratios."}
+      }
+    },
+    {
+      "id": "SN-09", "tema": "cinerea", "dopo": "p022", "tipo": "scheda", "livello": 2, "minuti": 5,
+      "testo": {"it": "Galileo scrive che il «secondo candore» della Luna è tanto più grande quanto meno la Luna dista dal Sole. Con la luce cinerea attiva, porta la simulazione a un giorno in cui la parte buia si vede bene.",
+                "en": "Galileo writes that the Moon's «secondary brightness» is greater the nearer the Moon is to the Sun. With earthshine switched on, bring the simulation to a day when the dark part is clearly visible."},
+      "scheda": {"id": "fasi", "apri": {"giorno": 14.8, "vista": "terra", "cinerea": true},
+                 "verifica": [{"giorno": [1.5, 6], "cinerea": true}, {"giorno": [23.5, 28], "cinerea": true}],
+                 "ok": {"it": "Sì: è una falce sottile, vicina al Sole nel cielo. Prova ad andare oltre il primo quarto e confronta.", "en": "Yes: a thin crescent, close to the Sun in the sky. Try going past the first quarter and compare."},
+                 "no": {"it": "Non ancora: cerca una falce sottile, crescente o calante, con la luce cinerea attiva.", "en": "Not yet: look for a thin crescent, waxing or waning, with earthshine on."}},
+      "indizio": {"it": "«Quanto meno la Luna dista dal Sole»: nel cielo, cioè vicino alla luna nuova.", "en": "«The nearer the Moon is to the Sun»: in the sky, that is, close to new Moon."},
+      "passo": {"id": "p022", "termini": {"it": ["secondo (per cosi dire) candore"], "en": ["secondary brightness"]}},
+      "risposta": {"it": "Nei giorni vicini alla luna nuova (falce crescente o calante). In quei giorni, vista dalla Luna, la Terra è quasi «piena» e la illumina di più. Dopo il primo quarto la luce cinerea quasi scompare, come scrive Galileo.",
+                   "en": "On the days near new Moon (waxing or waning crescent). Seen from the Moon, the Earth is then nearly «full» and lights it more. After the first quarter earthshine almost disappears, as Galileo writes."},
+      "docenti": {
+        "commento": {"it": "Le fasi della Terra viste dalla Luna sono complementari a quelle della Luna vista dalla Terra. Nella vista dallo spazio si può far notare quanta parte della Terra illuminata è rivolta verso la Luna.",
+                     "en": "The Earth's phases seen from the Moon are complementary to the Moon's phases seen from the Earth. In the space view, point out how much of the lit Earth faces the Moon."},
+        "errori": [{"it": "Cercarla alla luna piena: «più luce» non vuol dire più luce cinerea.", "en": "Looking for it at full Moon: «more light» does not mean more earthshine."}],
+        "obiettivi": {"it": "Riflessione della luce; ragionare da un altro punto di vista.", "en": "Reflection of light; reasoning from another point of view."}
+      }
+    },
+    {
+      "id": "SN-10", "tema": "cinerea", "dopo": "p022", "tipo": "scelta", "livello": 2, "minuti": 4,
+      "testo": {"it": "Perché, secondo Galileo, la luce cinerea non può essere luce propria della Luna o luce delle stelle?",
+                "en": "Why, according to Galileo, can earthshine not be the Moon's own light or light from the stars?"},
+      "opzioni": [{"it": "Perché allora si vedrebbe soprattutto nelle eclissi, quando la Luna è nel cielo più buio, e invece non è così", "en": "Because then it would be seen above all in eclipses, when the Moon is in the darkest sky, and it is not"},
+                  {"it": "Perché la Luna è troppo lontana dalle stelle", "en": "Because the Moon is too far from the stars"},
+                  {"it": "Perché il cannocchiale non la mostra", "en": "Because the telescope does not show it"},
+                  {"it": "Perché è di colore rosso", "en": "Because it is red"}],
+      "giusta": 0,
+      "indizio": {"it": "Cerca «eclissi» nel paragrafo sulla luce cinerea.", "en": "Search for «eclipses» in the paragraph on earthshine."},
+      "passo": {"id": "p022", "termini": {"it": ["nelle eclissi"], "en": ["eclipses"]}},
+      "risposta": {"it": "Una luce propria (o delle stelle) ci sarebbe sempre, e si vedrebbe meglio nelle eclissi, nel cielo più scuro. Ma nelle eclissi la Luna mostra un'altra luce: più debole, rossiccia, quasi color bronzo e mutevole. Per Galileo la causa è la Terra, che riflette la luce del Sole.",
+                   "en": "The Moon's own light (or starlight) would always be there, and would be best seen in eclipses, against the darkest sky. But in eclipses the Moon shows a different light, fainter, reddish and changing. For Galileo the cause is the Earth, reflecting sunlight."},
+      "docenti": {
+        "commento": {"it": "Esempio di confutazione per conseguenze: se l'ipotesi fosse vera, osserveremmo X; non osserviamo X. Il colore rosso è una trappola: Galileo lo attribuisce alla luce delle eclissi, non alla luce cinerea.",
+                     "en": "An example of refutation by consequences: if the hypothesis were true we would observe X; we do not. The red colour is a trap: Galileo attributes it to the light seen in eclipses, not to earthshine."},
+        "errori": [{"it": "Scegliere «è di colore rosso»: confonde le due luci descritte nel paragrafo.", "en": "Choosing «it is red»: it mixes up the two kinds of light described in the paragraph."}],
+        "obiettivi": {"it": "Struttura di un argomento per assurdo.", "en": "Structure of an argument by contradiction."}
+      }
+    },
+    {
+      "id": "SN-11", "tema": "stelle", "dopo": "figura03", "tipo": "scelta", "livello": 2, "minuti": 4,
+      "testo": {"it": "Al cannocchiale la Luna si ingrandisce molto, le stelle molto meno. Qual è la spiegazione di Galileo?",
+                "en": "Through the telescope the Moon is greatly magnified, the stars much less. What is Galileo's explanation?"},
+      "opzioni": [{"it": "A occhio nudo le stelle appaiono circondate da raggi che le fanno sembrare più grandi; il cannocchiale toglie quei raggi e ingrandisce solo il piccolo corpo", "en": "To the naked eye stars appear fringed with rays that make them look larger; the telescope removes those rays and magnifies only the tiny body"},
+                  {"it": "Le stelle sono troppo lontane perché il cannocchiale funzioni", "en": "The stars are too far away for the telescope to work"},
+                  {"it": "La luce delle stelle non attraversa bene le lenti", "en": "Starlight does not pass well through the lenses"},
+                  {"it": "Le stelle sono più piccole della Luna", "en": "The stars are smaller than the Moon"}],
+      "giusta": 0,
+      "indizio": {"it": "Galileo ricorda che al crepuscolo anche le stelle più luminose sembrano piccolissime.", "en": "Galileo recalls that at twilight even the brightest stars look tiny."},
+      "passo": {"id": "p023", "termini": {"it": ["chiomati", "splendori"], "en": ["fringed"]}},
+      "risposta": {"it": "Le stelle a occhio nudo appaiono «chiomate» da raggi: l'angolo che vediamo è quello dello splendore intorno, non del corpo della stella. Il cannocchiale toglie questi splendori e poi ingrandisce un corpo piccolissimo.",
+                   "en": "To the naked eye stars appear «fringed with sparkling rays»: the angle we see is that of the glow around them, not of the star itself. The telescope removes this glow and then magnifies a very small body."},
+      "docenti": {
+        "commento": {"it": "Oggi sappiamo che il disco di una stella è sotto il potere risolutivo di qualunque cannocchiale: quello che si vede è una figura di diffrazione e di turbolenza. L'intuizione di Galileo (dimensione apparente non uguale alla vera) è giusta.",
+                     "en": "We now know that a star's disc is below the resolving power of any telescope: what we see is a diffraction and turbulence pattern. Galileo's insight (apparent size is not real size) is right."},
+        "errori": [{"it": "Scegliere «sono troppo lontane»: anche la Luna è lontana, eppure si ingrandisce.", "en": "Choosing «too far away»: the Moon is far too, yet it is magnified."}],
+        "obiettivi": {"it": "Dimensione apparente e dimensione reale; ruolo dell'occhio nella misura.", "en": "Apparent and real size; the eye's role in measurement."}
+      }
+    },
+    {
+      "id": "SN-12", "tema": "stelle", "dopo": "figura03", "tipo": "numero", "livello": 1, "minuti": 2,
+      "testo": {"it": "Quante stelle disegna Galileo nel Presepe, oltre agli Asinelli? Trova il numero nel testo.",
+                "en": "How many stars does Galileo draw in Praesepe, besides the Aselli? Find the number in the text."},
+      "valore": 36, "tolleranza": 0, "unita": {"it": "stelle", "en": "stars"},
+      "indizio": {"it": "Cerca «Presepe».", "en": "Search for «Praesepe»."},
+      "passo": {"id": "p028", "termini": {"it": ["trentasei"], "en": ["thirty-six"]}},
+      "risposta": {"it": "Trentasei. A occhio nudo il Presepe sembra una sola macchia chiara: Galileo mostra che è un ammasso di stelle.",
+                   "en": "Thirty-six. To the naked eye Praesepe looks like a single bright patch: Galileo shows it is a cluster of stars."},
+      "docenti": {
+        "commento": {"it": "Oggi il Presepe è l'ammasso aperto M44, con centinaia di stelle a circa 600 anni luce. Si può confrontare con la Testa di Orione, dove Galileo conta 21 stelle.",
+                     "en": "Today Praesepe is the open cluster M44, with hundreds of stars about 600 light-years away. Compare it with Orion's Head, where Galileo counts 21 stars."},
+        "errori": [{"it": "Rispondere «più di quaranta»: è la stima complessiva, non le stelle disegnate.", "en": "Answering «more than forty»: that is the overall estimate, not the stars drawn."}],
+        "obiettivi": {"it": "Lettura attenta di un dato numerico.", "en": "Careful reading of a numerical datum."}
+      }
+    },
+    {
+      "id": "SN-13", "tema": "giove", "dopo": "giove", "tipo": "scheda", "livello": 2, "minuti": 6,
+      "testo": {"it": "La prima sera, il 7 gennaio, Galileo vede tre stelline: due a oriente e una a occidente. Il modello calcola quattro satelliti, tutti fuori dal disco di Giove. Apri il primo disegno e mostra i nomi: perché Galileo ne vede solo tre?",
+                "en": "On the first evening, 7 January, Galileo sees three little stars: two to the east and one to the west. The model computes four satellites, all outside Jupiter's disc. Open the first drawing and show the names: why does Galileo see only three?"},
+      "scheda": {"id": "giove", "apri": {"disegno": 1, "nomi": false}, "verifica": [{"disegno": [1, 1], "nomi": true}],
+                 "ok": {"it": "Ora confronta le distanze a oriente nei riquadri sotto il cielo ricostruito.", "en": "Now compare the eastern distances in the boxes below the reconstructed sky."},
+                 "no": {"it": "Porta la scheda al disegno 1 (7 gennaio) e premi «Mostra i nomi».", "en": "Go to drawing 1 (7 January) and press «Show names»."}},
+      "indizio": {"it": "Guarda le distanze in primi: due satelliti stanno quasi nello stesso punto.", "en": "Look at the distances in minutes of arc: two satellites are almost at the same spot."},
+      "risposta": {"it": "Io ed Europa sono entrambi a circa 2,3′ a oriente di Giove, separati da meno di un decimo di primo: nel cannocchiale di Galileo sono una sola «stella». Callisto è a circa 9′ a oriente, Ganimede a circa 5,5′ a occidente.",
+                   "en": "Io and Europa are both about 2.3′ east of Jupiter, less than a tenth of a minute apart: in Galileo's telescope they are a single «star». Callisto is about 9′ east, Ganymede about 5.5′ west."},
+      "docenti": {
+        "commento": {"it": "Introduce il potere risolutivo: due sorgenti più vicine di un certo angolo non si distinguono. È anche un buon esempio di come un modello moderno aiuti a leggere un dato storico.",
+                     "en": "Introduces resolving power: two sources closer than a certain angle cannot be told apart. It is also a good example of a modern model helping to read a historical datum."},
+        "errori": [{"it": "Pensare che il satellite mancante sia dietro Giove: nel modello sono tutti fuori dal disco.", "en": "Thinking the missing satellite is behind Jupiter: in the model they are all outside the disc."}],
+        "obiettivi": {"it": "Angoli in primi d'arco; potere risolutivo; confronto dati–modello.", "en": "Angles in arcminutes; resolving power; data–model comparison."}
+      }
+    },
+    {
+      "id": "SN-14", "tema": "giove", "dopo": "giove", "tipo": "scheda", "livello": 3, "minuti": 8,
+      "testo": {"it": "Usa il cursore del tempo libero (o il grafico) per trovare un istante, tra gennaio e marzo 1610, in cui tutti e quattro i satelliti sono visibili dalla stessa parte di Giove.",
+                "en": "Use the free-time slider (or the graph) to find a moment, between January and March 1610, when all four satellites are visible on the same side of Jupiter."},
+      "scheda": {"id": "giove", "apri": {"ore": 0}, "verifica": [{"stessoLato": true}],
+                 "ok": {"it": "Trovato: tutti e quattro dalla stessa parte. Guarda nel grafico come si presentano queste configurazioni.", "en": "Found: all four on one side. See in the graph what these configurations look like."},
+                 "no": {"it": "Non ancora: servono quattro satelliti visibili, tutti a oriente o tutti a occidente.", "en": "Not yet: you need four visible satellites, all east or all west."}},
+      "indizio": {"it": "Nel grafico cerca una riga orizzontale in cui le quattro curve stanno tutte dalla stessa parte della striscia di Giove.", "en": "In the graph look for a horizontal line where the four curves are all on the same side of Jupiter's band."},
+      "risposta": {"it": "Succede solo qualche volta in due mesi, per poche ore: ad esempio il 14–15 gennaio, il 24 gennaio o il 19 febbraio. Il grafico tempo–elongazione è lo strumento giusto per trovarle.",
+                   "en": "It happens only a few times in two months, for a few hours: for example on 14–15 January, 24 January or 19 February. The time–elongation graph is the right tool to find them."},
+      "docenti": {
+        "commento": {"it": "Domanda aperta di esplorazione. Leggere il grafico (tempo verso il basso, elongazione in orizzontale) è la competenza chiave: ogni disegno di Galileo è una sua fetta orizzontale.",
+                     "en": "An open exploration question. Reading the graph (time downwards, elongation horizontally) is the key skill: each of Galileo's drawings is a horizontal slice of it."},
+        "errori": [{"it": "Contare anche i satelliti nascosti dietro o davanti a Giove.", "en": "Counting satellites hidden behind or in front of Jupiter."},
+                   {"it": "Confondere oriente e occidente: nei disegni l'oriente è a sinistra.", "en": "Mixing up east and west: in the drawings east is on the left."}],
+        "obiettivi": {"it": "Lettura di grafici; moti periodici sovrapposti.", "en": "Reading graphs; superposed periodic motions."}
+      }
+    },
+    {
+      "id": "SN-15", "tema": "conclusioni", "dopo": "p138", "tipo": "testo", "livello": 2, "minuti": 4,
+      "testo": {"it": "Da quale osservazione Galileo deduce che i satelliti con l'orbita più piccola girano più in fretta? Trova il passo.",
+                "en": "From which observation does Galileo infer that the satellites with the smallest orbits move fastest? Find the passage."},
+      "indizio": {"it": "Cerca «orbite minori».", "en": "Search for «smallest circles»."},
+      "passo": {"id": "p138", "termini": {"it": ["orbite minori"], "en": ["smallest circles"]}},
+      "risposta": {"it": "I satelliti più vicini a Giove spesso si vedono a oriente quando il giorno prima erano a occidente, e viceversa: cambiano lato in poco tempo. Il più lontano invece ha un periodo di circa mezzo mese.",
+                   "en": "The satellites nearest Jupiter are often seen in the east when the day before they were in the west, and vice versa: they change sides quickly. The outermost one instead has a period of about half a month."},
+      "docenti": {
+        "commento": {"it": "Collegamento con la terza legge di Keplero (lettura moderna nella scheda degli Astri Medicei): r³/T² è circa lo stesso per i quattro satelliti.",
+                     "en": "Link to Kepler's third law (modern reading in the Medicean Stars panel): r³/T² is about the same for the four satellites."},
+        "errori": [{"it": "Rispondere con la legge di Keplero: la domanda chiede che cosa osserva Galileo, non la spiegazione di oggi.", "en": "Answering with Kepler's law: the question asks what Galileo observes, not today's explanation."}],
+        "obiettivi": {"it": "Dal dato qualitativo alla legge; periodo e raggio.", "en": "From qualitative data to a law; period and radius."}
+      }
+    },
+    {
+      "id": "SN-16", "tema": "conclusioni", "dopo": "p138", "tipo": "scelta", "livello": 2, "minuti": 4,
+      "testo": {"it": "Galileo dice di avere un «valido ed eccellente argomento» per chi esita ad accettare Copernico. Quale obiezione smontano i satelliti di Giove?",
+                "en": "Galileo says he has an «notable and splendid argument» for those hesitant to accept Copernicus. Which objection do Jupiter's satellites remove?"},
+      "opzioni": [{"it": "Che la Terra non potrebbe girare intorno al Sole portandosi dietro la Luna", "en": "That the Earth could not go round the Sun carrying the Moon with it"},
+                  {"it": "Che le stelle fisse dovrebbero mostrare una parallasse", "en": "That the fixed stars should show a parallax"},
+                  {"it": "Che un sasso lasciato cadere da una torre dovrebbe restare indietro", "en": "That a stone dropped from a tower should be left behind"},
+                  {"it": "Che Venere non mostra le fasi", "en": "That Venus shows no phases"}],
+      "giusta": 0,
+      "indizio": {"it": "Rileggi la frase che parla della «sola Luna intorno alla Terra».", "en": "Reread the sentence about «the motion of one Moon about the Earth»."},
+      "passo": {"id": "p138", "termini": {"it": ["copernico"], "en": ["copernican"]}},
+      "risposta": {"it": "Chi rifiutava Copernico obiettava che la Terra non può girare intorno al Sole trascinando con sé la Luna. Giove mostra quattro lune che lo seguono mentre gira: un sistema del genere esiste davvero.",
+                   "en": "Opponents of Copernicus objected that the Earth cannot go round the Sun dragging the Moon along. Jupiter shows four moons following it as it moves: such a system really exists."},
+      "docenti": {
+        "commento": {"it": "Le altre tre opzioni sono obiezioni reali al sistema copernicano, affrontate altrove (la parallasse, la torre nel Dialogo, le fasi di Venere osservate nel 1610 dopo il Sidereus). Si può chiedere di collocarle.",
+                     "en": "The other three options are real objections to the Copernican system, dealt with elsewhere (parallax, the tower in the Dialogue, the phases of Venus observed in 1610 after the Sidereus). Ask students to place them."},
+        "errori": [{"it": "Pensare che il Sidereus dimostri il sistema copernicano: toglie un'obiezione, non lo prova.", "en": "Thinking the Sidereus proves the Copernican system: it removes an objection, it does not prove it."}],
+        "obiettivi": {"it": "Distinguere tra prova e rimozione di un'obiezione.", "en": "Distinguishing proof from removing an objection."}
+      }
+    }
+  ]
+}

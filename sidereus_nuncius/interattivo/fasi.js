@@ -399,6 +399,17 @@
     bottoni.forEach((b, i) => b.addEventListener("click", () => { play = false; const p = radice.querySelector(".fl-play"); p.setAttribute("aria-pressed", false); p.textContent = "▶ Anima"; scegliFigura(i); }));
     scegliFigura(0); aggiornaTesto();
     requestAnimationFrame(disegna);
-    return { imposta: (e) => { eta = e; cursore.value = e; aggiornaTesto(); }, vista: () => bVista.click() };
+    // interfaccia comune delle schede (domande): imposta({giorno, vista: "terra"|"spazio", cinerea}) e leggi()
+    const fuoriOra = () => vista === 1 || verso === 1;
+    function imposta(o) {
+      if (typeof o === "number") o = { giorno: o };
+      o = o || {};
+      if (o.giorno != null) { play = false; const p = radice.querySelector(".fl-play"); p.setAttribute("aria-pressed", false); p.textContent = "▶ Anima";
+        eta = Math.max(0, Math.min(LUNAZIONE, +o.giorno)); cursore.value = eta; scegliFigura(null); aggiornaTesto(); }
+      if (o.vista && (o.vista === "spazio") !== fuoriOra()) bVista.click();
+      if (o.cinerea != null && !!o.cinerea !== cinereaOn) radice.querySelector(".fl-cinerea").click();
+    }
+    function leggi() { return { giorno: Math.round(eta * 100) / 100, vista: fuoriOra() ? "spazio" : "terra", cinerea: cinereaOn }; }
+    return { imposta, leggi, vista: () => bVista.click() };
   };
 })();

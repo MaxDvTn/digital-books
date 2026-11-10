@@ -122,6 +122,8 @@ b.chiave{font-weight:600}
 <script>%%FASI_JS%%</script>
 <script>%%ASTRO%%</script>
 <script>
+/* interfaccia comune delle schede: SCHEDE[id].imposta(stato) e .leggi() (usata dalle domande e dai link #scheda=…) */
+const SCHEDE = window.SCHEDE = window.SCHEDE || {};
 const OSS = %%OSS%%;
 const IMG = %%IMG%%;
 const NOMI=["I · Io","II · Europa","III · Ganimede","IV · Callisto"];
@@ -265,6 +267,8 @@ function marcaGrafico(t){const m=$("#gMarca");if(!m)return;const y=GR.top+t/24*G
     txt(q,300,Hq-6,ok?"Le due figure coincidono: lo strumento ingrandisce i diametri 20 volte, le superfici 400.":`Il quadrato piccolo appare ${m} volte più largo: ${m<20?"ancora troppo piccolo":"già troppo grande"}.`,{"font-size":12.5,"text-anchor":"middle","font-family":"Inter,sans-serif",fill:ok?"var(--s2)":"var(--inchiostro)"});
   }
   $("#cM").addEventListener("input",disegna);$("#cForo").addEventListener("input",disegna);
+  SCHEDE.cannocchiale={imposta(o){o=o||{};if(o.m!=null)$("#cM").value=o.m;if(o.foro!=null)$("#cForo").value=o.foro;disegna();},
+    leggi(){return{m:+$("#cM").value,foro:+$("#cForo").value};}};
   document.querySelectorAll("[data-strum]").forEach(b=>b.addEventListener("click",()=>{$("#cM").value=b.dataset.strum;disegna();}));
   disegna();
 })();
@@ -359,11 +363,20 @@ function marcaGrafico(t){const m=$("#gMarca");if(!m)return;const y=GR.top+t/24*G
   $("#lF").addEventListener("input",()=>{passo=PASSI.length-1;disegna();});
   $("#luna").addEventListener("keydown",e=>{if(e.target.tagName==="INPUT")return;if(e.key==="ArrowRight"){$("#lSucc").click();e.preventDefault();}if(e.key==="ArrowLeft"){$("#lPrec").click();e.preventDefault();}});
   passo=0;disegna();
+  SCHEDE.luna={imposta(o){o=o||{};if(o.cd!=null)$("#lF").value=o.cd;passo=o.passo!=null?Math.max(0,Math.min(PASSI.length-1,o.passo-1)):PASSI.length-1;disegna();},
+    leggi(){const cd=+$("#lF").value;return{cd,passo:passo+1,ad:Math.round((Math.sqrt(cd*cd+1e6)-1000)*100)/100};}};
 })();
 const st=document.createElement("style");st.textContent="@keyframes lamp{0%,100%{opacity:1}50%{opacity:.15}} .nuovo{animation:lamp .5s ease 2}";document.head.appendChild(st);
 disegnaGrafico();osserva(0);
+SCHEDE.giove={imposta(o){o=o||{};if(anim)$("#gPlay").click();
+    if(o.nomi!=null&&!!o.nomi!==nomiOn)$("#gNomi").click();
+    if(o.disegno!=null)osserva(o.disegno-1);
+    else if(o.ore!=null){tCont=Math.max(0,Math.min(+$("#tempo").max,+o.ore));$("#tempo").value=tCont;aggiornaGiove();}},
+  leggi(){const t=+$("#tempo").value,q=tCont!==null?daOre(t):OSS[iOss],c=calcola(q.m,q.d,q.h),vis=c.sat.filter(s=>!s.nascosto);
+    return{disegno:tCont===null?iOss+1:0,libero:tCont!==null,ore:t,nomi:nomiOn,visibili:vis.length,
+      stessoLato:vis.length===4&&(vis.every(s=>s.x<0)||vis.every(s=>s.x>0))};}};
 try{Libro.init();}catch(e){console.error(e);}
-try{window.FASI=FasiLuna(document.getElementById('fasi'),%%FASI_IMG%%);}catch(e){console.error(e);}
+try{window.FASI=FasiLuna(document.getElementById('fasi'),%%FASI_IMG%%);SCHEDE.fasi=window.FASI;}catch(e){console.error(e);}
 function apriDaHash(){const h=location.hash.slice(1);if(h){const e=document.getElementById(h);if(e)e.scrollIntoView();}}
 window.addEventListener("hashchange",apriDaHash);
 </script>

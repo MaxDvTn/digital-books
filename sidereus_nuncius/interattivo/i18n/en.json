@@ -1490,5 +1490,25 @@
 [
 "it",
 "="
+],
+[
+"domande",
+"="
+],
+[
+"<div class=\"lb-tav-et\">${it.etichetta || \"Tavola interattiva\"}</div><div class=\"lb-tav-tit\">${it.titolo}</div><button class=\"b lb-apri\" data-scheda=\"${it.id}\">${it.apri || \"Apri la scheda ↗\"}</button>",
+"!<div class=\"lb-tav-et\">${it.etichetta || \"Interactive plate\"}</div><div class=\"lb-tav-tit\">${it.titolo}</div><button class=\"b lb-apri\" data-scheda=\"${it.id}\">${it.apri || \"Open the panel ↗\"}</button>"
+],
+[
+"number",
+"="
+],
+[
+"spazio",
+"="
+],
+[
+"terra",
+"="
 ]
 ]

@@ -167,7 +167,7 @@ JS = r"""/*lingue*/ /*navigazione*/
     else document.querySelectorAll("#testo h2[id], #testo h3.sez[id]").forEach(el => {
       const s = el.querySelector(".sotto");
       voci.push({el, t: pulito(el), s: s ? s.textContent.trim() : "", l: el.tagName === "H2" ? 1 : 2}); });
-    const tav = [...document.querySelectorAll("section.scheda[id]")].map(el => { const h = el.querySelector("h3"); return {el, t: h ? pulito(h).replace(/^(Scheda|Tavola|Panel|Plate)\s*·\s*/, "") : el.id, tav: true}; });
+    const tav = [...document.querySelectorAll("section.scheda[id]:not(.domande)")].map(el => { const h = el.querySelector("h3"); return {el, t: h ? pulito(h).replace(/^(Scheda|Tavola|Panel|Plate)\s*·\s*/, "") : el.id, tav: true}; });
     const note = $("note");
     const esc = s => s.replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
     let h = "<ol>" + voci.map((v, i) => '<li><a href="#' + v.el.id + '" data-i="' + i + '" class="l' + v.l + '">' + esc(v.t) + (v.s ? '<span class="sotto">' + esc(v.s) + '</span>' : "") + "</a></li>").join("") + "</ol>";
@@ -196,6 +196,8 @@ JS = r"""/*lingue*/ /*navigazione*/
     if (termini) { evidenzia(el, termini); el.classList.remove("nv-lampo"); void el.offsetWidth; el.classList.add("nv-lampo"); }
   }
 
+  window.NAV = {vaiA: (el, termini) => vaiA(el, termini)};   // usato dalle domande («Mostrami dove»)
+
   /* ---------- ricerca: senza accenti e senza maiuscole, tutte le parole */
   const norm1 = c => c.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
   function normMappa(s){ let n = "", m = []; for (let i = 0; i < s.length; i++) { const x = norm1(s[i]); for (const _ of x) m.push(i); n += x; } m.push(s.length); return [n, m]; }
@@ -206,6 +208,7 @@ JS = r"""/*lingue*/ /*navigazione*/
     const sel = "#testo p, #testo li, #testo h2, #testo h3, #testo figcaption, #testo td, #note p";
     const els = [...document.querySelectorAll(sel)].filter(el => {
       const sc = el.closest("section.scheda");
+      if (el.closest("section.domande")) return false;
       if (sc && !el.matches("section.scheda > h3, section.scheda .intro")) return false;
       return !el.closest(".lb-tav, #libro, .nv-pannello, details") && el.textContent.trim().length > 1;
     });

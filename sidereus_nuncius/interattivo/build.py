@@ -2,7 +2,7 @@
 """Genera index.html del Sidereus interattivo da blocchi.json + immagini + astro.js."""
 import base64, json, html, sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "strumenti"))
-import copertina, lingue, navigazione
+import copertina, lingue, navigazione, domande
 
 BASE = os.environ.get("SIDEREUS_DIR", os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")) + "/"
 QUI = os.path.dirname(os.path.abspath(__file__))
@@ -160,6 +160,17 @@ SCHEDA_GIOVE = """
 </section>
 """
 
+# --- domande per la classe (domande.json): riquadri nel testo e pagina per i docenti
+DQ = domande.carica(os.path.join(QUI, "domande.json"))
+DOCENTI = "docenti.html" if LINGUA == "it" else "docenti.%s.html" % LINGUA
+RQ = domande.riquadri(DQ, LINGUA, DOCENTI)
+ANCORE = set()
+def riquadri_dopo(*ids):   # il riquadro va dopo il paragrafo o la figura, e dopo la scheda che la segue
+    for i in ids:
+        ANCORE.add(i)
+        if i in RQ:
+            out.append(fisso(RQ.pop(i)))
+
 # --- testo --------------------------------------------------------------------
 out = []
 for b in blocchi:
@@ -177,10 +188,11 @@ for b in blocchi:
         out.append('<p class="%s" id="%s">%s%s</p>' % (cls, b["id"], t, note))
         if b["id"] == "p009":
             out.append(SCHEDA_CANN)
-        if b["id"] == "p020":
-            pass
+            riquadri_dopo("cannocchiale")
         if b["id"] == "p029":
             out.append(SCHEDA_GIOVE)
+            riquadri_dopo("giove")
+        riquadri_dopo(b["id"])
     else:
         f = b["id"]
         if f in idx:
@@ -198,8 +210,18 @@ for b in blocchi:
             out.append('<figure class="%s" data-fig="%s"><img alt="%s" src="%s"><figcaption>%s</figcaption></figure>' % (cls, f, alt, uri(f), didasc))
             if f == "figura07":
                 out.append(SCHEDA_LUNA)
+                riquadri_dopo("luna")
             if f == "figura01":
                 out.append(open(os.path.join(QUI, "fasi_scheda.html")).read())
+                riquadri_dopo("fasi")
+        riquadri_dopo(f)
+
+if RQ:
+    sys.exit("domande.json: ancore non trovate nel testo: %s" % ", ".join(RQ))
+errori = domande.controlla(DQ, {LINGUA: {pid: CONT[pid] for pid in par}}, ANCORE, set(domande.CHIAVI), [LINGUA])
+if errori:
+    sys.exit("domande.json:\n  " + "\n  ".join(errori))
+print("domande:", len(DQ["domande"]))
 
 # controlla che ogni figura dell'italiano sia stata usata
 usate = [b["id"] for b in blocchi if b["tipo"] == "figura"]
@@ -234,6 +256,13 @@ SOMMARIO = {
         ["p026", "The Milky Way and the nebulae"], ["p029", "The four Medicean Stars"], ["p030", "The observations, from 7 January 1610", 2],
         ["p138", "Conclusions on the Medicean Stars", 2]]}
 page = navigazione.applica(page, casa="../../index.html", sommario=SOMMARIO)
+page = domande.applica(page, LINGUA)
+# pagina per i docenti, nella stessa lingua
+altra = {"it": ("docenti.en.html", "index.en.html"), "en": ("docenti.html", "index.html")}[LINGUA]
+open(os.path.join(QUI, DOCENTI), "w", encoding="utf-8").write(domande.pagina_docenti(
+    DQ, LINGUA, libro_href=lingue.nome_file(LINGUA), home_href="../../index.html", altra_href=altra[0],
+    testa_extra=navigazione.contatore_html()))
+print(DOCENTI)
 # --- lingua: menu, traduzione dell'interfaccia, testo del libro
 page = (page.replace('<html lang="it">', '<html lang="%s">' % LINGUA)
         .replace("</div></header>", lingue.menu_html(LINGUA, DISPONIBILI) + "</div></header>", 1)

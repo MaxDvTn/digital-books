@@ -17,9 +17,10 @@
     for (const el of $("#testo").children) {
       if (el.matches("p.sottotitolo")) out.push({ t: "p", html: el.innerHTML, cls: "sottotitolo" });
       else if (el.matches("h2, h3.sez")) out.push({ t: "h", html: el.innerHTML });
-      else if (el.matches("p")) out.push({ t: "p", html: el.innerHTML, cls: el.className, id: el.id });
+      else if (el.matches("p")) out.push({ t: "p", html: el.innerHTML.replace(/<mark class="nv-trovato">([^<]*)<\/mark>/g, "$1"), cls: el.className.replace(/\s*\bnv-lampo\b/, ""), id: el.id });
       else if (el.matches("figure")) { out.push({ t: "fig", fid: el.dataset.fig, nodo: el }); if (CONF.loopFig && el.dataset.fig === CONF.loopFig) out.push({ t: "loop" }); }
-      else if (el.matches("section.scheda")) out.push({ t: "tavola", id: el.id, titolo: $("h3", el).textContent.replace(/^Scheda · /, ""), intro: ($(".intro", el) || {}).textContent || "" });
+      else if (el.matches("section.scheda")) out.push({ t: "tavola", id: el.id, titolo: el.dataset.titolo || $("h3", el).textContent.replace(/^Scheda · /, ""), intro: ($(".intro", el) || {}).textContent || "",
+        etichetta: el.dataset.etichetta, apri: el.dataset.apri, cls: el.classList.contains("domande") ? " lb-domande" : "" });
     }
     return out;
   }
@@ -62,8 +63,8 @@
       return f;
     }
     if (it.t === "tavola") {
-      const d = document.createElement("div"); d.className = "lb-tavola";
-      d.innerHTML = `<div class="lb-tav-et">Tavola interattiva</div><div class="lb-tav-tit">${it.titolo}</div><button class="b lb-apri" data-scheda="${it.id}">Apri la scheda ↗</button>`;
+      const d = document.createElement("div"); d.className = "lb-tavola" + (it.cls || "");
+      d.innerHTML = `<div class="lb-tav-et">${it.etichetta || "Tavola interattiva"}</div><div class="lb-tav-tit">${it.titolo}</div><button class="b lb-apri" data-scheda="${it.id}">${it.apri || "Apri la scheda ↗"}</button>`;
       return d;
     }
     const p = document.createElement("p"); p.className = it.cls || "t"; p.innerHTML = html !== undefined ? html : it.html;
@@ -318,7 +319,8 @@
     palco.focus(); avviaCiclo();
   }
   function chiudi() {
-    stato.aperto = false; radice.hidden = true; document.body.classList.remove("lb-on");
+    stato.aperto = false;
+    chiudiScheda(); radice.hidden = true; document.body.classList.remove("lb-on");
     $("#btnLibro").setAttribute("aria-pressed", "false");
     try { history.replaceState(null, "", "#testo"); } catch (e) { }
   }
@@ -374,10 +376,10 @@
       const g = e.target.closest(".vaiOss"); if (g) { e.stopPropagation(); apriScheda("giove", () => { if (window.osserva) window.osserva(+g.dataset.i); }); }
     }, true);
     let t = null;
-    window.addEventListener("resize", () => { if (!stato.aperto || schedaAperta) return; clearTimeout(t); t = setTimeout(ricostruisci, 200); });
+    window.addEventListener("resize", () => { if (!stato.aperto || schedaAperta) return; clearTimeout(t); t = setTimeout(() => { if (stato.aperto && !schedaAperta) ricostruisci(); }, 200); });
     const bc = $("#btnCielo"); if (bc) bc.addEventListener("click", () => { if (stato.aperto) setTimeout(ricostruisci, 50); });
     $("#btnLibro").addEventListener("click", () => stato.aperto ? chiudi() : apri());
     const m = location.hash.match(/^#pagina-(\d+)$/); if (m) apri(+m[1]); else if (location.hash === "#libro") apri();
   }
-  window.Libro = { init, apri, chiudi };
+  window.Libro = { init, apri, chiudi, apriScheda, chiudiScheda, aperto: () => stato.aperto, schedaAperta: () => schedaAperta && schedaAperta.id };
 })();
